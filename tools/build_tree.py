@@ -28,6 +28,7 @@ def rel(path):
 
 def main():
     tr = json.load(open(os.path.join(HERE, "translations", "ar_final.json")))
+    scaleform = json.load(open(os.path.join(HERE, "translations", "ar_scaleform_final.json")))
     report = []
     # --- strings ---------------------------------------------------------
     pats = ["STRINGS.VIV", "STRINGMP.VIV"]
@@ -39,7 +40,12 @@ def main():
         changed = 0
         for e in v.entries:
             txt = e.data.decode("utf-16-le")
-            patched = patch_xml(txt, tr)
+            # Front-end/HUD strings are rendered through Scaleform/GFx. They
+            # must stay in logical order so Scaleform can perform its own BiDi
+            # pass; gameplay text keeps the pre-visualized LTR path.
+            merged = dict(tr)
+            merged.update({k: v for k, v in scaleform.items() if k in tr})
+            patched = patch_xml(txt, merged)
             if patched != txt:
                 e.data = patched.encode("utf-16-le")
                 e.size = len(e.data)

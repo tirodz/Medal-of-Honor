@@ -98,6 +98,43 @@ class TestFontRoundTrip(unittest.TestCase):
         raw = open(p, "rb").read()
         self.assertEqual(SfnBuilder(raw).rebuild(), raw)
 
+    def test_offsets_are_signed(self):
+        # The EA format stores advance/x_offset/y_offset as signed int8; the
+        # original digit '0' in SUBFNT uses y_offset 0xff == -1.
+        p = os.path.join(EX, "MOH4", "DATA", "SUBFNT.SFN")
+        if not have(p):
+            self.skipTest("SUBFNT.SFN missing")
+        f = sfn_build.SfnFont.parse(p)
+        zero = [c for c in f.chars if c.code == ord("0")]
+        self.assertTrue(zero)
+        self.assertEqual(zero[0].y_offset, -1)
+        self.assertEqual(zero[0].y_offset + zero[0].height, 13)
+
+    def test_kerning_offset_relocated(self):
+        # Growing the character table must move the kerning-table offset, or
+        # the engine reads kerning from inside the appended glyph entries.
+        from tools.sfn import CharEntry
+        from tools.pal4 import encode
+        from PIL import Image
+        for p in sorted(glob.glob(os.path.join(EX, "MOH4", "DATA", "*.SFN"))):
+            raw = open(p, "rb").read()
+            b = SfnBuilder(raw)
+            if not b.kio:
+                continue
+            with self.subTest(p=os.path.basename(p)):
+                strip = Image.new("L", (b.atlas_w, 4), 0)
+                rows = [encode(strip)[i:i + b.atlas_w // 2]
+                        for i in range(0, len(encode(strip)), b.atlas_w // 2)]
+                ch = CharEntry(code=0xFFFF, width=2, height=2, u=0,
+                               v=b.atlas_h, advance=3, x_offset=0, y_offset=0)
+                out = b.add_glyphs([ch], rows)
+                f2 = sfn_build.SfnFont.parse_bytes(out)
+                ctab_end = f2.char_info_offset + f2.num_chars * b.entry_size
+                self.assertEqual(f2.kerning_offset, ctab_end)
+                import struct
+                nk = struct.unpack_from("<I", out, f2.kerning_offset)[0]
+                self.assertLess(nk, 1000)
+
 
 class TestArabicPipeline(unittest.TestCase):
     def test_presentation_forms_and_order(self):
@@ -120,6 +157,14 @@ class TestArabicPipeline(unittest.TestCase):
             for tok in ("%1", "%2", "$ACTION", "\\n"):
                 if tok in s:
                     self.assertIn(tok, out)
+
+    def test_line_order_not_reversed(self):
+        # The engine draws each line left-to-right, so the bidi pass must run
+        # per line; otherwise the first paragraph would render last.
+        out = arabic.process("الأول\\n\\nالثاني")
+        self.assertTrue(out.startswith(arabic.process("الأول") + "\\n\\n"))
+        out2 = arabic.process("- واحد|- اثنان")
+        self.assertTrue(out2.startswith(arabic.process("- واحد") + "|"))
 
 
 class TestTranslations(unittest.TestCase):

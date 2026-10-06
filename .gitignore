@@ -5,3 +5,5 @@ tests/tmp/
 *.log
 research/
 log.txt
+__pycache__/
+*.pyc

@@ -93,6 +93,16 @@ def main():
         open(dest, "wb").write(out)
         report.append((rel(src), os.path.getsize(src), len(out), changed))
 
+    # --- movie subtitles / title cards (8-bit .LOC) ----------------------
+    for p in sorted(glob.glob(os.path.join(HERE, "build", "movies", "LOC", "*.LOC"))):
+        name = os.path.basename(p)
+        src = os.path.join(HERE, "extracted", "MOH4", "DATA", "SHARED", "MOVIES", "LOC", name)
+        dest = os.path.join(TREE, rel(src))
+        os.makedirs(os.path.dirname(dest), exist_ok=True)
+        data = open(p, "rb").read()
+        open(dest, "wb").write(data)
+        report.append((rel(src), os.path.getsize(src), len(data), 1))
+
     print(f"{'file':52s} {'orig':>10s} {'new':>10s} {'delta':>8s} {'chg':>4s}")
     tot_o = tot_n = 0
     for r, o, n, c in report:

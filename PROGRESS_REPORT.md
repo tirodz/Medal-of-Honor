@@ -1,8 +1,8 @@
 # PROGRESS REPORT — Arabic localization of MoH: European Assault (PS2, USA)
 
-Snapshot taken after the toolchain, translations, fonts, ISO rebuild and
-regression suite were all completed and re-verified following an environment
-restart.
+Snapshot taken after the movie-subtitle pass and the final polish audit. The
+toolchain, translations, fonts, ISO rebuild and regression suite are complete
+and re-verified.
 
 ## Status at a glance
 
@@ -11,58 +11,66 @@ restart.
 | Reconnaissance / format reversing | COMPLETE |
 | String extraction + translation | COMPLETE (100% of unique IDs) |
 | Arabic shaping + bidi | COMPLETE |
-| Arabic font injection (18 SFN fonts) | COMPLETE |
+| Arabic font injection (18 SFN fonts, 16-bit) | COMPLETE |
+| Cutscene subtitle localization (.LOC/.STF) | COMPLETE (byte-mapped) |
 | ISO repack | COMPLETE, structurally verified |
 | Delta patch | COMPLETE, reproduces image byte-exactly |
-| Regression tests | 11/11 PASS |
-| Runtime test in PCSX2 | NOT_TESTED (no emulator in this environment) |
-| Movie subtitles (.LOC/.STF) | WARNING — documented limitation |
+| Regression tests | 30/30 PASS |
+| Runtime test in PCSX2 | NOT_TESTED (no emulator/BIOS here) |
 
 ## Deliverables present in `/workspace/project`
 
 | artefact | size | SHA-256 |
 |---|---|---|
-| `build/moh_ea_ar.iso` (localized image) | 3,857,154,048 | `8f2b2ad8cfb8c6826d10690eb25f72c75ab06a1737292578fc918e17333bcabe` |
-| `build/moh_ea_ar.xdelta` (sector delta vs. original) | 5,513,748 | `bedc392e381baf09769a15c49bdf2ec5487544cdc0ac2167223647c55e619e24` |
+| `build/moh_ea_ar.iso` (localized image) | 3,857,154,048 | `407041a49d5f1b42934e75f23a38a09c0a8c25d8b6c333f419861c0834298828` |
+| `build/moh_ea_ar.xdelta` (sector delta vs. original) | 5,538,372 | `969af762f7a469152de2bdd7348209ab8504899298ea5e7ff5e317aaa494dfab` |
 | `original/…(USA).iso` (pristine, never written) | 3,857,154,048 | `151ecaeee5168eb052794dbbca0ca4da4709c16dec5cd35c796a49cee989da29` |
 
 Documentation: `reports/RECON.md` (technical reconnaissance), `BUILD.md`
-(reproducible build), `QA_REPORT.md` (full QA), this file.
+(reproducible build), `QA_REPORT.md` (full QA), this file. One-command rebuild:
+`bash scripts/build_all.sh`.
 
 ## What was done in this session
 
-1. **Re-verified the previously built ISO** byte for byte: 350 unchanged files
-   identical, 41 changed files match the build tree, PS2 boot area intact,
-   `pycdlib` opens the image, zero failures.
-2. **Closed the translation gap.** 21 multiplayer strings (bomb / CTF / general
-   modes) had no `<english>` child on disc; translated them from their
-   German/French siblings. Also fixed an XML-escaped ID (`&amp;`). Result:
-   **2,623 / 2,623 unique IDs translated, 0 untranslated, 0 control-code
-   mismatches.**
-3. **Improved the Arabic typeface.** Replaced the fallback rasterization source
-   with open-source **Noto Sans Arabic** (vendored in `build/fonts_src/`); all
-   **18 SFN fonts** rebuild with full coverage (0 missing, 0 out-of-atlas).
-4. **Rebuilt the image** with the improved font and complete translations.
-5. **Added `tools/make_patch.py`** — a compact sector-delta generator, since the
-   3.86 GB ISO cannot be attached. The 5.5 MB patch applies to the original ISO
-   and reproduces the final image byte-exactly (hash verified).
-6. **Added `tests/test_roundtrip.py`** — 11 regression tests covering every
-   custom parser round-trip, the Arabic shaping/bidi pipeline and translation
-   completeness. All pass.
-7. **Hardened the injector** to resolve XML-escaped string IDs.
-8. **Wrote `BUILD.md` and `QA_REPORT.md`.**
+1. **Localized the cutscene subtitles.** The 8-bit `.LOC` subtitle tables were
+   previously a documented limitation. Added `tools/build_movie_font.py` (raster
+   the 114 subtitle contextual forms into byte slots `0x80–0xF1` of the two
+   fonts with enough room, in place so kerning/table order survive) and
+   `tools/inject_loc.py` (write the byte-mapped shaped Arabic into the `english`
+   block of every movie `.LOC`). **144/144 referenced subtitles translated, 0
+   missing**; `.STF` frame timings are untouched so subtitle timing is
+   unchanged. English voice audio remains intact.
+2. **Fixed an XML-escaping bug.** Translations containing `"` (e.g. quoted
+   speech, `"Wild Bill" Donovan`) were written literally into the
+   `value="…"` attribute, corrupting the XML of 2 built tables. `_escape()` now
+   emits `&quot;`, matching the shipped English. All 28 built tables parse.
+3. **Added static resource verification** (`tools/verify_build.py`): decodes
+   every built `.LOC` back to the expected shaped text (145/145 OK), counts
+   Arabic coverage (2,565/2,589) and renders UI + subtitle contact sheets
+   (`build/qa/*.png`).
+4. **Added regression tests** (`tests/test_build_integrity.py`): built-tree XML
+   well-formedness, Arabic presence, save-game decode, STF→LOC coverage. Suite
+   is now **30 tests, all passing**.
+5. **Added a one-shot build script** (`scripts/build_all.sh`) that runs the whole
+   pipeline in the correct order and is idempotent.
+6. **Rebuilt and re-verified the image**: 341 unchanged files byte-identical,
+   50 changed files correct, 0 failures, PS2 boot area intact, `pycdlib` opens
+   it; delta patch regenerated and round-trips to the same hash.
+7. **Updated `BUILD.md`, `QA_REPORT.md` and this report.**
 
-## Modified resources (41 files, no code/texture changes)
+## Modified resources (50 files, no code/texture changes)
 
-* 29 string tables (`STRINGS.VIV` × 28, `STRINGMP.VIV`, `SHARED/STRINGS.VIV`)
+* 30 string tables (`STRINGS.VIV` × 28, `STRINGMP.VIV`, `SHARED/STRINGS.VIV`)
 * `SAVEGAME.LOC`, `SG_MISC.LOC` (save-game / memory-card dialogs)
+* 9 cutscene subtitle tables (`MOVIES/LOC/*.LOC`, byte-mapped)
 * 8 standalone SFN fonts + `REALFONT.VIV` + `REALFTFE.VIV` (10 fonts)
 
 ## Known limitations
 
-1. **Movie subtitles** are 8-bit Latin-1 with no Arabic slot and only 9 free
-   glyph slots across all 13 language sections — not localizable without a
-   renderer patch. Cutscene **voice audio stays English** (as intended).
+1. **Movie subtitle font not named in the executable.** Byte glyphs were written
+   into both fonts that have enough high slots (`SUBFNT.SFN`, `OBJFONT.SFN`);
+   the other six get 16-bit Arabic only. Static evidence points to these two;
+   runtime confirmation is the one open item.
 2. **Front-end language menu** labels keep their original language names; the
    game displays Arabic under the default English selection.
 3. Four large display fonts clamp the Arabic baseline a few pixels high.
@@ -70,21 +78,21 @@ Documentation: `reports/RECON.md` (technical reconnaissance), `BUILD.md`
 
 ## Next steps (optional)
 
-* Run the test matrix in `QA_REPORT.md` §12 in PCSX2 on the patched image.
+* Run the test matrix in `QA_REPORT.md` §12 in PCSX2 on the patched image,
+  including a cutscene to confirm the byte-mapped subtitle font.
 * Report any clipping / missing glyphs / residual English for a targeted fix
-  and rebuild (the pipeline is deterministic and re-runnable in ~4 commands).
+  and rebuild (deterministic, re-runnable with `scripts/build_all.sh`).
 
 ## Final polish pass
 
-A product audit of the whole translation DB was performed after the first
-build. Fixes applied: unified all numerals to Western digits (41 strings) so
-static numbers match the engine's runtime `%1` substitutions; fixed a doubled
-particle in a King Tiger objective; corrected the `Paused` status string and
-the `SP_Credits` label. Terminology variants (9) and residual Latin (16) were
-reviewed and confirmed contextually correct. The image was rebuilt, verified
-(350 unchanged / 41 changed / 0 failures), 12 regression tests pass, the delta
-patch round-trips byte-exactly, and a repeat rebuild produced an identical
-SHA-256.
+A product audit of the whole translation DB was performed. Fixes applied:
+unified all numerals to Western digits (41 strings) so static numbers match the
+engine's runtime `%1` substitutions; fixed a doubled particle in a King Tiger
+objective; corrected the `Paused` status string and the `SP_Credits` label.
+Terminology variants (9) and residual Latin (16) were reviewed and confirmed
+contextually correct. Arabic subtitle width was checked against the 530 px
+subtitle box: max 874 px vs. English 1,430 px, and the renderer already wraps
+English to ≤3 lines, so Arabic is strictly safer.
 
 ## How to obtain the localized game
 
@@ -96,4 +104,4 @@ python3 tools/make_patch.py apply \
     build/moh_ea_ar.xdelta /path/to/moh_ea_ar.iso
 ```
 
-or do a full source rebuild following `BUILD.md` §3.
+or do a full source rebuild following `BUILD.md` §3 (`bash scripts/build_all.sh`).

@@ -57,13 +57,27 @@ def _restore(s: str, store) -> str:
 
 
 def process(text: str) -> str:
-    """Return the shaped, visually-ordered string to store in the game."""
+    """Return the shaped, visually-ordered string to store in the game.
+
+    The string tables use two line separators - the literal two-character
+    sequence ``\\n`` and ``|`` - and the engine breaks lines on them, drawing
+    each line left to right.  They must therefore be handled as hard breaks:
+    the bidi algorithm would otherwise reverse the order of the lines
+    themselves (first paragraph would render last).  Each line is reshaped and
+    reordered on its own and the separators are kept verbatim.
+    """
     if not has_arabic(text):
         return text
-    protected, store = _protect(text)
-    shaped = _RESHAper.reshape(protected)
-    visual = get_display(shaped, base_dir="R")
-    return _restore(visual, store)
+    out = []
+    for part in re.split(r"(\\n|\|)", text):
+        if part in ("\\n", "|"):
+            out.append(part)
+            continue
+        protected, store = _protect(part)
+        shaped = _RESHAper.reshape(protected)
+        visual = get_display(shaped, base_dir="R")
+        out.append(_restore(visual, store))
+    return "".join(out)
 
 
 if __name__ == "__main__":

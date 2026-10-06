@@ -40,7 +40,19 @@ class SfnBuilder:
         self.header = d[:0x20]
         self.fontstates = d[0x20:self.cio]
         self.char_table = d[self.cio:self.cio + self.nch * self.entry_size]
-        self.mid = d[self.cio + self.nch * self.entry_size:self.sho]
+        # After the character table come (in this order) the optional kerning
+        # table and the EA image entry, up to the shape header.  The kerning
+        # table must be relocated when the character table grows, otherwise the
+        # header offset points into the appended glyph entries.
+        ctab_end = self.cio + self.nch * self.entry_size
+        if self.kio:
+            nk = struct.unpack_from("<I", d, self.kio)[0]
+            kern_size = 4 + nk * 4          # version >= 310 entry is 4 bytes
+            self.kern_block = d[self.kio:self.kio + kern_size]
+            self.image_entry = d[self.kio + kern_size:self.sho]
+        else:
+            self.kern_block = b""
+            self.image_entry = d[ctab_end:self.sho]
         self.shape_hdr = d[self.sho:self.sho + 16]
         self.block_size = int.from_bytes(self.shape_hdr[1:4], "little")
         self.atlas_w = struct.unpack_from("<H", self.shape_hdr, 4)[0]
@@ -52,17 +64,20 @@ class SfnBuilder:
 
     # --- round-trip -------------------------------------------------------
     def rebuild(self):
-        return (self.header + self.fontstates + self.char_table + self.mid
+        return (self.header + self.fontstates + self.char_table
+                + self.kern_block + self.image_entry
                 + self.shape_hdr + self.atlas + self.footer + self.tail)
 
     # --- extension --------------------------------------------------------
-    def add_glyphs(self, new_chars, new_rows, new_width=None):
-        """Append glyph rows to the atlas and glyph entries to the table.
+    def _pack_entry(self, c):
+        if self.entry_size == 12:
+            return struct.pack("<HBBHHbbbB", c.code, c.width, c.height,
+                               c.u, c.v, c.advance, c.x_offset, c.y_offset, 0)
+        return struct.pack("<HBBHHBbbBHH", c.code, c.width, c.height,
+                           c.u, c.v, c.advance_y, c.x_offset, c.y_offset,
+                           0, 0, c.advance)
 
-        new_chars : list[CharEntry] with (u, v) into the extended atlas
-        new_rows  : list[bytes], each a full atlas row of width new_width
-        new_width : new atlas width (default: keep current width)
-        """
+    def _emit(self, ctab, new_rows, new_width):
         w = new_width or self.atlas_w
         if w != self.atlas_w:
             raise ValueError("atlas width changes are not supported")
@@ -70,31 +85,62 @@ class SfnBuilder:
         new_atlas = self.atlas + b"".join(new_rows)
         assert len(new_atlas) == w * new_h // 2
 
-        ctab = bytearray(self.char_table)
-        for c in new_chars:
-            if self.entry_size == 12:
-                ctab += struct.pack("<HBBHHBBBB", c.code, c.width, c.height,
-                                    c.u, c.v, c.advance, c.x_offset, c.y_offset, 0)
-            else:
-                ctab += struct.pack("<HBBHHBBBBHH", c.code, c.width, c.height,
-                                    c.u, c.v, c.advance_y, c.x_offset, c.y_offset,
-                                    0, 0, c.advance)
-
         sh = bytearray(self.shape_hdr)
         sh[1:4] = (len(new_atlas) + FOOTER).to_bytes(3, "little")
         struct.pack_into("<H", sh, 4, w)
         struct.pack_into("<H", sh, 6, new_h)
 
         header = bytearray(self.header)
-        struct.pack_into("<H", header, 10, self.nch + len(new_chars))
+        struct.pack_into("<H", header, 10, len(ctab) // self.entry_size)
         struct.pack_into("<I", header, 20, self.cio)
-        struct.pack_into("<I", header, 24, self.kio)
-        new_sho = self.cio + len(ctab) + len(self.mid)
+        new_kio = self.cio + len(ctab) if self.kern_block else 0
+        struct.pack_into("<I", header, 24, new_kio)
+        new_sho = self.cio + len(ctab) + len(self.kern_block) + len(self.image_entry)
         struct.pack_into("<I", header, 28, new_sho)
-        out = bytearray(bytes(header) + self.fontstates + bytes(ctab) + self.mid
+        out = bytearray(bytes(header) + self.fontstates + bytes(ctab)
+                        + self.kern_block + self.image_entry
                         + bytes(sh) + new_atlas + self.footer + self.tail)
         struct.pack_into("<I", out, 4, len(out))
         return bytes(out)
+
+    def add_glyphs(self, new_chars, new_rows, new_width=None):
+        """Append glyph rows to the atlas and glyph entries to the table.
+
+        new_chars : list[CharEntry] with (u, v) into the extended atlas
+        new_rows  : list[bytes], each a full atlas row of width new_width
+        new_width : new atlas width (default: keep current width)
+        """
+        ctab = bytearray(self.char_table)
+        for c in new_chars:
+            ctab += self._pack_entry(c)
+        return self._emit(ctab, new_rows, new_width)
+
+    def replace_chars(self, kept_chars, new_chars, new_rows, new_width=None):
+        """Rebuild the character table from an explicit glyph set.
+
+        Used to drop a range of existing glyphs (freeing their code slots)
+        while preserving the remaining ones and appending new glyphs.  The
+        caller is responsible for keeping the combined code list ascending.
+        """
+        ctab = bytearray()
+        for c in kept_chars + new_chars:
+            ctab += self._pack_entry(c)
+        return self._emit(ctab, new_rows, new_width)
+
+    def replace_glyphs(self, replacements, new_rows):
+        """Point existing glyph entries at new bitmaps, keeping the table shape.
+
+        ``replacements`` maps an existing code to a CharEntry whose (u, v)
+        address the extended atlas.  The entry count, code order and therefore
+        the kerning indices are all preserved, so a font can have a block of
+        glyphs (e.g. Latin-1) overwritten with new shapes without disturbing
+        anything that references glyph positions.
+        """
+        ctab = bytearray()
+        for c in self.font.chars:
+            r = replacements.get(c.code)
+            ctab += self._pack_entry(r if r is not None else c)
+        return self._emit(ctab, new_rows, None)
 
 
 if __name__ == "__main__":

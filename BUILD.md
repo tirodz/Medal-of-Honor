@@ -30,7 +30,7 @@ export AR_TTF=build/fonts_src/NotoSansArabic-Regular.ttf
 original/      pristine supplied ISO + its SHA-256 (never modified)
 extracted/     byte-exact extraction of the original ISO tree
 build/
-  tree/        the modified tree (only the 41 changed files live here)
+  tree/        the modified tree (only the 50 changed files live here)
   fonts/       Arabic-extended SFN fonts
   fonts_src/   the TrueType source used for rasterization
   moh_ea_ar.iso        final image
@@ -55,10 +55,13 @@ original ISO
    │  tools/build_tdb.py          -> translations/strings.json
    │  (hand-authored Arabic)      -> translations/*_ar.py
    │  tools/build_translations.py -> translations/ar_final.json (shaped+bidi)
-   │  tools/build_fonts.py        -> build/fonts/*.SFN
-   │  tools/build_tree.py         -> build/tree/   (41 modified files)
+   │  tools/build_fonts.py        -> build/fonts/*.SFN  (16-bit Arabic)
+   │  tools/build_movie_font.py   -> build/fonts/*.SFN  (+ byte Arabic for movies)
+   │  tools/inject_loc.py         -> build/movies/LOC/*.LOC
+   │  tools/build_tree.py         -> build/tree/   (50 modified files)
    │  tools/build_iso.py          -> build/moh_ea_ar.iso
    │  tools/verify_iso.py         -> structural verification
+   │  tools/verify_build.py       -> resource-level verification + QA sheets
    │  tools/make_patch.py         -> build/moh_ea_ar.xdelta
 ```
 
@@ -112,14 +115,27 @@ without any renderer change.
 
 All 18 fonts build with full coverage (0 missing, 0 out-of-atlas).
 
+`build_movie_font.py` then adds a second, byte-addressed Arabic set to the
+standalone `DATA/*.SFN` fonts for the cutscene subtitles. The 8-bit `.LOC`
+tables can only address bytes, so the 114 Arabic contextual forms used by the
+subtitles are rasterized into the byte slots `0x80–0xF1` of the two fonts that
+have enough high slots (`SUBFNT.SFN`, `OBJFONT.SFN`), in place so the character
+table size, order and kerning are preserved. Fonts with fewer free slots are
+left with 16-bit Arabic only. `build/fonts/movie_byte_map.json` records the
+form→byte mapping used by the injector.
+
 ### 2.5 Injection
 `build_tree.py` writes the modified files into `build/tree/`:
 
 * `inject_strings.py` replaces only the `value` attribute of the `english`
   child of each `<localstring>`; indentation, ordering and the ten other
-  language children are preserved byte for byte;
+  language children are preserved byte for byte, and `"` is escaped as
+  `&quot;` exactly as the shipped English does;
 * `inject_savegame.py` re-encodes the save-game `.LOC` payloads (UTF-16LE),
   reconstructing the suffix-shared offsets;
+* `inject_loc.py` writes the byte-mapped shaped Arabic into the `english` block
+  of the 9 cutscene `MOVIES/LOC/*.LOC` tables (frame timing in `.STF` is
+  untouched);
 * the SFN files are copied from `build/fonts/`.
 
 ### 2.6 ISO rebuild
@@ -131,8 +147,8 @@ total image length is unchanged, so no PVD/lead-out patching is needed.
 `verify_iso.py` then confirms:
 
 * the 16-sector PS2 boot system area is byte-identical,
-* the 350 unchanged files are byte-identical,
-* the 41 changed files match `build/tree/` byte for byte,
+* the 341 unchanged files are byte-identical,
+* the 50 changed files match `build/tree/` byte for byte,
 * `pycdlib` opens the image without error.
 
 ### 2.7 Delta patch
@@ -150,18 +166,29 @@ python3 tools/make_patch.py apply \
 
 ```
 cd /workspace/project
-export AR_TTF=build/fonts_src/NotoSansArabic-Regular.ttf
+bash scripts/build_all.sh          # every stage, in order, idempotent
+```
 
-python3 tools/build_translations.py     # -> translations/ar_final.json
-python3 tools/build_fonts.py            # -> build/fonts/
+`scripts/build_all.sh` runs:
+
+```
+python3 tools/build_fonts.py            # -> build/fonts/  (16-bit Arabic)
+python3 tools/build_movie_font.py       # -> build/fonts/  (+ byte Arabic)
+python3 tools/inject_loc.py             # -> build/movies/LOC/
 python3 tools/build_tree.py             # -> build/tree/
+python3 tools/verify_build.py           # static resource verification
 python3 tools/build_iso.py              # -> build/moh_ea_ar.iso
 python3 tools/verify_iso.py             # structural verification
+python3 -m unittest discover -s tests   # regression suite
+
+# optional, 3.86 GB -> 5.5 MB delta patch
 python3 tools/make_patch.py make \
     "original/Medal of Honor - European Assault (USA).iso" \
     build/moh_ea_ar.iso build/moh_ea_ar.xdelta
-python3 tests/test_roundtrip.py         # regression suite
 ```
+
+(Edit `translations/*_ar.py`, then run `tools/build_translations.py` first if
+the translation sources changed.)
 
 ## 4. Adding or fixing a translation
 

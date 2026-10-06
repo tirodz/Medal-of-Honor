@@ -20,8 +20,8 @@ verifiable in this environment; **FAIL** = a check did not pass.
 | artefact | SHA-256 |
 |---|---|
 | original ISO (pristine, never written) | `151ecaeee5168eb052794dbbca0ca4da4709c16dec5cd35c796a49cee989da29` |
-| final localized ISO | `8f2b2ad8cfb8c6826d10690eb25f72c75ab06a1737292578fc918e17333bcabe` |
-| delta patch (`build/moh_ea_ar.xdelta`) | `bedc392e381baf09769a15c49bdf2ec5487544cdc0ac2167223647c55e619e24` |
+| final localized ISO | `407041a49d5f1b42934e75f23a38a09c0a8c25d8b6c333f419861c0834298828` |
+| delta patch (`build/moh_ea_ar.xdelta`) | `969af762f7a469152de2bdd7348209ab8504899298ea5e7ff5e317aaa494dfab` |
 
 The original ISO is opened read-only by every tool; its hash is recorded above
 and in `original/Medal of Honor - European Assault (USA).iso.sha256`.
@@ -41,10 +41,12 @@ and in `original/Medal of Honor - European Assault (USA).iso.sha256`.
 | String instances parsed | PASS | 3,174 |
 | Unique string IDs | PASS | 2,623 |
 | IDs translated | PASS | 2,623 / 2,623 = **100%** |
-| Control codes preserved | PASS | 0 mismatches (`build_translations.py`) |
+| Control codes preserved | PASS | 0 mismatches (`tools/build_translations.py`) |
 | Untranslated remainder | PASS | `translations/untranslated.json` == `{}` |
+| Built tables still well-formed XML | PASS | `tests/test_build_integrity.py` (all 28) |
+| Built tables carry Arabic | PASS | 2,565 / 2,589 = 99.1%; remainder are codes / language names / proper nouns |
 | Tables with no `<english>` child (MP modes) | PASS | 21 IDs translated from the German/French siblings so they are not left in English |
-| Untranslated by design | PASS | `SP_DolbyDigital` (`Dolby® Digital`), `SP_Español` (language name kept in Latin script) |
+| Untranslated by design | PASS | `SP_DolbyDigital` (`Dolby® Digital`), language names kept in Latin script |
 
 ## 5. Arabic rendering
 
@@ -56,7 +58,7 @@ and in `original/Medal of Honor - European Assault (USA).iso.sha256`.
 | Arabic + Western numerals | PASS | `%1 من %2` preserved; digits render LTR |
 | Punctuation mirrored correctly | PASS | sentence-final `.` stored left of the RTL run |
 | Control codes / placeholders | PASS | `%1 %2 %s $ACTION [$…] \n` verified per string |
-| Static glyph layout proof | PASS | `tools/render_sample.py build/fonts/SUBFNT.SFN "دمّر مدفعية العدو."` renders connected RTL glyphs |
+| Static glyph layout proof | PASS | `tools/render_ui.py`; `build/qa/ui_arabic_sample.png`, `build/qa/movie_subtitle_sample.png` |
 
 ## 5a. Polish pass (final audit)
 
@@ -80,6 +82,33 @@ with Western digits via `%1`, `%2`, `%3`; static numerals are therefore kept
 Western throughout so no screen ever mixes `٣` with `3`. Arabic-Indic digits
 remain fully present in the font, so a future switch is a one-command change.
 
+## 5b. Movie subtitles (cutscene `.LOC` / `.STF`) — localized
+
+The cutscene subtitles are byte-oriented: the `.STF` file maps a video frame to
+a string index in the matching 8-bit `LOC` table, and the movie player renders
+it with one of the standalone `DATA/*.SFN` fonts. The USA build ships 13
+language blocks but no Arabic one, so the Arabic was injected by:
+
+* shaping + bidi-processing each subtitle into Arabic presentation forms,
+* remapping those forms onto the byte slots `0x80–0xF1` of the standalone
+  subtitle fonts (in place, so the character table size/order and kerning are
+  preserved), and
+* writing the remapped bytes into the `english` block of every `.LOC`.
+
+| check | status | evidence |
+|---|---|---|
+| Referenced subtitles found | PASS | 144 non-empty, across 9 movies |
+| Subtitles translated | PASS | 144 / 144 = **100%** (`tests/test_build_integrity.py`) |
+| Built `.LOC` decodes back to the shaped Arabic | PASS | 145 / 145 round-trip (`tools/verify_build.py`) |
+| Every remapped byte has a glyph | PASS | `tests/test_loc.py` |
+| Language-block count preserved | PASS | `tests/test_loc.py` |
+| Byte fonts keep Latin + 16-bit Arabic glyphs | PASS | 353 glyphs = 129 sixteen-bit + 128 byte |
+| Subtitle width vs. 530 px box | PASS | max Arabic 874 px vs. English 1,430 px; 13 vs. 50 over-box, renderer already wraps English to ≤3 lines, so Arabic is strictly safer |
+
+The `.STF` timing files are **not** modified — the Arabic reuses the existing
+frame timings, so subtitle timing is unchanged. Movie **voice** audio is
+untouched and remains English (goal: English voices + Arabic subtitles).
+
 ## 6. Fonts
 
 | check | status | evidence |
@@ -87,14 +116,16 @@ remain fully present in the font, so a future switch is a one-command change.
 | SFN parser round-trip | PASS | 18/18 fonts `rebuild() == original` |
 | Fonts extended with Arabic | PASS | 18/18, 0 missing code points, 0 out-of-atlas glyphs |
 | Required code points | PASS | 142 (Arabic presentation forms + punctuation/digits) |
-| Source face | PASS | open-source Noto Sans Arabic (`build/fonts_src/`) |
-| Original Latin glyphs preserved | PASS | glyphs appended; existing entries untouched |
+| Byte-addressed movie fonts | PASS | `SUBFNT.SFN`, `OBJFONT.SFN` carry 114 forms at bytes `0x80–0xF1` |
+| Original Latin glyphs preserved | PASS | glyphs appended / in-place slots; existing entries untouched |
 | Font metrics (baseline/advance) matched to Latin | PASS | glyphs placed on the shared baseline row |
+| Source face | PASS | open-source Noto Sans Arabic (`build/fonts_src/`) |
 
-## 7. Modified resources (41 files)
+## 7. Modified resources (50 files)
 
-* 28 × `STRINGS.VIV` + `STRINGMP.VIV` + `SHARED/STRINGS.VIV` — Arabic strings
-* `SAVEGAME.LOC`, `SG_MISC.LOC` — save-game / memory-card dialogs
+* 30 × `STRINGS.VIV` / `STRINGMP.VIV` — Arabic UI/mission strings
+* `SAVEGAME.LOC`, `SG_MISC.LOC` — save-game / memory-card dialogs (UTF-16)
+* 9 × `MOVIES/LOC/*.LOC` — cutscene subtitles (8-bit, byte-mapped)
 * `COMICFNT.SFN`, `DBFNT.SFN`, `OBJFONT.SFN`, `SUBFNT.SFN`,
   `TPRO10.SFN`, `TPRO10B.SFN`, `TPRO12.SFN`, `TPRO12B.SFN`
 * `REALFONT.VIV`, `REALFTFE.VIV` — front-end fonts
@@ -106,8 +137,8 @@ No executable, no script and no texture was modified.
 | check | status | evidence |
 |---|---|---|
 | PS2 boot system area (16 sectors) byte-identical | PASS | `tools/verify_iso.py` |
-| Unchanged files byte-identical | PASS | 350 / 350 |
-| Changed files match `build/tree/` byte for byte | PASS | 41 / 41 |
+| Unchanged files byte-identical | PASS | 341 / 341 |
+| Changed files match `build/tree/` byte for byte | PASS | 50 / 50 |
 | Filesystem opens cleanly (independent parser) | PASS | `pycdlib` |
 | Boot file `SLUS_211.99` unchanged | PASS | in unchanged set |
 | Image length unchanged | PASS | 3,857,154,048 bytes |
@@ -116,14 +147,16 @@ No executable, no script and no texture was modified.
 
 ## 9. Regression suite
 
-`python3 tests/test_roundtrip.py` — **11 tests, OK**
+`python3 -m unittest discover -s tests` — **30 tests, OK**
 
 * VIV/0xC0FB archive round-trip (all archives)
-* string-table XML round-trip (empty translation map ⇒ identical bytes)
-* `.LOC` round-trip (all 11 files)
-* SFN font round-trip (all 18 fonts)
+* string-table XML round-trip + built-tree XML well-formedness
+* `.LOC` round-trip (all files) and byte-mapping coverage
+* SFN font round-trip (all 18 fonts) and visual glyph goldens
 * Arabic shaping / bidi / control-code tests
 * translation completeness + Arabic-presence tests
+* save-game `.LOC` decode test
+* STF→LOC subtitle coverage test
 
 ## 10. Runtime testing
 
@@ -131,6 +164,7 @@ No executable, no script and no texture was modified.
 |---|---|
 | Boot in PCSX2 | NOT_TESTED |
 | Menus / HUD / objectives render | NOT_TESTED |
+| Movie subtitles render | NOT_TESTED |
 | Save / load cycle | NOT_TESTED |
 | Full mission playthrough | NOT_TESTED |
 | Real PS2 hardware | NOT_TESTED |
@@ -141,26 +175,26 @@ perform the runtime pass in PCSX2 (see §12 for the test matrix).
 
 ## 11. Known limitations
 
-1. **Movie subtitles (`.LOC` / `.STF`) are not localized.** The cutscene
-   subtitle stream is 8-bit Latin-1 and the USA build ships no Arabic language
-   slot; only 9 glyph slots are free across all 13 subtitle sections, which is
-   insufficient for a 142-glyph Arabic set. Localizing them would require
-   patching the movie-subtitle renderer to use a 16-bit font — out of scope for
-   this build. Movie **voice** audio is untouched and remains English.
+1. **Movie subtitle font is not named in the executable.** The byte glyphs were
+   therefore written into every standalone `DATA/*.SFN` font that has ≥114 free
+   high slots (`SUBFNT.SFN`, `OBJFONT.SFN`); the remaining six fonts cannot fit
+   the set and receive 16-bit Arabic only. Static evidence (8-bit `.LOC`, the
+   full Latin-1 coverage of `SUBFNT`/`OBJFONT`) points to these two as the
+   subtitle fonts. Runtime confirmation is the one open item.
 2. **Front-end language selection.** The engine selects the display language by
-   child index. The Arabic text overwrites the `english` child, so with the
-   default (English) selection the game shows Arabic. The front-end menu label
-   list still shows the original language names.
+   child index; the Arabic overwrites the `english` child, so with the default
+   selection the game shows Arabic. Selecting another language shows that
+   language. The language-name list itself keeps its original Latin names.
 3. **Scaleform GFx front-end textures** (`MOHFE.VIV`) contain no localizable
    string literals — all labels are string-table IDs, which are translated.
    That archive is not rebuilt (its 61 MB BIGF offsets exceed the writer's
-   24-bit table), but it needs no change.
+   24-bit table) but needs no change.
 4. **Fonts with a Latin cap height above 255 px** (four large display fonts)
    clamp the Arabic baseline; Arabic sits a few pixels high in those four
    fonts. It remains legible and connected.
 5. **Harakat (diacritics)** are not emitted: the engine lays glyphs linearly on
-   the baseline with no mark positioning, so inline diacritics would render
-   incorrectly. Standard unvocalized MSA is used, which is correct for a game.
+   the baseline with no mark positioning. Standard unvocalized MSA is used,
+   which is correct for a game.
 6. **`PADME.AAA`** (a 2 GB padded blob) and the FMV streams were inspected but
    contain no text resources.
 
@@ -171,16 +205,19 @@ perform the runtime pass in PCSX2 (see §12 for the test matrix).
 3. Start a mission: briefing, objectives, HUD, notifications, tutorials.
 4. Weapon / equipment names.
 5. Pause menu, mission-restart and exit.
-6. Complete a mission, progress to the next, save, reload, reboot.
-7. Multiplayer menus and in-match messages (bomb / CTF modes).
+6. Play a cutscene — confirm the Arabic subtitle appears with correct shaping
+   and RTL order (this exercises the byte-mapped movie font).
+7. Complete a mission, progress to the next, save, reload, reboot.
+8. Multiplayer menus and in-match messages (bomb / CTF modes).
 
 Report any clipping, missing-glyph boxes, or non-Arabic text so the relevant
 translation or glyph can be fixed and the image rebuilt.
 
 ## 13. Final result
 
-The localized image **was rebuilt and structurally verified**. It boots
-information is intact and only intended resources changed. Runtime
-verification in an emulator/hardware remains **NOT_TESTED** and is the user's
-final acceptance step. The image is 3.86 GB and cannot be attached here; the
-5.5 MB delta patch plus the toolchain reproduce it exactly.
+The localized image **was rebuilt and structurally verified**: 50 intended
+resources changed, 341 untouched resources byte-identical, boot information
+intact, filesystem clean. Runtime verification in an emulator/hardware remains
+**NOT_TESTED** and is the user's final acceptance step. The image is 3.86 GB and
+cannot be attached here; the 5.5 MB delta patch plus the toolchain reproduce it
+exactly.

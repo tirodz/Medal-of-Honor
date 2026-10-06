@@ -34,11 +34,15 @@ def _lang_re(lang):
 
 
 def _escape(s):
-    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    # values live in double-quoted XML attributes, so a literal quote must be
+    # escaped exactly as the shipped English does (`&quot;`)
+    return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+            .replace('"', "&quot;"))
 
 
 def _unescape(s):
-    return s.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+    return (s.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+            .replace("&quot;", '"'))
 
 
 def patch_xml(txt, translations, lang="english"):

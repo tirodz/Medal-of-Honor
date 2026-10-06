@@ -26,7 +26,13 @@ BASELINE_GLYPHS = "HEFLTIKNMBD R P".replace(" ", "") + "xzvw0123456789"
 
 
 def _baseline(font):
-    """Pixel row of the baseline, derived from flat-bottom Latin glyphs."""
+    """Signed y row of the baseline, derived from flat-bottom Latin glyphs.
+
+    Character offsets are signed int8 (see the EA font template), so a Latin
+    capital such as 'H' has a small positive bottom row (e.g. 13) in the UI
+    fonts, while large display fonts use negative y_offsets that still resolve
+    to a small positive baseline row.
+    """
     from collections import Counter
     c = Counter()
     for ch in BASELINE_GLYPHS:
@@ -82,10 +88,10 @@ def rasterize_glyph(font, ch, baseline, ttf_ascent, descent):
     ink = img.crop(bbox).point(lambda v: round(v * 15 / 255))
     if ink.width > 255 or ink.height > 255:
         return None
-    advance = min(255, max(1, round(font.getlength(ch))))
-    x_offset = min(255, max(0, x0 - pad))
+    advance = min(127, max(1, round(font.getlength(ch))))
+    x_offset = min(127, max(-128, x0 - pad))
     y_offset = baseline + y0 - (pad + ttf_ascent)
-    if y_offset < 0 or y_offset > 255:
+    if not (-128 <= y_offset <= 127) or not (-128 <= x_offset <= 127):
         return None
     return ink, advance, x_offset, y_offset
 
@@ -97,10 +103,9 @@ def build(raw, ttf_path, code_points, size=None, row_pitch=None, logger=print):
     if not need:
         return raw, []
     ascent, descent = b.font.ascent, b.font.descent
-    # The baseline row can exceed the u8 y_offset field in the large display
-    # fonts (their Latin glyphs use a >255 row).  Clamp so Arabic still fits;
-    # it then sits a few pixels high in those four fonts.
-    baseline = min(_baseline(b.font), 255)
+    # Offsets are signed int8, so the baseline is a small row (13..33) in every
+    # font; Arabic glyphs are placed relative to it exactly like the Latin ones.
+    baseline = _baseline(b.font)
     cap = max(1, _cap_height(b.font))
     px = size or _pick_size(ttf_path, cap)
     glyphs = {}

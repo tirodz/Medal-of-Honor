@@ -20,7 +20,7 @@ from tools.sfn_build import SfnBuilder  # noqa: E402
 from tools.build_arabic_font import build  # noqa: E402
 from tools.viv import Viv  # noqa: E402
 
-TTF = os.environ.get("AR_TTF", "/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf")
+TTF = os.environ.get("AR_TTF", os.path.join(HERE, "build", "fonts_src", "NotoSansArabic-Regular.ttf"))
 OUTDIR = os.path.join(HERE, "build", "fonts")
 
 

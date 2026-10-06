@@ -95,17 +95,19 @@ class SfnFont:
         o.direction = get_bits(o.flags, 1, 11)
         o.encoding = get_bits(o.flags, 2, 16)
         o.fmt = get_bits(o.flags, 1, 18)
-        # Character12 (fmt 0, 12 bytes) or Character16 (fmt 1, 16 bytes)
+        # Character12 (fmt 0, 12 bytes) or Character16 (fmt 1, 16 bytes).
+        # Per the EA template, advance/x_offset/y_offset are signed int8.
         pos = o.char_info_offset
         if o.fmt == 0:
             for i in range(o.num_chars):
-                (code, w, h, u, v, adv, xo, yo) = struct.unpack_from("<HBBHHBBB", data, pos)
-                o.chars.append(CharEntry(code, w, h, u, v, adv, xo, yo))
+                (code, w, h, u, v, adv, xo, yo, nk) = \
+                    struct.unpack_from("<HBBHHbbbB", data, pos)
+                o.chars.append(CharEntry(code, w, h, u, v, adv, xo, yo, num_kern=nk))
                 pos += 12
         else:
             for i in range(o.num_chars):
                 (code, w, h, u, v, adv_y, xo, yo, nk, ki, adv_x) = \
-                    struct.unpack_from("<HBBHHBBBBHH", data, pos)
+                    struct.unpack_from("<HBBHHBbbBHH", data, pos)
                 o.chars.append(CharEntry(code, w, h, u, v, adv_x, xo, yo,
                                          num_kern=nk, advance_y=adv_y, kern_index=ki))
                 pos += 16

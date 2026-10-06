@@ -1,0 +1,872 @@
+[
+ {
+  "id": "LOC_BOBCINTR_001",
+  "movie": "BOBCINTR",
+  "index": 1,
+  "english": "Well, it was snowing in the Ardennes."
+ },
+ {
+  "id": "LOC_BOBCINTR_003",
+  "movie": "BOBCINTR",
+  "index": 3,
+  "english": "You couldn't recognize one town from the next."
+ },
+ {
+  "id": "LOC_BOBCINTR_005",
+  "movie": "BOBCINTR",
+  "index": 5,
+  "english": "And I guess that's what a lot of us remember the most..."
+ },
+ {
+  "id": "LOC_BOBCINTR_007",
+  "movie": "BOBCINTR",
+  "index": 7,
+  "english": "the cold"
+ },
+ {
+  "id": "LOC_BOBCINTR_009",
+  "movie": "BOBCINTR",
+  "index": 9,
+  "english": "and how it just never stopped snowing."
+ },
+ {
+  "id": "LOC_BOBCINTR_011",
+  "movie": "BOBCINTR",
+  "index": 11,
+  "english": "We all thought it was over;"
+ },
+ {
+  "id": "LOC_BOBCINTR_013",
+  "movie": "BOBCINTR",
+  "index": 13,
+  "english": "the pain,"
+ },
+ {
+  "id": "LOC_BOBCINTR_015",
+  "movie": "BOBCINTR",
+  "index": 15,
+  "english": "the cold,"
+ },
+ {
+  "id": "LOC_BOBCINTR_017",
+  "movie": "BOBCINTR",
+  "index": 17,
+  "english": "the waiting..."
+ },
+ {
+  "id": "LOC_BOBCINTR_019",
+  "movie": "BOBCINTR",
+  "index": 19,
+  "english": "And we'd all be going home soon..."
+ },
+ {
+  "id": "LOC_BOBCINTR_021",
+  "movie": "BOBCINTR",
+  "index": 21,
+  "english": "600,000 Americans and 55,000 British were camped there."
+ },
+ {
+  "id": "LOC_BOBCINTR_023",
+  "movie": "BOBCINTR",
+  "index": 23,
+  "english": "Judging it an unlikely spot for a German offensive,"
+ },
+ {
+  "id": "LOC_BOBCINTR_025",
+  "movie": "BOBCINTR",
+  "index": 25,
+  "english": "the American staff commanders kept the line thin."
+ },
+ {
+  "id": "LOC_BOBCINTR_027",
+  "movie": "BOBCINTR",
+  "index": 27,
+  "english": "Concentrating their troops at key points to the north and south."
+ },
+ {
+  "id": "LOC_BOBCINTR_029",
+  "movie": "BOBCINTR",
+  "index": 29,
+  "english": "I didn't know at the time"
+ },
+ {
+  "id": "LOC_BOBCINTR_031",
+  "movie": "BOBCINTR",
+  "index": 31,
+  "english": "but this place was soon to become a crossroads"
+ },
+ {
+  "id": "LOC_BOBCINTR_033",
+  "movie": "BOBCINTR",
+  "index": 33,
+  "english": "For the war,"
+ },
+ {
+  "id": "LOC_BOBCINTR_035",
+  "movie": "BOBCINTR",
+  "index": 35,
+  "english": "for Von Schrader"
+ },
+ {
+  "id": "LOC_BOBCINTR_037",
+  "movie": "BOBCINTR",
+  "index": 37,
+  "english": " -- for everything."
+ },
+ {
+  "id": "LOC_BOBMINTR_003",
+  "movie": "BOBMINTR",
+  "index": 3,
+  "english": "I don't like it.  It's too quiet.  "
+ },
+ {
+  "id": "LOC_BOBMINTR_005",
+  "movie": "BOBMINTR",
+  "index": 5,
+  "english": "Can't see nuthin' from here.  Krauts are dug in too deep."
+ },
+ {
+  "id": "LOC_BOBMINTR_007",
+  "movie": "BOBMINTR",
+  "index": 7,
+  "english": "That's it. We've gotta get a man up there. "
+ },
+ {
+  "id": "LOC_BOBMINTR_009",
+  "movie": "BOBMINTR",
+  "index": 9,
+  "english": "Sir?  You were due to pick up intel from the CP twenty minutes ago.  --I hope you're right about this.  "
+ },
+ {
+  "id": "LOC_BOBMINTR_011",
+  "movie": "BOBMINTR",
+  "index": 11,
+  "english": "I hope I'm wrong, Sergeant."
+ },
+ {
+  "id": "LOC_BOBMINTR_013",
+  "movie": "BOBMINTR",
+  "index": 13,
+  "english": "Okay, you heard the man.  Crockett, you're up again."
+ },
+ {
+  "id": "LOC_BOBMINTR_015",
+  "movie": "BOBMINTR",
+  "index": 15,
+  "english": "Call me \"lucky number seven\".  Watch my gear."
+ },
+ {
+  "id": "LOC_BOBMINTR_017",
+  "movie": "BOBMINTR",
+  "index": 17,
+  "english": "What do you see?  "
+ },
+ {
+  "id": "LOC_BOBMINTR_019",
+  "movie": "BOBMINTR",
+  "index": 19,
+  "english": "It's all clea --"
+ },
+ {
+  "id": "LOC_BOBMINTR_020",
+  "movie": "BOBMINTR",
+  "index": 20,
+  "english": "GET DOWN!!!!"
+ },
+ {
+  "id": "LOC_GAMEOUTR_001",
+  "movie": "GAMEOUTR",
+  "index": 1,
+  "english": "What the?!!"
+ },
+ {
+  "id": "LOC_GAMEOUTR_003",
+  "movie": "GAMEOUTR",
+  "index": 3,
+  "english": "It's Holt.  He did it..."
+ },
+ {
+  "id": "LOC_GAMEOUTR_005",
+  "movie": "GAMEOUTR",
+  "index": 5,
+  "english": "You men, shoot any Kraut who so much as twitches."
+ },
+ {
+  "id": "LOC_GAMEOUTR_007",
+  "movie": "GAMEOUTR",
+  "index": 7,
+  "english": "Corporal Fielder, with me."
+ },
+ {
+  "id": "LOC_GAMEOUTR_009",
+  "movie": "GAMEOUTR",
+  "index": 9,
+  "english": "Holt!  Thought we'd lost you there."
+ },
+ {
+  "id": "LOC_GAMEOUTR_011",
+  "movie": "GAMEOUTR",
+  "index": 11,
+  "english": "What happened to Von Schrader?"
+ },
+ {
+  "id": "LOC_GAMEOUTR_013",
+  "movie": "GAMEOUTR",
+  "index": 13,
+  "english": "Dead.  He's Gone.  It's all gone."
+ },
+ {
+  "id": "LOC_GAMEOUTR_015",
+  "movie": "GAMEOUTR",
+  "index": 15,
+  "english": "Good work Holt. Here - I've been ordered to give you this."
+ },
+ {
+  "id": "LOC_GAMEOUTR_017",
+  "movie": "GAMEOUTR",
+  "index": 17,
+  "english": "The Krauts are falling back to Berlin."
+ },
+ {
+  "id": "LOC_GAMEOUTR_019",
+  "movie": "GAMEOUTR",
+  "index": 19,
+  "english": "Our forces will be right behind them."
+ },
+ {
+  "id": "LOC_GAMEOUTR_021",
+  "movie": "GAMEOUTR",
+  "index": 21,
+  "english": "Will you be following the action?"
+ },
+ {
+  "id": "LOC_GAMEOUTR_023",
+  "movie": "GAMEOUTR",
+  "index": 23,
+  "english": "Yeah.  I'll be there."
+ },
+ {
+  "id": "LOC_GAMEOUTR_025",
+  "movie": "GAMEOUTR",
+  "index": 25,
+  "english": "Then let's give 'em hell."
+ },
+ {
+  "id": "LOC_GAMEOUTR_027",
+  "movie": "GAMEOUTR",
+  "index": 27,
+  "english": "Carry on Lieutenant."
+ },
+ {
+  "id": "LOC_GAMEOUTR_029",
+  "movie": "GAMEOUTR",
+  "index": 29,
+  "english": "Sir!"
+ },
+ {
+  "id": "LOC_GAMEOUTR_031",
+  "movie": "GAMEOUTR",
+  "index": 31,
+  "english": "That was a long time ago."
+ },
+ {
+  "id": "LOC_GAMEOUTR_033",
+  "movie": "GAMEOUTR",
+  "index": 33,
+  "english": "For a lot of my buddies the war was over."
+ },
+ {
+  "id": "LOC_GAMEOUTR_035",
+  "movie": "GAMEOUTR",
+  "index": 35,
+  "english": "Some of 'em went home."
+ },
+ {
+  "id": "LOC_GAMEOUTR_037",
+  "movie": "GAMEOUTR",
+  "index": 37,
+  "english": "Most didn't make it."
+ },
+ {
+  "id": "LOC_GAMEOUTR_039",
+  "movie": "GAMEOUTR",
+  "index": 39,
+  "english": "When people ask me if I was a hero in the war,"
+ },
+ {
+  "id": "LOC_GAMEOUTR_041",
+  "movie": "GAMEOUTR",
+  "index": 41,
+  "english": "I think about the ones who were left behind."
+ },
+ {
+  "id": "LOC_GAMEOUTR_043",
+  "movie": "GAMEOUTR",
+  "index": 43,
+  "english": "They were the heroes."
+ },
+ {
+  "id": "LOC_GAMEOUTR_045",
+  "movie": "GAMEOUTR",
+  "index": 45,
+  "english": "I don't know how I survived.  But I did."
+ },
+ {
+  "id": "LOC_GAMEOUTR_047",
+  "movie": "GAMEOUTR",
+  "index": 47,
+  "english": "So I keep their memory alive."
+ },
+ {
+  "id": "LOC_GAMEOUTR_049",
+  "movie": "GAMEOUTR",
+  "index": 49,
+  "english": "I owe it to them."
+ },
+ {
+  "id": "LOC_GAMEOUTR_051",
+  "movie": "GAMEOUTR",
+  "index": 51,
+  "english": "We all do..."
+ },
+ {
+  "id": "LOC_GAMEOUTR_053",
+  "movie": "GAMEOUTR",
+  "index": 53,
+  "english": "for what they did.  "
+ },
+ {
+  "id": "LOC_NAFCINTR_001",
+  "movie": "NAFCINTR",
+  "index": 1,
+  "english": "North Africa was rough."
+ },
+ {
+  "id": "LOC_NAFCINTR_003",
+  "movie": "NAFCINTR",
+  "index": 3,
+  "english": "I had been assigned to the British seventh armored..."
+ },
+ {
+  "id": "LOC_NAFCINTR_005",
+  "movie": "NAFCINTR",
+  "index": 5,
+  "english": "... a bunch of guys they called the Desert Rats."
+ },
+ {
+  "id": "LOC_NAFCINTR_007",
+  "movie": "NAFCINTR",
+  "index": 7,
+  "english": "Their elite force."
+ },
+ {
+  "id": "LOC_NAFCINTR_009",
+  "movie": "NAFCINTR",
+  "index": 9,
+  "english": "They'd do anything."
+ },
+ {
+  "id": "LOC_NAFCINTR_011",
+  "movie": "NAFCINTR",
+  "index": 11,
+  "english": "The thing I remember most about them was how they relied on each other."
+ },
+ {
+  "id": "LOC_NAFCINTR_013",
+  "movie": "NAFCINTR",
+  "index": 13,
+  "english": "They didn't want me there."
+ },
+ {
+  "id": "LOC_NAFCINTR_015",
+  "movie": "NAFCINTR",
+  "index": 15,
+  "english": "But even they knew they could use all the help they could get."
+ },
+ {
+  "id": "LOC_NAFCINTR_017",
+  "movie": "NAFCINTR",
+  "index": 17,
+  "english": "The Nazis were in North Africa."
+ },
+ {
+  "id": "LOC_NAFCINTR_019",
+  "movie": "NAFCINTR",
+  "index": 19,
+  "english": "Mussolini's hold on Egypt was slipping and Germany had its sights set on the Suez canal."
+ },
+ {
+  "id": "LOC_NAFCINTR_021",
+  "movie": "NAFCINTR",
+  "index": 21,
+  "english": "Hitler needed both situations dealt with, so he sent his best... "
+ },
+ {
+  "id": "LOC_NAFCINTR_023",
+  "movie": "NAFCINTR",
+  "index": 23,
+  "english": "... he sent Rommel."
+ },
+ {
+  "id": "LOC_NAFCINTR_025",
+  "movie": "NAFCINTR",
+  "index": 25,
+  "english": "The \"Desert Fox\", as he was called, quickly ripped across the sands and reclaimed Egypt - then stood poised to drive towards Suez."
+ },
+ {
+  "id": "LOC_NAFCINTR_027",
+  "movie": "NAFCINTR",
+  "index": 27,
+  "english": "The Desert Rats were different. "
+ },
+ {
+  "id": "LOC_NAFCINTR_029",
+  "movie": "NAFCINTR",
+  "index": 29,
+  "english": "Their jury-rigged vehicles were kept moving on an unsteady supply of parts salvaged from the desert."
+ },
+ {
+  "id": "LOC_NAFCINTR_031",
+  "movie": "NAFCINTR",
+  "index": 31,
+  "english": "Whatever they didn't have they raided and took."
+ },
+ {
+  "id": "LOC_NAFCINTR_033",
+  "movie": "NAFCINTR",
+  "index": 33,
+  "english": "For them, the word \"impossible\" didn't exist."
+ },
+ {
+  "id": "LOC_NAFCINTR_035",
+  "movie": "NAFCINTR",
+  "index": 35,
+  "english": "Neither did \"fear\" or \"failure\"."
+ },
+ {
+  "id": "LOC_NAFCINTR_037",
+  "movie": "NAFCINTR",
+  "index": 37,
+  "english": "Now it seemed that fate and Von Schrader were bringing us together."
+ },
+ {
+  "id": "LOC_NAFMINTR_003",
+  "movie": "NAFMINTR",
+  "index": 3,
+  "english": "All clear. -- Right men, move it!"
+ },
+ {
+  "id": "LOC_NAFMINTR_005",
+  "movie": "NAFMINTR",
+  "index": 5,
+  "english": "Lt. Holt - What do ya see?"
+ },
+ {
+  "id": "LOC_NAFMINTR_007",
+  "movie": "NAFMINTR",
+  "index": 7,
+  "english": "I got a bunker and a tank - far end of the canyon.  -- well guarded!"
+ },
+ {
+  "id": "LOC_NAFMINTR_009",
+  "movie": "NAFMINTR",
+  "index": 9,
+  "english": "Can you see the way in?"
+ },
+ {
+  "id": "LOC_NAFMINTR_011",
+  "movie": "NAFMINTR",
+  "index": 11,
+  "english": "Yeah ... there's an opening at the foot of the cliff."
+ },
+ {
+  "id": "LOC_NAFMINTR_013",
+  "movie": "NAFMINTR",
+  "index": 13,
+  "english": "All right men - -  Search and destroy!"
+ },
+ {
+  "id": "LOC_RUSCINTR_001",
+  "movie": "RUSCINTR",
+  "index": 1,
+  "english": "Stalingrad was a miserable place."
+ },
+ {
+  "id": "LOC_RUSCINTR_003",
+  "movie": "RUSCINTR",
+  "index": 3,
+  "english": "Bitter cold."
+ },
+ {
+  "id": "LOC_RUSCINTR_005",
+  "movie": "RUSCINTR",
+  "index": 5,
+  "english": "The people there were trying to defend their city."
+ },
+ {
+  "id": "LOC_RUSCINTR_007",
+  "movie": "RUSCINTR",
+  "index": 7,
+  "english": "And some of them didn't even have guns."
+ },
+ {
+  "id": "LOC_RUSCINTR_009",
+  "movie": "RUSCINTR",
+  "index": 9,
+  "english": "They were getting slaughtered."
+ },
+ {
+  "id": "LOC_RUSCINTR_011",
+  "movie": "RUSCINTR",
+  "index": 11,
+  "english": "Bodies everywhere,"
+ },
+ {
+  "id": "LOC_RUSCINTR_013",
+  "movie": "RUSCINTR",
+  "index": 13,
+  "english": "but they wouldn't quit."
+ },
+ {
+  "id": "LOC_RUSCINTR_015",
+  "movie": "RUSCINTR",
+  "index": 15,
+  "english": "Those Russians would fight to their dying breath."
+ },
+ {
+  "id": "LOC_RUSCINTR_017",
+  "movie": "RUSCINTR",
+  "index": 17,
+  "english": "I never forgot that..."
+ },
+ {
+  "id": "LOC_RUSCINTR_019",
+  "movie": "RUSCINTR",
+  "index": 19,
+  "english": "When after two devastating years of war in western Europe,"
+ },
+ {
+  "id": "LOC_RUSCINTR_021",
+  "movie": "RUSCINTR",
+  "index": 21,
+  "english": "Hitler diverted his attention to Russia."
+ },
+ {
+  "id": "LOC_RUSCINTR_023",
+  "movie": "RUSCINTR",
+  "index": 23,
+  "english": "By October, Leningrad was besieged and the Germans had reached the outskirts of Moscow."
+ },
+ {
+  "id": "LOC_RUSCINTR_025",
+  "movie": "RUSCINTR",
+  "index": 25,
+  "english": "Hitler now took command himself."
+ },
+ {
+  "id": "LOC_RUSCINTR_027",
+  "movie": "RUSCINTR",
+  "index": 27,
+  "english": "And against his generals' advice, ordered an attack from the south - on Stalingrad."
+ },
+ {
+  "id": "LOC_RUSCINTR_029",
+  "movie": "RUSCINTR",
+  "index": 29,
+  "english": "Not wanting to suffer another tactical defeat, he concentrated his forces in an all out effort to take the city."
+ },
+ {
+  "id": "LOC_RUSCINTR_031",
+  "movie": "RUSCINTR",
+  "index": 31,
+  "english": "Stalin decreed that his namesake would be valiantly defended by the people."
+ },
+ {
+  "id": "LOC_RUSCINTR_033",
+  "movie": "RUSCINTR",
+  "index": 33,
+  "english": "They would use bullets, clubs, even bricks - if necessary - to stop the Germans."
+ },
+ {
+  "id": "LOC_RUSCINTR_035",
+  "movie": "RUSCINTR",
+  "index": 35,
+  "english": "For Stalingrad - surrender was not an option."
+ },
+ {
+  "id": "LOC_RUSMINTR_003",
+  "movie": "RUSMINTR",
+  "index": 3,
+  "english": "Look. There is that damn railgun."
+ },
+ {
+  "id": "LOC_RUSMINTR_005",
+  "movie": "RUSMINTR",
+  "index": 5,
+  "english": "Our comrades across the river are taking a heavy beating from that devil."
+ },
+ {
+  "id": "LOC_RUSMINTR_007",
+  "movie": "RUSMINTR",
+  "index": 7,
+  "english": "We have to take it out!"
+ },
+ {
+  "id": "LOC_RUSMINTR_009",
+  "movie": "RUSMINTR",
+  "index": 9,
+  "english": "And the radio tower!"
+ },
+ {
+  "id": "LOC_RUSMINTR_011",
+  "movie": "RUSMINTR",
+  "index": 11,
+  "english": "Quick, let's go before it can do any more damage!"
+ },
+ {
+  "id": "LOC_RUSMINTR_013",
+  "movie": "RUSMINTR",
+  "index": 13,
+  "english": "Wait!  Someone's coming!"
+ },
+ {
+  "id": "LOC_RUSMINTR_015",
+  "movie": "RUSMINTR",
+  "index": 15,
+  "english": "Don't shoot!  It's me - Gregori!"
+ },
+ {
+  "id": "LOC_RUSMINTR_017",
+  "movie": "RUSMINTR",
+  "index": 17,
+  "english": "It's clear!  There are only two guards at gate."
+ },
+ {
+  "id": "LOC_RUSMINTR_019",
+  "movie": "RUSMINTR",
+  "index": 19,
+  "english": "Dimitri, you move up to the farmhouse.  I'll clear the gate for the others."
+ },
+ {
+  "id": "LOC_RUSMINTR_021",
+  "movie": "RUSMINTR",
+  "index": 21,
+  "english": "Very well, comrade Holt.  We will meet on the other side.  "
+ },
+ {
+  "id": "LOC_STNCINTR_001",
+  "movie": "STNCINTR",
+  "index": 1,
+  "english": "They called it the greatest raid ever."
+ },
+ {
+  "id": "LOC_STNCINTR_003",
+  "movie": "STNCINTR",
+  "index": 3,
+  "english": "And the memories I have don't even seem real to me."
+ },
+ {
+  "id": "LOC_STNCINTR_005",
+  "movie": "STNCINTR",
+  "index": 5,
+  "english": "I was the only American with them."
+ },
+ {
+  "id": "LOC_STNCINTR_007",
+  "movie": "STNCINTR",
+  "index": 7,
+  "english": "I was an officer with the OSS."
+ },
+ {
+  "id": "LOC_STNCINTR_009",
+  "movie": "STNCINTR",
+  "index": 9,
+  "english": "For my part, it began in the spring of 1942."
+ },
+ {
+  "id": "LOC_STNCINTR_011",
+  "movie": "STNCINTR",
+  "index": 11,
+  "english": "Hitler's war machine was steam-rolling over Europe;"
+ },
+ {
+  "id": "LOC_STNCINTR_013",
+  "movie": "STNCINTR",
+  "index": 13,
+  "english": "and years of punishing German attacks were finally taking its toll on Britain."
+ },
+ {
+  "id": "LOC_STNCINTR_015",
+  "movie": "STNCINTR",
+  "index": 15,
+  "english": "Nazi U-boats continually patrolled the North Atlantic, tightening the noose around Britain's neck."
+ },
+ {
+  "id": "LOC_STNCINTR_017",
+  "movie": "STNCINTR",
+  "index": 17,
+  "english": "Then word reached London that the Germans were sending the Battleship Tirpitz."
+ },
+ {
+  "id": "LOC_STNCINTR_019",
+  "movie": "STNCINTR",
+  "index": 19,
+  "english": "If that happened the British coast would be vulnerable to attack"
+ },
+ {
+  "id": "LOC_STNCINTR_021",
+  "movie": "STNCINTR",
+  "index": 21,
+  "english": "and what little defenses they had left would soon crumble."
+ },
+ {
+  "id": "LOC_STNCINTR_023",
+  "movie": "STNCINTR",
+  "index": 23,
+  "english": "Since all previous attempts to sink the Tirpitz had failed,"
+ },
+ {
+  "id": "LOC_STNCINTR_025",
+  "movie": "STNCINTR",
+  "index": 25,
+  "english": "their target would now be the only dry dock in the area large enough to service her - "
+ },
+ {
+  "id": "LOC_STNCINTR_027",
+  "movie": "STNCINTR",
+  "index": 27,
+  "english": "in German-occupied St. Nazaire, France."
+ },
+ {
+  "id": "LOC_STNCINTR_029",
+  "movie": "STNCINTR",
+  "index": 29,
+  "english": "This was considered by many to be a suicide mission."
+ },
+ {
+  "id": "LOC_STNCINTR_031",
+  "movie": "STNCINTR",
+  "index": 31,
+  "english": "But for the British, desperate times meant desperate measures..."
+ },
+ {
+  "id": "LOC_STNCINTR_033",
+  "movie": "STNCINTR",
+  "index": 33,
+  "english": "... and things had never been more desperate."
+ },
+ {
+  "id": "LOC_STNMINTR_007",
+  "movie": "STNMINTR",
+  "index": 7,
+  "english": "When people ask me what I did in the war"
+ },
+ {
+  "id": "LOC_STNMINTR_009",
+  "movie": "STNMINTR",
+  "index": 9,
+  "english": "I tell them that I did the same thing we all did..."
+ },
+ {
+  "id": "LOC_STNMINTR_011",
+  "movie": "STNMINTR",
+  "index": 11,
+  "english": "we fought for what was right..."
+ },
+ {
+  "id": "LOC_STNMINTR_013",
+  "movie": "STNMINTR",
+  "index": 13,
+  "english": "I've come to realize that there's nothing good about war,"
+ },
+ {
+  "id": "LOC_STNMINTR_015",
+  "movie": "STNMINTR",
+  "index": 15,
+  "english": "but there is good in why you fight wars."
+ },
+ {
+  "id": "LOC_STNMINTR_017",
+  "movie": "STNMINTR",
+  "index": 17,
+  "english": "And we were all fighting for the same thing..."
+ },
+ {
+  "id": "LOC_STNMINTR_021",
+  "movie": "STNMINTR",
+  "index": 21,
+  "english": "2 Miles off the coast of St. Nazaire, France"
+ },
+ {
+  "id": "LOC_STNMINTR_023",
+  "movie": "STNMINTR",
+  "index": 23,
+  "english": "[praying]"
+ },
+ {
+  "id": "LOC_STNMINTR_025",
+  "movie": "STNMINTR",
+  "index": 25,
+  "english": "This doesn't feel right."
+ },
+ {
+  "id": "LOC_STNMINTR_027",
+  "movie": "STNMINTR",
+  "index": 27,
+  "english": "Check your magazines.  Remember to stay low."
+ },
+ {
+  "id": "LOC_STNMINTR_029",
+  "movie": "STNMINTR",
+  "index": 29,
+  "english": "You know, Holt, when I volunteered I couldn't wait for this moment.  Now that it's here..."
+ },
+ {
+  "id": "LOC_STNMINTR_031",
+  "movie": "STNMINTR",
+  "index": 31,
+  "english": "Winslow's been monitoring the radio, sir.  Looks like the stolen signals worked. The Gerries still think we're one of their own. "
+ },
+ {
+  "id": "LOC_STNMINTR_033",
+  "movie": "STNMINTR",
+  "index": 33,
+  "english": "Incoming!"
+ },
+ {
+  "id": "LOC_STNMINTR_035",
+  "movie": "STNMINTR",
+  "index": 35,
+  "english": "Mr. Reilly! -- Get Down!!"
+ },
+ {
+  "id": "LOC_STNMINTR_037",
+  "movie": "STNMINTR",
+  "index": 37,
+  "english": "Helm, all engines to full!   -All engines full, aye sir!   -Raise the flag, men!"
+ },
+ {
+  "id": "LOC_STNMINTR_039",
+  "movie": "STNMINTR",
+  "index": 39,
+  "english": "We'll ram it down their throats!   -Thirty seconds to impact!   -Return Fire!  -Firing!"
+ },
+ {
+  "id": "LOC_STNMINTR_041",
+  "movie": "STNMINTR",
+  "index": 41,
+  "english": "Faster!  Ready!  Fifteen seconds to impact!"
+ },
+ {
+  "id": "LOC_STNMINTR_043",
+  "movie": "STNMINTR",
+  "index": 43,
+  "english": "This is it lads, we're gonna hit!!  Hang on to something!!"
+ },
+ {
+  "id": "LOC_STNMINTR_045",
+  "movie": "STNMINTR",
+  "index": 45,
+  "english": "Kommt zurück!"
+ }
+]

@@ -124,7 +124,7 @@ untouched and remains English (goal: English voices + Arabic subtitles).
 
 ## 7. Modified resources (50 files)
 
-* 30 × `STRINGS.VIV` / `STRINGMP.VIV` — Arabic UI/mission strings
+* 29 × `STRINGS.VIV` / `STRINGMP.VIV` — Arabic UI/mission strings
 * `SAVEGAME.LOC`, `SG_MISC.LOC` — save-game / memory-card dialogs (UTF-16)
 * 9 × `MOVIES/LOC/*.LOC` — cutscene subtitles (8-bit, byte-mapped)
 * `COMICFNT.SFN`, `DBFNT.SFN`, `OBJFONT.SFN`, `SUBFNT.SFN`,

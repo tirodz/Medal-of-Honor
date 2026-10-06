@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<document xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="stringtable">
+  <xmlstringtable name="LevelTable">
+    <localstring name="CSA_PressActionFilm">
+      <danish value="Tryk på [$ACTION] for at tage V2-filmen" />
+      <dutch value="Druk op [$ACTION] om V2-film te pakken" />
+      <english value="Press [$ACTION] to Take V2 Film" />
+      <french value="Appuyez sur [$ACTION] pour prendre le film" />
+      <german value="Drücke [$ACTION], um den V2-Film zu nehmen." />
+      <italian value="Premi [$ACTION] per prendere la pellicola del V2" />
+      <japanese value="V2のフィルムを奪うには[$アクション]を押してください" />
+      <korean value="필름을 가져오려면 [$ACTION] 버튼을 누르십시오." />
+      <spanish value="Pulsa [$ACTION] para coger la película del V2" />
+      <swedish value="Tryck på [$ACTION] för att ta V2-testfilmen" />
+    </localstring>
+    <localstring name="CSA_PressActionFuel">
+      <danish value="Tryk på [$ACTION] for at sænke V2-raket" />
+      <dutch value="Druk op [$ACTION] om V2-raket te laten zakken" />
+      <english value="Press [$ACTION] to Lower V2 Rocket" />
+      <french value="Appuyez sur [$ACTION] pour descendre le V2" />
+      <german value="Drücke [$ACTION], um die V2-Rakete zu senken." />
+      <italian value="Premi [$ACTION] per calare il razzo V2" />
+      <japanese value="V2ロケットを下げるには[$アクション]を押してください" />
+      <korean value="연료 배출구를 열려면 [$ACTION] 버튼을 누르십시오." />
+      <spanish value="Pulsa [$ACTION] para descender el cohete V2" />
+      <swedish value="Tryck på [$ACTION] för att sänka V2-raketen" />
+    </localstring>
+    <localstring name="CSA_PressActionPhoto">
+      <danish value="Tryk på [$ACTION] for at fotografere V2-tegningerne" />
+      <dutch value="Druk op [$ACTION] om V2-schema te fotograferen" />
+      <english value="Press [$ACTION] to Photograph V2 Schematics" />
+      <french value="Appuyez sur [$ACTION] pour photographier les plans du V2" />
+      <german value="Fotografiere die Baupläne der V2 mit [$ACTION]." />
+      <italian value="Premi [$ACTION] per fotografare i progetti del V2" />
+      <japanese value="V2構造図の写真を撮るには[$アクション]を押してください" />
+      <korean value="V2 로켓포 설계도 사진을 찍으려면 [$ACTION] 버튼을 누르십시오." />
+      <spanish value="Pulsa [$ACTION] para fotografiar los planos del V2" />
+      <swedish value="Tryck på [$ACTION] för att fotografera V2-ritningarna" />
+    </localstring>
+    <localstring name="CSA_PressActionPrisoner">
+      <danish value="Tryk på [$ACTION] for at befri fangen" />
+      <dutch value="Druk op [$ACTION] om gevangene te bevrijden" />
+      <english value="Press [$ACTION] to Free Prisoner" />
+      <french value="Appuyez sur [$ACTION] pour libérer le commando" />
+      <german value="Drücke [$ACTION], um den Gefangenen zu befreien." />
+      <italian value="Premi [$ACTION] per liberare il prigioniero" />
+      <japanese value="プランジャーを使うには[$アクション]を押してください" />
+      <korean value="포로들을 석방하려면 [$ACTION] 버튼을 누르십시오." />
+      <spanish value="Pulsa [$ACTION] para liberar al prisionero" />
+      <swedish value="Tryck på [$ACTION] för att befria fången" />
+    </localstring>
+  </xmlstringtable>
+</document>

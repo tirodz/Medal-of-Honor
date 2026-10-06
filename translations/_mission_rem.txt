@@ -1,0 +1,248 @@
+MO_EscapePause	Return to HMS Campbeltown
+MO_PrimaryPause	Destroy Tiger Tank Prototypes
+MO_PumpPause	Destroy pump house
+MO_RadioPause	Destroy Radio Tower
+MO_ShedPause	Destroy Winding Shed
+MO_STN1_EscapeSuccess	You Have Successfully Escaped
+PrimaryObjective_STN1	Locate Captain Beck
+10282_GENPC_Achtung	Achtung! All available troops!  Advance to the church immediately!
+10286a_GEGM1_Retreat	Retreat! The Russians have retaken the Church!
+10286b_GEGM2_FallBack	Fall Back! Fall Back!!!
+MO_BunkerPause	Capture German Bunker
+MO_CommTowerPause	Destroy Communication Tower
+MO_PartisanPause	Partisan Fighters Located
+MO_RescuePause	Rescue Trapped Allies
+MO_SignalPause	Signal Rocket Strike
+MO_TankComplete	3 Panzer Tanks Destroyed
+MO_TankPause	Destroy Panzer Tank
+MO_Charge_Next	%1 of %2 Charges Placed
+MO_COPause	Meet with Russian Officer
+MO_GatePause	Destroy Rectory Gate
+MO_TankSuccess	Panzer Tank Destroyed
+01907_Hardcastle_CommandosOnYourFeet	COMMANDOS!  ON YOUR FEET!
+01964_Commando3_Incoming	INCOMING!!!!
+01967_Commando3_JesusChrist	JESUS CHRIST!!!
+01971_Pilot_WeveLostNumberOne	We've lost the number one.  We're losing power.
+01976_LtRoderick_AllRightLadsForward	All right, lads!  Forward!!
+01979_Hardcastle_HurryItUpMen	Hurry it up, men!
+01993_LtRoderick_DoItCollins	Do it, Collins!!
+01995_LtRoderick_ComeOnMenAttack	Come on, men!  Attack!!!!
+02063_LtRoderick_GetToThePetrolTanks	Whatever happens men, get to the petrol tanks!
+02106_Commando3_SecureThisFloor	Come on! Secure this floor!
+02123_LtRoderick_TroopTrain	TROOP TRAIN!
+02137_German2_Fire	FIRE!!
+02161_GermanComdant_EnemyIsInRailYard	Attention!  Attention! All Garrison soldiers, the enemy is in the railyard!  Reinforcements are on the way!
+02164_SgtGibbs_DigInGetReady	Dig in!  Get ready!
+02165_Commando1_HereTheyCome	Here they come!
+02199_Commando2_LooksLikeATunnel	Sir, we've got an opening.  Looks like a tunnel.
+02200_LtRoderick_GoodWorkArcher	Good work, Archer.  I need some men down there!
+02201_LtRoderick_ReportackWhenYouveCompleted	Report back when you've completed your task.
+02208_Upton_ThoseGunsAreHammering	Those guns are 'ammering on our boys out there!
+02208c_Upton_RightTimeToShutEmDown	Right!  Time to shut 'em down!
+02208d_Upton_GetToTheShoreGuns	Get to the shore guns!
+02217a_Ally01_GreatJob	Great Job!
+02217c_Ally03_AnotherWayUp	I'm going 'round back!  There may be another way up!
+02217d_Ally04_CarefulUpThere	Be careful up there!
+02249_LtRoderick_PlantTheCharges	Get up top to plant the charges
+02264_LtRoderick_ReGroupForTheNextStrike	Set up a perimeter.  Re-group for the next strike.
+02265_SgtGibbs_DemoTeamsStandBy	Demo teams, stand by!
+02266_Commando2_GreatJobHolt	Great job, Holt!
+02268_Upton_HappyBirthdayAdolph	If you think that was big, yank, what till these Huns get a taste o' the surprise we have for 'em inside the Campeltown!  8 tons o' depth charges.  Happy Birthday, Adolph!
+91010_1_USHLT_ForWhatWasRight	when people ask me what I did in the war, I tell them  I did the same thing we all did..we fought for what was right.
+91010_USOHT_ForWhatWasRight	when people ask me what I did in the war, I tell them that I did the same thing we all did....we fought for what was right...  We were just ordinary people asked to do extraordinary things.  I've come to realize that there's nothing good about war, but there is good in why you fight wars.  And we were all fighting for the same thing...
+91012_1_USHLT_FightingForTheSameThing	I've come to realize that there's nothing good about war..but there is good in why you fight wars...and we were all fighting for the same thing.
+91012a_1_USHLT_FightingForTheSameThing	They called it the greatest raid ever.  (pause) The memories I have don't even seem real to me.  Like pictures out of some book. (pause) I was the only American with them.  If I didn't make it, no one could know.  I was an officer with the OSS.  I was there.
+91012a_USVHT_FightingForTheSameThing	They called it the greatest raid ever.  (pause) And the memories I have don't even seem real to me.  It's like pictures out of some book. (pause) I was the only American with them.  If I didn't make it, no one could know.  I was an officer with the OSS.  And I was there.
+91025_UKNPCPCM_LordsPrayer	Our Father who art in Heaven...hallowed by thy name...Thy kingdom come, thy will be done, on earth as it is in Heaven...
+91027_UKNPCCDO_DoesntFeelRight	This doesn't feel right.
+91028_UKNPCCDO3_CheckMagazines	Check your magazines.  Remember to stay low.
+91029_UKNPCHMD_WaitForThisMoment	You know, Holt, when I volunteered I couldn't wait for this moment.  Now that it's here...
+91029a_USHOLT_DoYourJob	You'll do fine Hammond.
+91030_UKNPCRLY_GerriesThinkWereTheirOwn	Winslow's been monitoring the radio, sir.  Looks like the stolen signals worked. The Gerries still think we're one of their own.
+91031_UKNPCNWM_Bugger	Incoming!
+91032_UKNPCNWM_TheyreOnToUS	THEY'RE ONTO US!  -- Get down!
+91033_UKNPCNWM_TellRodrick	Mr. Reilly!  Tell Roderick...
+91034_UKNPCNWM_EnginesFull	Helm, all engines full!
+91035_UKNPCESN_AyeSir	All engines full, aye sir!
+91036_UKNPCNWM_RaiseTheFlag	Raise the flag, men!  We'll ram it down their throats!
+91037_UKNPCNWM_ReturnFire	Return fire!
+91038_UKNPCJKN_Firing	FIRING!
+91039_UKNPCJKN_FasterMordrey	Faster!
+91040_UKNPCMDY_Ready	Ready!
+91041_UKNPCCCO_FifteenSeconds	Fifteen seconds to impact!
+91042_UKNPCUPT_WereGoingToHit	This is it, lads!  We're going to hit!
+91043_UKNPCUPT_HangOnToSomething	Hang on to something!
+91044_GENPC_WatchOut	Watch out!  Get back!
+91900_UKNPC_MoveJerry'sWaitin'	Get up, lads!  Move out!
+91900a_UKNPC_Let'sGet'em	Right!  Let's get 'em!
+91901_UKNPC_GroupRightStraightLeft	You men - shore guns to the right!  Petrol tanks straight ahead!
+92000_UKNPC01_WeHaveToGetUpToThatRooftop	The Krauts on the roof have got us pinned down! We've got to stop that AA Gun!  Our bombers can't get through!
+92002_GENPC01_TommiesByTheAAGun	Hello!  Hello!  There are Tommies at the AA gun!  Send reinforcements!
+92003_UKAlly02_StairwayAmmoRushThem	I think they're moving ammo up these stairs!  C'mon, we'll get the drop on 'em!
+92003b_UKAlly02_GreatJob	Good work!
+92004_UKNPC01_ShoreGunKnockingOutEscapeBoats	Dammit!  That shore gun is blocking our escape boats.  We've gotta hit it - and hit it fast!
+92005_UKNPC02_Bunkerfieldtrouble	The Gerries are thick in the bunker field!  I'm gonna give our boys a hand!
+92006_UKNPC03_LongWalkHome	Christ!  They got another boat!   If we don't hurry we'll be walking home!
+92007_UKNPC04_RunningOutOfAmmo	We're low on ammo!  We've got to stop those reinforcements!
+92008_GENPC01_Wemuststopthemhere	Look!  To the right" "There!  On the left!" "Keep firing!  We have to hold this position!
+92009_GENPC02_SetTheTrap	Pull back!  Everyone back!  Set the trap!
+92010_UKNPC05_AmbushRightFlank	To the right! Gerries on the dock!  It's an ambush!
+92011_UKNPC06_PutAChargeOnThatGun	Set a charge on that gun!  I'll cover the tunnel.
+92012_UKNPC07_GetBoatsInForEscape	Good!  Now the escape boats can get into position!
+92013_UKNPC08_Ifwesurvivethatlong	Yeah, if we live that long.
+92014_UKNPC09_WhatIsDownInThatBunker	Can you see what's down in that bunker?
+92015_GENPC03_Killltheintruders	Kill the intruders! YAHHH!!!!
+92030_UKNPC_FuelTanksMoveUp	Look!  There are the petrol tanks.  Move up, lads.
+92031_GENPC_FallBackToPipes	All right!  Fall back to the pipes!
+92032_UKNPC_GuysTooOrganized	This doesn't feel right, sir!  They're too well organized.
+92032a_UKNPC_WatchOutForTheLights	Stay clear of the light beams!  -Someone kill those lights!
+92033_GENPC_WeAreUnderAttack	We're under attack!  We need reinforcements at the bunker field!  Now!  Now!
+92033a_GENPC_PullBackOpenFire	Pull back to the bunker!  Machine gunners prepare to fire!
+92034_GENPC_CatchThemInTrap	Fall back to the wall!  Quickly!  Stand by!!!
+92034a_GENPC_BunkerIsChewingUsUp	That bloody bunker's eating us alive!
+92035_UKNPC_GetSatchelCharge	Someone get a satchel charge up here!
+92036_UKNPC_RunForItCoveringFire	I'm going!  Cover me!!
+92036a_GENPCNEM_Aaaaarrgh	Aaaaarrgh!!
+92037_UKNPC_FindAnotherWayThrough	We can't get through the fence! There's got to be another way!
+MO_AAPause	Destroy AA Outpost
+MO_DocumentsPause	Find and Secure Axis Documents
+MO_ShorePause	Destroy Shore Gun
+15043_Reyes_Grenade	GRENADE!!!!
+15045_German3_ComeOnOverTheWall	Come on!  Over the wall!
+15052_Reardon_LookOutMen	Look out, men!!
+15056_Pecos_AmmoINeedAmmo	Ammo!  I need ammo!!!
+15057_GermanRadioOP_AllSquadsMoveForward	All squads move forward.
+15060_German4_KillTheAmericans	Kill them!  Kill the Americans!
+15061_German5_MoveUpHurry	Move up!  Move up!  Hurry!
+15062_German10_DieAmericans	Die, Americans!!!
+15063_GermanRadioOP_ArmorUnitsMoveForward	Armor units move forward!
+15065_Reardon_TheCommandPostStopEm	The command post!  They're heading to the command post!!  We've got to stop 'em!
+15070_German7_CommandPostIsThatWay	The command post is that way!
+15071_German8_GoGo	Go!  Go!
+15073_German8_DontLetThemStopYou	Don't let them stop you!
+15074_German9_CutThroughTheAmericans	Cut through the Americans!
+15075_German7_DamnDogs	Damn Dogs!
+15083_GI1_CutEmOff	Cut 'em off!  Cut 'em off!
+15084_GI2_TheyreTryingToCutAround	They're trying to cut around!
+15090_GI1_StayLowWatchIt	Stay low!  Watch it!!
+15092_GI3_WhyDontYouTellThat	Why don't you tell that to them!
+15100_GI3_HeyGILendUsAHand	Hey, GI - lend us a hand!
+15101_GermanRadioOP_ForwardUnits	Forward units!  Do you see your objective!
+15102_German3_CommandPostIsInSight	Affirmative!  The command post is in sight!
+15105_GermanRadioOP_DestroyAmericanCommandPost	Forward units!  Do not fail to reach your objective.  Destroy the American command post!
+15107_German4_KeepFighting	Keep fighting!
+15108_German5_MoveUpTakeMoreGround	Move up!  Take more ground!
+15112_GI3_MoreSuppressiveFire	More suppressive fire!!!!
+15113_GI1_NeedHeatOnTheLeft	I need some heat on the left!!!
+15122c_GI3_AreaSecureGoodJob	Area secure!  Good job!
+15122e_GI1_NiceWorkWereClear	Nice work!  We're clear!
+15132_AmericanRadioOP1_BattalionThisIsBravo	Battalion!  This is Bravo!  We've got massive enemy movement!  Jesus, where's they come from!!!???
+15133_BattalionRadioOP_HoldThemBackBravo	Hold them back, Bravo!
+15135_AmericanRadioOP1_GetDown	How'd they nail our position!?  GET DOWN!
+15136_AmericanRadioOP1_WereTakingCover	We're taking cover, battalion!
+15137_BattalionRadioOP_MovingUnitsToYourPosition	I read you!  Moving units to your position!
+15138_AmericanRadioOP3_MovementAtTheBridge	Battalion, we've got movement at the bridge!!  We need help over here!
+15143_Lopez_ThisIsEasyRadiomansDead	Battalion!  Come in! This is Easy!  Our radioman's dead!  Everyone's dead!  I'm the only one!
+15144_BattalionRadioOP_EasyComeIn	Easy! Come in!  What is your situation?
+15145_Lopez_GermansRushingLeftFlank	I've got Germans rushing the left flank!
+15146_Lopez_ImHoldingThemOff	I'm holding them off though..
+15147_BattalionRadioOP_SayAgainDidYouSay	Say again...did you say you're holding them?
+15148_Lopez_AffirmativeRepeatSolo	Affirmative!  Repeat! Solo!  Short on ammo though....I need some fast!
+15150_AmericanRadioOP1_EnemyUnitsFloodingOurArea	Battalion!  This is Bravo!  We've got enemy units flooding our area!
+15151_BattalionRadioOP_IReadYouBravo	I read you, Bravo.  Hold them as best you can!  We're sending reinforcements!
+15152_AmericanRadioOP1_AffirmativeBattalionHurry	Affirmative, Battalion.  Hurry!
+15153_AmericanRadioOP2_GermansEverywhere	Germans!  Germans everywhere!  We keep killing them with our machine guns...they just keep coming!
+15154_AmericanRadioOP3_TheyHaveTigerTanks	They have Tiger Tanks!  Bigger!  Bigger than Tigers.  Our bazookas aren't working against them!
+15157_Hutchins_ComeOnLetsGo	Come on!  Let's go!
+15157a_Hutchins_LetsGoChief	Let's go, chief!  Time's wasting!
+15157c_Hutchins_Forward	Forward!!!!
+15158d_German10_Yaaaiiiyyy	Yaaaiiiyyyy!!
+15158f_Hutchins_GreatJobGI	Great job, GI.  Thanks for the help!
+15159_Cross_DammitRiggs	Dammit, Riggs!  They're too accurate with those shells!
+15160_Cross_TheyveGotASpotter	I'm telling you, they've got a spotter out here.  Close by.  I think he's up there!
+15161_Riggs_IDontSeeAnything	I don't see anything.
+15163_GermanRadioOP_EagleThisIsThorsHammer	Eagle, this is Thor's hammer.  We are waiting for the next target.
+15164_GermanSpotter_ThisIsEagle	This is Eagle.  Direct fire:  King's Crown - grid square 7.
+15165_GermanRadioOP_KingsCrownGridSquare	King's Crown - grid square 7. Relaying.
+15166_GermanSpotter_ConfirmedHit	Yes.  Confirmed hit.  Stand by.
+15167_GermanRadioOP_ThorsHammerStandingBy	Good.  Thor's hammer Standing by.
+15168_GermanSpotter_AhhhGetBack	AHHH!!!  GET BACK!!!
+15169_GermanSpotter_DieAmericanScum	DIE, AMERICAN SCUM!
+15170_GermanSpotter_GhhaaYouBastard	GHHAAA!!!  YOU BASTARD!!!!
+15171_GermanRadioOP_EagleThisIsThorsHammer	Eagle, this is Thor's hammer.  We are still standing by.
+15173_GermanRadioOP_WhatIsTheNextTarget	Eagle, what is the next target?  Come in.
+15175_Pecos_Tank	TANK!!!
+15183_Reardon_Bazookas	Bazookas!!
+15184_Reardon_GetThoseBazookasUpHere	Get those bazookas up here!!!!
+15190_Barnes_LookAtThatThing	Jesus, look at that thing!!
+15191_Pecos_TheArmorsThicker	The armor's thicker than a Tiger's!
+15196_Reardon_GoodWorkMen	Yes!  Good work, men!!
+15197_Chesterfield_Unbefreakinglievable	Un-be-freaking-lievable!
+15200_BattalionRadioOP_HammondComeIn	Hammond!  HAMMOND!  COME IN!
+15201_BattalionRadioOP_WhyHasntTheBridge	HAMMOND! Why hasn't the bridge been blown yet?
+15202_BattalionRadioOP_TheGermansAreCrossing	HAMMOND!  THE GERMANS ARE CROSSING!
+15203_BattalionRadioOP_WhereAreYou	WHERE ARE YOU?!!!  BLOW THE BRIDGE!!  DO IT!  DO IT NOW!!!
+15204_BattalionRadioOP_BridgeIsDestroyed	GOOD WORK!  We confirm the bridge is destroyed!  Rendezvous back at battalion.  Out.
+15205a_Chesterfield_HoltOverHere	Holt!  Hey, Holt!  Over here!
+15205b_Chesterfield_HeyOverHere	Hey!  Over here!
+15242_GI4_GladToSeeYou	Glad to see you!  Keep these guys off the CP!
+15251_BattalionRadioOP_CommandAreaSecure	Command area is secure.  We read no enemy contacts in the area.
+15253_Patterson_WeDidIt	We did it!
+15254_Chesterfield_ICantBelieveIt	I can't believe it!!!
+61065_1_USHLT_BoBCampaignIntro	It was snowing in the Ardennes.  You couldn't tell one town from the next.  So that's what a lot of us remember most...the cold and how it just never stopped snowing.  We thought it was over; the pain, the cold, everything and we'd all be going home soon...
+61065_USVHT_BoBCampaignIntro	Well, it was snowing in the Ardennes.  You couldn't recognize one town from the next.  And I guess that's what a lot of us remember most...the cold and how it just never stopped snowing.  We all thought it was over; the pain, the cold, the waiting, everything and we'd all be going home soon...
+96009c_UKNPC_UnderAttack	We are under attack!
+96011_1a_GENPCNEM_StubbornAsBitch	ACH! You're as stubborn as that French Resistence bitch!
+96011_2a_GENPCNEM_StubbornAsTrollop	ACH!  You're as stubborn as that French Resistence trollop!
+96011a_GENPCNEM_ManonKeptMyBedWarm	You Americans - when will you learn!  You can't stop us!
+96011c_UKNPC_NameRankSerial#2	Casillas, Aaron.  Lieutenant.  Serial number: 2424256.
+MO_Artillery_Pause	Transmit Artillery Coordinates
+MO_C2_Tower_Pause	Obtain C2 in Church Tower
+MO_C2_Tower_Success	C2 Obtained
+MO_DestroyBridge_Pause	Destroy Town Bridge
+MO_Docs_Pause	Collect Secret Documents
+MO_Primary_Pause	Rescue French Operative
+MO_Primary2_Tanks_Pause	Destroy King Tiger Tanks
+MO_Recon_Pause	Eliminate Recon Unit in Windmill
+CSA_KingTiger	Press  [$ACTION] to Plant Demo Charge
+MO_DemoKingTiger_Pause	Destroy King Tiger Tank
+MO_Des88s_Pause	Destroy 3 German Artillery Positions
+MO_DesAmmoDump_Pause	Destroy Ammunition Depot
+MO_Escape_Pause	Defend Farm and Destroy Approaching Tanks
+99999_USVHT_GAMEOUTRO	That was a long time ago.  For a lot of my buddies the war was over.  Some of 'em went home.  Most didn't make it.  (pause) When people ask me if I was a hero in the war, I think about the ones who were left behind.  They were the heroes.  I don't know how I survived.  But I did.  So I keep their memory alive.  I owe it to them.  We all do...for what they did.
+MO_Call_Airstrike_Pause	Radio Airstrike Coordinates
+MO_Escape_Diry_Pause	Eliminate Von Schrader and Disable Dirty Bomb
+MO_MMG_PillBox_Pause	Destroy 4 German MMG Pillboxes
+03130_UKNPCOFC_SecureTheArea	Secure the area!
+03161_UKNPCOFC_StayInCover	Stay in cover!
+03178_UKNPCOFC_MoveUp	Move up!
+MO_ST4_OldMolePause	Eliminate German Infantry Unit
+MO_ST4_PrimaryPause	Destroy Power Station
+MO_ST4_RocketPause	Destroy 3 V2 Rocket Hulls
+MO_ST4_SUBPause	Locate and Destroy German U-Boat
+MO_ST4_SUBSub	%1 of %2 charges set
+92499d_UKAL1_Doesn'tLookGood	Christ, this doesn't look good!
+92512_UKNPCCMD_CoverHim	Cover him!
+92514b_UKNPCCMD_EveryoneDown	Christ!  Down!  Everyone down!
+92519d_UKNPCCMD_TakeCover	Take cover!
+MO_MMGPause	Destroy Machine-gun Nest
+MO_SquareTankPause	Eliminate Panzer Tank
+93031_UKNPC_Panzer	Panzer!
+93051b_GENPC_KillThem	Kill the Englanders!
+93060_GENPC_Attack	Attack!
+93067a_GENPCNEM_AnotherBodyCrashSite	You English are like cockroaches..
+93067a1a_GENPCNEM_DieAmerican	Die, American!
+MO_RadarPause	Sabotage German Radar Dish
+MO_ReconPause	Recover British Reconnaissance
+MO_VillagePause	Destroy Panzer Tank In Ruins
+OBJ_Escape_Pause	Escape Into Bunker
+09212a_GENPC_OneMoreWordEnglish	Keep quiet!  Unless you want the electrodes!
+09243_GENPCMMG_Damnit	Damnit!
+93090a_FRN4WT_DestroyRocket	Holt, you need to destroy that rocket before the Germans can move it by rail.
+OBJ_NAF4_Escape_Pause	Escape V2 Facility
+OBJ_NAF4_Film_Pause	Steal V2 Test Film
+OBJ_NAF4_Photo_Pause	Photograph V2 Schematics
+OBJ_NAF4_Primary_Pause	Destroy V2 Rocket
+OBJ_NAF4_Prisoners_Pause	Free 3 SAS Commando Prisoners
+OBJ_NAF4_Train_Pause	Destroy Train Tracks
+OBJ_NAF4_Train_Success	Train Tracks Destroyed

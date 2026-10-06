@@ -1,0 +1,432 @@
+02208i_Holt_StN2Briefing01	St. Nazaire is nothing like|I thought it would be.|We smashed the dock|and landed in a firestorm.[5.9]We have our orders:|take out the fuel tanks.|The OSS wants me to keep my eyes|and ears open for more intel.[6]They gave me the name of|a German officer - Mueller.|That's all I've got.[5]Recon says the dock is more|heavily fortified than we thought||We need to move quickly|to hold our advantage.
+03249_StN4BRF_DarknessBeforeDawnA	Well, whatever element of surprise we had is gone.  We took over the German HQ to set up our next attack, but now it's full of wounded, and were taking heavy fire.  Those of us that still can are getting ready to take on the power station.  More information from the OSS would be helpful, especially about this guy Horst.  I'm not sure how he fits.  All I do know is, we gotta get the hell out of here.
+05962b_NAF3BRF_OperationBlindfold	Never thought I'd end up in North Africa.  It's the hottest place I've ever been. The OSS thinks the Germans are testing secret weapons in the desert. Intel believes a German Officer named Von Schrader is behind it.  Plan is for me to join up with the Desert Rats and look into it.  The Germans are supposed to be working on some new thing called a Tiger Tank. Direct orders are to take 'em out...and whatever else we find. I'm tracking a guy named Brecht;  he's another of Von Schrader's men.  I'm with a forward patrol - closing in on their position...
+09199_NAF4BRF_Facility	The commandos in St. Nazaire were tough, but these Desert Rats are a different breed.  They fight like animals. I can see how they earned their reputation.  We've cut our way deeper into the facility.  Intel believes the Nazis are working on a rocket out here - a new kind of V2.  We need to destroy it.  We also need to track down Schneider.  He holds important info.  Feels like we're getting close to something.
+09880a_RUS1BRF_TheRoadToStalingrad	I've been sent to Russia to keep Hitler at bay.  Delivering anti-tank prototypes.  The plan is to exchange the weapons with the Russians for info about something called Virus House.  It's been linked to Von Schrader - and they know where it's being kept.   I'm moving forward with a Russian outfit.  Our primary objective is to take out a German rail gun in the village ahead.  Additional orders are to come out with as much intel as possible.  Situation is unpredictable.  OSS says this guy Neumann already knows I'm here.  He may be hunting me....he may not be the only one.
+14960a_BoB1BRF_TwinVillages	I hear the Nazis are losing steam.  Everyone's hoping for a quick victory.  The OSS has tracked Von Schrader to Belgium.  A French Resistence operative, Manon du Champs, reported that she'd found something - now she's missing.  Orders are to go to the American Command Post near her last position and get more info.  Don't know what Von Schrader's doing out here.  Intel says a German General named Kappelhoff is linked to him somehow.    Going forward to check the line.  None of this feels right.
+17199_BoB4BRF_HellFrozeOver	Manon told me Von Schrader's plan...  about the dirty bomb.  It all fits.  The launch site in St. Nazaire, the secret weapons in North Africa, the Virus House information in Russia...now here.  Intel believes he intended to use the bomb on London. But now that the Germans are desperate, he might use it in the Ardennes.  It'll kill thousands.  My orders are to find him and stop him.  No matter what the cost...
+92599_StN5BRF_TakingAFrenchLeave	Hoped the darkness would give us a break, but it'll be light soon.  Campbeltown could blow at any time. We've gotta get outta here now.  The Germans got our escape boats, so we have to fight our way though town and head for the countryside. Koster knows we're coming - he'll be waiting.  These commandos are the bravest men I've ever seen.  People will remember this night - even if we live.
+93999_RUS5BRF_OperationUranus	The Russians have suffered greatly, now they fight with a vengeance. Word is the info I'm looking for is close by, but I'll have to fight through hell to get it.  The Russians are planning an attack today.  I'll be with them.  Have orders to recover and send Virus House info back to the OSS. This man is guarding it closely.  The Russians want it too.  Been ordered to destroy the intel after transmission. HQ wants to keep it out of Russian hands.  Feels like we're at a turning point.
+96199_BoB2BRF_TheFarm	It's chaos out here. The Germans caught us completely by surprise.  We're trying to regroup.  Recon says that Manon is being held in a farmhouse nearby.  We've been ordered to rescue her.  It's well-guarded.  The OSS thinks that Von Schrader's most trusted officer - Freder Engel - is questioning her there.  There isn't much time.  We've gotta move fast if we're gonna get her out alive.
+
+Allies	Allies
+Axis	Axis
+DIFFICULTY_DISC_ELITE	Player starts each mission with no Revives and no Medkits. Enemies are aggressive and difficulty is hard.
+DIFFICULTY_DISC_HERO	Player starts each mission with no Revives and no Medkits. There are no health pickups. Enemies are relentless and difficulty is unforgiving.
+DIFFICULTY_DISC_RECRUIT	For beginners. Player starts each mission with 2 Revives and 4 Medkits. Enemies are unskilled and difficulty is easy.
+DIFFICULTY_DISC_VETERAN	Player starts each mission with 1 Revive and 1 Medkit. Enemies are skilled and difficulty is normal.
+HB_Accept	Accept
+HB_Back	Back
+HB_Cancel	Cancel
+HB_Change	Change
+HB_Confirm	Confirm
+HB_Continue	Continue
+HB_Controller_Settings	Controller Settings
+HB_Delete	Delete
+HB_Game_Options	Game Options
+HB_Join	Join
+HB_Leave	Leave
+HB_MainMenu	Main Menu
+HB_Map	Map
+HB_New	New
+HB_No	No
+HB_Options	Options
+HB_Pause	Pause
+HB_PauseMenu	Pause Menu
+HB_Play	Play
+HB_Refresh	Refresh
+HB_Select	Select
+HB_ServiceRecord	Service Record
+HB_Yes	Yes
+MP_2_to_4_Players	(2 to 4 Players)
+MP_4_Players	(4 Players)
+MP_4P_HOTSEAT_HEADER	PLAYER SETUP
+MP_AlertAllPlayersInSameTeam	All players are on the same team!
+MP_Allies_Wins	Allies win!
+MP_At_Least_1_Map	You must select at least one map to play.
+MP_At_Least_2_Players	You must have at least two players to play.
+MP_At_Least_One_Objective_Level	You must select at least one objective to play.
+MP_Axis_vs_Allies	Axis vs Allies
+MP_Axis_vs_Allies_1_Description	Axis vs Allies Preset 1
+MP_Axis_vs_Allies_2_Description	Axis vs Allies Preset 2
+MP_Axis_vs_Allies_Description	The Axis vs. Allies game mode puts players head-to-head as members of either the Axis team or the Allied team. This game mode allows for multiple types of gameplay, with each map allowing for different types of objectives to be fulfilled.
+MP_Axis_Wins	Axis win!
+MP_Back	Back
+MP_Cancel	Cancel
+MP_Class	Class
+MP_Clear	Clear
+MP_Controller_Configuration	Controller Settings
+MP_Controller_Options	Controller Options
+MP_Controller_Options_Capitalized	CONTROLLER OPTIONS
+MP_Current_Objective	Current Objective:
+MP_Custom	Custom
+MP_Custom_Axis_vs_Allies	Custom Axis vs Allies
+MP_Custom_Free_For_All	Custom Free for All
+MP_Custom_Objectives	Custom Objectives
+MP_Customize	Customize
+MP_Death_Match_Description	Death Match is a point-based game mode where players score points by killing one another. The first player to reach the specified score wins the match. Be careful not to kill yourself, as players are penalized for this by losing points. Death Match mode can be played either individually or in teams.
+MP_Default	Default
+MP_Edit_Name	Edit
+MP_Final_Statistics	Final Statistics
+MP_Free_For_All	Free for All
+MP_Free_For_All_Description	The Free for All game mode leaves every player to fend for themselves as they try to complete various point-based objectives. There are multiple types of gameplay for this game mode, such as King of the Hill and Nemesis.
+MP_Friendly_Fire	Friendly Fire
+MP_GameLobby	Game Lobby
+MP_HeavyWeapons	Heavy Weapons
+MP_Infantry	Infantry
+MP_Invert_Y_Axis	Invert Y Axis
+MP_Kills	Kills
+MP_Large	(Large)
+MP_Leave	Leave
+MP_Level	Level
+MP_Level_2_51_Name	Up in Flames
+MP_Level_2_52_Name	Up-close and Personal
+MP_Level_2_53_Name	Meet me in Bastogne
+MP_Level_2_54_Name	Crash Landing
+MP_Level_2_55_Name	Crossing the Styx
+MP_Level_2_56_Name	Epiphany
+MP_Level_2_57_Name	Frostbite
+MP_Level_2_58_Name	Outskirt Skirmish
+MP_Level_2_59_Name	For the Motherland
+MP_Level_2_60_Name	Cellar Rats
+MP_Level_2_61_Name	Winter's Harvest
+MP_Level_2_62_Name	Sniper Square
+MP_Level_2_63_Name	End of the Line
+MP_Level_2_64_Name	Stage Fright
+MP_Level_2_66_Name	Crimson Shores
+MP_Light_Encounters_Solo	Light Encounters
+MP_Light_Encounters_Team	Light Encounters: Team Play
+MP_Lives	Lives
+MP_Main_Menu	Main Menu
+MP_Max_Frags	Max Frags
+MP_Max_Respawns	Max Respawns
+MP_Max_Time	Max Time
+MP_Medium	(Medium)
+MP_Minutes	Minutes
+MP_Multiplayer	Multiplayer
+MP_NA	N/A
+MP_Name_Your_Profile	NAME YOUR PROFILE
+MP_Next	Next
+MP_No_objective_selected	No objective selected.
+MP_Objective	Objective
+MP_Objective_0_Description	Plant the bomb in the enemy base to destroy it and win.\n\nProtect your own base from destruction.\n\nYou can disarm an enemy's bomb.
+MP_Objective_0_Name	Face to Face
+MP_Objective_1_Description	Be the king of the hill.\n\nStand alone near the flag to score points.\n\nPrevent the other player from scoring points by being alone near the flag.
+MP_Objective_1_Name	King of the Hill
+MP_Objective_10_Description	Find the enemy's flag and bring it to your base to score.\n\nPrevent the enemy from capturing your flag and returning it to their base.\n\nScore the specified amount of points to win.
+MP_Objective_10_Name	Capture the Flag
+MP_Objective_11_Description	Kill the enemy players to score points.\n\nScore the specified number of points to win.\n\nYou will lose points for killing yourself or your teammate.
+MP_Objective_11_Name	Team Death Match
+MP_Objective_12_Description	Kill the enemy player to score points.\n\nScore the specified number of points to win.\n\nYou will lose points for killing yourself.
+MP_Objective_12_Name	Death Match
+MP_Objective_13_Description	Allies: Find the enemy's flag and return it to your base to win.\n\nAxis: Prevent the enemy from capturing your flag. Kill the flag carrier to reclaim your captured flag.
+MP_Objective_13_Name	Capture the Axis Flag
+MP_Objective_14_Description	Axis: Find the enemy's flag and return it to your base to win.\n\nAllies: Prevent the enemy from capturing your flag. Kill the flag carrier to reclaim your captured flag.
+MP_Objective_14_Name	Capture the Allied Flag
+MP_Objective_2_Description	Capture all 3 flags to win.\n\nStand near a flag for 5 seconds to capture it.\n\nEnemies can recapture your flags.
+MP_Objective_2_Name	Blitzkrieg
+MP_Objective_3_Description	Find the artillery flag and bring it to the enemy's drop zones to win.\n\nPrevent the enemy from bringing the flag to your drop-zone.\n\nBy killing the flag carrier you can reclaim the flag.
+MP_Objective_3_Name	Artillery Flag
+MP_Objective_4_Description	Find the artillery flag and keep possession of it to score points.\n\nDon't let the enemy carry the flag for too long.\n\nIf you kill the flag carrier then you can pick up the flag.
+MP_Objective_4_Name	Survival
+MP_Objective_5_Description	Find the artillery flag and bring it to the lit-up drop-zone to score.\n\nYou can find the active drop-zone in your compass.\n\nPrevent the enemy from bringing the flag to the drop-zone.\n\nIf you kill the flag carrier, you can pick up the flag.
+MP_Objective_5_Name	Getaway
+MP_Objective_6_Description	Axis: Prevent the destruction of your flak cannons.\n\nAllies: Plant the bomb on one of the two flak cannons to destroy it and win.
+MP_Objective_6_Name	Black Eyes Strike: Allies
+MP_Objective_7_Description	Allies: Prevent the destruction of your flak cannons.\n\nAxis: Plant the bomb on one of the two flak cannons to destroy it and win.
+MP_Objective_7_Name	Black Eyes Strike: Axis
+MP_Objective_8_Description	Find the Bazooka to become the nemesis.\n\nScore points by killing other players while you're the nemesis.\n\nIf you kill the nemesis, pick up the bazooka and become the new Nemesis.\n\nIf the bazooka is not picked-up in time, it will respawn randomly.
+MP_Objective_8_Name	Nemesis
+MP_Objectives	Objectives
+MP_Off	Off
+MP_On	On
+MP_Options	Options
+MP_Pause	Pause
+MP_Play	Play
+MP_Play_Again	Restarting the game using the currently selected objectives and maps.\n\nIs this correct?
+MP_Player	Player
+MP_Player_Name	Player Name
+MP_Player_Name_0	PLAYER 1
+MP_Player_Name_1	PLAYER 2
+MP_Player_Name_2	PLAYER 3
+MP_Player_Name_3	PLAYER 4
+MP_Player_Name_4	PLAYER 5
+MP_Player_Name_5	PLAYER 6
+MP_Player_Name_6	PLAYER 7
+MP_Player_Name_7	PLAYER 8
+MP_Player_Options	Player Options
+MP_Please_Select_Custom	Please select custom objectives and maps.
+MP_Please_Select_Objective	Please Select an Objective
+MP_PleaseSelect	Please Select
+MP_Preset	Preset
+MP_Preset_AA_1	Finally; Face-to-Face
+MP_Preset_AA_1_Description	Destroy the enemy's base while protecting your own.
+MP_Preset_AA_2	Territory Invasion
+MP_Preset_AA_2_Description	Capture the three flags and control the landscape.
+MP_Preset_AA_3	Black-eye Strike
+MP_Preset_AA_3_Description	Plant the flag at the enemy's base in order for your artillery to destroy it.
+MP_Preset_AA_4	Capture the Flag
+MP_Preset_AA_4_Description	It's all about pride; capture the enemy's flag and return to your base.
+MP_Preset_AA_5	I`ll get your flag
+MP_Preset_AA_5_Description	Secure the flag and bring it to the objective point.
+MP_Preset_LE_1	King of the Hill
+MP_Preset_LE_1_Description	Control the hill for as long as you can.
+MP_Preset_LE_2	I will Survive
+MP_Preset_LE_2_Description	The flag is in your hands; don't let it go!
+MP_Preset_LE_3	Escape with the flag
+MP_Preset_LE_3_Description	Secure the flag and bring it to the objective point.
+MP_Preset_LE_4	Meet your Nemesis
+MP_Preset_LE_4_Description	Find the bazooka and become the Nemesis.
+MP_Preset_LE_5	Only Death Matches
+MP_Preset_LE_5_Description	Free for All Preset 5 Description HERE!
+MP_Preset_TOW_1	Cold as Hell!
+MP_Preset_TOW_2	Too Hot to Breathe!
+MP_Press	Press
+MP_Quit	Quit
+MP_Ready	READY
+MP_Reflected	Reflected
+MP_Restart	Restart
+MP_Resume	Resume
+MP_Rifleman	Rifleman
+MP_Round_1	Round 1
+MP_Round_2	Round 2
+MP_Round_3	Round 3
+MP_Round_4	Round 4
+MP_Round_5	Round 5
+MP_Round_Description	Round Description
+MP_Score	Score to Win
+MP_Select	Select
+MP_Select_a_Profile	SELECT A PROFILE
+MP_Settings	Settings
+MP_Skin	Skin
+MP_SkinNameAmericanInfantry	American
+MP_SkinNameBritishCommando	British
+MP_SkinNameFrenchManon	French
+MP_SkinNameGermanFemale	Female
+MP_SkinNameGermanInfantry	Infantry
+MP_SkinNameGermanOfficer	Officer
+MP_SkinNameKriegsMarine	Kriegsmarine
+MP_SkinNameRussianInfantry	Russian
+MP_Slot_1	Slot 1
+MP_Slot_2	Slot 2
+MP_Slot_3	Slot 3
+MP_Slot_4	Slot 4
+MP_Slot_5	Slot 5
+MP_Small	(Small)
+MP_Sniper	Sniper
+MP_Statistics	Statistics
+MP_Team	Team
+MP_TEST_DO_NOT_LOCALIZE	Testing 1-2-1-2
+MP_Tied	The Game is Tied!
+MP_To_Join	to join
+MP_TOW_Options	Axis vs. Allies Options
+MP_Turn_Rate	Turn Rate
+MP_Vibration	Vibration
+MP_Vp	VP
+MP_Waiting	Waiting
+MP_Wins	Wins
+MP_XY_Sensitivity	X/Y Sensitivity
+MultiplayerConfig	Multiplayer
+SouthPaw	South Paw
+SP_@	@
+SP_5+kill	5 + Kill
+SP_ACCENT	ACCENT
+SP_Accuracy	Accuracy
+SP_Adrenaline_Stats	Adrenaline Stats
+SP_AllCheatsUnlocked	All cheats are unlocked
+SP_AreYouSure	Are you sure you want to cancel?\nProfile name will be lost.
+SP_Arms	Arms
+SP_AudioVideo	Audio/Video
+SP_AudioVideoOptions	Audio/Video Options
+SP_Autosave	Autosave
+SP_AV_OPTIONS_HEADER	AUDIO/VIDEO OPTIONS
+SP_BackSpace	BACKSPACE
+SP_Basic_Stats	Basic Stats
+SP_BATTLEOFSTALINGRAD	1 - ROAD TO STALINGRAD
+SP_BattleoftheBulge	BATTLE OF THE BULGE
+SP_BLINDFOLD	1 - OPERATION: BLINDFOLD
+SP_Bronze	Bronze
+SP_Calibration	Brightness Adjustment
+SP_CalibrationInstructions	Adjust the brightness of your screen until you can see two soldiers and no box around them.
+SP_CAMPAIGN_MEDAL_SCREEN_HEADER	CAMPAIGN AWARDS
+SP_CampaignMedals	Campaign Medals
+SP_CampaignSelectServiceRecord	Select a campaign record
+SP_CAPSLOCK	CAPS LOCK
+SP_Cheats	Cheats
+SP_CHEATS_HEADER	CHEATS
+SP_CinematicVolume	Cinematic Volume
+SP_Clear	CLEAR
+SP_Complete	% of Game Complete
+SP_ControllerConfig	CONTROLLER SETTINGS
+SP_Copyright	© 2005 Electronic Arts Inc.  All rights reserved.
+SP_Credits	Credits
+SP_CRIPPLE	CRIPPLE
+SP_Crosshairs	Crosshairs
+SP_Dansk	Dansk
+SP_DESERT_RATS	DESERT RATS
+SP_DESTROY	DESTROY
+SP_DESTROYED	DESTROYED
+SP_DESTROYED_STN4	DESTROYED
+SP_DifficultySelect	DIFFICULTY SELECT
+SP_DISCOVERED	DISCOVERED!!!
+SP_DolbyDigital	Dolby® Digital
+SP_Doublekill	Double Kill
+SP_Elite	Veteran
+SP_EnemyHitLocation	Enemy Hit Location
+SP_English	English
+SP_ESCAPE	4 - ESCAPE AT DAWN
+SP_Español	Español
+SP_Exploretounlock	Explore to unlock
+SP_Extras	Extras
+SP_Fail	Fail
+SP_FavoriteWeapon	Favorite weapon
+SP_FUEL_TANKS	FUEL TANKS
+SP_GAME_SETTINGS_HEADER	GAME SETTINGS
+SP_GameMedals	GAME MEDALS
+SP_GameSettings	Game Settings
+SP_GERMAN	GERMAN
+SP_GERMAN_BOB1	GERMAN
+SP_GERMAN_BOB2	GERMAN
+SP_GetAllGoldToWinMedal	Get all gold to win medal.
+SP_Gold	Gold
+SP_GrenadeCook	Grenade Cook
+SP_HALTED	HALTED
+SP_Head	Head
+SP_Headshot	Headshot
+SP_HELLFROZEOVER	3 - OPERATION: VIRUS HOUSE
+SP_Hero	Hero
+SP_HistoryoftheO.S.S.	History of the O.S.S.
+SP_Hitler'sAtomicProgram	Hitler's Atomic Program
+SP_HUD	HUD
+SP_InvalidPassword	You have entered an invalid password.
+SP_Inverted	Inverted
+SP_InvertYAxis	Invert Y Axis
+SP_InvertYnotice	This option is also available by pausing the game and selecting options from the menu.
+SP_InvertYprompt	Please select your preferred method for your vertical look control.
+SP_LanguageSelect	Language Select
+SP_Legs	Legs
+SP_LIGHTS_OUT_IN	LIGHTS OUT IN
+SP_Locked	Locked
+SP_MAIN_MENU	MAIN MENU
+SP_MakingofEuropeanAssault	The Making of European Assault
+SP_Medal_Awarded	Medal Awarded
+SP_Medal_Bronze	Bronze
+SP_Medal_Gold	Gold
+SP_Medal_Silver	Silver
+SP_MedKitsAwarded	Medkits Awarded
+SP_Meleeattack	Melee Attack
+SP_MeleeKills	Melee Kills
+SP_MissionSelect	MISSION SELECT
+SP_MissionTime	Mission Time
+SP_Mono	Mono
+SP_Multiplayer	Multiplayer
+SP_MusicVolume	Music Volume
+SP_Nederlands	Nederlands
+SP_Nemesis	Nemesis Objectives:
+SP_Nemesiskill	Nemesis Kill
+SP_NewProfile	New Profile
+SP_NO_CHEATS	No cheats unlocked.
+SP_None	None
+SP_Normal	Normal
+SP_NorthAfrica	NORTH AFRICA
+SP_NUCLEAR	ATOMIC
+SP_Objective_Complete	Complete
+SP_Objectives	Objectives
+SP_Off	Off
+SP_OK	OK
+SP_On	On
+SP_ON_ICE	ON ICE
+SP_OPERATIONURANUS	2 - CLIMBING MAMAYEV HILL
+SP_Options	Options
+SP_OPTIONS_HEADER	OPTIONS
+SP_OSS	OSS Objectives:
+SP_OSS:	OSS :
+SP_PARTISANLIBERATION	PARTISAN LIBERATION
+SP_PARTISANS	PARTISANS
+SP_Passwords	Passwords
+SP_PercentCheatsUnlocked	% cheats unlocked
+SP_PETROLSABOTAGE	1 - OPERATION: CHARIOT
+SP_POWERSTATION	3 - LIGHTS OUT IN THE PORT CITY
+SP_PRESSANYBUTTON	PRESS ANY BUTTON
+SP_PRESSSTARTBUTTON	PRESS START
+SP_Profiles	Profiles
+SP_Prologic	Dolby Prologic II
+SP_Quadkill	Quad Kill
+SP_RAID_ON	RAID ON
+SP_RAID_ON_STNAZAIRE	2 - RAID ON ST. NAZAIRE
+SP_RAIL_GUN	RAIL GUN
+SP_ReceivedCampaign0Medal	You have received the\nDistinguished Service Cross\nfor St. Nazaire!
+SP_ReceivedCampaign1Medal	You have received the\nDistinguished Service Order\nfor North Africa!
+SP_ReceivedCampaign2Medal	You have received the\nOrder of the Patriotic War, First Class\nfor Russia!
+SP_ReceivedCampaign3Medal	You have received the\nDistinguished Service Cross\nfor the Battle of the Bulge!
+SP_Recruit	Recruit
+SP_RED_ARMY_FORCES	RED ARMY FORCES
+SP_RED_ARMY_FORCES_BOB1	RED ARMY FORCES
+SP_RETREAT	RETREAT
+SP_RETREAT_BOB1	RETREAT
+SP_Revive_Earned	Revives Earned
+SP_ROCKET_FACILITY	ROCKET FACILITY
+SP_ROMANRUINS	2 - OPERATION: V2 SILENCE
+SP_Rommel'sTigerTanks	Rommel's Tiger Tanks
+SP_Russia	RUSSIA
+SP_SaveOptionsChanges	Do you want to keep your options changes?
+SP_Secondary	Secondary Objectives:
+SP_SecondaryObjective	Secondary Objective
+SP_SelectaProfile	SELECT A PROFILE
+SP_SERVICE_RECORD_HEADER	SERVICE RECORD
+SP_ServiceRecord	Service Record
+SP_SFXVolume	SFX Volume
+SP_Shift	Shift
+SP_Silver	Silver
+SP_SinglePlayer	Single Player
+SP_SinglePlayerCampaignSelect	CAMPAIGN SELECT
+SP_SoundMode	Sound Mode
+SP_SoundTest	Sound Test
+SP_SPACE	SPACE
+SP_Squad_Members_Survived	Squad Members Survived
+SP_ST.NAZAIRE	ST. NAZAIRE!!!
+SP_Stalingrad	STALINGRAD
+SP_Standard	Standard
+SP_Stereo	Stereo
+SP_STNazaire	ST. NAZAIRE
+SP_StNazaireFrance	St. Nazaire France
+SP_Subtitles	Subtitles
+SP_SUPRISE_ATTACK	SURPRISE ATTACK
+SP_Svenska	Svenska
+SP_Tankkill	Tank Kill
+SP_TEXT_DIFFICULTY_DISC_ELITE	Player starts each mission with no Revives and no Medkits. Enemies are aggressive and difficulty is hard.
+SP_TEXT_DIFFICULTY_DISC_HERO	Player starts each mission with no Revives and no Medkits. There are no health pickups. Enemies are relentless and difficulty is unforgiving.
+SP_TEXT_DIFFICULTY_DISC_RECRUIT	For beginners. Player starts each mission with 2 Revives and 4 Medkits. Enemies are unskilled and difficulty is easy.
+SP_TEXT_DIFFICULTY_DISC_VETERAN	Player starts each mission with 1 Revive and 1 Medkit. Enemies are skilled and difficulty is normal.
+SP_THEFARM	2 - FARMHOUSE LIBERATION
+SP_TheStoryofNorthAfrica	The Story of North Africa
+SP_TheStoryofSt.Nazaire	The Story of St. Nazaire
+SP_TheStoryofStalingrad	The Story of Stalingrad
+SP_TheStoryoftheBattleoftheBulge	The Story of the Battle of the Bulge
+SP_THREAT	THREAT
+SP_TIGER_TANKS	TIGER TANKS
+SP_TimesDied	Times Died
+SP_TIRPITS_PUT	TIRPITZ PUT
+SP_Torso	Torso
+SP_TotalHitsTaken	Total Hits Taken
+SP_TotalKills	Total Kills
+SP_TotalTime	Total Time Played
+SP_Triplekill	Triple Kill
+SP_TroopsLost	Troops Lost
+SP_Turnrate	Turnrate
+SP_TWINVILLAGESGO	1 - MISSION TO ROCHERATH
+SP_UnlockedCheat0	You have unlocked the GOD cheat.
+SP_UnlockedCheat1	You have unlocked the AMMO cheat.
+SP_VerticalLookControl	VERTICAL LOOK CONTROL
+SP_Veteran	Normal
+SP_Vibration	Vibration
+SP_Vibration_GC	Rumble Feature
+SP_VICTORY_SCREEN_HEADER	MISSION AWARDS
+SP_VideoMode	Video Mode
+SP_Widescreen	Widescreen
+SP_WildBillDonovan	"Wild Bill" Donovan
+SP_XYSensitivity	X/Y Sensitivity
+SP_YouHaveCompleted	You have completed
+SP_YouHaveEarnedBronze	You Have Earned Bronze!
+SP_YouHaveEarnedGold	You Have Earned Gold!
+SP_YouHaveEarnedSilver	You Have Earned Silver!

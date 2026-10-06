@@ -1,0 +1,7 @@
+original/
+extracted/
+build/
+tests/tmp/
+*.log
+research/
+log.txt

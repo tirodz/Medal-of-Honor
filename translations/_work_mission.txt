@@ -1,0 +1,1450 @@
+00555_1_UKCM2_PummelingUs	1_1	Christ!  They're pummeling us with mortars!!
+00556_UKCPB_BackToMaker	1_1	Holt, you're a sight for sore eyes.  Right - let's send these bastards back to hell.  Sledgehammer!  Come in - this is sabre!  Requesting air support at coordinates three, two, eight, four-seven..
+00557_1_UKCM3_YouAlright	1_1	Hey- hey yank!  You alright?!
+00557_2_UKCM3_TheyGotRadioMan	1_1	They got our radio man!
+00557_3_UKCM3_CallInAirstrike	1_1	We need to call in the air strike!  Captain Beck's already landed, he's got a radio - get to him!
+00557_UKCM3_GetClear	1_1	Here come the bombers!  Get clear, men!
+00558_UKCPB_BackToTheShip	1_1	Holt! Bombers are on the way! We've gotta get back to the ship.
+01954_Pilot_ApproachingYourPosition	1_1	We are approaching your position.
+01955_Pilot_StartingBombingRunNow	1_1	Starting our bombing run now.
+03111_UKNPC_MoveMoveMove	1_1	Move, move, move!
+03119_UKNPC01_StayBehindCover	1_1	Watch yourselves.  Keep cover!
+03126_UKNPC_MoveInCover	1_1	Move in cover, men!
+03127_UKNPC_FlankLeft	1_1	Squad, flank left!
+03128_UKNPC_GoGoGo	1_1	Go, Go, Go!
+03132_UKNPC_AreaSecured	1_1	Area secured!
+03179_UKNPC_NotMuchCover	1_1	Be careful here men, there's not much cover.
+03181_UKNPC_GettingClose	1_1	We're bloody close!
+03183_UKNPC_KeepMoving	1_1	Keep moving!  We haven't much time!
+03187_UKNPC_Quickly	1_1	Come on, men!  Quickly!
+92401_UKNPC_LetsGo	1_1	Hurry it up, let's go.
+92401a_UKNPC_MoveMove	1_1	Move. Move.
+92401b_UKNPC_StayBehindCover	1_1	Stay behind cover...
+92401c_UKNPC_WatchForEnemyFire	1_1	Watch the windows for enemy fire.
+92401da_UKNPC_ThereTheyAre	1_1	There they are!
+92401e_UKNPC_ThereTheyAre	1_1	There!
+92401g_UKNPC_HoldHere	1_1	Hold here.
+92401h_UKNPC_Enemy	1_1	Huns!!!
+92401i_UKNPC_InTheWindow	1_1	In the window!
+92402b_UKNPC_SplitUpSquad	1_1	Collins, take the alley. The rest of you men follow me.
+92514c_UKNPCCMD_MachineGun	1_1	Machine gun!
+92514d_UKNPCCMD_SomeoneGetMachineGun	1_1	Someone get that machine gunner!
+92514f_UKNPCCMD_GoGoGo	1_1	GO, GO, GO!
+92514i_UKNPCCMD_CoverHim	1_1	Cover him!
+92519e_UKNPCCMD_HearOurPlanes	1_1	The planes!  I hear 'em!  Hang tight, lads!
+92524d_UKNPCCMD_DefendThisPosition	1_1	Defend our position, men!
+92536b_UKNPCCMD02_DefendThisPosition2	1_1	Hold this position!
+92601b_UKNPC_KeepTheMMGOnUS	1_1	Everyone -- take cover!
+92601d_UKNPC_HoldPosition	1_1	Hold your position!
+92601e_UKNPC_MoreEnemyOnTheWay	1_1	Hold here! Could be more Gerries on the way!
+92601f_UKNPC_StayInCover	1_1	Stay in cover!
+92601g_UKNPC_WindowAbove	1_1	I need a shooter in that window up there!
+92602e_UKNPC_ThereTheyAre	1_1	Look!  There they are!
+92602f_UKNPC_TakeOutMMG	1_1	Take out that machine gun!!
+92602g_UKNPC_TheirOwnMMG	1_1	Use their own bloody machine gun on 'em!
+BombingRun	1_1	[14]We've lost the number one.  We're losing power.
+CSC_Add	1_1	Enemy Ambush Detected. Press  [$ACTION] to Counter
+CSC_Initiate	1_1	Counter Performed. Reinforcements Deployed!
+EnemySquadKilled	1_1	Enemy Squad Eliminated! + 20%
+MissionName_STN1	1_1	Operation Chariot
+MO_EscapeAdd	1_1	Get Back to HMS Campbeltown
+MO_EscapePause	1_1	Get Back to HMS Campbeltown
+MO_EscapeSuccess	1_1	Church Defended
+MO_PrimaryAdd	1_1	Primary Objective Added: Free French Partisans
+MO_PrimaryPause	1_1	Primary Objective: Free French Partisans
+MO_PrimarySuccess	1_1	Primary Objective Complete: French Partisans Freed
+MO_PumpAdd	1_1	Secondary Objective Added: Destroy Pump House
+MO_PumpPause	1_1	Secondary Objective: Destroy Pump House
+MO_PumpPrompt	1_1	One More Charge to Go!
+MO_PumpSuccess	1_1	Secondary Objective Complete: Pump House Destroyed
+MO_RadioAdd	1_1	Secondary Objective Added: Destroy German Radio
+MO_RadioPause	1_1	Secondary Objective: Destroy German Radio
+MO_RadioSuccess	1_1	Secondary Objective Complete: German Radio Destroyed
+MO_ShedAdd	1_1	Secondary Objective Added: Destroy Winding Shed
+MO_ShedPause	1_1	Secondary Objective: Destroy Winding Shed
+MO_ShedSuccess	1_1	Secondary Objective Complete: Winding Shed Destroyed
+MO_STN1_EscapeAdded	1_1	Fall Back to HMS Campbeltown
+MO_STN1_EscapeSuccess	1_1	You Have Successfully Escaped
+MO_STN1_Primary_Radioman	1_1	Locate Captain Beck
+MO_STN1_Primary_RadiomanFound	1_1	Captain Beck Located
+MO_STN1_Secondary_ThreeMMGs	1_1	Clear three enemy MMG nests
+MO_STN1_SecondaryComplete	1_1	MMG nests cleared
+PrimaryObjective_STN1	1_1	Locate Captain Beck
+Tutorial_Medkit	1_1	Your Health is now less than 50%.|Find Canteens to provide a small but instant increase. |[>Activate_Medkit] to use a Medkit for a large increase.
+Tutorial_Primary	1_1	- Complete the Primary Objective in order to accomplish your mission.|- Use the Compass to navigate and follow the Yellow Arrow.
+TutorialTitle_Medkit	1_1	Health
+TutorialTitle_Primary	1_1	Primary Objective
+09799_1_USHLT_RUS1CampaignIntro	1_11	Stalingrad was a miserable place.  It was bitter cold -- I get cold now just thinking about it, the people were trying to defend their city.  Some of them didn't even have guns.  They were getting slaughtered. There were bodies everywhere, but they wouldn't quit. The Russians would fight to their dying breath.  I never forgot that.  (pause) I was sent to Russia
+09799_USVHT_RUS1CampaignIntro	1_11	Stalingrad was a miserable place.  Bitter cold -- teeth-chattering cold, the people there were trying to defend their city.  And some of them didn't even have guns.  They were getting slaughtered. Bodies everywhere, but they wouldn't quit. Those Russians would fight to their dying breath.  I never forgot that.  (pause) I was sent to Russia
+09880a_RUS1BRF_TheRoadToStalingrad	1_11	I've been sent to Russia to keep Hitler at bay.  Delivering anti-tank prototypes.  The plan is to exchange the weapons with the Russians for info about something called Virus House.  It's been linked to Von Schrader - and they know where it's being kept.   I'm moving forward with a Russian outfit.  Our primary objective is to take out a German rail gun in the village ahead.  Additional orders are to come out with as much intel as possible.  Situation is unpredictable.  OSS says this guy Neumann already knows I'm here.  He may be hunting me....he may not be the only one.
+10250_GENPC1_Halt	1_11	Halt! Surrender or die!
+10251_GENPC2_SoundTheAlarm	1_11	Return to Headquarters! Sound the alarm!
+10252_RUNPC_AmericanOverHere	1_11	American! Over here!
+10253_RUNPC_WaitingDownstairs	1_11	They're waiting for you downstairs.
+10254_RUPRL_WelcomeAmongPartisans	1_11	American, I have read your dossier.  Chuikov may not trust you - but I say,  any man willing to kill Germans is welcome among the Partisans.
+10254a_RUPRL_HoldTheChurch	1_11	We must take and hold the church on the East side of town.
+10254b_RUPRL_MyFinestTroops	1_11	I will give to you some of my finest troops to command.
+10254c_RUPRL_GoodLuckComrade	1_11	Good luck comrade!  Go now!
+10258_1_RUPRL_Let'sGo	1_11	Let's go!  Za Rodinu!  Za Stalina!
+10258_RUPRL_SignalPartisanFighters	1_11	Next to the church is an ammunition dump.  If you destroy it - that will signal my men to attack.
+10258b_RUNPC_HonoredToFight	1_11	We're honored to fight with you comrade. Let's teach these Germans a lesson.
+10259_RUNPC_TakePositionOnHill	1_11	Over there - to the south. We must take that position on the hill.
+10259a_RUPRL_TakeGermanHQ	1_11	We have destroyed the railgun, but we still need to take the church. Get back out there and FIGHT!
+10259b_RUPRL_BackToFrontlines	1_11	What you doing here? Get back to the frontlines and take out the Headquarters!
+10260_RUNPC_NebelwerferClearShot	1_11	Get on that Nebelwerfer!
+10261_RUP#1_GreatJob	1_11	Great job, comrade!
+10262_RUP#2_TakeCover	1_11	Take cover!
+10263_RUP#3_GoingToBlow	1_11	She's going to blow!
+10263a_RUPAR_LookAtThat	1_11	Boshamoi, look at that!
+10264_RUP#1_NoIdea	1_11	The Fritzes had no idea what hit them!
+10265_RUP#2_StirredNest	1_11	We have stirred the hornets nest, comrades.
+10266_RUP#3_LookAtThat	1_11	God! Look at that!
+10266a_RUPRL_UpToYou	1_11	My partisans are no match for those Panzers! It's up to you, American!
+10267_RUP#3_DestroyPanzer	1_11	Destroy that Panther!
+10267a_RUP#3_PanzerInBuilding	1_11	Panzer!  In that building!
+10267b_RUPRL_RailGunAhead	1_11	The rail gun is just ahead. It must be destroyed!
+10268_GENPC_DestroyTheBridge	1_11	Destroy the bridge! Do not let them cross!
+10269_GENPC_Reloading	1_11	Reloading! Prepare to fire! - - Fire!!
+10270_GENPC_UnderAttack	1_11	We are under attack!
+10270a_RUPRL_ManyLivesSpared	1_11	Well done, comrade. Destroying that weapon spared many lives! The church will not be so easily taken.
+10271_RUPAR_PanzerOnHill	1_11	Panzer on hill!
+10272_RUPAR_PanzerBehindFence	1_11	Panzer! Behind fence!
+10274_RUPRL_ResupplyBeforeChurch	1_11	Comrade Holt - we control the building directly across from the graveyard.  Resupply there before taking the church.
+10275a_RUPRF_ComeWithMe	1_11	American! Come with me! You can resupply upstairs!
+10275b_RUPRF_I'llCoverYou	1_11	Get down there and take the church! I'll cover you from here!
+10275c_1_RUPRF_DieFacista	1_11	Die, Faciste!
+10275c_RUPRF_DieScum	1_11	Die, German scum!
+10275d_RUPRF_BurnInHell	1_11	This is for Mother Russia! Burn in hell!
+10275e_RUPRF_ForRussia	1_11	For Russia!!!
+10275f_RUPRL_AmmoDumpAhead	1_11	The Germans have an ammo dump just ahead. Destroy it!
+10275g_RUPAR_SetYourCharges	1_11	There is ammo dump! Set your charges! Blow it to hell!
+10275h_RUPRL_ReinforcementsOnTheWay	1_11	You have done it, comrade! Now our reinforcements will come!
+10278_RUP#1_OnTheWay	1_11	DA!  That is it comrade! -Now, our brothers will come!!!
+10279_1_RUPRL_SappersSighted	1_11	Partisan sappers sighted in vicinity of ammo dump. All forces converge on their position!
+10279_GENPC_MakeThemPay	1_11	ACH! The Russian dogs have blown the ammo dump! Make them pay!
+10279a_RUPRL_TakeThatChurch	1_11	Damn Fascists!  - Come on!!  Let's go!
+10279b_RUPAR_ChargeTheChurch	1_11	Charge the church!
+10279c_RUPRL_DestroyRadioTower	1_11	Cut off their communications! Destroy the radio tower in the courtyard!
+10280_RUP#1_CommTower	1_11	There is the communication tower! Take it out before the Fritzes call for backup!
+10281_RUP#2_GermanHQInsideChurch	1_11	The German Headquarters is inside the church ahead of us.  It is time, commrades, to crush the vermin once and for all. --Move in!
+10281a_RUPRL_GermanHQInsideChurch	1_11	You've done it, comrade. Their communications are down. Now get back to the church and FIGHT!
+10282_1_GENPC_AchtungEng	1_11	Achtung! All available troops!  Advance to the church immediately!
+10282_GENPC_Achtung	1_11	Achtung! All available troops!  Advance to the church immediately!
+10282a_1_GENPC_DefendTheChurchEng	1_11	Our headquarters are under attack! Defend the church!!
+10283_RUP#1_PASystemNearby	1_11	That PA system is somewhere nearby. Destroy it before more reinforcements arrive!
+10283a_GENEM_NowYouDie	1_11	This has gone far enough American--now you die!
+10284_RUP#1_TakenChurch	1_11	We have taken the church!
+10285_RUP#2_DefendChurch	1_11	Fight, comrades, fight!  We must defend the church!
+10286_RUP#2_GermanCounterAttack	1_11	It's a German counter-attack! -- Defend the church!
+10286a_1_GEGM1_RetreatEng	1_11	Retreat! The Russians have retaken the Church!
+10286a_GEGM1_Retreat	1_11	Retreat! The Russians have retaken the Church!
+10286b_1_GEGM2_FallBackEng	1_11	Fall Back! Fall Back!!!
+10286b_GEGM2_FallBack	1_11	Fall Back! Fall Back!!!
+10286c_RUPA1_They'reRetreating	1_11	They're retreating! We've done it!
+10286d_RUPA2_LookAtThemRun	1_11	Cowards!  Look at them run! Run!  Run back to your Fuhrer!.
+10286e_RUPRF_ThankYou	1_11	Spaceba americanytz. We owe you for this.
+10287_RUPRL_FoughtValiantly	1_11	You fought well American... The Soviet people are in your debt.
+CSA_Nebelwerfer	1_11	Press [$ACTION] to Fire Nebelwerfer
+CSA_Radio	1_11	Press  [$ACTION] to Radio OSS
+CSA_Signal	1_11	Press  [$ACTION] to Signal Reinforcements
+MO_BunkerAdd	1_11	Destroy Perimeter Bunker
+MO_BunkerComplete	1_11	Perimeter Bunker Destroyed
+MO_BunkerPause	1_11	Destroy Perimeter Bunker
+MO_CommAdd	1_11	Destroy Communication Tower
+MO_CommTowerComplete	1_11	Communication Tower Destroyed
+MO_CommTowerPause	1_11	Destroy Communication Tower
+MO_COSuccess	1_11	Objective Complete: Met with Russian Officer
+MO_EscapeAdd	1_11	Secure and Defend Church
+MO_EscapeComplete	1_11	Church Defended
+MO_EscapePause	1_11	Secure and Defend Church
+MO_EscapeSuccess	1_11	Church Defended
+MO_PartisanAdd	1_11	Locate Partisan Fighters
+MO_PartisanComplete	1_11	Partisan Fighters Located
+MO_PartisanPause	1_11	Partisan Fighters Located
+MO_Place3_Charges	1_11	%1 of %2 Charges Placed
+MO_PrimaryAdd	1_11	Destroy German Railgun
+MO_PrimaryComplete	1_11	German Railgun Destroyed
+MO_PrimaryPause	1_11	Destroy German Railgun
+MO_RescueAdd	1_11	Rescue Trapped Allies
+MO_RescueComplete	1_11	Allies Rescued
+MO_RescuePause	1_11	Rescue Trapped Allies
+MO_SignalAdd	1_11	Destroy Ammunition Dump
+MO_SignalComplete	1_11	Ammunition Dump Destroyed
+MO_SignalPause	1_11	Destroy Ammunition Dump
+MO_Tank_1of3_Destroyed	1_11	Tank %1 of %2 Destroyed
+MO_Tank_3of3_Destroyed	1_11	3 Panzer Tanks Destroyed
+MO_TankAdd	1_11	Destroy 3 Panzer Tanks
+MO_TankComplete	1_11	3 Panzer Tanks Destroyed
+MO_TankNext	1_11	Panzer Tank Destroyed
+MO_TankPause	1_11	Destroy 3 Panzer Tanks
+NemesisName	1_11	Walther Neumann
+OSSDocumentFound	1_11	Ardennes Forest Recon Dossier Obtained
+14012_Chuikov_YouWillShareOurVictory	1_15	You have done well, Comrade Holt.  Today you will share in our victory.  You are to kill Von Schraeder's elite tank commanders in the field and then destroy their command bunker - deep behind their lines.  That will be your honor.  It is time to drive the fox to the hounds.  We will start in the village ahead of us.  The Germans came to us with "lightening"...now, we will unleash "thunder!"
+14015_Chuikov_ForRussiaForStalin	1_15	FOR RUSSIA, FOR STALIN!!!
+14016_ALL_ForRussia	1_15	FOR RUSSIA!!!!
+93999_RUS5BRF_OperationUranus	1_15	The Russians have suffered greatly, now they fight with a vengeance. Word is the info I'm looking for is close by, but I'll have to fight through hell to get it.  The Russians are planning an attack today.  I'll be with them.  Have orders to recover and send Virus House info back to the OSS. This man is guarding it closely.  The Russians want it too.  Been ordered to destroy the intel after transmission. HQ wants to keep it out of Russian hands.  Feels like we're at a turning point.
+94000_RUNPCGEN_SPEECH	1_15	Today comrades, our goal is not only victory, our goal is vengeance! For the people! For Stalin! FOR RUSSIA!!! Attack!
+94000a_RUNPC_ForStalin	1_15	For Stalin!
+94000b_RUNPC_ForRussia	1_15	For Russia!
+94000c_RUNPC_ForTheMotherland	1_15	For the motherland!
+94001_RUNPCGEN_Attack	1_15	Attack!
+94001a_RUNPC_Charge	1_15	Charge!
+94001b_RUNPC_Forward	1_15	Forward!
+94001c_RUR5WT_BreakingThroughLines	1_15	Our comrades control this side of the river but German patrols are breaking through our lines.
+94001d_RUR5WT_Panzer	1_15	Panzer!
+94001e_RUR5WT_FireFire	1_15	Fire! Fire!
+94002_RUNPC_PanzerTakeCover	1_15	Panzer!! Take cover!
+94002a_RUNPC_BrokenThroughTheLines	1_15	The fascists have broken through!
+94003_RUNPC_PanzerIsTearingUsApart	1_15	That Panzer is killing us!!  Take it out!
+94004_RUNPC_GermansInBuildings	1_15	The Germans have moved into the buildings!  Go, clear them out!
+94004a_RUNPC_MG42InWindow	1_15	Machine gun!  In the window!
+94005_RUNPC_ReinforceTheTrenches	1_15	Reinforce the trenches!  Move up!
+94005a_RUNPC_VillageIsOurs	1_15	Harashaw! The village is ours!
+94005b_RUNPC_We'veTakenTheVillage	1_15	We have taken the village!  Move up!
+94005c_RUNPC_AmericanDestroyedThePanzer	1_15	Yes!  The American destroyed the Panzer!
+94010_RUNPC_We'reAllGoingToDie	1_15	We are all going to die!
+94010a_RUNPC_MamaMama	1_15	They're coming!  They're coming!
+94010b_RUNPC_MakeItStop	1_15	For the love of God!  Make it stop!
+94010c_USOSS_GetToTrenches	1_15	Holt.Mission 6. Too slow! Get moving! Get in those trenches!
+94010d_USOSS_SouthOfBridge	1_15	Holt.Holt... Mission 6. Be advised I'm holding in the center trench, south of the bridge. Get here.in a hurry.
+94010e_USOSS_WhereAreYou	1_15	Holt.This is Mission 6. Where are you? Say your position!
+94011_RUNPCRCO_GetOverHereHolt	1_15	Comrade Holt!  Get over here!
+94011a_RUNPCRCO_LaySuppressiveFire	1_15	Holt - lay down suppressive fire! Second squad - Advance!
+94011b_RUNPCRCO_HoltGetBackHere	1_15	Damn you, American! Get back here! --I gave you an order!
+94012_RUNPC_TalkToCO	1_15	Talk to the Colonel!  He is in the next trench!
+94012a_RUNPC_TakeTheGun	1_15	American! Take that weapon!
+94012b_RUNPC_AcrossRiver	1_15	Across the river!!! Open fire!!
+94012c_RUP#1_TankCrew	1_15	Tank crew dead ahead!
+94013_RUNPC_NextTrenchOver	1_15	Talk to the CO - he's in the next trench!
+94013a_RUNPC_PinnedDown	1_15	We're pinned down!!!
+94013b_RUSGI_Incoming	1_15	Incoming!!!
+94014_RUNPCRCO_They'reBeingSlaughtered	1_15	They are being slaughtered!  We need to weaken those defenses!  Call in rocket strike!
+94014a_RUNPCRCO_SoftenThoseDefenses	1_15	We need to weaken those defenses!
+94014b_RUNPCRCO_CallARocketStrike	1_15	Call in a rocket strike!
+94014c_RUNPCRCO_GetAFlareOnBunker	1_15	Holt, mark that bunker with a flare!  --Then get the hell out of there!
+94014d_RUNPCRCO_SergeiWillProvideCover	1_15	Sergei will cover you!  Good luck, comrade!
+94014e_RUPRL_SmokeCanister	1_15	On the road, find the smoke canister, set it off!
+94014f_RUPRL_TriggerSmokeSignal	1_15	You must set off that smoke signal!!!
+94015_RUNPCSRG_WeMustTakeCover	1_15	Comrade! We must take cover!
+94015a_RUPRL_VisualOnSignal	1_15	Harashaw, we see your signal! Find cover NOW!
+94016_RUNPCSRG_WellDoneComrade	1_15	Well done! Stalin himself should give you a medal...
+94016a_RUPRL_TakeTheRectory	1_15	Forward up the hill! Take the rectory!
+94020_RUNPCRCO_RearAssaultOnRectory	1_15	Mount an assault on the Rectory!  Take it from the rear!
+94023_RUNPC_TakeOutPanzers	1_15	They are killing our tanks!  Take out those Panzers!
+94024_RUNPC_WeMustTakeOutPanzer	1_15	Destroy that Panzer!
+94025a_RUPRL_BlowTheGate	1_15	Our Reinforcements are standing by! Blow the gate!
+94026_RUNPC_OnwardToRectory	1_15	Forward to the Rectory!  GO!
+94032a_RUPRL_SuppressMGs	1_15	Comrade Holt! I can see you! We're pinned down in the trenches! Suppress those Machine Guns!
+94040_RUNPC_MustTakeOut88s	1_15	We have got to take out those 88's!
+94040a_RUNPC_MustTakeOut88s	1_15	We have got to take out those guns!
+94041_GENPC_Where'sMyAmmo	1_15	Hans! Hans! Where's my ammo!?
+94042_GENPCNEM_RussiansClosingIn	1_15	The damn Russians are closing in!  --Don't let them get the plans!
+94043_RUNPC_NoEnterBuilding	1_15	No one enters that building until the General arrives!
+94043a_RUNPC_HoldYourPositions	1_15	We have the Fritzes surrounded!  Hold your positions, men!
+94043b_RUNPC_GeneralWantsBuildingIntact	1_15	Watch you fire!  General Chuikov wants this building left untouched!
+94043c_RUNPC_ComeBack	1_15	HEY! Get back here! --Damn American!
+94044_GENPCGEN_ProtectIntelligence	1_15	Here are your orders now:  You will protect our intelligence documents at all costs!
+94045_USNPCDON_DestroyAllEvidence	1_15	Roger our last transmission.  Mission follows- destroy all intel and do it before the Soviets can get there.  Out, copy, over.
+94046_RUNPCGEN_WhoGaveOrder	1_15	Who gave the order to enter the Rectory?  TELL ME!!
+94046a_RUNPCGEN_ShouldHaveShotHim	1_15	The American, comrade General. --I should have shot him.
+94046b_RUNPCGEN_GemansDestroyedHQ	1_15	The Germans did this to keep their intelligence from  us.  --Comrade Holt, did you see anything when you were inside?
+94046c_RUNPCGEN_DsvedonyaComrade	1_15	You have been of great service to Soviet people, it is a pity that you will be leaving - empty handed.   Perhaps it is for the best.
+CSA_Radio	1_15	Press  [$ACTION] to Radio OSS
+CSA_SmokeSignal	1_15	Press  [$ACTION] to Trigger Smoke Signal
+MO_ArtilleryAdd	1_15	Destroy the Artillery Guns
+MO_ArtilleryNext	1_15	Charge Placed
+MO_ArtilleryPause	1_15	Destroy Artillery Guns
+MO_ArtillerySuccess	1_15	Artillery Guns Destroyed
+MO_Charge_Next	1_15	%1 of %2 Charges Placed
+MO_COAdd	1_15	Meet with Russian Officer
+MO_COPause	1_15	Meet with Russian Officer
+MO_COSuccess	1_15	Objective Complete: Met with Russian Officer
+MO_EscapeAdd	1_15	Destroy German Intelligence
+MO_EscapePause	1_15	Destroy German Intelligence
+MO_EscapeSuccess	1_15	German Intelligence Destroyed
+MO_GateAdd	1_15	Destroy Rectory Gate
+MO_GatePause	1_15	Destroy Rectory Gate
+MO_GateSuccess	1_15	Rectory Gate Destroyed
+MO_Place3Charges	1_15	%1 of %2 Charges Placed
+MO_PrimaryAdd	1_15	Radio Intelligence to OSS
+MO_PrimaryPause	1_15	Radio Intelligence to OSS
+MO_PrimarySuccess	1_15	Intelligence Transmitted to OSS
+MO_SignalAdd	1_15	Signal Rocket Strike
+MO_SignalPause	1_15	Signal Rocket Strike
+MO_SignalSuccess	1_15	Rocket Strike Signaled
+MO_TankAdd	1_15	Destroy Panzer Tank
+MO_TankPause	1_15	Destroy Panzer Tank
+MO_TankSuccess	1_15	Panzer Tank Destroyed
+NemesisName	1_15	Franz Gruebner
+OSSDocumentFound	1_15	Heavy Water Test Logbook Stolen
+01907_Hardcastle_CommandosOnYourFeet	1_2	COMMANDOS!  ON YOUR FEET!
+01964_Commando3_Incoming	1_2	INCOMING!!!!
+01967_Commando3_JesusChrist	1_2	JESUS CHRIST!!!
+01971_Pilot_WeveLostNumberOne	1_2	We've lost the number one.  We're losing power.
+01976_LtRoderick_AllRightLadsForward	1_2	All right, lads!  Forward!!
+01979_Hardcastle_HurryItUpMen	1_2	Hurry it up, men!
+01993_LtRoderick_DoItCollins	1_2	Do it, Collins!!
+01995_LtRoderick_ComeOnMenAttack	1_2	Come on, men!  Attack!!!!
+02063_LtRoderick_GetToThePetrolTanks	1_2	Whatever happens men, get to the petrol tanks!
+02106_Commando3_SecureThisFloor	1_2	Come on! Secure this floor!
+02123_LtRoderick_TroopTrain	1_2	TROOP TRAIN!
+02137_German2_Fire	1_2	FIRE!!
+02161_GermanComdant_EnemyIsInRailYard	1_2	Attention!  Attention! All Garrison soldiers, the enemy is in the railyard!  Reinforcements are on the way!
+02164_SgtGibbs_DigInGetReady	1_2	Dig in!  Get ready!
+02165_Commando1_HereTheyCome	1_2	Here they come!
+02199_Commando2_LooksLikeATunnel	1_2	Sir, we've got an opening.  Looks like a tunnel.
+02200_LtRoderick_GoodWorkArcher	1_2	Good work, Archer.  I need some men down there!
+02201_LtRoderick_ReportackWhenYouveCompleted	1_2	Report back when you've completed your task.
+02208_Upton_ThoseGunsAreHammering	1_2	Those guns are 'ammering on our boys out there!
+02208c_Upton_RightTimeToShutEmDown	1_2	Right!  Time to shut 'em down!
+02208d_Upton_GetToTheShoreGuns	1_2	Get to the shore guns!
+02217a_Ally01_GreatJob	1_2	Great Job!
+02217c_Ally03_AnotherWayUp	1_2	I'm going 'round back!  There may be another way up!
+02217d_Ally04_CarefulUpThere	1_2	Be careful up there!
+02249_LtRoderick_PlantTheCharges	1_2	Get up top to plant the charges
+02264_LtRoderick_ReGroupForTheNextStrike	1_2	Set up a perimeter.  Re-group for the next strike.
+02265_SgtGibbs_DemoTeamsStandBy	1_2	Demo teams, stand by!
+02266_Commando2_GreatJobHolt	1_2	Great job, Holt!
+02268_Upton_HappyBirthdayAdolph	1_2	If you think that was big, yank, what till these Huns get a taste o' the surprise we have for 'em inside the Campeltown!  8 tons o' depth charges.  Happy Birthday, Adolph!
+91010_1_USHLT_ForWhatWasRight	1_2	when people ask me what I did in the war, I tell them  I did the same thing we all did..we fought for what was right.
+91010_USOHT_ForWhatWasRight	1_2	when people ask me what I did in the war, I tell them that I did the same thing we all did....we fought for what was right...  We were just ordinary people asked to do extraordinary things.  I've come to realize that there's nothing good about war, but there is good in why you fight wars.  And we were all fighting for the same thing...
+91012_1_USHLT_FightingForTheSameThing	1_2	I've come to realize that there's nothing good about war..but there is good in why you fight wars...and we were all fighting for the same thing.
+91012a_1_USHLT_FightingForTheSameThing	1_2	They called it the greatest raid ever.  (pause) The memories I have don't even seem real to me.  Like pictures out of some book. (pause) I was the only American with them.  If I didn't make it, no one could know.  I was an officer with the OSS.  I was there.
+91012a_USVHT_FightingForTheSameThing	1_2	They called it the greatest raid ever.  (pause) And the memories I have don't even seem real to me.  It's like pictures out of some book. (pause) I was the only American with them.  If I didn't make it, no one could know.  I was an officer with the OSS.  And I was there.
+91025_UKNPCPCM_LordsPrayer	1_2	Our Father who art in Heaven...hallowed by thy name...Thy kingdom come, thy will be done, on earth as it is in Heaven...
+91027_UKNPCCDO_DoesntFeelRight	1_2	This doesn't feel right.
+91028_UKNPCCDO3_CheckMagazines	1_2	Check your magazines.  Remember to stay low.
+91029_UKNPCHMD_WaitForThisMoment	1_2	You know, Holt, when I volunteered I couldn't wait for this moment.  Now that it's here...
+91029a_USHOLT_DoYourJob	1_2	You'll do fine Hammond.
+91030_UKNPCRLY_GerriesThinkWereTheirOwn	1_2	Winslow's been monitoring the radio, sir.  Looks like the stolen signals worked. The Gerries still think we're one of their own.
+91031_UKNPCNWM_Bugger	1_2	Incoming!
+91032_UKNPCNWM_TheyreOnToUS	1_2	THEY'RE ONTO US!  -- Get down!
+91033_UKNPCNWM_TellRodrick	1_2	Mr. Reilly!  Tell Roderick...
+91034_UKNPCNWM_EnginesFull	1_2	Helm, all engines full!
+91035_UKNPCESN_AyeSir	1_2	All engines full, aye sir!
+91036_UKNPCNWM_RaiseTheFlag	1_2	Raise the flag, men!  We'll ram it down their throats!
+91037_UKNPCNWM_ReturnFire	1_2	Return fire!
+91038_UKNPCJKN_Firing	1_2	FIRING!
+91039_UKNPCJKN_FasterMordrey	1_2	Faster!
+91040_UKNPCMDY_Ready	1_2	Ready!
+91041_UKNPCCCO_FifteenSeconds	1_2	Fifteen seconds to impact!
+91042_UKNPCUPT_WereGoingToHit	1_2	This is it, lads!  We're going to hit!
+91043_UKNPCUPT_HangOnToSomething	1_2	Hang on to something!
+91044_GENPC_WatchOut	1_2	Watch out!  Get back!
+91900_UKNPC_MoveJerry'sWaitin'	1_2	Get up, lads!  Move out!
+91900a_UKNPC_Let'sGet'em	1_2	Right!  Let's get 'em!
+91901_UKNPC_GroupRightStraightLeft	1_2	You men - shore guns to the right!  Petrol tanks straight ahead!
+92000_UKNPC01_WeHaveToGetUpToThatRooftop	1_2	The Krauts on the roof have got us pinned down! We've got to stop that AA Gun!  Our bombers can't get through!
+92002_GENPC01_TommiesByTheAAGun	1_2	Hello!  Hello!  There are Tommies at the AA gun!  Send reinforcements!
+92003_UKAlly02_StairwayAmmoRushThem	1_2	I think they're moving ammo up these stairs!  C'mon, we'll get the drop on 'em!
+92003b_UKAlly02_GreatJob	1_2	Good work!
+92004_UKNPC01_ShoreGunKnockingOutEscapeBoats	1_2	Dammit!  That shore gun is blocking our escape boats.  We've gotta hit it - and hit it fast!
+92005_UKNPC02_Bunkerfieldtrouble	1_2	The Gerries are thick in the bunker field!  I'm gonna give our boys a hand!
+92006_UKNPC03_LongWalkHome	1_2	Christ!  They got another boat!   If we don't hurry we'll be walking home!
+92007_UKNPC04_RunningOutOfAmmo	1_2	We're low on ammo!  We've got to stop those reinforcements!
+92008_GENPC01_Wemuststopthemhere	1_2	Look!  To the right" "There!  On the left!" "Keep firing!  We have to hold this position!
+92009_GENPC02_SetTheTrap	1_2	Pull back!  Everyone back!  Set the trap!
+92010_UKNPC05_AmbushRightFlank	1_2	To the right! Gerries on the dock!  It's an ambush!
+92011_UKNPC06_PutAChargeOnThatGun	1_2	Set a charge on that gun!  I'll cover the tunnel.
+92012_UKNPC07_GetBoatsInForEscape	1_2	Good!  Now the escape boats can get into position!
+92013_UKNPC08_Ifwesurvivethatlong	1_2	Yeah, if we live that long.
+92014_UKNPC09_WhatIsDownInThatBunker	1_2	Can you see what's down in that bunker?
+92015_GENPC03_Killltheintruders	1_2	Kill the intruders! YAHHH!!!!
+92030_UKNPC_FuelTanksMoveUp	1_2	Look!  There are the petrol tanks.  Move up, lads.
+92031_GENPC_FallBackToPipes	1_2	All right!  Fall back to the pipes!
+92032_UKNPC_GuysTooOrganized	1_2	This doesn't feel right, sir!  They're too well organized.
+92032a_UKNPC_WatchOutForTheLights	1_2	Stay clear of the light beams!  -Someone kill those lights!
+92033_GENPC_WeAreUnderAttack	1_2	We're under attack!  We need reinforcements at the bunker field!  Now!  Now!
+92033a_GENPC_PullBackOpenFire	1_2	Pull back to the bunker!  Machine gunners prepare to fire!
+92034_GENPC_CatchThemInTrap	1_2	Fall back to the wall!  Quickly!  Stand by!!!
+92034a_GENPC_BunkerIsChewingUsUp	1_2	That bloody bunker's eating us alive!
+92035_UKNPC_GetSatchelCharge	1_2	Someone get a satchel charge up here!
+92036_UKNPC_RunForItCoveringFire	1_2	I'm going!  Cover me!!
+92036a_GENPCNEM_Aaaaarrgh	1_2	Aaaaarrgh!!
+92037_UKNPC_FindAnotherWayThrough	1_2	We can't get through the fence! There's got to be another way!
+92038_UKNPC_PerimeterMG42's	1_2	The field is secure!  Rollins, set up a perimeter!  You men - collect their weapons!
+92038a_UKNPC_SetUpPerimeter	1_2	The field is secure!  Rollins, setup a perimeter!  You men - collect their 42s!!
+92039_UKNPC_YourOnlyPath	1_2	That's the way, but they're like rats in a sewer down there.  Watch yourself.
+92042_UKNPC_GreatJobHolt	1_2	Good work out there, Holt!
+92044_UKNPC_EnemyComingIn	1_2	More Gerrie reinforcements!  Here they come!!!
+92046_UKNPC_ExplosionFromBerlin	1_2	The Huns probably saw that blast all the way in Berlin!
+92047_UKNPC_ThoughtWeLostYou	1_2	God, thought we lost you when that train rolled in.
+92048_UKNPC_SeenHoltFight	1_2	Oh, you shoulda' seen our man Holt fightin' out there!
+92049_1_UKNPC_StrikingThePowerStation	1_2	Alright, lads!  Into your squads!  We're striking the power station!
+92049_UKNPC_StrikingTheTown	1_2	Alright, lads!  Into your squads!  We're striking the town!
+92049a_UKNPC_RightSir	1_2	Right, sir! / Sah!
+92050_UKNPC_ChargeOnControlPanel	1_2	You'll have to set the charge on the control panel at the top of the stairs!  Go on!
+92051_UKNPC_GetOutBeforeItBlows	1_2	Come on, get out of there!  Get clear!!!
+92052_UKNPC_BlowTheWall	1_2	Gotta blow the wall, sir!  Take cover!  - BLASTING!
+92053_UKNPC_She'sGonnaBlow	1_2	There she goes!!!!
+92054_UKNPC_GreatJobHolt	1_2	Great Job, Holt!
+92054a_UKNPC_NotSoFastBoys	1_2	Steady on, lads!  We still have to make it out of here!
+92057_GENPC_ShootHim	1_2	Shoot him!!!  Shoot!
+92057a_GENPC_KillTheStupidAmerican	1_2	Kill the American!  Kill him!!!!
+92057c_GENPCNEM_StayClose	1_2	Stay close!
+92057d_GENPCNEM_FireAtWill	1_2	OPEN FIRE!!!!
+92058_GENPCNEM_AlliesAreHere	1_2	The damn Englanders are here!
+92058a_GENPCNEM_SecureDocuments	1_2	Security alert!  Lock up all sensitive materials!
+92058b_GENPCNEM_ShootToKill	1_2	Kill the Englanders!
+92060_UKNPC_GetThroughThatBunker	1_2	We've gotta get through that bunker!
+92061_UKNPC_ComingThroughTheTunnels	1_2	The damn Enlanders are coming through the tunnels!
+92075_GENPC_They'reComing	1_2	They're coming!
+92076_GENPCNEM_He'sInTheTunnels	1_2	He's in the tunnel.
+92077_UKNPC_AreaIsSecure	1_2	Area secure, sir!  Come on!  Let's get to the petrol tanks!
+92100_USS2WT_CrossOpenArea	1_2	Holt, that's wide open and no cover between you and the fuel tanks.  Watch yourself!
+92100a_FRS2WT_CrossOpenArea2	1_2	You have to cross a wide open area to get to the fuel tanks, be careful.
+92101_USS2WT_TakeOutShoreGuns	1_2	Holt, orient yourself and get over to the docks.  You've gotta take out the shore batteries.
+92101a_FRS2WT_TakeOutShoreGuns2	1_2	Holt, come in, get over to the docks and take out those shore guns.
+92102_USS2WT_MachineGunStronghold	1_2	Holt, we're taking plunging fire from the roof.  Get up there and take 'em out!
+92102a_FRS2WT_MachineGunStronghold2	1_2	Holt, there is a heavy machine gun on the roof, find a way to take it out.
+92103_USS2WT_TunnelSystem	1_2	Holt, stand by for mission modification.  We've got reports that an intricate tunnel system is located in that area.  There may be sensitive documents inside.
+92103a_FRS2WT_TunnelSystem2	1_2	Holt, we believe the Germans may be using an intricate tunnel system in your area they may be keeeping sensitive documents inside.
+92104_USS2WT_BeOnTheLookout	1_2	Holt, German reinforcements have been spotted leaving the garrison, moving by rail, headed your way.
+92104a_FRS2WT_BeOnTheLookout2	1_2	Holt, there is a trainload of German reinforcements coming your way.  Stay sharp!
+CSA_OpenDoor	1_2	Press [$ACTION] to Open Door
+CSC_Initiate	1_2	Counter Performed. Reinforcements Deployed!
+EnemySquadKilled	1_2	Enemy Squad Eliminated! + 20%
+MO_AAAdd	1_2	Locate and Destroy Anti-Aircraft Gun
+MO_AAPause	1_2	Locate and Destroy Anti-Aircraft Gun
+MO_AASuccess	1_2	Anti-Aircraft Gun Destroyed
+MO_BunkerAdd	1_2	Capture German Bunker
+MO_BunkerPause	1_2	Capture German Bunker
+MO_BunkerSuccess	1_2	German Bunker Captured
+MO_DocumentsAdd	1_2	Find and Secure Axis Documents
+MO_DocumentsPause	1_2	Find and Secure Axis Documents
+MO_DocumentSuccess	1_2	Secret Documents Secured
+MO_EscapeAdd	1_2	Return to HMS Campbeltown
+MO_EscapePause	1_2	Return to HMS Campbeltown
+MO_EscapeSuccess	1_2	You Have Successfully Escaped
+MO_PrimaryAdd	1_2	Destroy Fuel Tank
+MO_PrimaryPause	1_2	Destroy Fuel Tank
+MO_PrimarySuccess	1_2	Fuel Tank Destroyed
+MO_PumpAdd	1_2	Destroy pump house
+MO_PumpPause	1_2	Destroy pump house
+MO_PumpSuccess	1_2	Pump house Destroyed
+MO_ShedAdd	1_2	Destroy Winding Shed
+MO_ShedPause	1_2	Destroy Winding Shed
+MO_ShedSuccess	1_2	Winding Shed Destroyed
+MO_ShoreAdd	1_2	Destroy Shore Gun
+MO_ShorePause	1_2	Destroy Shore Gun
+MO_ShoreSuccess	1_2	Shore Gun Destroyed
+NemesisDefeated	1_2	Nemesis Defeated!
+NemesisName	1_2	Klaus Mueller
+OSSDocumentFound	1_2	V2 Rocket Fuel Specifications Found
+Tutorial_Adrenaline	1_2	- You just performed a head shot and earned Adrenaline.|- You can earn Adrenaline by:|    - Melee kills & headshots|    -Completing secondary objectives & healing squad members|- Experiment to find other ways to earn adrenaline.
+Tutorial_AdrenalineMode	1_2	Your Adrenaline is now full!|[>Activate_Adrenaline] to use your Adrenaline.|When using Adrenaline, you are invincible, your bullets do extra damage, and your weapon has unlimited ammo.|
+Tutorial_Aiming	1_2	Enemy troops will have difficulty shooting you in cover.|[>Aim] to use Iron Sights.|[>Strafe_LeftRight] to peer around corners.|[>Move_ForwardBackward] to peek over cover or duck.
+Tutorial_Demolition	1_2	- Press and Hold [>Action] to set a Demo Charge. The Demo charge will not be successfully set until the timer is filled.|- Once the timer is set, the timer will countdown to detonation.|- Use Demo Charges to destroy doors, vehicles and heavy artillery.
+Tutorial_Grenades	1_2	- Throw Grenades by using the [>Activate_Grenade]. There are 4 different ways to throw grenades:|- Tap [>Activate_Grenade] to toss Grenade|- Press [>Activate_Grenade] to throw Grenade|- Hold [>Activate_Grenade] to throw Grenade farther|- Press "L1" to Cook Grenade. Cooking the Grenade allows you to control when the Grenade explodes. The Grenade will cook for 5 Seconds and explode.
+Tutorial_Medkit	1_2	Your Health is now less than 50%.|Find Canteens to provide a small but instant increase. |[>Activate_Medkit] to use a Medkit for a large increase.
+Tutorial_Pause	1_2	 |[>Pause] to review your Objectives and status.|[>Map] to view your Map and current location.
+Tutorial_Primary	1_2	- Complete the Primary Objective in order to accomplish your mission.|- Use the Compass to navigate and follow the Yellow Arrow.
+Tutorial_Revive	1_2	- Earn Revives by completing Secondary Objectives.|- Revives can be found where the Secondary Objective was completed.|- When your health reaches 0 and you have a Revive remaining, you will continue the mission from your current location.|- When you are out of Revives and your Health reaches 0, you must restart the mission.|- You can only carry 5 Revives in your inventory.
+Tutorial_Secondary	1_2	- You just discovered a Secondary Objective.|- Completing a Secondary Objective will earn a Revive and contribute to your mission score.|- Use the Compass to navigate by moving in the direction of the Blue Arrow.
+Tutorial_SquadControl	1_2	You command three squad members identified with Green Stars.|[>Send_Squad] to order your squad into battle.|[>Recall_Squad] to order your squad to return.
+Tutorial_SquadHealth	1_2	- A member of your squad is low on health!|- To heal them with a Med Kit, target at close range and press [>Action]. |- The squad icon indicates the squad member's curent health.|     Green = High       Yellow = Medium       Red = Low
+Tutorial_StanceChange	1_2	- Change Stance to become a smaller target for enemies, and to increase weapon accuracy. The Stance indicator tells you at a glance what position you are currently in.|- Weapons are most accurate in prone, and least accurate while standing.|- Press [>Stance_Down] to move down to crouch or prone.|- Press [>Stance_Up] to move up, crouch, stand or jump
+Tutorial_Weapons	1_2	- Stand over a weapon and press [>Action] to swap your current weapon with it.|- Swap out your weapons for more powerful weapons like Sniper Rifles and Bazookas.|- You are only able to carry two weapons at a time.
+TutorialTitle_AdrenalineMode	1_2	Using Adrenaline
+TutorialTitle_AdrenalinePoints	1_2	Earning Adrenaline
+TutorialTitle_Aiming	1_2	Using Cover
+TutorialTitle_Demolition	1_2	Demolition Charges
+TutorialTitle_Grenades	1_2	Grenades
+TutorialTitle_Medkit	1_2	Health
+TutorialTitle_Pause	1_2	Pause and Mission Map
+TutorialTitle_Primary	1_2	Primary Objective
+TutorialTitle_Revive	1_2	Revive
+TutorialTitle_Secondary	1_2	Secondary Objectives
+TutorialTitle_SquadControl	1_2	Controlling Your Squad
+TutorialTitle_SquadHealth	1_2	Healing Your Squad
+TutorialTitle_Stance	1_2	Stance
+TutorialTitle_Weapons	1_2	Weapons and Ammunition
+14960a_BoB1BRF_TwinVillages	1_21	I hear the Nazis are losing steam.  Everyone's hoping for a quick victory.  The OSS has tracked Von Schrader to Belgium.  A French Resistence operative, Manon du Champs, reported that she'd found something - now she's missing.  Orders are to go to the American Command Post near her last position and get more info.  Don't know what Von Schrader's doing out here.  Intel says a German General named Kappelhoff is linked to him somehow.    Going forward to check the line.  None of this feels right.
+15043_Reyes_Grenade	1_21	GRENADE!!!!
+15045_German3_ComeOnOverTheWall	1_21	Come on!  Over the wall!
+15052_Reardon_LookOutMen	1_21	Look out, men!!
+15056_Pecos_AmmoINeedAmmo	1_21	Ammo!  I need ammo!!!
+15057_GermanRadioOP_AllSquadsMoveForward	1_21	All squads move forward.
+15060_German4_KillTheAmericans	1_21	Kill them!  Kill the Americans!
+15061_German5_MoveUpHurry	1_21	Move up!  Move up!  Hurry!
+15062_German10_DieAmericans	1_21	Die, Americans!!!
+15063_GermanRadioOP_ArmorUnitsMoveForward	1_21	Armor units move forward!
+15065_Reardon_TheCommandPostStopEm	1_21	The command post!  They're heading to the command post!!  We've got to stop 'em!
+15070_German7_CommandPostIsThatWay	1_21	The command post is that way!
+15071_German8_GoGo	1_21	Go!  Go!
+15073_German8_DontLetThemStopYou	1_21	Don't let them stop you!
+15074_German9_CutThroughTheAmericans	1_21	Cut through the Americans!
+15075_German7_DamnDogs	1_21	Damn Dogs!
+15083_GI1_CutEmOff	1_21	Cut 'em off!  Cut 'em off!
+15084_GI2_TheyreTryingToCutAround	1_21	They're trying to cut around!
+15090_GI1_StayLowWatchIt	1_21	Stay low!  Watch it!!
+15092_GI3_WhyDontYouTellThat	1_21	Why don't you tell that to them!
+15100_GI3_HeyGILendUsAHand	1_21	Hey, GI - lend us a hand!
+15101_GermanRadioOP_ForwardUnits	1_21	Forward units!  Do you see your objective!
+15102_German3_CommandPostIsInSight	1_21	Affirmative!  The command post is in sight!
+15105_GermanRadioOP_DestroyAmericanCommandPost	1_21	Forward units!  Do not fail to reach your objective.  Destroy the American command post!
+15107_German4_KeepFighting	1_21	Keep fighting!
+15108_German5_MoveUpTakeMoreGround	1_21	Move up!  Take more ground!
+15112_GI3_MoreSuppressiveFire	1_21	More suppressive fire!!!!
+15113_GI1_NeedHeatOnTheLeft	1_21	I need some heat on the left!!!
+15122c_GI3_AreaSecureGoodJob	1_21	Area secure!  Good job!
+15122e_GI1_NiceWorkWereClear	1_21	Nice work!  We're clear!
+15132_AmericanRadioOP1_BattalionThisIsBravo	1_21	Battalion!  This is Bravo!  We've got massive enemy movement!  Jesus, where's they come from!!!???
+15133_BattalionRadioOP_HoldThemBackBravo	1_21	Hold them back, Bravo!
+15135_AmericanRadioOP1_GetDown	1_21	How'd they nail our position!?  GET DOWN!
+15136_AmericanRadioOP1_WereTakingCover	1_21	We're taking cover, battalion!
+15137_BattalionRadioOP_MovingUnitsToYourPosition	1_21	I read you!  Moving units to your position!
+15138_AmericanRadioOP3_MovementAtTheBridge	1_21	Battalion, we've got movement at the bridge!!  We need help over here!
+15143_Lopez_ThisIsEasyRadiomansDead	1_21	Battalion!  Come in! This is Easy!  Our radioman's dead!  Everyone's dead!  I'm the only one!
+15144_BattalionRadioOP_EasyComeIn	1_21	Easy! Come in!  What is your situation?
+15145_Lopez_GermansRushingLeftFlank	1_21	I've got Germans rushing the left flank!
+15146_Lopez_ImHoldingThemOff	1_21	I'm holding them off though..
+15147_BattalionRadioOP_SayAgainDidYouSay	1_21	Say again...did you say you're holding them?
+15148_Lopez_AffirmativeRepeatSolo	1_21	Affirmative!  Repeat! Solo!  Short on ammo though....I need some fast!
+15150_AmericanRadioOP1_EnemyUnitsFloodingOurArea	1_21	Battalion!  This is Bravo!  We've got enemy units flooding our area!
+15151_BattalionRadioOP_IReadYouBravo	1_21	I read you, Bravo.  Hold them as best you can!  We're sending reinforcements!
+15152_AmericanRadioOP1_AffirmativeBattalionHurry	1_21	Affirmative, Battalion.  Hurry!
+15153_AmericanRadioOP2_GermansEverywhere	1_21	Germans!  Germans everywhere!  We keep killing them with our machine guns...they just keep coming!
+15154_AmericanRadioOP3_TheyHaveTigerTanks	1_21	They have Tiger Tanks!  Bigger!  Bigger than Tigers.  Our bazookas aren't working against them!
+15157_Hutchins_ComeOnLetsGo	1_21	Come on!  Let's go!
+15157a_Hutchins_LetsGoChief	1_21	Let's go, chief!  Time's wasting!
+15157c_Hutchins_Forward	1_21	Forward!!!!
+15157s_Hutchins_Incoming	1_21	Incoming!
+15158d_German10_Yaaaiiiyyy	1_21	Yaaaiiiyyyy!!
+15158f_Hutchins_GreatJobGI	1_21	Great job, GI.  Thanks for the help!
+15159_Cross_DammitRiggs	1_21	Dammit, Riggs!  They're too accurate with those shells!
+15160_Cross_TheyveGotASpotter	1_21	I'm telling you, they've got a spotter out here.  Close by.  I think he's up there!
+15161_Riggs_IDontSeeAnything	1_21	I don't see anything.
+15163_GermanRadioOP_EagleThisIsThorsHammer	1_21	Eagle, this is Thor's hammer.  We are waiting for the next target.
+15164_GermanSpotter_ThisIsEagle	1_21	This is Eagle.  Direct fire:  King's Crown - grid square 7.
+15165_GermanRadioOP_KingsCrownGridSquare	1_21	King's Crown - grid square 7. Relaying.
+15166_GermanSpotter_ConfirmedHit	1_21	Yes.  Confirmed hit.  Stand by.
+15167_GermanRadioOP_ThorsHammerStandingBy	1_21	Good.  Thor's hammer Standing by.
+15168_GermanSpotter_AhhhGetBack	1_21	AHHH!!!  GET BACK!!!
+15169_GermanSpotter_DieAmericanScum	1_21	DIE, AMERICAN SCUM!
+15170_GermanSpotter_GhhaaYouBastard	1_21	GHHAAA!!!  YOU BASTARD!!!!
+15171_GermanRadioOP_EagleThisIsThorsHammer	1_21	Eagle, this is Thor's hammer.  We are still standing by.
+15173_GermanRadioOP_WhatIsTheNextTarget	1_21	Eagle, what is the next target?  Come in.
+15175_Pecos_Tank	1_21	TANK!!!
+15183_Reardon_Bazookas	1_21	Bazookas!!
+15184_Reardon_GetThoseBazookasUpHere	1_21	Get those bazookas up here!!!!
+15190_Barnes_LookAtThatThing	1_21	Jesus, look at that thing!!
+15191_Pecos_TheArmorsThicker	1_21	The armor's thicker than a Tiger's!
+15196_Reardon_GoodWorkMen	1_21	Yes!  Good work, men!!
+15197_Chesterfield_Unbefreakinglievable	1_21	Un-be-freaking-lievable!
+15200_BattalionRadioOP_HammondComeIn	1_21	Hammond!  HAMMOND!  COME IN!
+15201_BattalionRadioOP_WhyHasntTheBridge	1_21	HAMMOND! Why hasn't the bridge been blown yet?
+15202_BattalionRadioOP_TheGermansAreCrossing	1_21	HAMMOND!  THE GERMANS ARE CROSSING!
+15203_BattalionRadioOP_WhereAreYou	1_21	WHERE ARE YOU?!!!  BLOW THE BRIDGE!!  DO IT!  DO IT NOW!!!
+15204_BattalionRadioOP_BridgeIsDestroyed	1_21	GOOD WORK!  We confirm the bridge is destroyed!  Rendezvous back at battalion.  Out.
+15205a_Chesterfield_HoltOverHere	1_21	Holt!  Hey, Holt!  Over here!
+15205b_Chesterfield_HeyOverHere	1_21	Hey!  Over here!
+15242_GI4_GladToSeeYou	1_21	Glad to see you!  Keep these guys off the CP!
+15251_BattalionRadioOP_CommandAreaSecure	1_21	Command area is secure.  We read no enemy contacts in the area.
+15253_Patterson_WeDidIt	1_21	We did it!
+15254_Chesterfield_ICantBelieveIt	1_21	I can't believe it!!!
+61065_1_USHLT_BoBCampaignIntro	1_21	It was snowing in the Ardennes.  You couldn't tell one town from the next.  So that's what a lot of us remember most...the cold and how it just never stopped snowing.  We thought it was over; the pain, the cold, everything and we'd all be going home soon...
+61065_USVHT_BoBCampaignIntro	1_21	Well, it was snowing in the Ardennes.  You couldn't recognize one town from the next.  And I guess that's what a lot of us remember most...the cold and how it just never stopped snowing.  We all thought it was over; the pain, the cold, the waiting, everything and we'd all be going home soon...
+96000_UKNPC_C2IsInTheTower	1_21	The C2 is in the tower, we need to get up there now!
+96000a_UKNPC_ExplosivesInTheTower	1_21	Hey, Holt, over here! The charges are in the tower!
+96000b_UKNPC_WeNeedCoordinates	1_21	Battalion -- this is Foxtrot -- we need coordinates!  Come in..
+96000c_UKNPC_ArtilleryReadyToFire	1_21	Repeat.  Artillery ready - standing by for coordinates, over.
+96000d_UKNPC_Anybody?	1_21	Batallion.  Come in.  Come in.
+96000e_UKNPC_CoordinateReceived	1_21	Affirmative. Coordinates received.  Stand by.
+96000e1_UKNPC_ComencingFire	1_21	Affirmative. Coordinates received.  Commencing fire!
+96000f_UKNPC_Celebrate	1_21	Yee-Haw!!
+96000f1_UKNPC_TargetDestroyed	1_21	Confirmed target destroyed.
+96001_UKNPC_InTheGatehouseTakeHimOut	1_21	One of Von Schrader's men was spotted in the Gatehouse. -- We gotta take him out!
+96001a_UKNPC_InTheGatehouseTakeHimOut	1_21	One of Von Schrader's goons was spotted in the Gatehouse. -- We need to get that sombitch!
+96002_UKNPC_Dye'sInTheACP	1_21	Holt, over here! Captain's at the CP. Let's go!
+96002a_UKNPC_ProtectCommandPost	1_21	We've gotta defend the command post!  -- Those Tiger tanks will have to go!
+96002b_UKNPC_TakeOutTigers	1_21	Take out those Tigers.  --NOW!
+96003_UKNPC_WhereHaveYouBeenHolt	1_21	Holt, where the hell have you been? --These Kraut douments are important!  Now take care of 'em!
+96003a_USDYE_TakeOutThoseTanks	1_21	Grab a bazooka - take out those tanks!
+96003a1_UKNPC_GetToIntel	1_21	Holt, where the hell have you been? --These Kraut douments are important!  Get 'em to Intel!  On the double.
+96003b_USDYE_GermansPreparingCounterAttack	1_21	Krauts are gearing up for an attack.  Watch yourself!
+96003ba_USDYE_GermanCounterAttack	1_21	HERE THEY COME!!!
+96003c_USDYE_GoodLuck	1_21	Good luck, Holt!
+96003ca_USDYE_GoodLuckLieu	1_21	Good luck, Lieutennant!
+96004_UKNPC_GetToTheChurch	1_21	The C4's in that church! We've gotta get there fast!!!
+96005_UKNPC_TakeOutThatBridge	1_21	We'll cover you, Holt!  Take out that bridge!
+96006_UKNPC_WhatTheHellIsCoolidgeDoing	1_21	What the hell is Coolidge doing?
+96007_UKNPC_CheckThePerimeter	1_21	I'm going out to check the perimeter.
+96008_UKNPC_GermansAreComing	1_21	They're coming!  The German's are coming!!
+96009_UKNPC_FallBack	1_21	BACK!!  Fall back!!
+96009a_UKNPC_GetToTheACPHolt	1_21	Holt, get to the CP!
+96009b_UKNPC_AllUnitsFallBack	1_21	All units, all units - fall back to the command post.. I repeat, fall back!
+96009c_UKNPC_UnderAttack	1_21	We are under attack!
+96009d_USNPC_ReinforcementsNOW	1_21	We need reinforcements, NOW!
+96009e_UKNPC_GermansAreBlitz	1_21	Enemy units everywhere!  The Germans are blitz...
+96009f_UKNPC_BeingOverrun	1_21	Command - this is Bravo.  We're being overrun!  Repeat, overrun!  We need to pull back... Repeat, pull back.
+96009g_UKNPC_HoldCommandPost	1_21	Captain, we've lost Delta.  Battalion says to hold the Command Post!
+96009h_UKNPC_GermansBreachedLines	1_21	Situation - grave. The Germans have breached the lines. Repeat - The Germans have breached the lines!
+96009i_UKNPC_SetUpCounterAttack	1_21	ALL UNITS, we are setting up a counter attack at the command post!
+96011_1_GENPCNEM_StubbornAsBitch	1_21	ACH! You're as stubborn as that French Resistence bitch!
+96011_1a_GENPCNEM_StubbornAsBitch	1_21	ACH! You're as stubborn as that French Resistence bitch!
+96011_2_GENPCNEM_StubbornAsTrollop	1_21	ACH!  You're as stubborn as that French Resistence trollop!
+96011_2a_GENPCNEM_StubbornAsTrollop	1_21	ACH!  You're as stubborn as that French Resistence trollop!
+96011_GENPCNEM_ManonKeptMyBedWarm	1_21	You Americans - when will you learn!  You can't stop us!
+96011a_GENPCNEM_ManonKeptMyBedWarm	1_21	You Americans - when will you learn!  You can't stop us!
+96011a_UKNPC_NameRankSerial	1_21	Casillas, Aaron.  Lieutenant.  Serial number: 2424256.
+96011b_GENPC_SecretDocuments	1_21	Where are Herr Von Schrader's documents?  TELL ME!!!
+96011c_UKNPC_NameRankSerial#2	1_21	Casillas, Aaron.  Lieutenant.  Serial number: 2424256.
+96011d_GENPC_FinishedWithThis	1_21	I'm finished with this, ARGGGHHH!
+96011d_UKNPC_NameRankSerial#3	1_21	Casillas, Aaron.  Lieutenant.  Serial number: 2424256.
+96011e_GENPC_DieSwine	1_21	I'm finished with this!  --DIE SWINE!!!
+96012_UKNPC_TakeOutThatCommander	1_21	There's a Kraut commander up there calling in the artillery! --Take him out!!
+96013_UKNPC_FinallyTheArtilleryStopped	1_21	Finally!  --The shelling stopped.  Thank God.
+96020_USB1WT_CommandPostUnderAttack	1_21	Holt, Intel says the command post is under attack.  Now, you'll find it over there behind the church.  Hurry!
+96021_USB1WT_HammondMIA	1_21	Holt, listen up.  One of the engineers is MIA.  He was dispatched to pick up C2 charges in the church tower.  Now get over there and find him!
+96022_USB1WT_BehindTheGatehouse	1_21	Holt, once you've got that C2, you'll find the bridge on the other side of town.  It's over there behind the gatehouse!
+96023_USB1WT_WindmillCallArtillery	1_21	Holt, the Germans are using a spotter in the windmill to call in arty.
+96024_USB1WT_PlantChargesBelowBridge	1_21	You'll have to plant the charges below the bridge!
+96025_USB1WT_BackToCommandPost	1_21	Holt, what are you doing?  Get back to the Command Post!
+96026_USB1WT_GreatJob	1_21	Holt...Holt.Mission 6. Well done! It'll be a while before they try that again.
+CSA_Art_Strike	1_21	Press [$ACTION] to Call In Artillery Strike
+CSA_Fire_Rockets	1_21	Press  [$ACTION] to Fire Rockets
+CSA_ROCKETS	1_21	Press [$ACTION] to Fire Rockets
+CSA_Take_C2	1_21	Press  [$ACTION] to Take C2 Charge
+CSA_Take_Documents	1_21	Press  [$ACTION] to Take Dirty Bomb Plans
+CSA_TNT	1_21	Press [$ACTION] to Ignite Blast
+HINT_C2	1_21	C2 Obtained
+HINT_CP	1_21	The Command Post is under Attack!
+HINT_CP2	1_21	Destroy all Enemy Tanks
+HINT_Escape	1_21	Destroy the Bridge
+HINT_Tank1	1_21	Two Tanks Left to Destroy
+HINT_Tank2	1_21	One Tank Left to Destroy
+MO_Artillery_Add	1_21	Transmit Artillery Coordinates
+MO_Artillery_Pause	1_21	Transmit Artillery Coordinates
+MO_Artillery_Success	1_21	Artillery Coordinates Transmitted
+MO_C2_Tower_Add	1_21	Obtain C2 in Church Tower
+MO_C2_Tower_Pause	1_21	Obtain C2 in Church Tower
+MO_C2_Tower_Success	1_21	C2 Obtained
+MO_DestroyBridge_Add	1_21	Destroy Town Bridge
+MO_DestroyBridge_Pause	1_21	Destroy Town Bridge
+MO_DestroyBridge_Success	1_21	Town Bridge Destroyed
+MO_Docs_Add	1_21	Collect Secret Documents
+MO_Docs_Pause	1_21	Collect Secret Documents
+MO_Docs_Success_DYE	1_21	Dirty Bomb Plans Retrieved
+MO_Primary_Add	1_21	Fall Back to American Command Post
+MO_Primary_Pause	1_21	Fall Back to American Command Post
+MO_Primary_Success	1_21	American Command Post Reached
+MO_Primary2_Tanks_Add	1_21	Destroy King Tiger Tanks
+MO_Primary2_Tanks_Pause	1_21	Destroy King Tiger Tanks
+MO_Primary2_Tanks_Success	1_21	King Tiger Tanks Destroyed
+MO_Recon_Add	1_21	Eliminate Recon Unit in Windmill
+MO_Recon_Pause	1_21	Eliminate Recon Unit in Windmill
+MO_Recon_Success	1_21	German Recon Unit Eliminated
+NemesisName	1_21	Folker Kappelhoff
+OSSDocumentFound	1_21	Nuclear Scientist Rosters Uncovered
+16005_Barnes_WeveGottaMoveFast	1_22	We've gotta move fast.  Intel says the Germans are mounting a huge offensive.  This place will be crawling with Krauts in no time.
+16008_GI1_FormUp	1_22	FORM UP!!!
+16024_Chesterfield_TakeCover	1_22	Take cover!!!
+16026_GI1_MoveThatFrigginTank	1_22	Move that friggin' tank!
+16032_Chesterfield_MoveUpMoveUp	1_22	Move up!!!!  Move up!!
+16033_GI1_ComeOnMen	1_22	Come on, men!
+16035_GI2_GetIntoPosition	1_22	Get into position!!
+16036_Barnes_GentlemenSplitUpAndSecureFarm	1_22	Gentlemen split up and secure the farm!
+16036a_Barnes_SecureTheArea	1_22	Secure the area!
+16036n_German4_ItsTheAmericansHereTheyCome	1_22	It's the Americans!  Here they come!
+16036o_German5_ShootThem	1_22	Shoot them!
+16039_Barnes_GermansWillBeHereAnySecond	1_22	The Germans will be here any second.  We've already called for reinforcements, but we'll just have to hang on until they arrive.
+16041_Barnes_Understand	1_22	Understand!?
+16048_Manon_HoltInHere	1_22	HOLT!!!  HOLT!!! --IN HERE!!!
+16049_Engel_KeepHerQuiet	1_22	Keep her quiet!!
+16050_Engel_GuardShootHer	1_22	Guard! Shoot her!!
+16052_Manon_Yahhh	1_22	YAHHHHHHHH!!!!!!!!
+16076_Barnes_HereTheyComeGetReady	1_22	Here they come, men!  Get ready!!!
+16087_German1_ForTheFatherland	1_22	For the Fatherland!!!
+16088_German2_DieAmerican	1_22	Die, American!!!
+16092_German2_TheFarmhouseTakeTheFarmhouse	1_22	The farmhouse!  Take the farmhouse!!
+16094b_German8_HurryGetUpThere	1_22	Hurry!  Get up there!!!
+16094e_German3_GoGo	1_22	Go! GO!!!!
+16095_Barnes_JustHangOn	1_22	Just hang on!
+16097_Chesterfield_LooksBadOverHere	1_22	It looks freakin' bad over here!!!!
+16098_Barnes_LookTheRedballExpress	1_22	Look!!!  The Redball Express!!!
+96027_USB2WT_RedBallArrived	1_22	Holt.Mission 6. Be advised, the Red Ball has arrived at our position.
+96027a_USB2WT_GemansRetreating	1_22	Holt.Holt... This is Mission 6. Nice work out there. German units pulling back from your area.
+96030_USB2WT_OperativeHeldInBasement	1_22	Listen Holt, Intel says the French Operative is being held in the basement of the Farmhouse! Proceed with caution.
+96031_USB2WT_GermanForcesHeadedFarm	1_22	Holt, massive German forces are headed toward the farm.
+96032_USB2WT_PanzerfaustInBasement	1_22	Recon says there is a German Panzerfaust located in the basement.  You'll need it to take out the King Tigers.
+96199_BoB2BRF_TheFarm	1_22	It's chaos out here. The Germans caught us completely by surprise.  We're trying to regroup.  Recon says that Manon is being held in a farmhouse nearby.  We've been ordered to rescue her.  It's well-guarded.  The OSS thinks that Von Schrader's most trusted officer - Freder Engel - is questioning her there.  There isn't much time.  We've gotta move fast if we're gonna get her out alive.
+
+96200_USNPC_SomeChristmas	1_22	Great...Some Christmas this turned out to be.
+96201_USNPC_RescueFrenchOperative	1_22	Keep it down, soldier!  --Our orders are to rescue the French operative inside!
+96202_USNPC_CheckPerimeter	1_22	Okay..We'll check the perimeter
+96204a_German3_MmmHmmIfThatShouldBe	1_22	Mmmm-hmmmm...If that should be I have but one request..la-de-dee...mmmmm-hmmm...may once again look into our Führer's eyes...mmm..hmmm....
+96205_USNPC_TakeOutMMG	1_22	Take out that machine gun post!
+96206_USNPC_SniperInTower	1_22	Sniper in the tower!  Take him out!!!
+96207_USNPC_GetTheC2	1_22	Get the C2 up here, we need to blow those tank stoppers!
+96225_USNPC_KingTigerInBarn	1_22	There!  King Tiger in the barn! Take it out!
+96226_GENPC_NeedToGetRunning	1_22	Hurry up! We need to get her running!
+96250_USNPC_MMG'sKillingUs	1_22	Those damn machine guns are killing us!  Take 'em out!
+96251_USNPC_TakeFarm	1_22	We've gotta take that farm!
+96252_USNPC_ManonInBasement	1_22	We think the French Operative is holed up in the basement.  That's where we're going!
+96253_USNPC_CheckBasement	1_22	We've got the perimeter, Holt. --You check the basement.
+96254_GEEGL_KillHerNow	1_22	Kill her!!  Kill her now!!
+96254a_GEEGL_DamnFrenchBitch	1_22	Damn, french bitch!  Kill her!  KILL HER NOW!!!
+96255_FRMNN_TookSoLong	1_22	Holt!  --So what the hell took you so long?!
+96256_GENPC_FormCounterAttack	1_22	Regroup!!  Prepare to attack!!
+96257_GENPC_TakeOutFarm	1_22	Go after the farm!
+96258_GENPC_KillAmericans	1_22	Kill all of the Americans!
+96259_FRMNN_NeedAPlan	1_22	The Germans will plan a counter attack at once. We need to be ready!
+96260_FRMNN_LetsGo	1_22	Come on!  Let's go!
+96261_USNPC_LaunchingAttack	1_22	The Krauts are attacking again!
+96262_USNPC_ReinforcementsOnTheWay	1_22	Reinforcements are on the way, sir!
+96263_USNPC_HoldTheFarm	1_22	We'll have to hold the farm until reinforcements arrive!
+96264_GENPC_Respond	1_22	Odin1, this is Loki unit, respond.
+96265_GENPC_SendingReinforcements	1_22	Odin1, this is Loki unit, we are sending reinforcements immediately to the Farm!
+96266_GENPC_SeveralKingTigers	1_22	Several King Tigers and a blitzkrieg unit, over.
+96267_GENPC_AreYouThere	1_22	Hans, are you there?
+96268_GENPC_Hans	1_22	Hans!
+96275_GENPC_ForcesAdvance	1_22	All forces advance!
+96276_USNPC_That'sIt	1_22	What?  That's it? You're kiddin me...
+96277_USNPC_GottaBeMore	1_22	There's gotta be more than that.
+96278_USNPC_TakeOutDemoGuys	1_22	They're trying to blow the walls!  Take out those sappers!
+96279_USNPC_TakeOutKingTigers	1_22	Hurry!  Blow those King Tigers!  The plunger's behind the well!
+96280_USNPCRBL_RedBall	1_22	Red Ball is here, sir!
+96281_USNPC_ReinforcementsArrived	1_22	Yeehaw!  Reinforcements have arrived!!
+96282_USNPCRBL_GermansRetreating	1_22	The Germans are on the run!!
+96283_USNPCRBL_GotYourBack	1_22	We've got your back!
+CSA_88s	1_22	Press  [$ACTION] to Plant Demo Charge
+CSA_KingTiger	1_22	Press  [$ACTION] to Plant Demo Charge
+CSA_TNT	1_22	Press [$ACTION] to Ignite Blast
+MO_88_SubObjective_Text	1_22	%1 of %2 German Artillery Positions Destroyed
+MO_DemoKingTiger_Add	1_22	Destroy King Tiger Tank
+MO_DemoKingTiger_Pause	1_22	Destroy King Tiger Tank
+MO_DemoKingTiger_Success	1_22	King Tiger Tank Destroyed
+MO_Des88s_Add	1_22	Destroy 3 German Artillery Positions
+MO_Des88s_Pause	1_22	Destroy 3 German Artillery Positions
+MO_Des88s_Success	1_22	3 German Artillery Positions Destroyed
+MO_DesAmmoDump_Add	1_22	Destroy Ammunition Depot
+MO_DesAmmoDump_Pause	1_22	Destroy Ammunition Depot
+MO_DesAmmoDump_Success	1_22	Ammunition Depot Destroyed
+MO_Escape_Add	1_22	Defend Farm and Destroy Approaching Tanks
+MO_Escape_Pause	1_22	Defend Farm and Destroy Approaching Tanks
+MO_Escape_Success	1_22	Farm Successfully Defended
+MO_Primary_Add	1_22	Rescue French Operative
+MO_Primary_Misc	1_22	Hint: Set up a Defense
+MO_Primary_Pause	1_22	Rescue French Operative
+MO_Primary_Success	1_22	French Operative Rescued
+MO_ResPOW_Add	1_22	Rescue French Operative
+MO_ResPOW_Pause	1_22	Rescue French Operative
+MO_ResPOW_Success	1_22	Manon Rescued
+NemesisName	1_22	Freder Engel
+OSSDocumentFound	1_22	Virus House Program Location Discovered
+17004_USRadioOP1_TomahawkLostContact	1_24	Tomahawk! We've lost contact with forward observation!  Can you see them?!
+17005_USRadioOP4_NegativeSmokesTooThick	1_24	Negative!  Smoke's too thick here!
+17006_USRadioOp2_CharlieYouveGotSeven	1_24	Charlie!  Charlie!  You've got seven - REPEAT - SEVEN - armored units coming your way!
+17007_USRadioOP3_RogerISeeEmMovingToEngage	1_24	Roger, I see em!  We're moving to engage!  We're sayin' our Hail Mary's here!
+17008_USRadioOP1_BattalionThisIsDCompany	1_24	Battalion, this is D Company!  The Germans are overrunning our position!
+17025_Chesterfield_HoldTheLine	1_24	HOLD THE LINE!!!
+17030_GI5_JacobsonCoverMeNeedToReload	1_24	Jacobson!! Cover me!  I need to reload!!
+17031_GI3_GoIveGotYouReload	1_24	Go!  I've got you!!!  RELOAD!!
+17043_GI4_IveGotArmor	1_24	I've got armor!!!!
+17053_German1_GetToTheBunker	1_24	Get to the bunker!!!
+17055_German3_HaYouAmericanScum	1_24	HAAAAAAAAAAA!!!!!!!  YOU AMERICAN SCUM!!!
+17056_German3_YoureDead	1_24	You're dead!!!!
+17057_German2_FlorianMyGodFlorian	1_24	Florian!!!!  My god!  Florian!!!
+17058_German1_CutThemOff	1_24	Cut them off!!!
+17059_German1_NoPrisonersMen	1_24	No prisoners, men!!!
+17060_German3_CrushThemDriveThem	1_24	Crush them!!!  Drive them!!!
+17061_German3_YahMyLegs	1_24	YAHHH!!!!   My legs!!!!
+17062_Rollins_WeveStoppedTheirAdvance	1_24	We've stopped their advance!!!
+17071_German5_KeepShootingMen	1_24	KEEP SHOOTING, MEN!!
+17073_CptHam_ThereTheirLineIsWeakening	1_24	There!  Their line is weakening!
+17074_CptHam_ThatWhatWeveBeenWaitingFor	1_24	That's what we've been waiting for!
+17076_LtNix_MenPrepareToCharge	1_24	MEN!  PREPARE TO CHARGE!!!
+17077_GI4_Sir	1_24	SIR!!
+17078_GI5_Ready	1_24	READY!!!
+17080_CptHam_Charge	1_24	CHARGE!!!!
+17081_GI4_Yaahhh	1_24	YAAHHHHH!!!!!!!
+17087_GI1_BingoGreatWork	1_24	BINGO!  GREAT WORK!!
+17088_GI1_NowLetsGetOuttaHere	1_24	Now let's get outta here!!
+17199_BoB4BRF_HellFrozeOver	1_24	Manon told me Von Schrader's plan...  about the dirty bomb.  It all fits.  The launch site in St. Nazaire, the secret weapons in North Africa, the Virus House information in Russia...now here.  Intel believes he intended to use the bomb on London. But now that the Germans are desperate, he might use it in the Ardennes.  It'll kill thousands.  My orders are to find him and stop him.  No matter what the cost...
+17200_USDYE_LocateBunkerSystem	1_24	We need to locate Von Schrader's underground bunker!
+17200a_USDYE_LocateBunkerSystem2	1_24	We need to locate Von Schrader's underground bunker!  We know he's deep behind enemy lines.
+17201_USDYE_BehindGermanLines	1_24	We know he's deep behind enemy lines.
+17202_USNPC_GermansBreached	1_24	This is Foxtrot - Oscar: The enemy has breached the line!
+17203_USNPC_GermanAttack	1_24	The Germans are attacking!
+17204_USNPC_PrepareForAdvance	1_24	Enemy units are on the move!
+17205_USNPC01_HoldLine	1_24	Hold the line, men!
+17206_USNPC01_Advance	1_24	Advance!  -GO! GO! GO!
+17207_USNPC02_MoveUp	1_24	Move up, move up!
+17208_USNPC03_LetsGo	1_24	C'mon!! Let's go!
+17209_USNPC_NeedCoordinates	1_24	This Alpha wing.Standing by for coordinates. Over
+17209a_USNPC_BombersStandingBy	1_24	Do you read me.this is Alpha wing.bomber's standing by.need attack coordinates.over..
+17210_USNPC_Affirmative	1_24	Affirmative, rockets on the way - hold on to your boots, boys!
+17211_USNPC01_NiceJob	1_24	Great work!
+17212_USNPC02_FlankManeuver	1_24	Follow us!  We're gonna hit their flank!
+17225_USNPC01_FlankEm	1_24	C'mon!  Flank 'em!!
+17226_USNPC01_MoveMove	1_24	Move, move!
+17227_USNPC01_HurryUp	1_24	Let's go!  Hurry!
+17228_USNPC01_Charge	1_24	Okay, men..CHARGE!!
+17235_USNPC01_DestroyKingTigers	1_24	Entrenched or not - we've gotta take out those King Tigers!
+17236_USNPC01_GottaMove	1_24	We gotta move!
+17237_USNPC02_TakeOutBunkerOnTheHill	1_24	Command says we gotta take out that bunker on the hill!
+17245_USNPC01_GettingMowedDown	1_24	We're getting mowed down here!
+17246_USNPC02_ClearBunkers	1_24	Command says we gotta clear those bunkers!
+17247_USNPC01_MoveUp	1_24	Move up!
+17248_USNPC01_NextBunker	1_24	OK, next bunker!  Move!
+17249_USNPC01_LastOne	1_24	Good job!  OK - last one!
+17250_USNPC02_OneMore	1_24	One more!
+17251_USNPC01_ThankGod	1_24	This is it! --Thank God!
+17252_USNPC01_PlantTheCharge	1_24	Holt, plant the charge!  --We'll cover you!
+96040_FRB5WT_Schrader'sBunkerGermanSideArdennes	1_24	Holt, come in, this is Manon, we believe that Von Schrader's bunker system is on the German side of the Ardennes.
+96040_USB5WT_SchradersBunkerGermanSideArdennes	1_24	Listen Holt,our operatives have informed us that Von Schraeder's bunker is on the German side of the Ardennes.
+96041_FRB5WT_ThreeKingTigers	1_24	Holt, do you read me, Intel says that the Germans have three King Tigers in the trenches they're killing our men.
+96041_USB5WT_ThreeKingTigers	1_24	Holt, Intel says there's three King Tigers in position in the trenches.  We need 'em taken out.
+96042_FRB5WT_CamouflagedPillboxes	1_24	Holt, come in, reports from the field indicate that Germans may be hiding in camouflaged pill boxes.
+96042_USB5WT_CamouflagedPillboxes	1_24	Holt, scouts report we're taking fire from several camouflaged pill boxes in this area.
+96043_FRB5WT_BeCareful	1_24	Holt, it's Manon, watch yourself in there, come back in one piece.
+96043_USB5WT_BeCareful	1_24	Holt, watch yourself.  We'll contact you later.
+96044_USB4WT_BunkerTopOfHill	1_24	Holt.This is Mission 6. RECON reports your target bunker is on the crest of the hill.
+96044a_USB4WT_GetThereNow	1_24	Holt.This is Mission 6. Target bunker is beyond the trenches on the high ground. Proceed immediately in the attack.
+96050_FRB5WT_GetOutNow	1_24	Holt, come in, get out of there now!
+96050_USB5WT_GetOutNow	1_24	Holt, are you reading me?  Get out of there, now!
+96350_GEVSR_CantStopMe	1_24	It is pointless to try and stop this.
+96351_GEVSR_YoureTooLate	1_24	It is too late for you..It is too late for all of us..
+96352_GEVSR_HaHaHa	1_24	Ha!  Give in..Let it happen!
+96353_GEVSR_YouAreFinished	1_24	You are finished!
+96354_GEVSR_DefeatMe	1_24	You cannot defeat me.not here....
+96355_GEVSR_SillyAmerican	1_24	Foolish American.
+96356_GEVSR_DieInArdennes	1_24	This will be your tomb. Our victory, your epitaph.
+96357_GEVSR_IKnowWhoYouAre	1_24	William Holt.  Yes... I know who you are.
+96358_GEVSR_StudyOfMine	1_24	I have made you a study of mine
+96359_GEVSR_TheirDownfall	1_24	My men never really appreciated you.  That was their downfall, I think
+96360_GEVSR_WorthyAdversary	1_24	I however, have found you a worthy adversary.
+96361_GEVSR_RunItsCourse	1_24	But all games have their end...and this too has run its course.
+96362_GEVSR_BombWillDetonate	1_24	The bomb will detonate...
+96362a_GEVSR_DeviceWillDetonate	1_24	The device will detonate...
+96363_GEVSR_CannotStopDestiny	1_24	The Reich will triumph.  You simply cannot stop destiny.
+96364_GEVSR_CannotWin	1_24	William....You cannot win.
+96365_GEVSR_DeathLine	1_24	Nooo...We must.must....
+96400_USLON_WhatThe	1_24	What the?!!
+96401_USLON_HeDidIt	1_24	It's Holt.  He did it....  You men, shoot any Kraut who so much as twitches. --Corporal Fielder, with me.
+96402_USFDR_YesSir	1_24	Yes, sir.
+96403_USLON_WedLostYou	1_24	Holt!  Thought we'd lost you there.
+96404_USLON_VonSchrader	1_24	What happened to Von Schrader?
+96405_USHLT_AllGone	1_24	Dead.  He's Gone.  It's all gone.
+96406_USLON_MissionAccomplished	1_24	Good work Holt.
+96406a_USLON_ThankYouSir	1_24	Thank you sir.
+96406b_USLON_GiveYouThis	1_24	Here - I've been ordered to give you this.
+96407_USLON_KrautsFallingBack	1_24	The Krauts are falling back to Berlin.  Our forces will be right behind them.  Will you be following the action?
+96408_USHLT_IllBeThere	1_24	Yeah.  I'll be there.
+96409_USLON_CarryOn	1_24	Then let's give 'em hell.  Carry on Lieutenant.
+96410_USHLT_Sir	1_24	Sir
+99999_1_USHLT_GAMEOUTRO	1_24	That was a long time ago.  For a lot of my buddies the war was over.  Some of 'em went home.  Most didn't make it.  (pause) When people ask me if I was a hero in the war, I think about the ones who were left behind.  They were the heroes.  I don't know how I survived.  But I did.  So I keep their memory alive.  I owe it to them.  We all do...for what they did.
+99999_USVHT_GAMEOUTRO	1_24	That was a long time ago.  For a lot of my buddies the war was over.  Some of 'em went home.  Most didn't make it.  (pause) When people ask me if I was a hero in the war, I think about the ones who were left behind.  They were the heroes.  I don't know how I survived.  But I did.  So I keep their memory alive.  I owe it to them.  We all do...for what they did.
+CSA_Airstrike_hero	1_24	Press  [$ACTION] to Radio Airstrike
+CSA_Fire_Rockets	1_24	Press  [$ACTION] to Fire Rockets
+CSA_PULL_LEVER	1_24	Press  [$ACTION] to Stop Bomb
+MO_Call_Airstrike_Add	1_24	Radio Airstrike Coordinates
+MO_Call_Airstrike_Pause	1_24	Radio Airstrike Coordinates
+MO_Call_Airstrike_Success	1_24	Airstrike Coordinates Sent
+MO_Escape_Dirty_Add	1_24	Eliminate Von Schrader and Disable Dirty Bomb
+MO_Escape_Dirty_Success	1_24	Von Schrader Eliminated and Dirty Bomb Disabled
+MO_Escape_Diry_Pause	1_24	Eliminate Von Schrader and Disable Dirty Bomb
+MO_KTigerMisc	1_24	Destroy 3 Stationary King Tigers
+MO_MMG_PillBOX_Add	1_24	Destroy 4 German MMG Pillboxes
+MO_MMG_PillBox_Pause	1_24	Destroy 4 German MMG Pillboxes
+MO_MMG_PillBox_Success	1_24	American Lines Reinforced
+MO_PrimaryAdd	1_24	Find and Infiltrate German Underground Bunker
+MO_PrimaryPause	1_24	Find and Infiltrate German Underground Bunker
+MO_PrimarySuccess	1_24	German Underground Bunker Infiltrated
+MO_ReinforceMisc	1_24	Return to the Field Hospital to Get more Units
+MO_TigerTankPrompt	1_24	%1 of %2 King Tigers Destroyed
+MO_TigerTankPrompt_2	1_24	2 of 3 King Tigers Destroyed
+MO_TigerTanksAdd	1_24	Destroy 3 Entrenched King Tigers
+MO_TigerTanksPause	1_24	Destroy 3 Entrenched King Tiger Tanks
+MO_TigerTanksSuccess	1_24	3 King Tiger Tanks Destroyed
+NemesisName	1_24	Von Schrader
+OSSDocumentFound	1_24	Von Schrader's Journal Found
+00003_Commando1_Breach	1_4	BREACH!
+03100_UKMD1_GoingToMakeIt	1_4	Didn't know if you were gonna make it, yank.
+03101_UKMD1_NastyHit	1_4	Took quite a hit, but you can fight. -- Not like some o' these lads.
+03102_UKMD1_MovingOutSoon	1_4	We've secured the German HQ.  Won't be long before we move out.  --C'mon, back to it.
+03103_UKMD1_CarryOn	1_4	That should do you.  Carry on, lad.
+03105_UKNPC_TendToWounded	1_4	See to the wounded!
+03106_UKNPC_LocatePowerPlant	1_4	Alright men, now that we've captured the HQ... We'll deploy from here and make our way to the power station.
+03107_UKNPC_Incoming	1_4	Christ, here they come!
+03108_UKNPC_TakenOldMole	1_4	They've retaken the Old Mole!
+03109_UKOFC_DefendThisStation	1_4	Move out, men!   We've got to defend this place!
+03110_UKOFC_AbleBodies	1_4	All able bodies - move out!
+03111_UKNPC_MoveMoveMove	1_4	Move, move, move!
+03112_UKNPC01_They'reEverywhere	1_4	Jesus --they're everywhere!
+03113_UKNPC02_HoldPositions	1_4	Hold your positions, lads!
+03114_UKNPC03_Don'tLetThemCloser	1_4	Shut 'em down!  Don't let 'em any closer!
+03115_UKNPC04_ComingOverWall	1_4	Look!  They're coming over the wall!
+03116_UKNPC05_Genade	1_4	Grenade! -- Get down!
+03117_UKNPC01_RecapturedOldMole	1_4	Looks like the Gerries recaptured the Old Mole.  We've got to take it back or we're done.
+03118_UKNPC01_MoveForward	1_4	Come on, lads!   Forward!
+03119_UKNPC01_StayBehindCover	1_4	Watch yourselves.  Keep cover!
+03125_UKNPC_RetakeOldMole	1_4	We've got to retake the Old Mole if we're to stand a chance!
+03126_UKNPC_MoveInCover	1_4	Move in cover, men!
+03127_UKNPC_FlankLeft	1_4	Squad, flank left!
+03128_UKNPC_GoGoGo	1_4	Go, Go, Go!
+03129_UKNPCOFC_EliminateEnemies	1_4	Right, lads. We have to clear the Gerries out of the Old Mole!  Let's get to it!
+03130_UKNPCOFC_SecureTheArea	1_4	Secure the area!
+03131_UKNPCOFC_EscapeBoatsDestroyed	1_4	Dammit!  The bloody Gerries got our escape boats!  We're gonna have to find another way out of here!
+03132_UKNPC_AreaSecured	1_4	Area secured!
+03133_UKNPCOFC_OnToPowerPlant	1_4	Good work, lads. -- on to the power station!
+03133a_UKNPCOFC_ThroughThatBunker	1_4	We need to get though that bunker.
+03133b_UKNPCOFC_BlowThatDoor	1_4	Holt, blast that door!
+03134_UKNPC_StorageBuilding	1_4	Look!  There's the storage building.
+03135_UKNPC_DisableMachinery	1_4	Right!  We've gotta disable all the machines in this building.
+03136_UKNPC_DestroyMachines	1_4	Holt - there!  Smash the machines.
+03137_UKNPCOFC_GoodJobMoveOut	1_4	Great job, men!  C'mon!  Move out!!
+03137a_UKNPCOFC_That'llHurt'EmMoveOut	1_4	Great job, men!  That'll hurt 'em.  --Move out!
+03138_UKNPC_SlowThemDown	1_4	That outta slow 'em down a bit.
+03139a_UKNPCOFC_HodgesOpenThatDoor	1_4	Hodges, open that door!
+03140_UKNPCOFC_StormBuilding	1_4	Come on, we're gonna storm this building!
+03141_UKNPCOFC_ReadyGo	1_4	Ready?  GO -  GO -  GO!
+03141a_UKNPCOFC_AssembleRockets	1_4	The Germans are using that building to assemble rockets!
+03141b_UKNPCOFC_DestroyHulls	1_4	We need to destroy those rocket hulls.
+03141c_UKNPCOFC_ShootThemDown	1_4	^Shoot them down, Holt.
+03141d_UKNPCOFC_ThroughTheWarehouse	1_4	This way men, through the warehouse
+03141e_UKNPCOFC_OpenBayDoor	1_4	Gerber, open that bay door.
+03142_UKNPCOFC_ToTheDocks	1_4	Alright men, through there to the docks.
+03143_UKNPCOFC_EyesOpen	1_4	Keep your eyes open, men.
+03144_UKNPC_Crane	1_4	Up there -- that crane!
+03145_UKNPCOFC_SearchTrain	1_4	Holt, search those train cars.
+03146_UKNPC_DownHere	1_4	Hey!  Down here!!
+03147_UKNPC_DestroyEquipment	1_4	Here now!  We've gotta smash this equipment.
+03148_UKNPC_UsingEquipment	1_4	The bloody Nazi's must be using this equipment for something special.
+03148a_UKNPC_SomeKindOfWeapon	1_4	The bloody Nazi's must be using this equipment for some sort of weapon.
+03149_UKNPCOFC_CoverBehindTrain	1_4	Take cover behind that train!
+03150_UKNPC_WatchDoorways	1_4	Watch those doorways.
+03151_UKNPCOFC_NiceWork	1_4	Nice work, that should slow down their progress.
+03151b_UKNPCOFC_ExploreDock	1_4	We need to explore that dock.
+03151c_UKNPCOFC_UBoat	1_4	There should be a u boat over there, we need to destroy it!
+03151d_UKNPCOFC_SeveralCharges	1_4	It'll take several charges to take that thing out!
+03151e_UKNPCOFC_GetOnSub	1_4	Holt, get on that sub and plant those charges!
+03152_UKNPCOFC_ThereSheIs	1_4	There she is, lads.
+03153_UKNPCOFC_IntoPlant	1_4	Now we've gotta muscle our way into that power station!
+03154_UKNPC_MMG	1_4	MACHINE GUN!!!
+03155_UKNPC_TakeOutMMG	1_4	Christ!  We've gotta take out that machine gunner!
+03156_UKNPC_WatchWindow	1_4	Watch the window!
+03157_UKNPC_KeepDown	1_4	Stay down!
+03158_UKNPCOFC_SplitUp	1_4	Split up, lads!
+03159_UKNPCOFC_MoveRight	1_4	Squad, move right!
+03160_UKNPCOFC_MoveLeft	1_4	Squad, move left!
+03161_UKNPCOFC_StayInCover	1_4	Stay in cover!
+03162_UKNPCOFC_DefendPosition	1_4	Defend this position!
+03162a_UKNPCOFC_HoldGround	1_4	Hold your ground!
+03163_UKNPCOFC_MoveUp	1_4	Squad, move up!
+03163a_UKNPCOFC_SquadForward	1_4	Squad - forward!
+03164_UKNPCOFC_We'veMadeIt	1_4	Right men - we made it!
+03165_UKNPC_ReachBasement	1_4	We need to reach the celler.
+03166_UKNPCOFC_Generators	1_4	Quick!  Look for the generators!
+03167_UKNPCOFC_TakeOutThisBuilding	1_4	The power station's got to fall.  Everything's riding on it!
+03168_UKNPC_Careful	1_4	Careful, men -  they know we're here.
+03169_UKNPC_WatchLedges	1_4	Watch those ledges!
+03170_UKNPCOFC_MoveIn	1_4	Squad, move in!
+03171_UKNPC_FrontDoor	1_4	Looks like we use the front door.
+03172_UKNPCOFC_WatchBacks	1_4	Watch your backs, lads!
+03173_UKNPC_OnCatwalk	1_4	There!  On the catwalk!
+03174_UKNPCOFC_ClearOffices	1_4	Someone get up there and clear those damn offices!
+03175_UKNPCOFC_AlmostThere	1_4	Almost there, men.
+03176_UKNPCOFC_Basement	1_4	Right - on to the basement.
+03177_UKNPCOFC_WaitHere	1_4	Squad, hold here!  Watch our backs!
+03178_UKNPCOFC_MoveUp	1_4	Move up!
+03179_UKNPC_NotMuchCover	1_4	Be careful here men, there's not much cover.
+03180_UKNPC_AcrossCatwalks	1_4	Hurry!  Across the catwalks!
+03181_UKNPC_GettingClose	1_4	We're bloody close!
+03182_UKNPCOFC_TakeCover	1_4	Down!  Take cover!
+03183_UKNPC_KeepMoving	1_4	Keep moving!  We haven't much time!
+03184_UKNPCOFC_PlantCharges	1_4	Holt -- there they are!   Quick plant the charges!
+03184a_UKNPC_GetToPlunger	1_4	Reinforcements are heading in! We gotta go, get to that plunger.
+03184b_UKNPC1_GetToPlunger	1_4	Good job, Holt!  Squad's upstairs rigging the plunger. Let's get outside!
+03184c_UKNPC2_HitIt	1_4	There it is Holt! Now, hit it!
+03184d_UKALL_HitIt	1_4	Whoooo!
+03185_UKNPCOFC_EveryoneOut	1_4	Good work!  Now every one out of here!!!
+03186_UKNPCOFC_EnemyReturns	1_4	Move it -- before the Gerries find us!
+03187_UKNPC_Quickly	1_4	Come on, men!  Quickly!
+03188_UKNPC_RendezvousOutside	1_4	We'll rendezvous outside!
+03189_UKNPCOFC_GetPlunger	1_4	Holt!   Get to the plunger!  Fast!!
+03190_UKNPCOFC_HereWeGo	1_4	Here we go, lads!  --THIS IS IT!
+03191_UKNPC_CrippleBastards	1_4	That should cripple those Hun bastards!
+03191a_UKNPC_It'sAboutTime	1_4	It's about time you showed up, yank!
+03191b_UKNPC_SetThoseCharges	1_4	The power station's through there, let's set those charges.
+03191c_UKNPC_PowerPlant	1_4	There's the power station!
+03191d_UKNPC_MMGNest	1_4	Machine gun nest!
+03191e_UKNPC_TakeOutMMGNest	1_4	We need to take out that machine gun nest if we're going to get inside!
+03191f_UKNPC_SetTheCharges	1_4	You head in and set the charges.
+03191g_UKNPC_HoldThemOff	1_4	We'll hold them off from here.
+03191h_UKNPC_FieldMarshall	1_4	There's the field marshall!
+03191i_UKNPC_Officer	1_4	It's an officer!
+03191j_UKNPC_Snipers	1_4	Snipers!
+03191m_UKNPC_SlippedPastUs	1_4	Sorry! Some of them slipped past us!
+03191n_UKNPC_Let'sGo	1_4	Let's go!
+03191o_UKNPC_BackUpstairs	1_4	Let's head back upstairs.
+03191p_UKNPC_ReinforcementHeadingIn	1_4	There are reinforcements heading in!
+03191q_UKNPC_MakeItToPlunger	1_4	See if you can make it to that plunger!
+03191r_UKNPC_We'llCoverYou	1_4	We'll cover you.
+03191s_UKNPC_GetToPlunger	1_4	Get to the plunger!
+03249_1_StN4BRF_DarknessBeforeDawnA	1_4	Well, whatever element of surprise we had is gone.  We took over the German HQ to set up our next attack, but now its full of wounded...and we're taking heavy fire.  Those of us that still can - are getting ready to take on the power station.   More information from the OSS would be helpful - especially about this guy, Horst.  I'm not sure how he fits.  All I do know is - we gotta get the hell outta here.
+03249_StN4BRF_DarknessBeforeDawnA	1_4	Well, whatever element of surprise we had is gone.  We took over the German HQ to set up our next attack, but now it's full of wounded, and were taking heavy fire.  Those of us that still can are getting ready to take on the power station.  More information from the OSS would be helpful, especially about this guy Horst.  I'm not sure how he fits.  All I do know is, we gotta get the hell out of here.
+03250_USS4WT_ShutDownGenerators	1_4	Holt, listen to me, son.  You've got to shut down the generators at the power station.  Failure is not an option.
+03250a_FRS4WT_ShutDownGenerators2	1_4	Holt, you must shut down the generators at the Power Station, failure is not an option here.
+03251_USS4WT_IntelOnRocket	1_4	Holt, I hate to be vague, but this is all I've got.  We got indicatations that the Germans are working on some sort of rocket.  Now, get in there and see what you can find out.
+03251a_FRS4WT_IntelOnRocket2	1_4	Holt, Intel says that the German's are building some sort of rocket, see what you can find out.
+03252_USS4WT_GermansAtOldMole	1_4	Holt, German troops are moving on the Old Mole.  You've gotta stop 'em and you gotta do it in a hurry.
+03252a_FRS4WT_GermansAtOldMole2	1_4	Holt, come in, the German's have landed at the Old Mole!  You must eliminate them, hurry.
+03253_USS4WT_SearchWarehouses	1_4	Holt, the Germans may be storing experimental equipment in those warehouses.  Search and destroy.
+03253a_FRS4WT_SearchWarehouses2	1_4	Holt, search the warehouses destroy whatever you can find.
+CSA_Type_Plunger	1_4	Press [$ACTION] to Push Plunger
+MO_ST4_Escape	1_4	Escape Power Plant to Detonate Charges
+MO_ST4_OldMoleAdd	1_4	Eliminate German Infantry Unit
+MO_ST4_OldMolePause	1_4	Eliminate German Infantry Unit
+MO_ST4_OldMolePrompt	1_4	Eliminate German Infantry Unit
+MO_ST4_OldMoleSucess	1_4	German Infantry Unit Eliminated
+MO_ST4_PrimaryAdd	1_4	Destroy Power Station
+MO_ST4_PrimaryPause	1_4	Destroy Power Station
+MO_ST4_PrimaryPrompt	1_4	Destroy Power Station
+MO_ST4_PrimarySub	1_4	%1 of %2 charges set
+MO_ST4_PrimarySuccess	1_4	Power Station Destroyed
+MO_ST4_RocketAdd	1_4	Destroy 3 V2 Rocket Hulls
+MO_ST4_RocketPause	1_4	Destroy 3 V2 Rocket Hulls
+MO_ST4_RocketPrompt	1_4	Destroy 3 V2 Rocket Hulls
+MO_ST4_RocketSub	1_4	%1 of %2 V2 Rocket Hulls Destroyed
+MO_ST4_RocketSuccess	1_4	3 V2 Rocket Hulls Destroyed
+MO_ST4_SUBAdd	1_4	Locate and Destroy German U-Boat
+MO_ST4_SUBPause	1_4	Locate and Destroy German U-Boat
+MO_ST4_SUBPrompt	1_4	Locate and Destroy German U-Boat
+MO_ST4_SUBSub	1_4	%1 of %2 charges set
+MO_ST4_SUBSuccess	1_4	German U-Boat Destroyed
+MO_ST4_TriggerExplosivesAdd	1_4	Escape Power Station to Detonate Charges
+MO_ST4_TriggerExplosivesPause	1_4	Run Outside and Hit the Plunger
+MO_ST4_TriggerExplosivesSuccess	1_4	Plunger Hit
+MO_VillageAdd	1_4	Destroy Panzer Tank In Ruins
+NemesisName	1_4	Horst Brenner
+OSSDocumentFound	1_4	V2 Rocket Equipment Blueprints Uncovered
+05000_LtRoderick_AlrightItsAlmostDawn	1_5	Alright, it's almost dawn.  Time to leave.
+05001_Upton_BoutTimeSir	1_5	Bout time, sir.  Not all that sure when the fuses in the Campbeltown will go.  D'rather not be here, if you take my meaning.
+05002_LtRoderick_IDoIndeedSgt	1_5	I do indeed, Sergeant.  Rally the lads.  We'll make for the boats.
+05003_Upton_RightWerePullingOut	1_5	Right!  We're pulling out!
+05003a_Upton_GermansCampedOut	1_5	We've got Gerries camped out just ahead.  Sounds like they may have a bloody machine gun.
+05004_SgtGibbs_TheyGotOurEscapeBoats	1_5	Sir, they got our escape boats!
+05005_LtRoderick_BuggerNowWereOnFoot	1_5	Bugger.  Now we're on foot.  Better get moving.  It'll be light soon.
+05006_German1_WhereAreThey	1_5	Where are they!
+05008_LtRoderick_KeepASharpEyeOut	1_5	Keep a sharp eye out.  We don't have much room.
+05009_Upton_JesusAndMaryWeBombed	1_5	Jesus and Mary we bombed this place to hell.
+05010_LtRoderick_UpAhead	1_5	Up ahead!
+05015_German1_CanYouBelieve	1_5	Can you believe those damn English?  They rammed their little boat into our dock.
+05016_German2_WhatDidTheyHope	1_5	What did they hope to accomplish?  The damage was not that bad.  It can be fixed in a week.
+05017_German1_LongerThenTheyllLive	1_5	Longer then they'll live!
+05018_German2_LookTheresOne	1_5	Look!  There's one!
+05019_German1_WhereDidHeComeFrom	1_5	Where did he come from?!!
+05020_German2_WhoCaresKillHim	1_5	Who cares?  Kill him!!
+05021_German1_Aaaagggg	1_5	AAAAAGGGGG!!!!
+05022_German2_OoohhRrrggg	1_5	OOOOOHH!  RRRGGG!
+05055_German3_ThereTheyAre	1_5	THERE THEY ARE!
+92400_1_UKNPC_RogerThat	1_5	Roger That.
+92400_1a_UKNPCCPT_Damn	1_5	Damnit!
+92400_UKNPC_ReinforcementsNotComing	1_5	Reinforcements are not coming.  Repeat - not coming. You are directed to take the squad out of the city and await orders. Watch for other squads trapped in your area.  Good luck.
+92400a_UKNPCCPT_WeWalkFromHere	1_5	Well lads, it looks like we walk from here.  Hope you fancy the French countryside...
+92400b_UKNPCCPT_ScoutReport	1_5	Scout - Report.
+92400c_UKNPCCPT_GermansInAHouse	1_5	Got a few of the Huns in a nearby house, sir . Maybe more in the area.
+92401_UKNPC_LetsGo	1_5	Hurry it up, let's go.
+92401a_UKNPC_MoveMove	1_5	Move. Move.
+92401b_UKNPC_StayBehindCover	1_5	Stay behind cover...
+92401c_UKNPC_WatchForEnemyFire	1_5	Watch the windows for enemy fire.
+92401d_UKNPC_ClearHouse	1_5	We've gotta clear that house up ahead.
+92401da_UKNPC_ThereTheyAre	1_5	There they are!
+92401db_GENPC_GetIntoHouse	1_5	The Englanders!  Quickly - into the house.
+92401e_UKNPC_ThereTheyAre	1_5	There!
+92401f_GENPC_QuickIntoTheHouse	1_5	Get into the house. It's the dammned English!
+92401g_UKNPC_HoldHere	1_5	Hold here.
+92401h_UKNPC_Enemy	1_5	Huns!!!
+92401i_UKNPC_InTheWindow	1_5	In the window!
+92402_1_UKNPCCPT_SearchBuilding	1_5	Holt, search the building for supplies.
+92402_1a_UKNPCCPT_FollowMe	1_5	Morgan, Bishop, follow me!
+92402b_UKNPC_SplitUpSquad	1_5	Collins, take the alley. The rest of you men follow me.
+92499_UKMD1_StayWithMe	1_5	Winters, Winters.Stay with me!..
+92499a_UKMD1_YouCanMakeIt	1_5	Come on lad - fight!
+92499b_UKMD1_Nooooo	1_5	Winters!
+92499c_UKMD1_They'llPayForThis	1_5	Damn Gerries, I swear they'll pay for this.
+92499d_1_UKAL1_Doesn'tLookGoodLOUD	1_5	Christ, this doesn't look good!
+92499d_UKAL1_Doesn'tLookGood	1_5	Christ, this doesn't look good!
+92499e_UKAL2_SecondSquadAhead	1_5	Sir, I see Second Squad up ahead!
+92499f_UKSSM_HoldYourFire	1_5	Hold your fire, over Here!
+92499g_UKNPCCPT_RestUpHere	1_5	Alright men, rest up here!
+92499h_UKNPCCPT_MoveOnSecondSquad	1_5	Holt,  move on with second squad.
+92500_UKNPCCMD_SecondSquadPinned	1_5	A damn tank's got second squad pinned down up ahead.
+92501_UKNPCCMD_MarkWithSmoke	1_5	We need to mark it with smoke so the planes can take it out.
+92501a_UKNPCCMD_SmokePosition	1_5	We need to smoke its position so the planes can take it out.
+92502_UKNPCCMD01_BleedinGerries	1_5	Bleedin' Gerries...
+92503_UKNPCCMD_VerasAllAround	1_5	We pull this off and its Veras all around, lads.
+92504_UKNPCCMD_LetsMove	1_5	All right.  Let's move!
+92504a_UKNPCCMD_SquadPinnedDown	1_5	Oh Thank god!  The Huns have  my squad pinned down ahead.You've gotta help break through their lines.
+92504b_UKNPCCMD_TankFarSide	1_5	There's a bleedin tank on the far side of the courtyard, its got us cut off.
+92504c_UKNPCCMD_AirSupportOnTheWay	1_5	We've radio'd in -- air support's on the way, but we can't wait for 'em.
+92504d_UKNPCCMD_Let'sMove2	1_5	All right!  Let's move!
+92504e_UKNPCCMD_OldCarHolds	1_5	This old thing won't take it!
+92504f_UKNPCCMD_MoreOnTheWay	1_5	Hurry the hell up, will ya!  There is sure to be more on the way!
+92504g_UKNPCCMD_MoveUpstairs	1_5	Squad, upstairs!  Keep your eyes open!
+92505_UKNPCCMD_MowEmDown	1_5	That's where we're goin. These Huns are in our way! -- Mow 'em down, lads!
+92506_UKNPCCMD_ChargeOnThatDoor	1_5	Jago!  Get a charge on that door!
+92507_UKNPCJGO_Right	1_5	Right
+92508_UKNPCCMD_EveryoneDown	1_5	Christ!  Down!  Everyone down!
+92509_UKNPCCMD_GetThoseMMGs	1_5	Someone get those machine guns!
+92510_UKNPCCMD_TakeOutThatDoor	1_5	Benson!  You're up!  Take out that door!
+92511_UKNPCCMDBSN_I'mOnIt	1_5	I'm on it!
+92512_UKNPCCMD_CoverHim	1_5	Cover him!
+92513_UKNPCCMDBSN_Blasting	1_5	BLASTING!
+92514_UKNPCCMD_GetOutOfTheSquare	1_5	We've got to get out of the square!  Come on!  -- Move!  MOVE!
+92514a_UKNPCCMD_GetOtherSideOfSquare	1_5	We've gotta reach the other side of this square. --Our best bet is through those buildings!
+92514b_UKNPCCMD_EveryoneDown	1_5	Christ!  Down!  Everyone down!
+92514c_UKNPCCMD_MachineGun	1_5	Machine gun!
+92514d_UKNPCCMD_SomeoneGetMachineGun	1_5	Someone get that machine gunner!
+92514e_UKNPCCMD_MachineGunDown	1_5	Machine gun down!  --Move in!
+92514f_UKNPCCMD_GoGoGo	1_5	GO, GO, GO!
+92514g_UKNPCCMD_WatchWindows	1_5	Watch the windows!
+92514h_UKNPCCMD_Reinforcements	1_5	Got Gerrie reinforcements coming!!
+92514i_UKNPCCMD_CoverHim	1_5	Cover him!
+92514j_UKNPCCMD_RushThatDoor	1_5	Squad, we're gonna rush that door!
+92514k_UKNPCCMD_CrawlOut	1_5	Looks like we're gonna have to bleedin' crawl outta here!
+92514l_UKNPCCMD_KeepMoving	1_5	No - don't stop now -- Keep moving!
+92514m_UKNPCCMD_TankDamage	1_5	Christ - that tank's nearly gutted the place.
+92515_UKNPCCMD_PlanesWaitingForSignal	1_5	Tank's on the other side.  The planes are waiting for our signal.
+92516_UKNPCCMD_SmokeGrenade	1_5	There's the tank!  Hit it with a smoke grenade!
+92516a_UKNPCCMD_SmokeIt	1_5	There it is!  Smoke it!
+92516b_UKNPCCMD_WaitForBombers	1_5	Good.  Stand by.  Wait for the bombers
+92516c_UKNPCCMD_Yes	1_5	Yes!
+92517_UKNPCCMD01_TakeThatGerrie	1_5	Take that, Gerrie!
+92518_UKNPCCMD02_AntennaOffChurch	1_5	Funny that antenna coming off that church, eh?
+92519_UKNPCCMD_RadioSetLetsGo	1_5	Must be a radio set.  Come on.  Let's go.
+92519b_UKNPCCMD_DemolishBuilding	1_5	Jesus Christ! Its gonna tear this place apart!!
+92519c_UKNPCCMD_GetDownMen	1_5	Get down, lads!
+92519d_UKNPCCMD_TakeCover	1_5	Take cover!
+92519f_UKNPCCMD_StayDown	1_5	Incoming!  Stay down!
+92519g_UKNPCCMD_TankDown	1_5	Yeah! Tank's down!  --Let's move out!
+92519h_UKNPCCMD_CoverThoseWindows	1_5	Harrison!  Welles!!  Cover those windows!  Everyone else, move out!
+92519i_UKNPCCMD02_CommCenter	1_5	Look at that antenna.  -Probably a communications center!
+92519j_UKNPCCMD_TakeCover	1_5	Squad! Take cover behind that fountain.
+92519k_UKNPCCMD_DestroyRadio	1_5	Holt, you destroy the radio equipment!  We'll watch your back!
+92519q_UKNPCCMD_EscapeThroughChurch	1_5	We'll escape through that church, men!  Quickly!
+92519r_UKNPCCMD_WayToAntenna	1_5	We'll have to cut through the church to find that antenna!
+92519s_UKNPCCMD_TakeOutAntenna	1_5	We've gotta get inside and take out that antenna.  Understood?  Let's go!
+92519t_UKNPCCMD_FindAntenna	1_5	Search the area!  Find that antenna and destroy it!  Hurry!
+92520_UKNPCCMD_MajorCommRig	1_5	That antenna's bigger than I thought. It must be a major communications rig.
+92521_UKNPCCMD_TakeOutThatStation	1_5	We've got to get inside and take out that station.  Understood?  Let's go!
+92522_UKNPCCMD_SmashTheRig	1_5	Find the radio room.  Smash the rig!  Hurry!
+92523_UKNPCCMD_GoodWorkHolt	1_5	Good work, Holt!
+92524_UKNPCCMD_EveryoneOut	1_5	All right, men!  Out, Out! Everyone out!
+92524a_UKNPCCMD_FindRadioRoom	1_5	Search the area! Find the radio room and smash the rig!  Hurry!
+92524b_UKNPCCMD_MoreReinforcements	1_5	Damn!  More reinforcements!
+92524c_UKNPCCMD_TheyKeepComing	1_5	They just keep bloody coming!
+92524d_UKNPCCMD_DefendThisPosition	1_5	Defend our position, men!
+92524e_UKNPCCMD_EscapeOtherSide	1_5	We'll be home free once we get past that wall, lads!
+92525_UKNPCCMD_ClearTheCity	1_5	We've got to get clear of the city.
+92526_UKNPCCMD01_WhatsThatNoise	1_5	What's that noise?!
+92527_UKNPCCMD02_WhatIsIt	1_5	Christ!  What is it?!
+92528_UKNPCCMD01_ItsComingCloser	1_5	It's coming closer!
+92529_UKNPCCMD02_ItsComingCloser	1_5	A bloody tank!
+92530_UKNPCCMD_WatchOut	1_5	Watch out!
+92531_UKNPCCMD02_ItsStuck	1_5	It's stuck!
+92532_UKNPCCMD01_BlockingTheWay	1_5	It's blockin' the way!
+92533_UKNPCCMD_PlantAChargeOnTank	1_5	Fine - we'll make our own!  Holt, see if you can get close enough to plant a charge on that tank!  We'll cover you!
+92534_UKNPCCMD_CoverHolt	1_5	Holt's going!  Cover him!
+92535_UKNPCCMD_TakeCover	1_5	Take cover!
+92536_UKNPCCMD_LetsMoveOut	1_5	Holt's done it, men!  Everyone - move out!!!
+92536a_UKNPCCMD_GetClearOfCity	1_5	We've got to get clear of the city!  Come on, men, this way!
+92536b_UKNPCCMD02_DefendThisPosition2	1_5	Hold this position!
+92537_UKNPCCMD_EscapeJustAhead	1_5	We're almost out!  Stick together!!!
+92537_UKNPCCMD_ToTheCountryside	1_5	This way, lads!  --The countryside.  We're almost through!
+92539_UKNPCCMD02_Retreat	1_5	Bloody hell, retreat!
+92540_UKNPCCMD02_TakeCoverLowWalls	1_5	Take cover!  Behind these low walls!
+92541_UKNPCCMD_StayDown	1_5	For God's sake - stay down!
+92542_UKNPCCMD_UseGrenades	1_5	We'll have to use grenades to take it out, men!
+92543_UKNPCCMD_DirectShot	1_5	Don't let it take a direct shot!
+92544_UKNPCCMD02_UseBuildingsCover	1_5	Use the buildings for cover!
+92545_UKNPCCMD_MoreGrenadesNearChurch	1_5	Holt, there are more grenades near the church!  Get them!
+92546_UKNPCCMD02_It'sMovingUp	1_5	It's moving up!
+92547_UKNPCCMD02_StayInCover	1_5	Stay In cover!
+92548_UKNPCCMD_MoveBackMoveBack	1_5	Move Back! Move Back!
+92599_1_StN5BRF_TakingAFrenchLeave	1_5	I had hoped the darkness would give us a break, but it'll be light soon.  The Campbeltown could blow at any time, so we need to get outta here now.  I heard the Germans got our escape boats, so now we have to fight our way though town and head for the countryside.  Koster knows we're coming - he'll be waiting.  These commandos are the bravest men I've ever seen.  People will remember this night - even if we live.
+92599_StN5BRF_TakingAFrenchLeave	1_5	Hoped the darkness would give us a break, but it'll be light soon.  Campbeltown could blow at any time. We've gotta get outta here now.  The Germans got our escape boats, so we have to fight our way though town and head for the countryside. Koster knows we're coming - he'll be waiting.  These commandos are the bravest men I've ever seen.  People will remember this night - even if we live.
+92600a_UKNPC_StayInCover	1_5	Stay in cover -- watch the windows.
+92601_UKNPC_SecondStoryAngle	1_5	Somebody get up there and take out that damn machine gun!
+92601b_UKNPC_KeepTheMMGOnUS	1_5	Everyone -- take cover!
+92601c_UKNPC_GetDown	1_5	Bloody get down!
+92601d_UKNPC_HoldPosition	1_5	Hold your position!
+92601e_UKNPC_MoreEnemyOnTheWay	1_5	Hold here! Could be more Gerries on the way!
+92601f_UKNPC_StayInCover	1_5	Stay in cover!
+92601g_UKNPC_WindowAbove	1_5	I need a shooter in that window up there!
+92602d_UKNPC_KeepItQuiet	1_5	Allright, if you're with me -- keep it down.
+92602e_UKNPC_ThereTheyAre	1_5	Look!  There they are!
+92602f_UKNPC_TakeOutMMG	1_5	Take out that machine gun!!
+92602g_UKNPC_TheirOwnMMG	1_5	Use their own bloody machine gun on 'em!
+92603_UKNPC_Shhhh	1_5	Shhhh, I'm going in.
+92603a_UKNPC_TimeToPay	1_5	Time to pay the piper, Gerrie.
+92604_UKNPC_Hooray	1_5	RIGHT -YEAH!!!!
+92604a_UKNPC_GreatJobLads	1_5	Great job, lads -- now move out!
+92604b_UKNPC_LookoutForSquads	1_5	Keep your eyes open for other squads.  We're not the only ones stuck 'ere.
+92650_USS5WT_GetOutASAP	1_5	Holt, you need to muster your people and get out of there now. We'll cover your exit as soon as we can.
+92650a_FRS5WT_GetOutASAP2	1_5	Holt, take the men and get out of the city.  We will send help out to you as soon as we can.
+92651_USS5WT_MachineGunNest	1_5	We've got reports of heavy machine gun fire in that area.  Use all possible cover and concealment.  Do not move in straight lines.
+92651a_FRS5WT_MachineGunNest2	1_5	Holt, watch for German machine guns in your area.
+92652_USS5WT_CommApparatus	1_5	Holt, we're picking up serious intercepts from heavy radio traffic in that area.  Find the radio sets, RD.  Find 'em, destroy 'em.
+92652a_FRS5WT_CommApparatus2	1_5	Holt, come in, we have intercepted enemy radio transmissions.  Find and destroy any German radio equipment.
+92653_USS5WT_PlaneStandingBy	1_5	Holt, we've got an aircraft standing by.
+92653a_FRS5WT_PlaneStandingBy2	1_5	Holt, we have an aircraft standing by.
+92654_USS5WT_EnemyCommandAtChurch	1_5	Holt, just got word from recon in the area.  They say the enemy has seized a church.  They're using it as a CP.
+92654a_UFR5WT_EnemyCommandAtChurch2	1_5	Holt, come in, you'll find the German command center inisde the Church.
+BombingRun	1_5	The planes! I hear 'em! Hang tight, lads! Incoming! Stay down! Tanks down, let's move out!
+CSA_Plunger	1_5	Press  [$ACTION] to Use Plunger
+MO_MMGAdd	1_5	Destroy Machine-gun Nest
+MO_MMGPause	1_5	Destroy Machine-gun Nest
+MO_MMGPrompt	1_5	Destroy Machine-gun Nest
+MO_MMGSuccess	1_5	Machine-gun Nest Destroyed
+MO_PrimaryAdd	1_5	Escape St. Nazaire
+MO_PrimaryPause	1_5	Escape St. Nazaire
+MO_PrimarySuccess	1_5	Escaped St. Nazaire
+MO_RadioAdd	1_5	Destroy Radio Tower
+MO_RadioPause	1_5	Destroy Radio Tower
+MO_RadioSuccess	1_5	Radio Tower Destroyed
+MO_SquareTankAdd	1_5	Eliminate Panzer Tank
+MO_SquareTankPause	1_5	Eliminate Panzer Tank
+MO_SquareTankPrompt	1_5	Eliminate Panzer Tank
+MO_SquareTankSuccess	1_5	Panzer Tank Eliminated
+NemesisName	1_5	Erich Koster
+OSSDocumentFound	1_5	North African Shipping Manifest Obtained
+TankDestroysWall	1_5	Get down lad! That damn tank knows we're here!   Where the bloody hell is air support?!! Jesus Christ! It's gonna tear this place apart!!
+05962b_NAF3BRF_OperationBlindfold	1_8	Never thought I'd end up in North Africa.  It's the hottest place I've ever been. The OSS thinks the Germans are testing secret weapons in the desert. Intel believes a German Officer named Von Schrader is behind it.  Plan is for me to join up with the Desert Rats and look into it.  The Germans are supposed to be working on some new thing called a Tiger Tank. Direct orders are to take 'em out...and whatever else we find. I'm tracking a guy named Brecht;  he's another of Von Schrader's men.  I'm with a forward patrol - closing in on their position...
+93019_UKNPC_GermansTestingTanksCombined	1_8	All right, you lot!  We've got a new Gerrie tank to send back to hell!  We hear communication and radar posts are also operating in the area.  We've gotta put a stop to them.
+93020_UKNPC_GermansTestingTanks	1_8	All right, you lot!  We've got a new Gerrie tank to send back to hell!  It's just beyond a bloody trench - thick with the bastards!  Like rats, they are!
+93020a_UKNPC_RadarStationsMustBeDestroyed	1_8	We hear communication and radar posts are also operating in the area.  We've gotta put a stop to them.
+93021_UKNPC_GoodLuckChaps	1_8	Do the Jerboa and the division proud, lads!
+93021a_UKNPC_BeCarefulOutThere	1_8	Watch yourselves!
+93022a_UKNPC_WhatWeHaveBeenTrainingFor	1_8	It's come to this, men!   Chew 'em up and spit 'em out!
+93023_UKNPC_WhatTheHellWasThat	1_8	Bloody hell!  What was that?!!!
+93023a_UKNPC_ThereIsAPanzerInVillage	1_8	Look!  There's a bleedin' Panzer in that village!
+93023b_UKNPC_TakeCover	1_8	Get down!!!!
+93024_UKNPC_BehindThatDune	1_8	Hey!  Behind those crates is a little darlin' that should help even the odds.
+93024a_UKNPC_StormTheNaziVillage	1_8	The Nazi's have a hold of a village up ahead.  We're about to shake 'em loose!
+93024b_UKNPC_CoverUs	1_8	We're gonna storm the place.  Cover us!
+93025_UKNPC_Panzer&MMGsHaveUs	1_8	Christ!  Between the panzer and that machine gun, we're hemmed in!
+93025a_UKNPC_DrawTheirFire	1_8	We'll draw their fire - you take out the damn tank!  Do it!
+93026_GENPC_ProtectTheVillage	1_8	We've got to hold the village!!
+93026a_GENPC_HoldThemOff	1_8	Fight them off!  Hold your positions!
+93027_GENPC_StopThem	1_8	No!! Stop the English!!
+93027a_GENPC_ForTheFatherland	1_8	For the Furher!  For the Fatherland!
+93028_GENPC_DefendVillageWithOutLives	1_8	Hold this place - down to the last man!
+93028a_GENPC_HoldThemOffAtAllCosts	1_8	Hold them off!   Beat them back!
+93029_GENPC_HoldOurGround	1_8	Hold your ground, men!
+93029a_GENPC_MakeOurStand	1_8	We will lay down out lives!  Here - we make our stand!
+93030_UKNPC_WeHaveDoneIt	1_8	We did it!  YEAH!  We did it!!!
+93030a_UKNPC_TheVillageIsOurs	1_8	We've taken the village!
+93030b_UKNPC_GreatWorkForAmerican	1_8	Not bad, Yank.  Not bad.
+93031_UKNPC_Panzer	1_8	Panzer!
+93031a_UKNPC_ShoreUpThatBreech	1_8	Go on!  Shore up that breech!!
+93031b_UKNPC_SaveTheCelebrating	1_8	Drinks on me, eh?  -- After we route these Huns!
+93031c_UKNPC_TakeTheTrench	1_8	Time to take the trench!
+93031p_GENPC_SecretsBeyondTheTrench	1_8	Ahh.damn you to hell.you'll never see the other side.
+93031q_UKNPC_OnToTheTrench	1_8	GO!  On to the trench!
+93032_GENPC_RipThemApart	1_8	Grind them up, men!
+93032a_GENPC_DoNotLetAlliesAdvance	1_8	Stop them!  Stop the allies!
+93032b_GENPC_FireAtWill	1_8	OPEN FIRE!!!
+93033_GENPC_Retreat	1_8	ACH!!  RETREAT!!!
+93033a_GENPC_ProtectTigerTankFacility	1_8	Protect the Tiger Tank Facility.
+93050_UKNPC_It'sTooQuiet	1_8	It's too bleedin' quiet out here..
+93051a_GENPC_ProtectTheTanks	1_8	All squads, attack!!!  Protect the tanks!!!
+93051a1_GENPC_ProtectThePrototypes	1_8	Protect the prototypes!  Don't let them take them!
+93051b_GENPC_KillThem	1_8	Kill the Englanders!
+93051c_GENPC_Don'tLetThemNearTanks	1_8	ACH!  Keep them away from the tanks!
+93052_UKNPC_AmmoBouncesOff	1_8	Christ!  The anti-tanks aren't working!!
+93052a_UKNPC_GrenadesBarelyScratch	1_8	Grenades don't even scratch 'em!
+93053_UKNPC_Wouldn'tWantToBeBunkerDoor	1_8	You gotta blast that door, yank!  It's the only way into the bunker!
+93054_UKNPC_FindAWayOut	1_8	Now we gotta find a way outta this damn place!
+93054a_GENPC_DoNotLetThemEscape	1_8	Stop them!  Don't let them escape!
+93054b_GENPC_PleaseRespond	1_8	Come in!   What is going on there!  Come in!  Come in!
+93054c_GENPC_SchraderWantsReport	1_8	Lokki, this is Valhalla.  Herr Von Schrader wants his report!  Come in!
+93055_UKNPC_EyesOpenForMMGNest	1_8	Keep your eyes open!
+93055a_UKNPC_There'sOurFifth	1_8	Great, there's our fifth, let's go.
+93056_UKNPC_YouCouldUseHelp	1_8	Hey, yank -- Got a little something for ya.  Good hunting.
+93056a_1_UKNPC_RadarStationAhead	1_8	Right.the radar's just up ahead.
+93056a_UKNPC_RadarStationAhead	1_8	Right.the radar's just up ahead.  But first, we've gotta machine gun nest to take down.
+93056b_UKNPC_TakeOutNestInHillside	1_8	But first, we've gotta machine gun nest to take down.
+93057_UKNPC_MMGHasUsTrapped	1_8	That machine gun's got us pinned down, dammit!
+93057a_UKNPC_TakeOutDamnGunner	1_8	We'll draw their fire - you take out that Gerrie-gunner-bastard!
+93058_GENPC_KillHim	1_8	Kill him!
+93058a_GENPC_UnderAttack	1_8	Watch out!  We're under attack!
+93058b_GENPC_Don'tLetHimReachBunker	1_8	Stop them!  Do not let them get to the bunker!
+93058b1_GENPC_UnderAttack	1_8	Attention!  Attention!  We are under attack!
+93058c_GENPC_StopThemAtAnyCost	1_8	Kill the attackers!  You must stop them at all costs!
+93058d_GENPC_StopThemForFuhrer	1_8	Stop them!  Kill them for the Fuhrer!
+93059_GENPC_HeIsABitOutnumbered	1_8	Gunther, we've got a sheep in our midst!
+93059a_GENPC_HeLooksLost	1_8	Ja!  A lamb to the slaughter!
+93059b_GENPC_Don'tLetHimReachBunker	1_8	Keep the bastard away from the bunker!
+93060_GENPC_Attack	1_8	Attack!
+93060a_GENPC_IntruderAlert	1_8	We've got an intruder!  ALARM!
+93060b_GENPC_HeCannotReachBunker	1_8	You must stop him from reaching the bunker!
+93061a_GENPC_HeHasKilledOurBrothers	1_8	Damn Englanders!
+93065_UKNPCPLT_KrautsOnTopOfUs	1_8	.They shot us down..don't let them get the recon.
+93066_GENPCNEM_GiveMeReconDocs	1_8	I want those documents!
+93066a_UKNPC_OverMyDeadBody	1_8	NO!
+93067_GENPCNEM_AnotherBodyCrashSite	1_8	You English are like cockroaches..
+93067a_GENPCNEM_AnotherBodyCrashSite	1_8	You English are like cockroaches..
+93067a1_GENPCNEM_DieAmerican	1_8	Die, American!
+93067a1a_GENPCNEM_DieAmerican	1_8	Die, American!
+93067b_GENPC_KillHim	1_8	Get him!
+93067b_GENPCNEM_KillHim	1_8	Shoot!  Kill him!
+93067c_GENPCNEM_StopHim	1_8	Stop him, dammit!
+93067d_GENPCNEM_Don'tFindDocuments	1_8	Don't let him find the documents!
+93067e_GENPCNEM_KillYouMyself	1_8	Now I have to kill you myself.
+93075_USN3WT_DestroyPrototypes	1_8	Holt, scouts have located a secret tank facility in this area.  I want you destroy whatever is inside.
+93075a_FRN3WT_DestroyPrototypes	1_8	Holt, our scouts have located a secret tank facility in this area.  We need to destroy those prototypes!
+93076_USN3WT_SecureVillage	1_8	Holt, knock out that Panzer; secure the village.  Get a move on!
+93076a_FRN3WT_SecureVillage	1_8	Holt, you need to destroy that panzer and secure the village.  Hurry!
+93077_USN3WT_TakeOutRadarDish	1_8	Holt, take out that radar dish!  Without it, they're blind!
+93077a_FRN3WT_TakeOutRadarDish	1_8	Holt, you need to take care of that radar dish, that will blind them!
+93078_USN3WT_LancastersWentDown	1_8	Holt, Division S2 says a British Lancaster is missing in the area.  There's classified documents on board.  We can't let the Krauts get a hold of it.
+93078a_FRN3WT_LancastersWentDown	1_8	Holt, Intel says that one of our Lancasters has gone down in this area.  There are recon papers on board they cannot be allowed to fall into German hands!
+93079_USN3WT_BunkerLeadsToFacility	1_8	Holt, we've got indications that the bunker probably leads to another facility.  We need you to check it out!
+93079a_FRN3WT_BunkerLeadsToFacility	1_8	Holt, intelligence reports that the Bunker leads to another German facility, we need you to check it out!
+93080_USN3WT_BlowDoor	1_8	Holt, you're gonna have to blow that door to get inside the bunker!
+93080a_FRN3WT_BlowDoor	1_8	Holt, you're going to need to blast that door to get inside the bunker!
+93081_USN3WT_ClearTrench	1_8	Holt, If we can broom that trench, we can make it in the facility.
+93081a_FRN3WT_ClearTrench	1_8	Holt, come in, if we can clear that trench, we'll be able to make it to the facility.
+93081a_UKN3WT_SecuredBase	1_8	We've secured the base!
+93081b_UKALY_YouGoAhead	1_8	Holt, we're going to stay here, you move up.
+93081c_1_UKALY_GotYouCovered	1_8	Holt, you take point, we've got you covered.
+93081c_UKALY_YouTakePoint	1_8	Holt, you take point, we've got your back.
+96022_UKNPC_LookAlive	1_8	Chin up, lads!
+CSA_PressActionDocuments	1_8	Press [$ACTION] to Pick up Recon Documents
+MO_AAAdd	1_8	Destroy AA Outpost
+MO_AAPause	1_8	Destroy AA Outpost
+MO_AASuccess	1_8	AA Outpost Destroyed
+MO_Primary_NumberTanks	1_8	%1 of %2 Tanks Destroyed
+MO_PrimaryAdd	1_8	Destroy Tiger Tank Prototypes
+MO_PrimaryPause	1_8	Destroy Tiger Tank Prototypes
+MO_PrimarySuccess	1_8	Tiger Tank Prototypes Destroyed
+MO_RadarAdd	1_8	Sabotage German Radar Dish
+MO_RadarPause	1_8	Sabotage German Radar Dish
+MO_RadarSuccess	1_8	Sabotaged German Radar Dish
+MO_ReconAdd	1_8	Recover British Reconnaissance
+MO_ReconPause	1_8	Recover British Reconnaissance
+MO_ReconSuccess	1_8	British Reconnaissance Recovered
+MO_VillageAdd	1_8	Destroy Panzer Tank In Ruins
+MO_VillagePause	1_8	Destroy Panzer Tank In Ruins
+MO_VillageSuccess	1_8	Panzer Tank Destroyed
+NemesisName	1_8	Adabold Brecht
+OBJ_Escape_Add	1_8	Escape Into Bunker
+OBJ_Escape_Pause	1_8	Escape Into Bunker
+OBJ_Escape_Success	1_8	You Have Successfully Escaped
+OSSDocumentFound	1_8	Tiger Tank Operations Manuals Acquired
+Test	1_8	Test
+09129_German1_NowYouDieEnglanders	1_9	Now you die, Englander!
+09147_InjuredBritPilot2_OyeOverHere	1_9	HEY! OVER HERE!
+09161_Fitzsimmons_WellCoverYerBack	1_9	We'll cover yer back.
+09199_NAF4BRF_Facility	1_9	The commandos in St. Nazaire were tough, but these Desert Rats are a different breed.  They fight like animals. I can see how they earned their reputation.  We've cut our way deeper into the facility.  Intel believes the Nazis are working on a rocket out here - a new kind of V2.  We need to destroy it.  We also need to track down Schneider.  He holds important info.  Feels like we're getting close to something.
+09200_GENPC_PrepareRocket	1_9	Launch personnel:  Prepare the rocket for testing!
+09201_GENPC_CloseToCompletion	1_9	Attention: The weapon has been approved to final stage.
+09202_GENPC_Alarm	1_9	ALARM!  ALARM!  ALARM!
+09203_GENPC_SecurePrisoners	1_9	Hurry!  Secure the prisoners!
+09204_GENPC_DieAmerican	1_9	Die, you damn American!
+09205_GENPC_WeShallRise	1_9	.the Rheich shall rise - and soon will encircle the globe.
+09205a_GENPC_RheichShallRise	1_9	Through superior Aryan intelligence..and the inspired leadership of our Fuhrer..the Rheich shall rise - and soon will encircle the globe.
+09206_UKSAS_BlowThatDoor	1_9	Quick!  Blow that door, yank!
+09207_UKSAS_ComingWithYou	1_9	Your not leavin' me behind!
+09208_UKSAS_HopeYouKilled	1_9	I hope you got Schneider.the bastard.
+09209_GENPC_GetAway	1_9	Back!  Get away from the door!
+09210_UKSAS_ComingWith	1_9	You ain't leavin' me behind!
+09211_UKSAS_IsThatEveryone	1_9	Didja' get everyone!?
+09212_GENPC_OneMoreWord	1_9	Keep quiet!  Unless you want the electrodes!
+09212a_GENPC_OneMoreWordEnglish	1_9	Keep quiet!  Unless you want the electrodes!
+09213_UKSAS_ComingAsWell	1_9	Thanks for busting me out!
+09214_UKSAS_GetFilm	1_9	We can't leave without the test film!!
+09215_GENPC_ProtectRocket	1_9	Protect the rocket at all costs!
+09216_UKSAS_GetToCover	1_9	Find cover!!!
+09216a_UKSAS_NeedToKeepMoving	1_9	Come on Holt, we need to get moving!
+09225_GENAR_PowerfulWeapon	1_9	The rocket and its payload will be the most powerful weapon ever created.
+09225a_GENAR_SweepEnemiesAside	1_9	The rocket and its payload will be the most powerful weapon ever created.   With it, we will sweep our enemies aside in one mighty blow.Our children will tread on their ashes...
+09226_GEGR1_LetMeDoIt	1_9	The film, Fritz!  Let me!!
+09227_GEGR2_DoItLikeThis	1_9	No, you fool!  You'll ruin it!
+09228_GENEM_NeverGetOutAlive	1_9	Here - is where you will die, American!
+09229_GENEM_NeverGetWithFilm	1_9	You're not leaving here with that film!
+09230_GENEM_TaughtYouToShoot	1_9	HA!  You are as pathetic a shot as you are a race!
+09240_UKSAS_TakeOutNest	1_9	Take out that machine gun!!!
+09241_UKSAS_HelpUs	1_9	HEY!  Help! -- Help us!!
+09242_GENPC_KeepAwayFromRocket	1_9	Keep them away from the damn rocket!!
+09243_GENPCMMG_Damnit	1_9	Damnit!
+09244_UKSAS_TwoLessKrauts	1_9	Say goodnight, you Gerrie bastards!
+09245_GENPC_DieAmerican	1_9	Curse you, American!  DIE!!!
+09246_GENPC_GetHim	1_9	Stop him!!  Kill him!!!!
+09247_UKSAS_GotHim	1_9	CLEAN SHOT!
+09248_UKSAS_NestIsDown	1_9	Machine gunner's down!  Move up!!!
+09255_UKSAS_TakeOutTracks	1_9	Gotta stop the train!  Take out those tracks!
+09256_UKSAS_FromWarehouse	1_9	The warehouse!  They're comin' from the warehouse!
+09257_GRNPC_DieScum	1_9	Death to the Englanders!
+09258_UKSAS_We'llCoverYou	1_9	Plant the charge, yank!  We'll cover you!
+09259_UKSAS_Let'sMoveOn	1_9	Yeah!  Good on ya, Holt!  --We'd better keep movin!
+09265_UKSAS_ClearTheArea	1_9	Oi!  Holt! - Reinforcements are coming, but they can't get to us until we clear the area!
+09266_GENPC_KillAmerican	1_9	The American!  Kill him!!
+09267_UKSAS_TakeOutTheTanks	1_9	Take out those tanks or we're dog meat!!
+09268_UKSAS_GetInside	1_9	Quick!  Inside, Holt!  Hurry it up!
+09275_UKSAS_DestroyRocket	1_9	We've gotta destroy the bloody rocket!!
+09276_UKSAS_ClearGuysOut	1_9	Holt!  Chew through these bastards so we can get to the rocket!
+09277_UKSAS_HaveAtThem	1_9	Mow 'em down, lads!
+09278_GENPC_Don'tShoot	1_9	Watch out!  Don't shoot!  Explosives!!
+09279_GENPC_StopThem	1_9	Dammit!  Stop them!!
+09280_UKSAS_GetOut	1_9	Hurry!  Get the hell out of here!!!
+09281_UKSAS_Rendezvous	1_9	Rendezvous at the gate!!!
+09281a_UKSAS_MeetAtGate	1_9	Pull back!  Meet up at the gate!!!
+09282_UKSAS_Let'sGetOut	1_9	Come on!  Let's get out of here!
+09283_UKSAS_Man'sJob	1_9	Yeoman's work!  I owe you a vera, mate!
+93090_USN4WT_DestroyRocket	1_9	Holt, you need to destroy that rocket before the Germans can move it by rail.
+93090a_FRN4WT_DestroyRocket	1_9	Holt, you need to destroy that rocket before the Germans can move it by rail.
+93091_USN4WT_GatherIntel	1_9	Holt, it's a new weapon called a V2 rocket.  Get us all the intel you can.
+93091a_FRN4WT_GatherIntel	1_9	Holt, we need you to gather any Intel you can on these new V2 rockets.
+93092_USN4WT_FindMissingSAS	1_9	Holt, we've got 3 SAS scouts missing in this area.  I want you to see if you can find 'em.
+93092a_FRN4WT_FindMissingSAS	1_9	Holt, 3 of our SAS scouts went missing in this area, see if you can find them!
+93093_USN4WT_PhotographSchematics	1_9	Holt, critical mission.  We need photographs of the schematics of the V2 rocket.
+93093a_FRN4WT_PhotographSchematics	1_9	Holt, Intel needs you to photgraph the V2 rocket schematics, do you read me?
+93094_USN4WT_TakeOutTracks	1_9	Simple mission, Holt.  Take out the tracks, they can't move the rocket.
+93094a_FRN4WT_TakeOutTracks	1_9	Holt, if we destroy those tracks, the rocket cannot be moved.
+93095_USN4WT_CoverReinforcements	1_9	Holt, reinforcements inbound.  Cover 'em until they get inside the base.
+93095a_FRN4WT_CoverReinforcements	1_9	Holt, reinforcements are coming your way.  Cover them until they are inside the base!
+93097_USN4WT_LoadingBayDoor	1_9	Holt, reinforcements standing by.  Now get those loading bay doors open.
+93097a_FRN4WT_LoadingBayDoor	1_9	Holt, reinforcements are waiting to get in, you need to get that loading bay door open.
+93097b_USN4WT_OpenFuelVents	1_9	Holt.Mission 6. Demolition won't get it done. Infiltrate the control room and open all fuel vent valves.
+93097c_USN4WT_GetOutRocketBlows	1_9	Holt...This is Mission 6. Evacuate immediately! Warning! Evacuate immediately
+93097d_USN4WT_MeetAtGate	1_9	Holt.Holt... Mission 6. Rendezvous with your squad at the objective gates.
+93097e_1_USN4WT_GetAtRocket	1_9	Holt.This is Mission 6. Priority target is the rocket! Destroy it!
+CSA_PressActionDoor	1_9	Press [$ACTION] to Open Loading Bay Door
+CSA_PressActionFilm	1_9	Press [$ACTION] to Take V2 Film
+CSA_PressActionFuel	1_9	Press [$ACTION] to Lower V2 Rocket
+CSA_PressActionPhoto	1_9	Press [$ACTION] to Photograph V2 Schematics
+CSA_PressActionPrisoner	1_9	Press [$ACTION] to Free Prisoner
+NemesisName	1_9	Hans Schneider
+OBJ_NAF4_Escape_Add	1_9	Escape V2 Facility
+OBJ_NAF4_Escape_Pause	1_9	Escape V2 Facility
+OBJ_NAF4_Escape_Success	1_9	You Have Successfully Escaped
+OBJ_NAF4_Film_Add	1_9	Steal V2 Test Film
+OBJ_NAF4_Film_Pause	1_9	Steal V2 Test Film
+OBJ_NAF4_Film_Success	1_9	V2 Test Film Stolen
+OBJ_NAF4_Photo_Add	1_9	Photograph V2 Schematics
+OBJ_NAF4_Photo_Pause	1_9	Photograph V2 Schematics
+OBJ_NAF4_Photo_Success	1_9	V2 Schematics Photographed
+OBJ_NAF4_Primary_Add	1_9	Destroy V2 Rocket
+OBJ_NAF4_Primary_NextDemo	1_9	1 of 2 Charges Placed
+OBJ_NAF4_Primary_Pause	1_9	Destroy V2 Rocket
+OBJ_NAF4_Primary_Success	1_9	V2 Rocket Destroyed
+OBJ_NAF4_Prisoners_Add	1_9	Free 3 SAS Commando Prisoners
+OBJ_NAF4_Prisoners_Pause	1_9	Free 3 SAS Commando Prisoners
+OBJ_NAF4_Prisoners_SubObj	1_9	%1 of %2 Prisoners Freed
+OBJ_NAF4_Prisoners_Success	1_9	Freed 3 SAS Commando Prisoners
+OBJ_NAF4_Train_Add	1_9	Destroy Train Tracks
+OBJ_NAF4_Train_Pause	1_9	Destroy Train Tracks
+OBJ_NAF4_Train_Success	1_9	Train Tracks Destroyed
+OSSDocumentFound	1_9	Coded Virus House Information Located
+CSA_PressActionFilm	2_55	Press [$ACTION] to Take V2 Film
+CSA_PressActionFuel	2_55	Press [$ACTION] to Lower V2 Rocket
+CSA_PressActionPhoto	2_55	Press [$ACTION] to Photograph V2 Schematics
+CSA_PressActionPrisoner	2_55	Press [$ACTION] to Free Prisoner
+CSA_PressActionFilm	2_60	Press [$ACTION] to Take V2 Film
+CSA_PressActionFuel	2_60	Press [$ACTION] to Lower V2 Rocket
+CSA_PressActionPhoto	2_60	Press [$ACTION] to Photograph V2 Schematics
+CSA_PressActionPrisoner	2_60	Press [$ACTION] to Free Prisoner

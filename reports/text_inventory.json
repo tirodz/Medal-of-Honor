@@ -1,0 +1,158 @@
+{
+  "tables": [
+    {
+      "path": "extracted/MOH4/DATA/1/1_1/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 76
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_11/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 105
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_15/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 98
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_2/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 182
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_21/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 178
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_22/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 95
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_24/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 127
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_4/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 160
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_5/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 192
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_8/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 124
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_9/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 104
+    },
+    {
+      "path": "extracted/MOH4/DATA/1/1_99/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 602
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_51/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_52/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_53/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_54/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_55/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 4
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_56/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_57/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_58/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_59/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_60/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 4
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_61/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_62/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_63/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_64/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/2/2_66/STRINGS.VIV",
+      "xmlname": "stringtable.xml",
+      "strings": 0
+    },
+    {
+      "path": "extracted/MOH4/DATA/SHARED/STRINGS.VIV",
+      "xmlname": "globalstringtable.xml",
+      "strings": 538
+    }
+  ],
+  "total_strings": 2589,
+  "languages": [
+    "chinese",
+    "danish",
+    "dutch",
+    "english",
+    "french",
+    "german",
+    "italian",
+    "japanese",
+    "korean",
+    "spanish",
+    "swedish"
+  ]
+}

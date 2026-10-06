@@ -1,0 +1,538 @@
+70100_SCNAF_GoGo	Go!  Go!  Move up!
+70101_SCNAF_RightForward	Right!  Forward!
+70102_SCNAF_MoveForward	Come on!  Move forward!
+70103_SCNAF_HoldAndCover	Hold and cover, men!
+70104_SCNAF_HoldHere	Wait!  Hold here!
+70105_SCNAF_HoldPosition	Hold position!
+70106_SCNAF_Let'sGo	Right!  Let's go!
+70107_SCNAF_Holt'sGotIt	Holt's got it!  Move!
+70108_SCNAF_FormUp	Form up!  Let's go!
+70108a_SCNAF_Medic	Medic!  Medic!
+70108b_SCNAF_ImHit	Help me!  I'm hit!
+70108c_SCNAF_NeedMedic	Ghaa! I need a medic!
+70108d_SCNAF_Help	God, I'm hit! Help!
+70108e_SCNAF_IveBeenHit	Holt!  Help me!  I've been hit!
+70108f_SCNAF_GetMedic	Ghaa!  Medic!  Get a medic!
+70108g_SCNAF_AreaClear	Right, men!  Area clear!
+70108h_SCNAF_AreasClear	Area secure!
+70108i_SCNAF_AllClear	All clear, mates!
+70108j_SCNAF_AllRightMen	All right, men!  Area's clear!
+70108k_SCNAF_AllClear	All clear!
+70108l_SCNAF_ItsClear	Right!  It's clear!
+70108m_SCNAF_TendToWounded	Tend to the wounded!
+70108n_SCNAF_MedicOnMan	Get a medic on that man!
+70108q_SCNAF_GetToMan	Get to that man!
+70108r_SCNAF_GetAMedic	Get a medic over there!
+70125_SCUSA_MoveIt	Move it, guys!!
+70126_SCUSA_Let'sGo	Okay, let's go!
+70127_SCUSA_MoveOut	Move out!!
+70128_SCUSA_HoldPosition	Hold position!
+70129_SCUSA_HoldUp	Hold up!!
+70130_SCUSA_StandBy	Stand by!  Cover us!
+70131_SCUSA_Let'sGo	Okay!  Let's go!
+70132_SCUSA_Holt'sGotTheIdea	Holt's got the idea!  Move!
+70133_SCUSA_FormUp	Form up, squad!
+70133a_SCUSA_Medic	Medic!  Medic!
+70133b_SCUSA_ImWounded	Hey, Holt!  Help me! I'm wounded!
+70133c_1_SCUSA_MedicOverThere	Medic!  Over There!
+70133c_2_SCUSA_GetAMedic	We need a Medic!  Get a Medic over there!
+70133c_SCUSA_HelpMe	Medic!  Help me!!!
+70133d_SCUSA_ImHit	Over here! Help me!  I'm hit!
+70133e_SCUSA_HelpMe	Holt! Here  Help me!
+70133f_SCUSA_NeedMedic	Arrggh!  Medic!  I need a medic!!
+70133g_SCUSA_AreaClear	Right, boys!  Area clear!
+70133h_SCUSA_AreasClear	Area's clear!
+70133i_SCUSA_AllClear	All clear, boys!
+70133j_SCUSA_AllRightBoys	All right, boys!  Area's clear!
+70133k_SCUSA_AllClear	All clear!
+70133l_SCUSA_OkayItsClear	Okay!  It's clear!
+70133m_SCUSA_HelpThatGuy	Hey, help that guy!
+70133n_SCUSA_Medic	Medic, help that man!
+70150_SCRUS_GoComrades	Go, comrades!
+70151_SCRUS_Forward	DA!  Forward!
+70152_SCRUS_Let'sGoForward	Let's go!!  Forward!
+70153_SCRUS_StayHere	Hold it!  Stay here, comrades!
+70154_SCRUS_TakeCover	Wait!  Stop!  Take cover!
+70155_SCRUS_HoldPosition	Hold your position!
+70156_SCRUS_Let'sGo	All right!  Let's go!
+70157_SCRUS_IntoPosition	The American has a plan!!  Into position!
+70158_SCRUS_FormUp	Form up!  Let's go!
+70159_SCUK_Medic	Ghaa!  I'm hit.  Medic!  Medic!
+70159a_SCUK_HelpMe	Holt! Holt!  Help me!
+70159b_SCUK_INeedHelp	Ghaa!  I need help, lad!
+70159c_SCUK_AreaClear	Right, lads!  Area clear!
+70159d_SCUK_AreasClear	Area clear!
+70159e_SCUK_AllClear	All clear, lads!
+70159f_SCUK_Medic	Ghaa!  Christ!  Medic!
+70159g_SCUK_ComeHere	Holt!  Come here!  Help me!
+70159h_SCUK_ImHit	Help me! I'm hit.  Get a medic!
+70159i_SCUK_AreasClear	All right, men!  Area clear!
+70159j_SCUK_AllClear	All clear!
+70159k_SCUK_ItsClear	Right!  It's clear!
+70159m_SCUK_MedicOnThatMan	Oi! Get a medic on that man!
+70159n_SCUK_MedicOverThere	Medic! We need a medic over there!
+70159o_SCUK_GetMedic	Get a medic over there!
+70159p_SCUK_HelpThatMan	Help that man!
+Action_Action	Action
+Action_ActivateGrenade	Grenade
+Action_ActivateMedKit	Use Medkit
+Action_ActivateRally	Activate Adrenaline
+Action_Aim	Aim
+Action_AimUpDown	Look
+Action_CallSquad	Recall Squad
+Action_Crouch	Crouch/Prone
+Action_Jump	Jump/Stand
+Action_Map	Mission Map
+Action_Melee	Melee
+Action_MoveForwardBackward	Move
+Action_NextWeapon	Change Weapon
+Action_NotUsed	Not Used
+Action_Pause	Pause
+Action_Reload	Reload
+Action_SendSquad	Position Squad
+Action_Shoot	Fire
+Action_StrafeLeftRight	Strafe
+Action_TurnLeftRight	Turn
+AddObjective	Press [$ACTION] to add objective
+AllyHealed	%1 %2 Healed
+AllyName	%1 %2
+amer_name0	Hall
+amer_name1	Wilson
+amer_name2	Olsen
+amer_name3	Ramirez
+amer_name4	Myles
+amer_name5	Jackson
+amer_name6	Jennings
+amer_name7	Rogers
+amer_name8	Maser
+amer_name9	Cohen
+amer_rank0	Sgt
+amer_rank1	Pvt
+amer_rank2	Cpl
+amer_rank3	Lt
+AmmoDepotCSA	Press [$ACTION] to fill Primary Weapon.
+AmmoFull	%2 Ammo Full
+AmmoFullGeneric	Ammo Full
+AmmoPickup	Picked up %1 rounds of %2 ammo
+AmmoPickupSingular	Picked up 1 round of %1 ammo
+brit_name0	Jamison
+brit_name1	Abbott
+brit_name10	Edmunds
+brit_name11	Bull
+brit_name12	Dawkins
+brit_name13	Carr
+brit_name14	Perkins
+brit_name15	Grimes
+brit_name16	Burton
+brit_name17	Platt
+brit_name18	Terry
+brit_name19	Roberts
+brit_name2	Chester
+brit_name20	Bristol
+brit_name21	O'Neal
+brit_name22	Rissik
+brit_name3	Baker
+brit_name4	Lark
+brit_name5	Quinn
+brit_name6	Smythe
+brit_name7	Thomas
+brit_name8	Barrington
+brit_name9	Parish
+brit_rank1	Sgt
+brit_rank2	Cpl
+brit_rank3	Pte
+brit_rank4	Gdsm
+CampaignName_BOB	Battle of the Bulge
+CampaignName_NorthAfrica	North Africa
+CampaignName_Russia	Russia
+CampaignName_STN	Saint Nazaire
+Canteen_Used	Received health
+Commander	Commander
+CSA_DemoCharge	Press and Hold [$ACTION] to Set Charge
+CSA_NONE	This is bogus ToyBox text.
+CSC_Down	Coverfire!
+CSC_Left	Cautious
+CSC_Right	Aggressive
+CSC_Up	Advance!
+CTRL_NGC_Z	Z Button
+CTRL_PS2_L3	L3 button
+CTRL_PS2_R3	R3 button
+CTRL_XBOX_LTHUMBIN	Click the left thumbstick
+CTRL_XBOX_RTHUMBIN	Click the right thumbstick
+DocumentPickedUp	Document Added to Inventory!
+DocumentPrompt	Press  [$ACTION] to Pickup OSS Document
+GrenadeAmmoFull	Grenade Ammo Full
+GrenadeKill	Grenade Kill! + 15%
+GrenadePickup	Picked up %1 rounds of %2 ammo
+GrenadePickupSingular	Picked up 1 round of %1 ammo
+HB_Accept	Accept
+HB_Back	Back
+HB_Cancel	Cancel
+HB_Change	Change
+HB_Confirm	Confirm
+HB_Continue	Continue
+HB_Join	Join
+HB_Leave	Leave
+HB_MainMenu	Main Menu
+HB_Map	Map
+HB_New	New
+HB_No	No
+HB_Options	Options
+HB_PauseMenu	Pause Menu
+HB_Play	Play
+HB_Play_Again_Button	Play Again
+HB_Refresh	Refresh
+HB_Select	Select
+HB_ServiceRecord	Service Record
+HB_Yes	Yes
+HeadShot	Head Shot! + 10%
+HealAlly	Press  [$ACTION] to heal %1 %2
+HealthDepotCSA	Press [$ACTION] to Heal Squad.
+HealthFull	Full Health!
+KickGrenade	Press  [$ACTION] to kick Grenade
+LargeDocumentPrompt	OSS Objective Found!
+LargeMedkitPrompt	Medkit Found!
+LargeObjectiveComplete	Objective Complete
+LargeObjectiveEscapeAdded	Escape Objective Added
+LargeObjectiveNemesisAdd	Objective Added
+LargeObjectivePrimaryAdded	Primary Objective Added
+LargeObjectiveSecondaryAdded	Secondary Objective Added
+Loading	(localized) Loading
+LonniganName	Lonnigan
+LonniganRank	Capt
+ManonName	Manon
+Medkit_Used	Medkit Used!!
+MedkitPickedUp	Medkit Added to Inventory
+MedkitPrompt	Press [$ACTION] to add Medkit to inventory
+MedkitsFull	Medkits Full!
+MEM_Card_Status_Unformmated	unformatted
+MEM_Change_profile_warning	Are you sure you want to change your profile?  All unsaved changes will be lost.
+MEM_Do_you_want_to_save	Do you want to save your profile?
+MEM_Invalid_profile_name_message	The name entered is not a valid profile name.
+MEM_Scanning_For_Profiles	Checking for profiles
+MEMNGC_Active_profile_deleted_warning	The active profile has been deleted from the Memory Card in Slot A.
+MEMNGC_Autosave_disabled_save	Autosave has been disabled.  Do you wish to save to the memory card in %s?
+MEMNGC_Autosave_warning	Autosaving profile.  Do not touch the memory card in slot A or the POWER button
+MEMNGC_Autosave_was_disabled	Autosave was disabled.
+MEMNGC_Card_changed_autosave	Memory Card in Slot A was removed.  Autosave is turned off.
+MEMNGC_Card_corrupt_autosave	Memory Card in Slot A was removed.  Autosave is turned off.
+MEMNGC_Card_damaged_autosave	Memory Card in Slot A was removed.  Autosave is turned off.
+MEMNGC_Card_invalid_autosave	Memory Card in Slot A was removed.  Autosave is turned off.
+MEMNGC_Card_Not_Present	card not present
+MEMNGC_Card_Status_Corrupt	corrupt
+MEMNGC_Card_Status_Damaged	card damaged
+MEMNGC_Card_Status_Wd	status wd
+MEMNGC_Card_wrong_device_autosave	Memory Card in Slot A was removed.  Autosave is turned off.
+MEMNGC_Continue	Continue
+MEMNGC_Continue_without_saving?	Are you sure you want to continue without saving?
+MEMNGC_Device_removed_autosave	Memory Card in Slot A was removed.  Autosave is turned off.
+MEMNGC_Device_unformatted_autosave	Memory Card in Slot A was removed.  Autosave is turned off.
+MEMNGC_Freespace	free space
+MEMNGC_No	No
+MEMNGC_Ok	Press the A Button to continue
+MEMNGC_Scanning_For_Profiles	Checking for profiles on the Memory Card in Slot A.
+MEMNGC_Should_autosave_be_disabled	Save failed.  Should autosave be disabled?
+MEMNGC_Yes	Yes
+MEMPS2_Autosave_disabled_save	Autosave has been disabled.  Do you wish to save to the memory card (PS2) in %s?
+MEMPS2_Autosave_warning	Autosaving profile.  Do not remove memory card (PS2) controller or reset switch off the console
+MEMPS2_Autosave_was_disabled	Autosave was disabled.
+MEMPS2_Card_changed_autosave	A memory card (PS2) has been inserted into %s. Do you want to allow autosaves?
+MEMPS2_Card_corrupt_autosave	The memory card (PS2) in %s appears to be corrupt. Do you want to allow autosaves?
+MEMPS2_Card_damaged_autosave	The memory card (PS2) in %s appears to be damaged. Do you want to allow autosaves?
+MEMPS2_Card_invalid_autosave	An invalid device was inserted into %s. Do you want to allow autosaves?
+MEMPS2_Card_Status_Invalid	card invalid
+MEMPS2_Card_wrong_device_autosave	The wrong device was inserted into %s. Do you want to allow autosaves?
+MEMPS2_Continue_without_saving?	Are you sure you want to continue without saving?
+MEMPS2_Device_removed_autosave	Data cannot be saved because a Memory Card (8MB) (for PlayStation®2) is not inserted. Do you want to continue the game without saving?
+MEMPS2_Device_unformatted_autosave	Memory Card (8MB) (for PlayStation®2) is unformatted.  Autosave is disabled.
+MEMPS2_Freespace	free space
+MEMPS2_No	No
+MEMPS2_Ok	Ok
+MEMPS2_Should_autosave_be_disabled	Save failed.  Should autosave be disabled?
+MEMPS2_Yes	Yes
+MEMXBOX_Autosave_disabled_save	Autosave has been disabled.  Do you wish to save to the %s?
+MEMXBOX_Autosave_warning	Autosaving profile.  Please do not turn off your XBOX console
+MEMXBOX_Autosave_was_disabled	Autosave was disabled
+MEMXBOX_Card_changed_autosave	Memory Unit 1 was changed.  Do you want to allow autosaves?
+MEMXBOX_Card_corrupt_autosave	%s appears to be corrupt. Do you want to allow autosaves?
+MEMXBOX_Card_damaged_autosave	%s appears to be damaged. Do you want to allow autosaves?
+MEMXBOX_Card_invalid_autosave	%s is an invalid device. Do you want to allow autosaves?
+MEMXBOX_Card_Status_Invalid	card invalid
+MEMXBOX_Card_wrong_device_autosave	%s is the wrong device. Do you want to allow autosaves?
+MEMXBOX_continue	Continue
+MEMXBOX_Continue_without_saving?	Are you sure you want to continue without saving?
+MEMXBOX_continue_without_saving_option	Continue without saving
+MEMXBOX_Device_removed_autosave	Memory Unit 1 was removed.  Autosave is turned off.
+MEMXBOX_Device_unformatted_autosave	Memory Unit 1 is unformatted.  Autosave is disabled.
+MEMXBOX_Freespace	free space
+MEMXBOX_Freespace_Plus	free space plus
+MEMXBOX_manage_free_space	Free more blocks
+MEMXBOX_No	No
+MEMXBOX_Ok	Press the A Button to continue
+MEMXBOX_Should_autosave_be_disabled	Save failed.  Should autosave be disabled?
+MEMXBOX_Yes	Yes
+MissionCompleteMessage	Mission Complete
+MissionFailedMessage	Mission Failed
+MissionHeadline_BOB1	Red Army Forces German Retreat
+MissionHeadline_BOB2	German Surprise Attack Halted
+MissionHeadline_BOB4	Nuclear Threat Discovered
+MissionHeadline_NAF3	Tirpitz Put On Ice
+MissionHeadline_NAF4	Tiger Tanks Destroyed
+MissionHeadline_RUS1	Desert Rats Cripple Rocket Facility
+MissionHeadline_RUS5	Partisans Destroy Rail Gun
+MissionHeadline_STN2	Raid on St. Nazaire
+MissionHeadline_STN4	Fuel Tanks Destroyed
+MissionHeadline_STN5	Lights Out in St. Nazaire
+MissionName_Blitzkrieg	Blitzkrieg
+MissionName_BOB1	Mission to Rocherath
+MissionName_BOB2	Farmhouse Liberation
+MissionName_BOB4	Operation: Virus House
+MissionName_Escape	Escape!
+MissionName_FarmHouse	The Farm
+MissionName_HellFrozeOver	Hell Froze Over
+MissionName_NAF3	Operation Blindfold
+MissionName_NAF4	Operation: V2 Silence
+MissionName_OperationBlindfold	Operation Blindfold
+MissionName_OperationUranus	Operation Uranus
+MissionName_PartisanRescue	Partisan Rescue
+MissionName_PetrolSabotage	Petrol Sabotage
+MissionName_PowerStation	Power Station
+MissionName_RomanRuins	Roman Ruins
+MissionName_RUS1	The Road to Stalingrad
+MissionName_RUS4	Partisan Liberation
+MissionName_RUS5	Climbing Mamayev Hill
+MissionName_STN1	Operation Chariot
+MissionName_STN2	Raid on St. Nazaire
+MissionName_STN4	Lights Out in the Port City
+MissionName_STN5	Escape at Dawn
+MissionName_TwinVillages	Twin Villages
+MMGCSAText	Press  [$ACTION] to use Weapon
+NemesisObjective_BOB1	Eliminate Folker Kappelhoff
+NemesisObjective_BOB2	Eliminate Freder Engel
+NemesisObjective_BOB4	Eliminate Von Schrader
+NemesisObjective_NAF3	Eliminate Adabold Brecht
+NemesisObjective_NAF4	Eliminate Hans Schneider
+NemesisObjective_RUS1	Eliminate Walther Neumann
+NemesisObjective_RUS4	Eliminate Parsifal Von Krupp
+NemesisObjective_RUS5	Eliminate Franz Gruebner
+NemesisObjective_STN2	Eliminate Klaus Mueller
+NemesisObjective_STN4	Eliminate Horst Brenner
+NemesisObjective_STN5	Eliminate Erich Koster
+NemesisObjectiveAdded	Defeat %1!
+NemesisObjectiveCompleted	%1 Defeated!
+OneReviveLeft	Revive Used - One Revive Left
+OSSComplete_BOB1	Atomic Scientist Rosters Uncovered
+OSSComplete_BOB2	Virus House Location Discovered
+OSSComplete_BOB4	Von Schrader's Journal Found
+OSSComplete_NAF3	Tiger Tank Operations Manuals Acquired
+OSSComplete_NAF4	Coded Virus House Information Found
+OSSComplete_RUS1	Ardennes Forest Recon Dossier Obtained
+OSSComplete_RUS5	Heavy Water Test Logbook Stolen
+OSSComplete_STN2	V2 Rocket Fuel Specifications Found
+OSSComplete_STN4	V2 Rocket Equipment Blueprints Uncovered
+OSSComplete_STN5	North African Shipping Manifest Obtained
+OSSDocumentObjective_BOB1	Uncover Atomic Scientist Rosters
+OSSDocumentObjective_BOB2	Discover Virus House Location
+OSSDocumentObjective_BOB4	Find Von Schrader's Journal
+OSSDocumentObjective_NAF3	Acquire Tiger Tank Operations Manuals
+OSSDocumentObjective_NAF4	Locate Coded Virus House Information
+OSSDocumentObjective_RUS1	Obtain Ardennes Forest Recon Dossier
+OSSDocumentObjective_RUS4	Find and Secure Enemy Documents
+OSSDocumentObjective_RUS5	Steal Heavy Water Test Logbook
+OSSDocumentObjective_STN2	Find V2 Rocket Fuel Specifications
+OSSDocumentObjective_STN4	Uncover V2 Rocket Equipment Blueprint
+OSSDocumentObjective_STN5	Obtain North African Shipping Manifest
+OSSText_BOB1	A list of scientists with two things in common:  Firstly, they are physicists and chemists who deal with reactions on the atomic level.  Second, they all work for Von Schrader's secret weapons program.  Don't like where this is headed.
+OSSText_BOB2	Virus House is not a place, it's a thing - Von Schrader's secret program to create an atomic weapon.  We now know where we can find what we're looking for - and perhaps Von Schrader himself.
+OSSText_BOB4	This is Von Schrader's personal journal.  It includes formulas, notes, hidden locations of weapon caches around Germany - everything.  The OSS will put this to good use.
+OSSText_NAF3	These manuals shed light on the armor and workings of this new weapon.  The depth of Germany's weapons program has obviously been underestimated.  Destroying the Tiger Tank prototypes is only the first step.
+OSSText_NAF4	Coded documents about something called Virus House.  If it's a place, we don't know where it is - or what it means to the Nazis.  We do know it's something important -- to the Germans and the Russians.  It will take some time to decode...
+OSSText_RUS1	The Dossier shows the heavy German reconnaissance of this area.  Also a survey of the natural bedrock in the Ardennes and the prevailing wind directions.
+OSSText_RUS5	Deuterium Oxide is also known as Heavy Water.  This is a key ingredient in atomic reactions.  The Nazis have been experimenting with this.  We don't know how far they have gotten.
+OSSText_STN2	The rocket fuel called for in these specifications is very powerful.  Clearly, the St. Nazaire fuel facility has been playing a key role in its production.
+OSSText_STN4	These blueprints outline the construction of an enhanced V2 rocket - one with more range and payload capacity than previously thought possible.  Intel suggests a major shipment will be coming in from a secret location.
+OSSText_STN5	According to this, the V2 equipment is being shipped under a veil of secrecy from North Africa.  Rail routes from the Gulf of Tunis appear to head directly into the deep desert.  Tracking them that far out will be difficult.
+OutOfAmmo	Out of Ammo!
+PartisanFoshkovich	Foshkovich
+PartisanIvanova	Ivanova
+PartisanMoldavonov	Maldavonov
+PartisanMoskowitz	Moskowitz
+PartisanPopova	Popova
+PartisanVasileva	Vasileva
+PAUSE_All_Objectives_Complete	All Objectives Complete
+PAUSE_Autosave	Autosave
+PAUSE_CinematicVolume	Cinematic Volume
+PAUSE_Complete	Complete
+PAUSE_ControllerConfig	Controller Settings
+PAUSE_Crosshairs	Crosshairs
+PAUSE_Exploretounlock	Explore to unlock.
+PAUSE_for_Bronze	for Bronze
+PAUSE_for_Gold	for Gold
+PAUSE_for_Silver	for Silver
+PAUSE_GrenadeCook	Grenade Cook
+PAUSE_HUD	HUD
+PAUSE_InvertYAxis	Invert Y Axis
+PAUSE_Mission_Objectives	MISSION OBJECTIVES
+PAUSE_MusicVolume	Music Volume
+PAUSE_Objectives	Objectives
+PAUSE_Off	Off
+PAUSE_On	On
+PAUSE_Options	Options
+PAUSE_OPTIONS_HEADER	OPTIONS
+PAUSE_Pause	Pause
+PAUSE_Paused	PAUSED
+PAUSE_Quit	Quit
+PAUSE_QuitAlert	Are you sure you want to quit?\nAll unsaved progress will be lost.
+PAUSE_Restart	Restart
+PAUSE_RestartAlert	Are you sure you want to restart this level?\nAll unsaved progress will be lost.
+PAUSE_Resume	Resume
+PAUSE_SFXVolume	SFX Volume
+PAUSE_Turnrate	Turnrate
+PAUSE_Vibration	Vibration
+PAUSE_Vibration_GC	Rumble Feature
+PAUSE_XYSensitivity	X/Y Sensitivity
+PauseCheatCodeFailedText	Cheat Code Failed
+PauseEnteringCheatCodeText	Enter Cheat Code
+PauseTransitionInText	LOADING
+PauseTransitionOutText	LOADING
+PlayerSquadNPCDeath	has died!
+PORT_1	1
+PORT_1A	1-A
+PORT_1B	1-B
+PORT_1C	1-C
+PORT_1D	1-D
+PORT_2	2
+PrimaryObjective_BOB1	Reach American Command Post and Destroy King Tigers
+PrimaryObjective_BOB2	Rescue French Operative
+PrimaryObjective_BOB4	Find and Infiltrate German Underground Bunker
+PrimaryObjective_NAF3	Destroy Tank Prototypes
+PrimaryObjective_NAF4	Destroy V2 Rocket
+PrimaryObjective_RUS1	Destroy Rail Gun
+PrimaryObjective_RUS4	Rescue Partisan Leader
+PrimaryObjective_RUS5	Transmit Virus House Intel to OSS
+PrimaryObjective_STN2	Destroy Fuel Tanks
+PrimaryObjective_STN4	Destroy Power Plant
+PrimaryObjective_STN5	Escape to French Countryside
+RallyFullText	ADRENALINE!
+RallyText_ConsecutiveKill	in a Row!
+RallyText_DoubleKill	Double Kill!
+RallyText_HeadShot	Head Shot!
+RallyText_NemesisKill	Nemesis Kill!
+RallyText_QuadKill	Quad Kill!
+RallyText_TripleKill	Triple Kill!
+Recon	Recon
+Reloader	Reloader
+ReviveFound	Revive Found!
+RevivesFull	Revives Full
+RevivesLeft	Revive Used - %1 Revives Left
+RU_CLR_AllClear	All clear!
+RU_CLR_AllRightMen	All right, Tavarache!  All clear!
+RU_CLR_AreaClear	Right Comrades!  Area clear!
+RU_CLR_AreasClear	Area clear!
+RU_CLR_GetAMedic	Medic, get medic over there!
+RU_CLR_HelpWounded	Go! Go! Help the wounded!
+RU_CLR_ItsClear	DA! Clear, it's clear!
+RU_CLR_Mandown	Man down, we need Medic!
+RU_CLR_Wounded	He's wounded, help him comrade!
+RU_MFWD_GetGoing	Get going!!
+RU_MFWD_GoGoGo	Go! Go! Go!
+RU_MFWDF_Forward	Forward!!
+RU_MFWDF_MoveUpMoveUP	Move up! Move up!
+RU_WND_HelpMe	Holt! Help me! Please!
+RU_WND_HelpMeComrade	Ayy!  I'm hit!  Help me, comrade!
+RU_WND_ImHit	American, help me!  I'm hit!
+RU_WND_INeedMedic	Holt! Help me!  I need a medic!
+RU_WND_NeedMedic	Medic!  I need medic!
+russ_name0	Kroutikhin
+russ_name1	Maslov
+russ_name10	Moskowitz
+russ_name11	Troffimov
+russ_name12	Vasileva
+russ_name13	Popova
+russ_name14	Ivanova
+russ_name15	Gubinicha
+russ_name2	Kozin
+russ_name3	Deyenko
+russ_name4	Annenkov
+russ_name5	Krukov
+russ_name6	Bursakov
+russ_name7	Miasnkov
+russ_name8	Padorin
+russ_name9	Donskoi
+russ_rank0	Pte
+russ_rank1	Junior Lt
+russ_rank2	Senior Sgt
+russ_rank3	Lt
+russ_rank4	Capt
+SharpShooter	Sharp Shooter
+Sharpshooter3	Sharpshooter (3 kills)! + 15%
+Sharpshooter5	Sharpshooter (5 kills)! + 25%
+SP_BattleoftheBulge	BATTLE OF THE BULGE
+SP_NorthAfrica	NORTH AFRICA
+SP_Russia	RUSSIA
+SP_ST.NAZAIRE	ST. NAZAIRE!!!
+SP_STNazaire	ST. NAZAIRE
+SP_Vibration_GC	Rumble Feature
+SwapMessage	Swap?
+Tutorial_Adrenaline	- You just performed a head shot and earned Adrenaline.|- You can earn Adrenaline by:|    - Melee kills & headshots|    -Completing secondary objectives & healing squad members|- Experiment to find other ways to earn adrenaline.
+Tutorial_AdrenalineMode	Your Adrenaline is now full!|[>Activate_Adrenaline] to use your Adrenaline.|When using Adrenaline, you are invincible, your bullets do extra damage, and your weapon has unlimited ammo.|
+Tutorial_Aiming	Enemy troops will have difficulty shooting you in cover.|[>Aim] to use Iron Sights.|[>Strafe_LeftRight] to peer around corners.|[>Move_ForwardBackward] to peek over cover or duck.
+Tutorial_Medkit	Your Health is now less than 50%.|Find Canteens to provide a small but instant increase. |[>Activate_Medkit] to use a Medkit for a large increase.
+Tutorial_Pause	 |[>Pause] to review your Objectives and status.|[>Map] to view your Map and current location.
+Tutorial_SquadControl	You command three squad members identified with Green Stars.|[>Send_Squad] to order your squad into battle.|[>Recall_Squad] to order your squad to return.
+TutorialAccept	Press  [$ACTION] to continue
+TutorialMainTitle	TUTORIAL MENU
+TutorialSkip	Press [>cancel_button] to skip all
+UK_OFC_SquadFormUp	Alright, men!  Follow Holt!
+UK_OFC_SquadForward	Move forward!!
+UK_OFC_SquadHoldCover	Hold your position!
+UnplugMsg_MULTITAP	The multitap (PS2) in controller port %s is not connected.\n\n Please reconnect and press the START button to continue.
+UnplugMsg_PS2	The analog controller (DUALSHOCK®2) in controller port %s is not connected.\n\n Please reconnect and press the START button to continue.
+UnplugMsg_PS2_US	The DUALSHOCK®2 analog controller in controller port %s is not connected.\n\n Please reconnect and press the START button to continue.
+UnplugMsg_XBOX	Please reconnect the controller\n to controller port %d and press\n START to continue.
+Weapon_50Cal	50 Cal
+Weapon_BAR	BAR
+Weapon_BoysAntitankRifle	Boys Antitank Rifle
+Weapon_Bren	Bren
+Weapon_BritGrenade	Brit Grenade
+Weapon_DP1928	DP1928
+Weapon_Enfield	Enfield
+Weapon_enfieldScoped	Enfield Scoped
+Weapon_German88	German 88
+Weapon_Gewehr	Gewehr
+Weapon_GewehrScoped	Gewehr Scoped
+Weapon_Karabiner98k	Karabiner 98k
+Weapon_Lewis	Lewis
+Weapon_Luger	Lugur
+Weapon_M1911Pistol	M1911 Pistol
+Weapon_M1Bazooka	M1 Bazooka
+Weapon_M1Garand	M1 Garand
+Weapon_M1GarandScoped	M1 Garand Scoped
+Weapon_M1Mine	M1 Mine
+Weapon_M1ThompsonSMG	M1 Thompson SMG
+Weapon_M2FragGrenade	M2 Frag Grenade
+Weapon_M2FragGrenadePouch	M2 Frag Grenade Pouch
+Weapon_M9Bazooka	M9 Bazooka
+Weapon_Map	Map
+Weapon_Maxim1910	Maxim 1910
+Weapon_MedKit	Medkit
+Weapon_MeleeAttack	Melee Attack
+Weapon_MG42	MG42
+Weapon_Moisan-Nagant1891	Moisan-Nagant 1891
+Weapon_Moisan-NagantVP	Moisan-Nagant VP
+Weapon_MolotovCocktail	Molotov Cocktail
+Weapon_MP28	MP28
+Weapon_MP40SMG	MP40 SMG
+Weapon_Panzerfaust	Panzerfaust
+Weapon_PPSh	PPSh
+Weapon_Remington141	Remington 141
+Weapon_SatchelCharge	Satchel Charge
+Weapon_Shotgun	Shotgun
+Weapon_StenMkII	Sten Mk II
+Weapon_StG44	StG44
+Weapon_StickGrenade	Stick Grenade
+Weapon_Tokarev	Tokarev
+Weapon_VickersMk3	Vickers Mk3
+Weapon_Webley	Webley
+WeaponPickup	Press [$ACTION] to pick up %1
+WeaponSwap	Press [$ACTION] to swap %1 for %2

@@ -56,17 +56,6 @@ def _restore(s: str, store) -> str:
     return re.sub("\uE000([\uE001-\uE0FF])", repl, s)
 
 
-def _shape_parts(text: str):
-    """Yield hard-break-separated Arabic runs in logical storage order."""
-    for part in re.split(r"(\\n|\|)", text):
-        if part in ("\\n", "|"):
-            yield part
-            continue
-        protected, store = _protect(part)
-        shaped = _RESHAper.reshape(protected)
-        yield _restore(shaped, store)
-
-
 def shape_only(text: str) -> str:
     """Shape Arabic but keep logical order for a renderer that performs BiDi.
 
@@ -77,19 +66,30 @@ def shape_only(text: str) -> str:
     """
     if not has_arabic(text):
         return text
-    return "".join(_shape_parts(text))
+    out = []
+    for part in re.split(r"(\\n|\|)", text):
+        if part in ("\\n", "|"):
+            out.append(part)
+            continue
+        protected, store = _protect(part)
+        shaped = _RESHAper.reshape(protected)
+        out.append(_restore(shaped, store))
+    return "".join(out)
 
 
 def process(text: str) -> str:
-    """Return shaped, visually-ordered text for a strict LTR renderer."""
+    """Return the shaped, visually-ordered string to store for a strict LTR renderer."""
     if not has_arabic(text):
         return text
     out = []
-    for shaped in _shape_parts(text):
-        if shaped in ("\\n", "|"):
-            out.append(shaped)
+    for part in re.split(r"(\\n|\|)", text):
+        if part in ("\\n", "|"):
+            out.append(part)
             continue
-        out.append(get_display(shaped, base_dir="R"))
+        protected, store = _protect(part)
+        shaped = _RESHAper.reshape(protected)
+        visual = get_display(shaped, base_dir="R")
+        out.append(_restore(visual, store))
     return "".join(out)
 
 

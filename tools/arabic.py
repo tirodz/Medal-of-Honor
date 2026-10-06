@@ -56,16 +56,29 @@ def _restore(s: str, store) -> str:
     return re.sub("\uE000([\uE001-\uE0FF])", repl, s)
 
 
-def process(text: str) -> str:
-    """Return the shaped, visually-ordered string to store in the game.
+def shape_only(text: str) -> str:
+    """Shape Arabic but keep logical order for a renderer that performs BiDi.
 
-    The string tables use two line separators - the literal two-character
-    sequence ``\\n`` and ``|`` - and the engine breaks lines on them, drawing
-    each line left to right.  They must therefore be handled as hard breaks:
-    the bidi algorithm would otherwise reverse the order of the lines
-    themselves (first paragraph would render last).  Each line is reshaped and
-    reordered on its own and the separators are kept verbatim.
+    This is specifically for the game's Scaleform/GFx front-end. Scaleform's
+    BiDi-capable text path can reorder RTL runs, but it does not perform Arabic
+    contextual shaping. Feeding it text that has already been visually
+    reordered causes a second BiDi pass at runtime.
     """
+    if not has_arabic(text):
+        return text
+    out = []
+    for part in re.split(r"(\\n|\|)", text):
+        if part in ("\\n", "|"):
+            out.append(part)
+            continue
+        protected, store = _protect(part)
+        shaped = _RESHAper.reshape(protected)
+        out.append(_restore(shaped, store))
+    return "".join(out)
+
+
+def process(text: str) -> str:
+    """Return the shaped, visually-ordered string to store for a strict LTR renderer."""
     if not has_arabic(text):
         return text
     out = []

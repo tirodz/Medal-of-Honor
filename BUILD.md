@@ -64,7 +64,13 @@ original ISO
    │  tools/verify_build.py       -> resource-level verification + QA sheets
    │  tools/make_patch.py         -> build/moh_ea_ar.xdelta
    │  tools/diag_atlas_clip.py    -> build/qa/atlas_clip_*.png  (render proof)
+   │  tools/serve_iso.py          -> threaded, zero-copy (sendfile) download host
 ```
+
+> **Downloading the result.** `tools/serve_iso.py <port> build` serves the image
+> with `os.sendfile` (zero-copy), one thread per connection and HTTP `Range`
+> support, so clients can download in parallel/resume:
+> `aria2c -x8 -s8 <url>` or `curl -C - -O <url>`.
 
 > **Note (font geometry invariant).** Every SFN carries a duplicate copy of the
 > atlas geometry in its EA image entry (last 28 bytes: block size, 48, pixel

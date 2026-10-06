@@ -15,7 +15,7 @@ import sys
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "tools"))
-from tools.arabic import process  # noqa: E402
+from tools.arabic import process, shape_only  # noqa: E402
 from tools.inject_strings import STR_OPEN, _unescape  # noqa: E402
 
 CTRL = re.compile(r"(%\d|\$\[?[A-Za-z_][A-Za-z0-9_]*\]?|\[\d+(?:\.\d+)?\]|\\n|\|[^\|]*\|?|~[A-Za-z])")
@@ -42,15 +42,20 @@ def main():
     english = {x["id"]: x["english"] for x in db}
 
     raw = {}
+    ui_raw = {}
     for name in ("ui_ar.py", "global_ar.py", "mp_ar.py", "mission_ar.py",
                  "mission_ar2.py", "mission_ar3.py", "mission_ar4.py",
                  "mission_ar5.py", "mission_ar6.py", "mission_ar7.py", "mission_ar8.py",
                  "mission_ar9.py", "mission_ar10.py", "credits_ar.py"):
         p = os.path.join(HERE, "translations", name)
         if os.path.exists(p):
-            raw.update(load_source(name))
+            vals = load_source(name)
+            raw.update(vals)
+            if name == "ui_ar.py":
+                ui_raw.update(vals)
 
     shaped = {}
+    scaleform = {}
     problems = []
     unmatched = []
     for sid, ar in raw.items():
@@ -62,7 +67,11 @@ def main():
         if miss:
             problems.append((sid, miss))
         shaped[sid] = process(ar)
+        if sid in ui_raw:
+            scaleform[sid] = shape_only(ar)
 
+    json.dump(scaleform, open(os.path.join(HERE, "translations", "ar_scaleform_final.json"), "w"),
+              ensure_ascii=False, indent=1)
     json.dump(shaped, open(os.path.join(HERE, "translations", "ar_final.json"), "w"),
               ensure_ascii=False, indent=1)
 
@@ -70,6 +79,7 @@ def main():
     print(f"authored={len(raw)} matched={len(shaped)} of {total} unique strings "
           f"({100*len(shaped)//total}%)")
     print(f"ids not in DB: {len(unmatched)} {unmatched[:10]}")
+    print(f"scaleform/UI strings: {len(scaleform)} (shape-only, logical order)")
     print(f"control-code mismatches: {len(problems)}")
     for sid, miss in problems[:20]:
         print("   ", sid, "missing", miss)

@@ -24,6 +24,7 @@ jobs:
           python3 - <<'PY'
           import glob, os, json, sys
           sys.path.insert(0,'.')
+          sys.path.insert(0,'tools')
           from tools.sfn import SfnFont
           from tools.sfn_build import SfnBuilder
 

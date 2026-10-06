@@ -8,25 +8,28 @@ set -u
 cd "$(dirname "$0")/.."
 PY=${PYTHON:-python3}
 
-echo "== 1/7  fonts: 16-bit Arabic for all SFN (UI text) =="
+echo "== 1/8  translations: shape logical Scaleform UI + visual LTR text =="
+$PY tools/build_translations.py | tail -6
+
+echo "== 2/8  fonts: 16-bit Arabic for all SFN (UI text) =="
 $PY tools/build_fonts.py | tail -3
 
-echo "== 2/7  fonts: byte-addressed Arabic for the standalone movie fonts =="
+echo "== 3/8  fonts: byte-addressed Arabic for the standalone movie fonts =="
 $PY tools/build_movie_font.py
 
-echo "== 3/7  movie subtitles: inject Arabic into the .LOC tables =="
+echo "== 4/8  movie subtitles: inject Arabic into the .LOC tables =="
 $PY tools/inject_loc.py | tail -2
 
-echo "== 4/7  strings + fonts + savegame + movies -> build/tree =="
+echo "== 5/8  strings + fonts + savegame + movies -> build/tree =="
 $PY tools/build_tree.py | tail -4
 
-echo "== 5/7  static verification of the built resources =="
+echo "== 6/8  static verification of the built resources =="
 $PY tools/verify_build.py
 
-echo "== 6/7  assemble ISO =="
+echo "== 7/8  assemble ISO =="
 $PY tools/build_iso.py | tail -3
 
-echo "== 7/7  verify ISO integrity =="
+echo "== 8/8  verify ISO integrity =="
 $PY tools/verify_iso.py | tail -4
 
 echo "== regression tests =="

@@ -1,0 +1,73 @@
+name: Runtime Font Investigation
+
+on:
+  push:
+    branches: [debug/runtime-font-investigation]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  font-investigation:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install pillow arabic-reshaper python-bidi pycdlib
+      - name: Inspect pristine vs built SFN structure
+        run: |
+          mkdir -p investigation
+          python3 - <<'PY'
+          import glob, os, json, sys
+          sys.path.insert(0,'.')
+          sys.path.insert(0,'tools')
+          from tools.sfn import SfnFont
+          from tools.sfn_build import SfnBuilder
+
+          roots = [('pristine','extracted/MOH4/DATA'),('built','build/fonts')]
+          rows=[]
+          for label, root in roots:
+              for p in sorted(glob.glob(root+'/*.SFN')):
+                  try:
+                      raw=open(p,'rb').read()
+                      f=SfnFont.parse_bytes(raw,p)
+                      b=SfnBuilder(raw)
+                      rows.append({
+                        'set':label,'file':os.path.relpath(p),'size':len(raw),
+                        'flags':hex(f.flags),'encoding':f.encoding,'baseline':f.baseline,
+                        'direction':f.direction,'fmt':f.fmt,'nchars':f.num_chars,
+                        'cio':f.char_info_offset,'kio':f.kerning_offset,'sho':f.shape_offset,
+                        'atlas':[b.atlas_w,b.atlas_h],'block_size':b.block_size,
+                        'image_entry_len':len(b.image_entry),'kern_len':len(b.kern_block),
+                        'sorted':[c.code for c in f.chars]==sorted(c.code for c in f.chars),
+                        'duplicates':len(f.chars)-len(set(c.code for c in f.chars)),
+                        'mincode':min((c.code for c in f.chars),default=None),
+                        'maxcode':max((c.code for c in f.chars),default=None)
+                      })
+                  except Exception as e:
+                      rows.append({'set':label,'file':os.path.relpath(p),'ERROR':repr(e)})
+          open('investigation/font_structure.json','w').write(json.dumps(rows,indent=2,ensure_ascii=False))
+          for r in rows: print(r)
+          PY
+      - name: Compare renderer preview
+        run: |
+          mkdir -p investigation/png
+          for f in SUBFNT.SFN OBJFONT.SFN DBFNT.SFN COMICFNT.SFN TPRO10.SFN TPRO10B.SFN TPRO12.SFN TPRO12B.SFN; do
+            test -f "build/fonts/$f" || continue
+            python3 tools/render_ui.py "build/fonts/$f" "القائمة الرئيسية" --png "investigation/png/$f.png" || true
+            python3 tools/render_ui.py "build/fonts/$f" "ثلاث دبابات" --png "investigation/png/${f%.SFN}_tanks.png" || true
+            python3 tools/render_ui.py "build/fonts/$f" "اضغط R1 للبدء" --png "investigation/png/${f%.SFN}_mixed.png" || true
+          done
+      - name: Run existing tests
+        run: python3 -m unittest discover -s tests
+      - name: Package investigation
+        run: tar -czf runtime-font-investigation.tar.gz investigation
+      - uses: actions/upload-artifact@v4
+        with:
+          name: runtime-font-investigation
+          path: runtime-font-investigation.tar.gz
+          retention-days: 1

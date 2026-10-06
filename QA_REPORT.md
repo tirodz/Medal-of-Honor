@@ -20,8 +20,9 @@ verifiable in this environment; **FAIL** = a check did not pass.
 | artefact | SHA-256 |
 |---|---|
 | original ISO (pristine, never written) | `151ecaeee5168eb052794dbbca0ca4da4709c16dec5cd35c796a49cee989da29` |
-| final localized ISO | `06bec309ccc135f3b19f2c437c3800f558a01d1b6ee85b8665b5275a22658dd5` |
-| delta patch (`build/moh_ea_ar.xdelta`) | `0f847a425a1288752cbc5a005cce64c4eaea5922fb8ea22e62735ded72829995` |
+| final localized ISO | `c3be6386f04f9f60ffa3447283c131ba28abf52ad5d13f366f623bbc51ea41cc` |
+| superseded build (rendering bug) | `06bec309ccc135f3b19f2c437c3800f558a01d1b6ee85b8665b5275a22658dd5` |
+| delta patch (`build/moh_ea_ar.xdelta`) | `fba063200514d9223d43dcf858280262583f372d1b5b7ef259132fe3780784b3` |
 
 The original ISO is opened read-only by every tool; its hash is recorded above
 and in `original/Medal of Honor - European Assault (USA).iso.sha256`.
@@ -121,6 +122,42 @@ untouched and remains English (goal: English voices + Arabic subtitles).
 | Original Latin glyphs preserved | PASS | glyphs appended / in-place slots; existing entries untouched |
 | Font metrics (baseline/advance) matched to Latin | PASS | glyphs placed on the shared baseline row |
 | Source face | PASS | open-source Noto Sans Arabic (`build/fonts_src/`) |
+| Image-entry geometry synced after atlas growth | PASS | 20/20 fonts; `tests/test_build_integrity.py::TestFontGeometry` |
+| Character table ordered by code (engine lookup) | PASS | 20/20 fonts; `_pack_sorted` in `tools/sfn_build.py` |
+
+## 6a. Emergency rendering fix (root cause)
+
+A runtime report showed Arabic as fragmented/unreadable while Latin rendered
+normally. The failure was reproduced and traced to the EA **image entry** that
+precedes each SFN shape header. That entry ends with a duplicate copy of the
+atlas geometry:
+
+```
+[-28] block size (pixel bytes + 48)   [-24] 48
+[-20] pixel bytes                     [-8]  atlas width   [-4]  atlas height
+```
+
+The engine sizes and clips the glyph texture from **this copy**, not from the
+shape header. The font builder grew the atlas to hold the appended Arabic
+glyphs but left the entry at the original height, so every glyph whose `v` was
+`>=` the stale height was clipped. Because all Arabic glyphs are appended below
+the original Latin rows, only the Arabic disappeared — exactly the reported
+symptom. A second, independent defect compounded it: the 16-bit front-end fonts
+had their appended Arabic-block punctuation (`0x060C 0x061B 0x061F 0x0640`)
+placed *after* an existing `0x2122`, so the code-ordered glyph lookup missed
+them.
+
+| defect | before | after | status |
+|---|---|---|---|
+| image-entry atlas height | stale (e.g. `SUBFNT` 256×**153** vs real 256×431) | synced (256×431) | FIXED |
+| front-end char-table order | unsorted past index 202 | ascending by code | FIXED |
+
+Evidence: `tools/diag_atlas_clip.py` renders a phrase clipped at the stale
+height (blank/garbage) versus the corrected atlas (correct connected Arabic):
+`build/qa/atlas_clip_SUBFNT.SFN.png`, `build/qa/atlas_clip_REALFONT.VIV__Futura_Std_Book_18.sfn.png`.
+A structural audit of all 20 built fonts (header offsets, kerning boundary,
+shape-header size/geometry, entry-tail geometry, total size, code ordering,
+glyph bounds) reports **0 issues**.
 
 ## 7. Modified resources (50 files)
 
@@ -148,7 +185,7 @@ No executable, no script and no texture was modified.
 
 ## 9. Regression suite
 
-`python3 -m unittest discover -s tests` — **32 tests, OK**
+`python3 -m unittest discover -s tests` — **35 tests, OK**
 
 * VIV/0xC0FB archive round-trip (all archives)
 * string-table XML round-trip + built-tree XML well-formedness

@@ -11,6 +11,7 @@ Skipped (not failed) when build/ is absent.
 import glob
 import importlib.util
 import os
+import struct
 import sys
 import unittest
 import xml.etree.ElementTree as ET
@@ -117,6 +118,62 @@ class TestMovieCoverage(unittest.TestCase):
                             miss += 1
         self.assertGreater(total, 0)
         self.assertEqual(miss, 0, f"{miss} referenced subtitles have no translation")
+
+
+class TestFontGeometry(unittest.TestCase):
+    """The SFN image entry duplicates the atlas geometry; growing the atlas
+    without updating it makes the engine clip every appended glyph (all of the
+    Arabic ones), which is the runtime corruption this test guards against."""
+
+    def _entry_tail(self, raw):
+        from tools.sfn_build import SfnBuilder
+        b = SfnBuilder(raw)
+        e = b.image_entry
+        if len(e) < 28:
+            return None, b
+        tail = (struct.unpack_from("<I", e, len(e) - 28)[0],
+                struct.unpack_from("<I", e, len(e) - 24)[0],
+                struct.unpack_from("<I", e, len(e) - 20)[0],
+                struct.unpack_from("<I", e, len(e) - 8)[0],
+                struct.unpack_from("<I", e, len(e) - 4)[0])
+        return tail, b
+
+    def test_rebuild_preserves_entry_tail(self):
+        from tools.sfn_build import SfnBuilder
+        for p in sorted(glob.glob(os.path.join(EX, "MOH4/DATA/*.SFN"))):
+            raw = open(p, "rb").read()
+            b = SfnBuilder(raw)
+            with self.subTest(font=os.path.basename(p)):
+                self.assertEqual(b.rebuild(), raw)
+
+    def test_built_fonts_have_consistent_geometry(self):
+        import glob as _glob
+        checked = 0
+        for p in sorted(_glob.glob(os.path.join(HERE, "build/fonts/*.sfn"))):
+            tail, b = self._entry_tail(open(p, "rb").read())
+            if tail is None:
+                continue
+            w, h = b.atlas_w, b.atlas_h
+            px = w * h // 2
+            with self.subTest(font=os.path.basename(p)):
+                self.assertEqual(tail, (px + 48, 48, px, w, h))
+            checked += 1
+        self.assertGreater(checked, 0)
+
+    def test_add_glyphs_updates_entry_geometry(self):
+        from tools.sfn_build import SfnBuilder
+        from tools.sfn import CharEntry
+        raw = open(os.path.join(EX, "MOH4/DATA/SUBFNT.SFN"), "rb").read()
+        b = SfnBuilder(raw)
+        row = bytes(b.atlas_w // 2)
+        c = CharEntry(code=0xFF00, width=1, height=1, u=0, v=b.atlas_h,
+                      advance=1, x_offset=0, y_offset=0)
+        out = b.add_glyphs([c], [row])
+        tail, nb = self._entry_tail(out)
+        w, h = nb.atlas_w, nb.atlas_h
+        px = w * h // 2
+        self.assertEqual(h, SfnBuilder(raw).atlas_h + 1)
+        self.assertEqual(tail, (px + 48, 48, px, w, h))
 
 
 if __name__ == "__main__":

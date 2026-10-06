@@ -63,7 +63,15 @@ original ISO
    │  tools/verify_iso.py         -> structural verification
    │  tools/verify_build.py       -> resource-level verification + QA sheets
    │  tools/make_patch.py         -> build/moh_ea_ar.xdelta
+   │  tools/diag_atlas_clip.py    -> build/qa/atlas_clip_*.png  (render proof)
 ```
+
+> **Note (font geometry invariant).** Every SFN carries a duplicate copy of the
+> atlas geometry in its EA image entry (last 28 bytes: block size, 48, pixel
+> bytes, width, height). The engine sizes/clips the texture from that copy, so
+> `sfn_build.py` rewrites it whenever the atlas grows; it also emits the
+> character table in ascending code order, which the engine's glyph lookup
+> relies on. `tests/test_build_integrity.py::TestFontGeometry` guards both.
 
 ### 2.1 Extraction
 `extract_iso.py` walks the ISO9660 directory tree and writes every file out

@@ -1,6 +1,8 @@
 name: Runtime Font Investigation
 
 on:
+  push:
+    branches: [debug/runtime-font-investigation]
   pull_request:
     branches: [main]
   workflow_dispatch:

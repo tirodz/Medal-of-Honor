@@ -70,6 +70,28 @@ class TestSaveGame(unittest.TestCase):
                 self.assertTrue(ar.has_arabic(blob), fn + " has no Arabic")
 
 
+class TestPlaceholders(unittest.TestCase):
+    def test_format_codes_are_not_reordered(self):
+        """%s / %d must stay intact - bidi would otherwise flip them to s% / d%."""
+        import re
+        from tools.arabic import process
+        for src in ("أدخل البطاقة في المنفذ %s.",
+                    "يرجى الضغط على %d للمتابعة"):
+            out = process(src)
+            with self.subTest(src=src):
+                self.assertIn("%", out)
+                self.assertIsNone(re.search(r"[A-Za-z]%", out), out)
+
+    @unittest.skipUnless(os.path.exists(os.path.join(HERE, "translations/ar_final.json")),
+                         "no shaped DB")
+    def test_shaped_db_has_no_reversed_placeholders(self):
+        import json
+        import re
+        db = json.load(open(os.path.join(HERE, "translations/ar_final.json")))
+        bad = [k for k, v in db.items() if re.search(r"[A-Za-z]%", v)]
+        self.assertEqual(bad, [], f"{len(bad)} strings have reversed placeholders")
+
+
 class TestMovieCoverage(unittest.TestCase):
     def test_every_referenced_subtitle_is_translated(self):
         from tools.loc import Loc

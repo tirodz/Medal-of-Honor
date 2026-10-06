@@ -15,15 +15,15 @@ and re-verified.
 | Cutscene subtitle localization (.LOC/.STF) | COMPLETE (byte-mapped) |
 | ISO repack | COMPLETE, structurally verified |
 | Delta patch | COMPLETE, reproduces image byte-exactly |
-| Regression tests | 30/30 PASS |
+| Regression tests | 32/32 PASS |
 | Runtime test in PCSX2 | NOT_TESTED (no emulator/BIOS here) |
 
 ## Deliverables present in `/workspace/project`
 
 | artefact | size | SHA-256 |
 |---|---|---|
-| `build/moh_ea_ar.iso` (localized image) | 3,857,154,048 | `407041a49d5f1b42934e75f23a38a09c0a8c25d8b6c333f419861c0834298828` |
-| `build/moh_ea_ar.xdelta` (sector delta vs. original) | 5,538,372 | `969af762f7a469152de2bdd7348209ab8504899298ea5e7ff5e317aaa494dfab` |
+| `build/moh_ea_ar.iso` (localized image) | 3,857,154,048 | `06bec309ccc135f3b19f2c437c3800f558a01d1b6ee85b8665b5275a22658dd5` |
+| `build/moh_ea_ar.xdelta` (sector delta vs. original) | 5,538,372 | `0f847a425a1288752cbc5a005cce64c4eaea5922fb8ea22e62735ded72829995` |
 | `original/…(USA).iso` (pristine, never written) | 3,857,154,048 | `151ecaeee5168eb052794dbbca0ca4da4709c16dec5cd35c796a49cee989da29` |
 
 Documentation: `reports/RECON.md` (technical reconnaissance), `BUILD.md`
@@ -50,7 +50,7 @@ Documentation: `reports/RECON.md` (technical reconnaissance), `BUILD.md`
    (`build/qa/*.png`).
 4. **Added regression tests** (`tests/test_build_integrity.py`): built-tree XML
    well-formedness, Arabic presence, save-game decode, STF→LOC coverage. Suite
-   is now **30 tests, all passing**.
+   is now **32 tests, all passing**.
 5. **Added a one-shot build script** (`scripts/build_all.sh`) that runs the whole
    pipeline in the correct order and is idempotent.
 6. **Rebuilt and re-verified the image**: 341 unchanged files byte-identical,

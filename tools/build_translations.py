@@ -30,7 +30,7 @@ def load_source(name):
 
 
 def tokens(s):
-    return re.findall(r"%\d|\$\[?[A-Za-z_][A-Za-z0-9_]*\]?|\\n|\[\d+(?:\.\d+)?\]", s)
+    return re.findall(r"%[A-Za-z0-9]|\$\[?[A-Za-z_][A-Za-z0-9_]*\]?|\\n|\[\d+(?:\.\d+)?\]", s)
 
 
 def _escape_id(s):

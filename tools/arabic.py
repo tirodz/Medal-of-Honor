@@ -17,7 +17,7 @@ import unicodedata
 import arabic_reshaper
 from bidi.algorithm import get_display
 
-CTRL_RE = re.compile(r"(%\d|\$\[?[A-Za-z_][A-Za-z0-9_]*\]?|\[>[A-Za-z_]+\]|\[\d+(?:\.\d+)?\]|\\n|~[A-Za-z])")
+CTRL_RE = re.compile(r"(%[A-Za-z0-9]|\$\[?[A-Za-z_][A-Za-z0-9_]*\]?|\[>[A-Za-z_]+\]|\[\d+(?:\.\d+)?\]|\\n|~[A-Za-z])")
 
 _RESHAper = arabic_reshaper.ArabicReshaper(
     # Diacritics (harakat) are dropped: the engine places glyphs linearly on the

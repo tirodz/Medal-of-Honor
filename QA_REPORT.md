@@ -20,8 +20,8 @@ verifiable in this environment; **FAIL** = a check did not pass.
 | artefact | SHA-256 |
 |---|---|
 | original ISO (pristine, never written) | `151ecaeee5168eb052794dbbca0ca4da4709c16dec5cd35c796a49cee989da29` |
-| final localized ISO | `407041a49d5f1b42934e75f23a38a09c0a8c25d8b6c333f419861c0834298828` |
-| delta patch (`build/moh_ea_ar.xdelta`) | `969af762f7a469152de2bdd7348209ab8504899298ea5e7ff5e317aaa494dfab` |
+| final localized ISO | `06bec309ccc135f3b19f2c437c3800f558a01d1b6ee85b8665b5275a22658dd5` |
+| delta patch (`build/moh_ea_ar.xdelta`) | `0f847a425a1288752cbc5a005cce64c4eaea5922fb8ea22e62735ded72829995` |
 
 The original ISO is opened read-only by every tool; its hash is recorded above
 and in `original/Medal of Honor - European Assault (USA).iso.sha256`.
@@ -72,6 +72,7 @@ contextual correctness. Findings and fixes:
 | `MO_TigerTankPrompt_2` doubled particle ("2 من 3 من") | 1 | removed redundant `من` | FIXED |
 | `Paused` (status text) mistranslated as a button label | 1 | `إيقاف` → `متوقف مؤقتًا` (consistent with `PAUSE_Paused`) | FIXED |
 | `SP_Credits` rendered as "labour rights" | 1 | `حقوق العمل` → `فريق العمل` | FIXED |
+| `%s` / `%d` format codes reversed to `s%` / `d%` by bidi | 19 strings | the control-code regex only protected `%\d`; extended to `%[A-Za-z0-9]` in `tools/arabic.py` and the verifier, then rebuilt | FIXED |
 | same English → multiple Arabic | 9 | reviewed: all are genuine context splits (noun label vs. imperative objective, singular vs. plural bark, bullet vs. grenade pickup, affirmative vs. interrogative save prompt) | WONTFIX (correct) |
 | residual Latin inside Arabic | 16 | all intentional: brand/trademark (`Electronic Arts`, `PlayStation®2`, `DUALSHOCK®2`, `EARS`, `EALA`), key glyphs (`START`), product title (`European Assault`), weapon codes | WONTFIX (correct) |
 | whitespace anomalies | 16 | all faithfully mirror the English source (double space before `[$ACTION]`, tutorial indent) | WONTFIX (correct) |
@@ -147,7 +148,7 @@ No executable, no script and no texture was modified.
 
 ## 9. Regression suite
 
-`python3 -m unittest discover -s tests` — **30 tests, OK**
+`python3 -m unittest discover -s tests` — **32 tests, OK**
 
 * VIV/0xC0FB archive round-trip (all archives)
 * string-table XML round-trip + built-tree XML well-formedness
@@ -155,6 +156,7 @@ No executable, no script and no texture was modified.
 * SFN font round-trip (all 18 fonts) and visual glyph goldens
 * Arabic shaping / bidi / control-code tests
 * translation completeness + Arabic-presence tests
+* format-code preservation (`%s`/`%d` not reversed by bidi)
 * save-game `.LOC` decode test
 * STF→LOC subtitle coverage test
 

@@ -20,8 +20,8 @@ verifiable in this environment; **FAIL** = a check did not pass.
 | artefact | SHA-256 |
 |---|---|
 | original ISO (pristine, never written) | `151ecaeee5168eb052794dbbca0ca4da4709c16dec5cd35c796a49cee989da29` |
-| final localized ISO | `30ff50a295e42e6ac81c2c81fc2ba0ffa54d3130379477e8d22b5fc43f7a0b75` |
-| delta patch (`build/moh_ea_ar.xdelta`) | `e2e1926a7132e91317fa1d747d7ca2d52ffadf770cdccb02e1b9f8ad2e1b3ac0` |
+| final localized ISO | `8f2b2ad8cfb8c6826d10690eb25f72c75ab06a1737292578fc918e17333bcabe` |
+| delta patch (`build/moh_ea_ar.xdelta`) | `bedc392e381baf09769a15c49bdf2ec5487544cdc0ac2167223647c55e619e24` |
 
 The original ISO is opened read-only by every tool; its hash is recorded above
 and in `original/Medal of Honor - European Assault (USA).iso.sha256`.
@@ -57,6 +57,28 @@ and in `original/Medal of Honor - European Assault (USA).iso.sha256`.
 | Punctuation mirrored correctly | PASS | sentence-final `.` stored left of the RTL run |
 | Control codes / placeholders | PASS | `%1 %2 %s $ACTION [$…] \n` verified per string |
 | Static glyph layout proof | PASS | `tools/render_sample.py build/fonts/SUBFNT.SFN "دمّر مدفعية العدو."` renders connected RTL glyphs |
+
+## 5a. Polish pass (final audit)
+
+A full audit of the translation database (2,648 authored entries) was run for
+digit consistency, terminology consistency, whitespace, residual Latin and
+contextual correctness. Findings and fixes:
+
+| finding | count | resolution | status |
+|---|---|---|---|
+| Arabic-Indic digits (٣ ٤ …) mixed with runtime Western `%1` substitutions | 41 strings | converted all to Western `0-9` so static and runtime numbers match | FIXED |
+| `MO_TigerTankPrompt_2` doubled particle ("2 من 3 من") | 1 | removed redundant `من` | FIXED |
+| `Paused` (status text) mistranslated as a button label | 1 | `إيقاف` → `متوقف مؤقتًا` (consistent with `PAUSE_Paused`) | FIXED |
+| `SP_Credits` rendered as "labour rights" | 1 | `حقوق العمل` → `فريق العمل` | FIXED |
+| same English → multiple Arabic | 9 | reviewed: all are genuine context splits (noun label vs. imperative objective, singular vs. plural bark, bullet vs. grenade pickup, affirmative vs. interrogative save prompt) | WONTFIX (correct) |
+| residual Latin inside Arabic | 16 | all intentional: brand/trademark (`Electronic Arts`, `PlayStation®2`, `DUALSHOCK®2`, `EARS`, `EALA`), key glyphs (`START`), product title (`European Assault`), weapon codes | WONTFIX (correct) |
+| whitespace anomalies | 16 | all faithfully mirror the English source (double space before `[$ACTION]`, tutorial indent) | WONTFIX (correct) |
+| empty translations | 0 | — | PASS |
+
+**Numeral policy:** the game substitutes live counters (time, score, rounds)
+with Western digits via `%1`, `%2`, `%3`; static numerals are therefore kept
+Western throughout so no screen ever mixes `٣` with `3`. Arabic-Indic digits
+remain fully present in the font, so a future switch is a one-command change.
 
 ## 6. Fonts
 

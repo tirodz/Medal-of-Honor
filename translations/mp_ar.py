@@ -139,7 +139,7 @@ AR = {
     "Rank_3rd": "الثالث",
     "Rank_4th": "الرابع",
     "HUD_Rank": "%1",
-    "Paused": "إيقاف",
+    "Paused": "متوقف مؤقتًا",
     "Resumed": "استئناف",
     "ThirtySecondWarning": "تبقّت 30 ثانية!",
 

@@ -100,7 +100,7 @@ AR = {
     "MO_MMG_PillBox_Success": "عُزّزت الخطوط الأمريكية",
     "MO_ReinforceMisc": "عُد إلى المستشفى الميداني لجلب مزيد من الوحدات",
     "MO_TigerTankPrompt": "دُمّر %1 من %2 من دبابات الملك تايغر",
-    "MO_TigerTankPrompt_2": "دُمّرت 2 من 3 من دبابات الملك تايغر",
+    "MO_TigerTankPrompt_2": "دُمّرت 2 من 3 دبابات الملك تايغر",
     "MO_TigerTanksAdd": "دمّر 3 دبابات ملك تايغر متحصنة",
     "MO_TigerTanksPause": "دمّر 3 دبابات ملك تايغر متحصنة",
     "MO_TigerTanksSuccess": "دُمّرت 3 دبابات ملك تايغر",

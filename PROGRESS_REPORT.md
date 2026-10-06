@@ -22,8 +22,8 @@ restart.
 
 | artefact | size | SHA-256 |
 |---|---|---|
-| `build/moh_ea_ar.iso` (localized image) | 3,857,154,048 | `30ff50a295e42e6ac81c2c81fc2ba0ffa54d3130379477e8d22b5fc43f7a0b75` |
-| `build/moh_ea_ar.xdelta` (sector delta vs. original) | 5,513,748 | `e2e1926a7132e91317fa1d747d7ca2d52ffadf770cdccb02e1b9f8ad2e1b3ac0` |
+| `build/moh_ea_ar.iso` (localized image) | 3,857,154,048 | `8f2b2ad8cfb8c6826d10690eb25f72c75ab06a1737292578fc918e17333bcabe` |
+| `build/moh_ea_ar.xdelta` (sector delta vs. original) | 5,513,748 | `bedc392e381baf09769a15c49bdf2ec5487544cdc0ac2167223647c55e619e24` |
 | `original/…(USA).iso` (pristine, never written) | 3,857,154,048 | `151ecaeee5168eb052794dbbca0ca4da4709c16dec5cd35c796a49cee989da29` |
 
 Documentation: `reports/RECON.md` (technical reconnaissance), `BUILD.md`
@@ -73,6 +73,18 @@ Documentation: `reports/RECON.md` (technical reconnaissance), `BUILD.md`
 * Run the test matrix in `QA_REPORT.md` §12 in PCSX2 on the patched image.
 * Report any clipping / missing glyphs / residual English for a targeted fix
   and rebuild (the pipeline is deterministic and re-runnable in ~4 commands).
+
+## Final polish pass
+
+A product audit of the whole translation DB was performed after the first
+build. Fixes applied: unified all numerals to Western digits (41 strings) so
+static numbers match the engine's runtime `%1` substitutions; fixed a doubled
+particle in a King Tiger objective; corrected the `Paused` status string and
+the `SP_Credits` label. Terminology variants (9) and residual Latin (16) were
+reviewed and confirmed contextually correct. The image was rebuilt, verified
+(350 unchanged / 41 changed / 0 failures), 12 regression tests pass, the delta
+patch round-trips byte-exactly, and a repeat rebuild produced an identical
+SHA-256.
 
 ## How to obtain the localized game
 

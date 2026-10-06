@@ -130,6 +130,13 @@ class TestTranslations(unittest.TestCase):
         d = json.load(open(f))
         self.assertEqual(d, {}, f"untranslated ids: {list(d)[:10]}")
 
+    def test_no_arabic_indic_digits(self):
+        # static numerals must be Western so they match runtime %1 substitutions
+        db = json.load(open(os.path.join(TR, "ar_final.json")))
+        import re
+        bad = [k for k, v in db.items() if re.search(r"[\u0660-\u0669]", v)]
+        self.assertEqual(bad, [], bad[:10])
+
     def test_arabic_present_in_every_string(self):
         db = json.load(open(os.path.join(TR, "ar_final.json")))
         self.assertGreater(len(db), 2500)

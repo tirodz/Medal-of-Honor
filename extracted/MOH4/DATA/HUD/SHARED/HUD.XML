@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document type="hud">
+    <hud>
+
+<!-- Test Area
+<sprite name="test_back" texture="health_bar" locx="50" locy="50" width="128" height="128" > </sprite>
+<sprite name="test_top" texture="compass_ring" locx="50" locy="50" width="128" height="128" horiz_left="1" vert_bottom="1"></sprite>	
+<link parent="test_back" child="test_top" horiz_center="1" vert_center="1"></link>
+-->
+
+<!--	New MOH4 "Final" HUD	-->
+
+	<sprite name="compass_dummy" width="128" height="128" locx="0" locy="0" alignment="hl vb"></sprite>
+	
+<!-- Compass -->
+		<compass name="compass_center" texture="compass_center" locx="24" locy="-15" width="128" height="128" horiz_left="1" vert_bottom="1"></compass>
+		<sprite name="compass_back" texture="compass_back" locx="24" locy="-15" width="128" height="128" horiz_left="1" vert_bottom="1"></sprite>	
+
+<!-- Health -->
+		<sprite name="rally_flash" texture="rally_flash" locx="32" locy="33" width="13" height="13" horiz_center="1" vert_center="1"></sprite>
+		<sprite name="health_flash" texture="health_flash" locx="14" locy="34" width="13" height="13" horiz_center="1" vert_center="1"></sprite>
+
+		<healthmeter name="health_meter_all" width="64" height="100" locx="52" locy="36" horiz_left="1" vert_bottom="1">
+			<meterbar name="health_meter" texture="health_bar" width="64" height="100" locx="0" locy="0" arc="1" horiz_left="1" radius="38" thickness="25" flipVertical="1" vert_bottom="1" direction="1.0" thetaStart="250.0" thetaEnd="89.0"></meterbar>
+		</healthmeter>
+		
+		<sprite name="compass_ring" texture="compass_ring" locx="24" locy="-15" width="128" height="128" horiz_left="1" vert_bottom="1"></sprite>		
+		<sprite name="compass_glass" texture="compass_glass" locx="24" locy="-15" width="128" height="128" horiz_left="1" vert_bottom="1"></sprite>
+		
+		<link parent="compass_dummy" child="compass_back" alignment="hc vc"></link> 
+		<link parent="compass_dummy" child="health_meter_all" alignment="hc vc"></link> 
+		<link parent="compass_dummy" child="compass_center" alignment="hc vc"></link> 
+		<link parent="compass_dummy" child="compass_ring" alignment="hc vc"></link> 
+		<link parent="compass_dummy" child="compass_glass" alignment="hc vc"></link> 
+		<link parent="compass_dummy" child="rally_flash" alignment="hc vc"></link> 
+		<link parent="compass_dummy" child="health_flash" alignment="hc vc"></link> 
+		    	
+<!-- MORALE METER -->
+	<sprite name="rally_helmet" texture="rally_helmet" locx="115" locy="25" width="44" height="31" horiz_center="1" vert_center="1"></sprite>
+	<sprite name="rally_count_two" texture="rally_count_two" locx="115" locy="25" width="9" height="18" horiz_center="1" vert_center="1"></sprite>
+	<sprite name="rally_count_three" texture="rally_count_three" locx="115" locy="25" width="14" height="18" horiz_center="1" vert_center="1"></sprite>
+	<sprite name="rally_count_four" texture="rally_count_four" locx="115" locy="25" width="19" height="18" horiz_center="1" vert_center="1"></sprite>
+	<sprite name="rally_count_five" texture="rally_count_five" locx="115" locy="25" width="30" height="17" horiz_center="1" vert_center="1"></sprite>
+	<sprite name="rally_tank" texture="rally_tank" locx="115" locy="25" width="56" height="26" horiz_center="1" vert_center="1"></sprite>
+	<sprite name="rally_melee" texture="rally_melee" locx="115" locy="25" width="26" height="32" horiz_center="1" vert_center="1"></sprite>
+	<sprite name="rally_headshot" texture="rally_headshot" locx="115" locy="25" width="44" height="31" horiz_center="1" vert_center="1"></sprite>
+	<sprite name="rally_SS" texture="rally_SS" locx="115" locy="25" width="25" height="28" horiz_center="1" vert_center="1"></sprite>
+
+	<link parent="compass_dummy" child="rally_helmet" alignment="hc vc"></link>
+	<link parent="compass_dummy" child="rally_tank" alignment="hc vc"></link>
+	<link parent="compass_dummy" child="rally_melee" alignment="hc vc"></link>
+	<link parent="compass_dummy" child="rally_headshot" alignment="hc vc"></link>
+	<link parent="compass_dummy" child="rally_SS" alignment="hc vc"></link>
+	<link parent="compass_dummy" child="rally_count_two" alignment="hc vc"></link>
+	<link parent="compass_dummy" child="rally_count_three" alignment="hc vc"></link>
+	<link parent="compass_dummy" child="rally_count_four" alignment="hc vc"></link>
+	<link parent="compass_dummy" child="rally_count_five" alignment="hc vc"></link>
+
+	<text name="morale_text" fontname="Futura Std Condensed ExtBd" fontsize="16" link="compass_back" locx="48" locy="-16" horiz_right="1" vert_bottom_inside="1"></text>
+	
+	<moralemeter name="morale_meter_all" width="64" height="100" locx="58" locy="38" timeroffsetx="8" timeroffsety="49" offsetx="115" offsety="25" horiz_left="1" vert_bottom="1">
+		<moralemeterbar name="morale_meter" texture="rally_bar" width="64" height="100" locx="0" locy="0" horiz_left="1" vert_bottom="1" arc="1" radius="39" thickness="25" flipVertical="1" flipHorizontal="1" direction="1.0" thetaStart="-70.0" thetaEnd="87.0"></moralemeterbar>
+	</moralemeter>
+	
+	<link parent="compass_dummy" child="morale_meter_all" insertbefore="compass_ring" horiz_center="1" vert_center="1"></link>
+	
+<!-- Weapon / Ammo -->
+		<sprite name="ammo_dummy" width="96" height="24" locx="0" locy="-24" alignment="hr vb"></sprite>	
+		<text name="gun_clip_reserve" link="ammo_dummy" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="CombinedClipReserve" locx="0" locy="0" width="96" height="24" horiz_left_inside="1" vert_bottom_inside="1"></text>
+		<sprite name="ammo_icon" link="ammo_dummy" texture="ammo_icon" locx="-8" locy="0" width="12" height="26" horiz_left="1" vert_bottom_inside="1"></sprite>		
+		
+		<sprite name="grenade_dummy" link="ammo_icon" width="49" height="24" locx="0" locy="0" horiz_left="1" vert_bottom_inside="1"></sprite>	
+		<text name="grenade_count" fontname="Futura Std Condensed ExtBd" fontsize="16" link="grenade_dummy" datalink="GrenadeCount" locx="0" locy="0" horiz_left_inside="1" vert_bottom_inside="1"></text>
+		<sprite name="grenade_icon" link="grenade_dummy" texture="grenade_icon" locx="-4" locy="0" width="22" height="26" horiz_left="1" vert_bottom_inside="1"></sprite>
+				
+<!-- Stance -->
+		<!-- PNC_EAM: Note - the width and height of the stance indicator is relative to the dimensions of the stancestand image.  All other 
+							 stance indicator images are scaled proportionally -->
+		<stanceindicator name="stance_indicator" stancestand="stance_stand" stancecrouch="stance_crouch" stanceprone="stance_prone" locx="-40" locy="0" width="45" height="63" alpha="255" ></stanceindicator>
+		<link parent="ammo_dummy" child="stance_indicator" locx="0" locy="0" horiz_right_inside="1" vert_top="1"></link>	
+	
+<!-- Compass beads -->
+		<sprite name="compass_bead_objective" link="compass_back" texture="compass_objectivebead" locx="0" locy="0" width="24" height="24" horiz_center="1" vert_center="1"></sprite>		
+		<sprite name="compass_bead_team" link="compass_back" texture="compass_teambead" locx="0" locy="0" width="5" height="5" horiz_center="1" vert_center="1"></sprite>
+		<sprite name="compass_arrow_objective" link="compass_back" texture="compass_objectivearrow" locx="0" locy="0" width="24" height="24" horiz_center="1" vert_center="1"></sprite>
+	
+<!-- Timer -->
+		<stopwatchtimer name="stopwatchtimer" timerback="timer_back" timerhand="timer_hand" locx="288" locy="100" width="64" height="64" timeroffsetx="18" timeroffsety="268" horiz_center="1" vert_center="1"></stopwatchtimer>
+		<stopwatchmeter name="stopwatchmeter" texture="health_bar" width="64" height="64" locx="32" locy="34" arc="1" radius="0" thickness="26" thetaStart="450.0" thetaEnd="90.0" flipVertical="1" direction="1.0" horiz_center="1" vert_center="1"></stopwatchmeter>
+		<link parent="stopwatchtimer" child="stopwatchmeter" alignment="hc vc"></link>	
+
+<!--	END - MOH4 "Final" HUD 	-->  
+		<dyncrosshair name="crosshair" locx="0" locy="0" width="16" height="16" horiz_center="1" vert_center="1" radius="6" maxradius="75"></dyncrosshair>
+
+<!-- OVERHEAT METER -->    
+		<sprite name="overheat_indicator" link="compass_ring" texture="overheat_indicator" locx="370" locy="-22" width="96" height="22" horiz_right="1" vert_bottom="1"></sprite>
+		<overheatmeter name="overheat_meter_all" width="96" height="16" locx="2" locy="0" horiz_center="1" vert_center="1">
+			<overheatmeterbar name="overheat_meter" texture="overheat_bar" width="96" height="16" locx="0" locy="0" horiz_center="1" vert_center="1" direction="1.0"></overheatmeterbar>
+		</overheatmeter>
+		<link parent="overheat_indicator" child="overheat_meter_all" horiz_center="1" vert_center="1"></link>
+		<sprite name="overheat_bullets_icon" link="overheat_indicator" texture="overheat_bullets_icon" locx="-38" locy="-5" width="19" height="21" horiz_center="1" vert_top="1"></sprite>
+		<sprite name="overheat_bullets_slot" link="overheat_bullets_icon" texture="overheat_bullets_slot" locx="48" locy="21" width="76" height="21" horiz_center="1" vert_top="1"></sprite>
+		<text name="overheat_gun_ammo_count" link="overheat_bullets_slot" datalink="AmmoClipCount" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="-2" locy="1" horiz_center="1" vert_center="1"></text>
+
+<!-- Democharge meter -->    
+        <sprite name="democharge_indicator" texture="democharge_indicator" locx="0" locy="50" width="160" height="22" horiz_center="1" vert_center="1"></sprite>
+		<demochargemeter name="democharge_meter_all" width="160" height="16" locx="2" locy="0" horiz_center="1" vert_center="1">
+            <demochargemeterbar name="democharge_meter" texture="democharge_bar" width="158" height="16" locx="0" locy="0" horiz_center="1" vert_center="1" direction="1.0"></demochargemeterbar>
+        </demochargemeter>
+        <link parent="democharge_indicator" child="democharge_meter_all" horiz_center="1" vert_center="1"></link>
+
+<!-- Medkit / Revive -->
+		<sprite name="Medkit" width="96" height="24" locx="165" locy="-30" alignment="hr vb"></sprite>	
+		<text name="Medkit_reserve" link="Medkit" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="MedkitCount" locx="6" locy="0" width="96" height="24" horiz_left_inside="1" vert_bottom_inside="1"></text>
+		<sprite name="medkit_icon" link="Medkit" texture="medkit_icon" locx="0" locy="0" width="22" height="26" horiz_left="1" vert_bottom_inside="1"></sprite>		
+
+		<sprite name="Revive" width="96" height="24" locx="0" locy="-30" alignment="hr vb"></sprite>	
+		<text name="Revive_reserve" link="Revive" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="ReviveCount" locx="6" locy="0" width="96" height="24" horiz_left_inside="1" vert_bottom_inside="1"></text>
+		<sprite name="revive_icon" link="Revive" texture="revive_icon" locx="0" locy="0" width="12" height="26" horiz_left="1" vert_bottom_inside="1"></sprite>
+
+		<link parent="compass_dummy" child="Medkit" alignment="hc vc"></link>
+		<link parent="Medkit" child="Revive" alignment="hc vc"></link>
+	
+<!-- Other HUD Elements -->
+		<text name="csc_text" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="16" locy="130"></text>
+		<text name="csa_text" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="0" locy="75" horiz_center="1" vert_center="1"></text>
+		<!-- PNC_EAM: Looking for the text timer?  It's been split off into hudMP.xml and hudSP.xml -->
+
+		<text name="nemesis_text" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="480" locy="190"></text>
+		
+		<textdisplay name="message_display" fontname="Futura Std Condensed ExtBd" fontsize="16"></textdisplay>
+
+		<!-- <sprite name="csa_sprite" texture="BlackSprite" locx="0" locy="65" width="32" height="32" horiz_center="1" vert_center="1"></sprite> -->
+		<text name="pickup_text" fontname="Futura Std Condensed ExtBd" fontsize="16" locy="20" horiz_center="1" vert_top="1"></text>
+
+		<hitindicator name="hit_indicator" texture="hit_indicator" width="128" height="128" horiz_center="1" vert_center="1" alpha="128" radius="40"></hitindicator>        
+
+		<dpadmenu name="dpad_menu" texture="hud_dpad_texture" locx="0" locy="0" width="96" height="96" horiz_center="1" vert_center="1" />
+		<text name="hud_dpad_text_up" link="dpad_menu" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="0" locy="-10" horiz_center="1" vert_top="1" />
+		<text name="hud_dpad_text_down" link="dpad_menu" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="0" locy="10" horiz_center="1" vert_bottom="1" />
+		<text name="hud_dpad_text_left" link="dpad_menu" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="-10" locy="0" horiz_left="1" vert_center="1" />
+		<text name="hud_dpad_text_right" link="dpad_menu" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="10" locy="0" horiz_right="1" vert_center="1" />
+
+        <sprite name="warning_box" texture="warning_box"></sprite>
+    </hud>
+</document>

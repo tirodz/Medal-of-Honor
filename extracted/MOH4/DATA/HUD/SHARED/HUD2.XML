@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document type="hud">
+<hud>
+
+<!-- a few misc. hud elements -->
+	<text name="out_of_ammo" fontname="Futura Std Condensed ExtBd" fontsize="14" horiz_center="1" vert_center="1"></text> 
+	<sprite name="walkie_talkie" texture="csa_walkie_talkie" show="false" width="64" height="64" locx="20" locy="20" alignment="hl vt"></sprite>
+
+<!-- Compass -->
+	<!-- This is a dummy object that we attach all the compass related objects to. -->
+	<sprite name="compass_dummy" width="128" height="128" locx="-11" locy="2" alignment="hl vb"></sprite>
+	<compass name="compass_center" texture="compass_center" width="74" height="75" ></compass>
+	<!-- <sprite name="compass_back" texture="compass_back" locx="0" locy="0" width="128" height="128"></sprite>	-->
+
+<!-- Rally -->
+	<sprite name="rally_dummy" locx="0" locy="0" width="149" height="21"></sprite>
+
+	<sprite name="rally_top" texture="rally_top" locx="0" locy="0" width="149" height="21"></sprite>
+
+	<link parent="rally_dummy" child="rally_top" locx="-4" locy="0" alignment="hli vbi"></link>	
+	
+	<sprite name="rally_flash" texture="rally_flash" width="22" height="13"></sprite>
+	<link parent="rally_top" child="rally_flash" locx="10" locy="-5" alignment="hli vbi"></link> 	
+	
+
+<!-- Health -->
+	
+	<sprite name="health_flash" texture="health_flash" width="0" height="0"></sprite>
+	
+	<healthmeter name="health_meter_all" width="128" height="128" >
+		<meterbar name="health_meter" texture="health_bar" width="128" height="128" locx="1" locy="-2" arc="-2" radius="39" thickness="13" flipVertical="1" direction="1.0" thetaStart="237.0" thetaEnd="-57.0"></meterbar>
+	</healthmeter>
+	
+	<sprite name="compass_glass" texture="compass_glass" width="128" height="128"></sprite>
+	<sprite name="compass_icon_destination"></sprite>
+	<link parent="compass_glass" child="compass_icon_destination" locx="-20" alignment="hr vt"></link> 
+	
+	<link parent="compass_dummy" child="health_meter_all" locx="-2" locy="3" alignment="hc vc"></link> 
+	<link parent="compass_dummy" child="compass_glass" alignment="hc vc"></link> 
+	
+	
+	<!-- 
+		Compass Center and Compass Beads get drawn in same pass.   For now the Glass will get drawn
+		before Compass Center and Compass beads.  If the glass gets modified to have much less opacity,
+		we might put it on top of the Compass Center / Compass Beads again.
+	-->
+	<link parent="compass_dummy" child="compass_center" alignment="hc vc"></link> 
+	<link parent="compass_dummy" child="health_flash" locx="-1" locy="-10" alignment="hc vbi"></link> 
+
+<!-- Rally Icons -->
+	<!-- //rb - TODO - Use one SpriteObject and update BitmapElement. -->
+	<sprite name="rally_helmet"		texture="rally_helmet"		width="32" height="32" ></sprite>
+	<sprite name="rally_count_two"	texture="rally_count_two"	width="32" height="32" ></sprite>
+	<sprite name="rally_count_three" texture="rally_count_three" width="32" height="32" ></sprite>
+	<sprite name="rally_count_four" texture="rally_count_four"	width="32" height="32" ></sprite>
+	<sprite name="rally_count_five" texture="rally_count_five"	width="32" height="32" ></sprite>
+	<sprite name="rally_melee"		texture="rally_melee"		width="32" height="32" ></sprite>
+	<sprite name="rally_headshot"	texture="rally_headshot"	width="32" height="32" ></sprite>
+	<sprite name="rally_SS"			texture="rally_SS"			width="32" height="32" ></sprite>
+	<sprite name="rally_tank"		texture="rally_tank"		width="32" height="32" ></sprite>
+	
+	<link parent="rally_top" child="rally_helmet" alignment="hri vt"></link>
+	<link parent="rally_top" child="rally_tank" alignment="hri vt"></link>
+	<link parent="rally_top" child="rally_melee" alignment="hri vt"></link>
+	<link parent="rally_top" child="rally_headshot" alignment="hri vt"></link>
+	<link parent="rally_top" child="rally_SS" alignment="hri vt"></link>
+	<link parent="rally_top" child="rally_count_two" alignment="hri vt"></link>
+	<link parent="rally_top" child="rally_count_three" alignment="hri vt"></link>
+	<link parent="rally_top" child="rally_count_four" alignment="hri vt"></link>
+	<link parent="rally_top" child="rally_count_five" alignment="hri vt"></link>
+
+	<!-- This is the Adrenaline! message -->
+	<text name="rally_active" fontname="Futura Std Condensed ExtBd" fontsize="16"></text> 
+	<link parent="rally_helmet" child="rally_active" locx="-12" locy="-6" alignment="hl vbi"></link>
+
+	<moralemeter name="morale_meter_all" width="97" height="14" timeroffsetx="8" timeroffsety="49">
+		<moralemeterbar name="morale_meter" texture="rally_bar" width="97" height="14"></moralemeterbar>
+	</moralemeter>
+
+	<!-- This should go away soon, but they might bring it back. -->
+	<text name="morale_text" fontname="Futura Std Condensed ExtBd" fontsize="16"></text> 
+	<link parent="rally_top" child="morale_text" locx="-4" locy="0" alignment="hl vbi"></link>
+	
+	<link parent="rally_dummy" insertbefore="rally_top" child="morale_meter_all" locx="-4" locy="-4" alignment="hri vbi"></link> 
+		
+<!-- Weapon / Ammo -->
+	<!-- <sprite name="ammo_dummy" width="96" height="24" locx="0" locy="-24" alignment="hr vb"></sprite>-->
+	<!-- <text name="gun_clip_reserve" link="ammo_dummy" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="CombinedClipReserve" locx="0" locy="0" width="96" height="24" horiz_left_inside="1" vert_bottom_inside="1"></text> -->
+	<!-- <sprite name="ammo_icon" link="ammo_dummy" texture="ammo_icon" locx="-8" locy="0" width="12" height="26" horiz_left="1" vert_bottom_inside="1"></sprite> -->
+		
+	<!-- <sprite name="grenade_dummy" link="ammo_icon" width="49" height="24" locx="0" locy="0" horiz_left="1" vert_bottom_inside="1"></sprite>	 -->
+	<!-- <text name="grenade_count" fontname="Futura Std Condensed ExtBd" fontsize="16" link="grenade_dummy" datalink="GrenadeCount" locx="0" locy="0" horiz_left_inside="1" vert_bottom_inside="1"></text> -->
+	<!-- <sprite name="grenade_icon" link="grenade_dummy" texture="grenade_icon" locx="-4" locy="0" width="22" height="26" horiz_left="1" vert_bottom_inside="1"></sprite> -->
+					
+<!-- Stance -->
+	<!-- PNC_EAM: Note - the width and height of the stance indicator is relative to the dimensions of the stancestand image.  All other 
+							 stance indicator images are scaled proportionally -->
+	<stanceindicator name="stance_indicator" stancestand="stance_stand_2" stancecrouch="stance_crouch_2" stanceprone="stance_prone_2" width="28" height="61"></stanceindicator>
+	<!-- <link parent="rally_top" child="stance_indicator" locx="0" locy="0" alignment="vt hli"></link> -->
+
+<!-- Timer -->
+	<stopwatchtimer name="stopwatchtimer" timerback="timer_back" timerhand="timer_hand" animate="1" locx="0" locy="-100" width="64" height="64" timeroffsetx="25" timeroffsety="242" horiz_center="1" vert_center="1"></stopwatchtimer>
+	<stopwatchmeter name="stopwatchmeter" texture="health_bar" width="64" height="64" locx="0" locy="2" arc="1" radius="0" thickness="26" thetaStart="90.0" thetaEnd="-270.0" flipVertical="1" direction="1.0" horiz_center="1" vert_center="1"></stopwatchmeter>
+	<link parent="stopwatchtimer" child="stopwatchmeter" alignment="hc vc"></link>	
+
+	<dyncrosshair name="crosshair" width="6" height="16" horiz_center="1" vert_center="1" radius="12" maxradius="75"></dyncrosshair>
+
+	<sprite name="dont_shoot" texture="hud_dont_shoot" width="32" height="32" show="false" alignment="hc vc"></sprite>
+
+<!-- Democharge meter -->
+        <sprite name="democharge_indicator" texture="democharge_indicator" locx="0" locy="50" width="160" height="22" horiz_center="1" vert_center="1"></sprite>
+		<demochargemeter name="democharge_meter_all" width="160" height="16" locx="2" locy="0" horiz_center="1" vert_center="1">
+            <demochargemeterbar name="democharge_meter" texture="democharge_bar" width="158" height="16" locx="0" locy="0" horiz_center="1" vert_center="1" direction="1.0"></demochargemeterbar>
+        </demochargemeter>
+        <link parent="democharge_indicator" child="democharge_meter_all" horiz_center="1" vert_center="1"></link>
+
+<!-- Medkit / Revive -->
+	<sprite name="Revive" texture="revive_icon" width="40" height="30"></sprite>	
+	<text name="revive_count" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="ReviveCount"></text>
+	<link parent="Revive" child="stance_indicator" locx="3" locy="-1" alignment="vbi hr"></link>
+	
+	<!-- <sprite name="Medkit" texture="medkit_icon" width="47" height="27" locx="2" locy="0"></sprite>	-->
+	<text name="medkit_count" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="MedkitCount"></text>
+
+	<sprite name="ammo_dummy" width="150" height="30" locx="0" locy="1" alignment="vb hr"></sprite>
+
+	<sprite name="Ammo" texture="ammo_icon" width="91" height="30"></sprite>
+	<link parent="ammo_dummy" child="Ammo" alignment="vbi hri"></link>
+	
+	<text name="ammo_count" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="CombinedClipReserve" locx="14" locy="-4"></text>
+
+	<sprite name="Grenade" texture="grenade_icon" width="59" height="30"></sprite>	
+	<text name="grenade_count" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="GrenadeCount" locx="14" locy="-4"></text>
+
+	<!--<link parent="compass_dummy" child="Medkit" alignment="hc vc"></link>-->
+	<link parent="compass_dummy" child="Revive" locx="1" locy="-1" alignment="hri vbi"></link>
+	<!-- <link parent="Revive" child="Medkit" alignment="hr vbi"></link> -->
+	<link parent="ammo_dummy" child="Grenade" locx="0" locy="0" alignment="hli vbi"></link>	
+	<link parent="ammo_dummy" child="rally_dummy" locx="4" locy="-4" alignment="hli vt"></link>		
+	<!--<link parent="Grenade" child="Ammo" alignment="hr vbi"></link>	 -->
+	
+	<link parent="Ammo" child="ammo_count" locx="-8" locy="-3" alignment="hri vbi"></link>
+	<link parent="Grenade" child="grenade_count" locx="-8" locy="-5" alignment="hri vbi"></link>
+	<link parent="Revive" child="revive_count" locx="-7" locy="-4" alignment="hri vbi"></link>
+	<link parent="compass_dummy" child="medkit_count" locx="8" locy="-5" alignment="hc vbi"></link>	
+
+<!-- OVERHEAT METER -->
+	<sprite name="overheat_indicator" texture="overheat_indicator" locx="0" locy="0" width="90" height="29"></sprite>
+	<overheatmeter name="overheat_meter_all" width="60" height="20" locx="0" locy="0">
+		<overheatmeterbar name="overheat_meter" texture="overheat_bar" width="60" height="20" locx="0" locy="0" direction="1.0"></overheatmeterbar>
+	</overheatmeter>
+	
+	<link parent="ammo_dummy" child="overheat_indicator" alignment="vbi hri" ></link>
+	<link parent="overheat_indicator" child="overheat_meter_all" locx="0" locy="-2" alignment="hri vbi"></link>
+	<!-- <sprite name="overheat_bullets_icon" link="overheat_indicator" texture="overheat_bullets_icon" locx="-38" locy="-5" width="19" height="21" horiz_center="1" vert_top="1"></sprite> -->
+	<!-- <sprite name="overheat_bullets_slot" link="overheat_bullets_icon" texture="overheat_bullets_slot" locx="48" locy="21" width="76" height="21" horiz_center="1" vert_top="1"></sprite> -->
+	
+<!-- Other HUD Elements -->
+	<text name="csc_text" fontname="Futura Std Condensed ExtBd" locx="16" locy="130"></text>
+	<!--<text name="csa_text" fontname="Futura Std Condensed ExtBd" locx="0" locy="60" horiz_center="1" vert_center="1"></text>-->
+	<richtext name="csa_richtext" fontname="Futura Std Condensed ExtBd" iconwidth="24" iconheight="24" locx="0" locy="45" horiz_center="1" vert_center="1"></richtext>
+
+	<sprite name="csa_sprite" texture="" width="64" height="64"></sprite>
+	<link parent="csa_richtext" child="csa_sprite" locx="0" locy="10" alignment="hc vb"></link>
+
+	<!-- specialtextobject -->
+	<sprite name="objective_icon" texture="" width="64" height="64"></sprite>
+	<text name="medium_message" fontname="Futura Std Condensed ExtBd" fontsize="20" locx="0" locy="90" alignment="hc vt" staticcammode="1"></text>
+	<specialtextobject name="large_message" fontname="Futura Std Condensed ExtBd" scale="1" fontsize="24" locx="0" locy="40" alignment="hc vt" staticcammode="1"></specialtextobject>
+	<link parent="medium_message" child="objective_icon" locy="20" alignment="hc vb"></link>
+
+	<!-- This one should go away soon. -->
+	<!-- <text name="pickup_text" fontname="Futura Std Condensed ExtBd" fontsize="16" locy="20" alignment="hc vt"></text> -->
+	<!-- 
+	<text name="message_text_1" fontname="Futura Std Condensed ExtBd" fontsize="16" alignment="vt hc"></text>
+	<text name="message_text_2" fontname="Futura Std Condensed ExtBd" fontsize="16"></text>
+	<text name="message_text_3" fontname="Futura Std Condensed ExtBd" fontsize="16"></text>
+	<text name="message_text_4" fontname="Futura Std Condensed ExtBd" fontsize="16"></text>
+	<link parent="message_text_1" child="message_text_2" locx="0" locy="0" alignment="hc vb"></link>
+	<link parent="message_text_2" child="message_text_3" locx="0" locy="0" alignment="hc vb"></link>
+	<link parent="message_text_3" child="message_text_4" locx="0" locy="0" alignment="hc vb"></link>
+	
+	<link parent="message_text_4" child="large_message" alignment="hc vb"></link>
+	-->
+	
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- Should we allow combinations of screen align flags and object align flags? -->
+	<!-- Like Screen Horizontal Center and Object Vertical Top (subtitles could use this) -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<!-- Subtitle placeholders -->
+<!--
+	<text name="subtitle_text_1" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="0" locy="64" alignment="hc vc"></text>
+	<text name="subtitle_text_2" fontname="Futura Std Condensed ExtBd" fontsize="16"></text>
+	<text name="subtitle_text_3" fontname="Futura Std Condensed ExtBd" fontsize="16"></text>
+	<text name="subtitle_text_4" fontname="Futura Std Condensed ExtBd" fontsize="16"></text>
+	<link parent="subtitle_text_1" child="subtitle_text_2" locx="0" locy="0" alignment="hc vb"></link>
+	<link parent="subtitle_text_2" child="subtitle_text_3" locx="0" locy="0" alignment="hc vb"></link>	
+	<link parent="subtitle_text_3" child="subtitle_text_4" locx="0" locy="0" alignment="hc vb"></link>	
+-->
+	
+	<text name="nemesis_text" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="480" locy="190"></text>
+		
+	<textdisplay name="message_display" fontname="Futura Std Condensed ExtBd" fontsize="16"></textdisplay>
+
+	<hitindicator name="hit_indicator" texture="hit_indicator" width="83" height="57" horiz_center="1" vert_center="1" alpha="128" radius="54"></hitindicator>        
+
+<!--	<dpadmenu name="dpad_menu" texture="hud_dpad_texture" locx="0" locy="0" width="96" height="96" horiz_center="1" vert_center="1" />
+	<text name="hud_dpad_text_up" link="dpad_menu" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="0" locy="-10" horiz_center="1" vert_top="1" />
+	<text name="hud_dpad_text_down" link="dpad_menu" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="0" locy="10" horiz_center="1" vert_bottom="1" />
+	<text name="hud_dpad_text_left" link="dpad_menu" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="-10" locy="0" horiz_left="1" vert_center="1" />
+	<text name="hud_dpad_text_right" link="dpad_menu" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="10" locy="0" horiz_right="1" vert_center="1" />
+-->
+	<sprite name="warning_box" texture="warning_box"></sprite>
+</hud>
+</document>

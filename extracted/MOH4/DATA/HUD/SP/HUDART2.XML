@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document type="hud">
+	<hud>
+		<bitmap name="HUD_Sheet_SP" filename="HUD_Sheet_SP"></bitmap>
+		
+		<bitmapelement name="CSC_Move" parent="HUD_Sheet_SP" startx="147" starty="0" endx="203" endy="49"></bitmapelement>
+		<bitmapelement name="CSC_Form" parent="HUD_Sheet_SP" startx="204" starty="0" endx="260" endy="49"></bitmapelement>
+		<bitmapelement name="CSC_Wait" parent="HUD_Sheet_SP" startx="147" starty="50" endx="203" endy="99"></bitmapelement>
+		<bitmapelement name="CSC_Hold" parent="HUD_Sheet_SP" startx="204" starty="50" endx="260" endy="99"></bitmapelement>		
+		
+
+<!--		<bitmap name="nemesiscard" filename="nemesiscard"></bitmap>	-->
+
+		<!-- <bitmap name="Dossier" filename="MOH4_stats_FG"></bitmap> -->
+		
+		<!-- <bitmap name="rally_overlay" filename="Rally_Overlay"></bitmap> -->
+	</hud>
+</document>

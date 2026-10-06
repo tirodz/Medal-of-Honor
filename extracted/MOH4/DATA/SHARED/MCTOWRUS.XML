@@ -1,0 +1,15 @@
+<mapcycle>
+
+	<tow>
+		<level id="0" value="2_62" variation="2" 	nextIdAxis="4" 	nextIdAllies="5" />
+		<level id="1" value="2_62" variation="6" 	nextIdAxis="4" 	nextIdAllies="5" />
+		<level id="2" value="2_62" variation="7" 	nextIdAxis="4"	nextIdAllies="5" />
+		<level id="3" value="2_53" variation="3" 	nextIdAxis="8" 	nextIdAllies="1" />
+		<level id="4" value="2_53" variation="0" 	nextIdAxis="8" 	nextIdAllies="1" />
+		<level id="5" value="2_64" variation="0" 	nextIdAxis="2" 	nextIdAllies="7" />
+		<level id="6" value="2_64" variation="2" 	nextIdAxis="2" 	nextIdAllies="7" />
+		<level id="7" value="2_51" variation="13" 	nextIdAxis="6" 	nextIdAllies="255" />
+		<level id="8" value="2_54" variation="14" 	nextIdAxis="255" nextIdAllies="3" />
+	</tow>
+
+</mapcycle>

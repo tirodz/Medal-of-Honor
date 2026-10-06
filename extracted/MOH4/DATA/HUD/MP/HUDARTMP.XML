@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document type="hud">
+	<hud>							
+		<bitmap name="class_sheet" filename="MOH4_HUD_ClassIcons"></bitmap>
+		<bitmap name="mp_sheet_new" filename="HUD_MP_sheet_v2"></bitmap>
+		
+		<bitmapelement name="class_soldier" parent="class_sheet" startx="32" starty="32" endx="64" endy="64"></bitmapelement>		
+		<bitmapelement name="class_sniper" parent="class_sheet" startx="0" starty="32" endx="32" endy="64"></bitmapelement>		
+		<bitmapelement name="class_heavy" parent="class_sheet" startx="0" starty="0" endx="32" endy="32"></bitmapelement>
+		<bitmapelement name="class_rifleman" parent="class_sheet" startx="32" starty="0" endx="64" endy="32"></bitmapelement>	
+		<!--
+		<bitmapelement name="class_general" parent="mp_sheet" startx="128" starty="97" endx="160" endy="128"></bitmapelement>
+		-->
+		
+		<bitmapelement name="resupply_health" parent="mp_sheet_new" startx="124" starty="5" endx="156" endy="37"></bitmapelement>
+		<bitmapelement name="resupply_ammo" parent="mp_sheet_new" startx="124" starty="41" endx="156" endy="73"></bitmapelement>
+				
+		<bitmapelement name="compass_glass_mp" parent="mp_sheet_new" startx="0" starty="0" endx="119" endy="120"></bitmapelement>				
+		<bitmap name="compass_objective_arrow" filename="MOH4_HUD_CompassObjectiveArrow"></bitmap>
+						
+		<bitmapelement name="hud_flagicon" parent="mp_sheet_new" startx="212" starty="8" endx="252" endy="56"></bitmapelement>
+		<bitmapelement name="hud_crownicon" parent="mp_sheet_new" startx="162" starty="8" endx="206" endy="54"></bitmapelement>
+		<bitmapelement name="hud_objectivemeter_bar" parent="mp_sheet_new" startx="119" starty="78" endx="253" endy="86"></bitmapelement>
+		
+		<bitmapelement name="ammo_icon_mp" parent="mp_sheet_new" startx="173" starty="100" endx="255" endy="124"></bitmapelement>
+		<bitmapelement name="grenade_icon_mp" parent="mp_sheet_new" startx="126" starty="95" endx="162" endy="124"></bitmapelement>
+		
+		<bitmapelement name="compass_bead_primary_mp" parent="mp_sheet_new" startx="208" starty="57" endx="220" endy="65"></bitmapelement>
+		<bitmapelement name="compass_bead_primary_tail_mp" parent="mp_sheet_new" startx="208" starty="57" endx="220" endy="72"></bitmapelement>
+
+		<bitmap name="class_bombtimer_all" filename="MOH4_HUD_bombtimer_all"></bitmap>
+		
+		<bitmapelement name="class_bombtimer_frame" parent="class_bombtimer_all" startx="0" starty="0" endx="48" endy="48"></bitmapelement>
+		<bitmapelement name="class_bombtimer_00" parent="class_bombtimer_all" startx="49" starty="0" endx="81" endy="33"></bitmapelement>
+		<bitmapelement name="class_bombtimer_01" parent="class_bombtimer_all" startx="83" starty="0" endx="115" endy="33"></bitmapelement>
+		<bitmapelement name="class_bombtimer_02" parent="class_bombtimer_all" startx="117" starty="0" endx="149" endy="33"></bitmapelement>
+		<bitmapelement name="class_bombtimer_03" parent="class_bombtimer_all" startx="151" starty="0" endx="183" endy="33"></bitmapelement>
+		<bitmapelement name="class_bombtimer_04" parent="class_bombtimer_all" startx="185" starty="0" endx="217" endy="33"></bitmapelement>
+		<bitmapelement name="class_bombtimer_05" parent="class_bombtimer_all" startx="49" starty="34" endx="81" endy="67"></bitmapelement>
+		<bitmapelement name="class_bombtimer_06" parent="class_bombtimer_all" startx="83" starty="34" endx="115" endy="67"></bitmapelement>
+		<bitmapelement name="class_bombtimer_07" parent="class_bombtimer_all" startx="117" starty="34" endx="149" endy="67"></bitmapelement>
+		<bitmapelement name="class_bombtimer_08" parent="class_bombtimer_all" startx="151" starty="34" endx="183" endy="67"></bitmapelement>
+		<bitmapelement name="class_bombtimer_09" parent="class_bombtimer_all" startx="185" starty="34" endx="217" endy="67"></bitmapelement>
+		<bitmapelement name="class_bombtimer_10" parent="class_bombtimer_all" startx="219" starty="34" endx="251" endy="67"></bitmapelement>
+		<bitmapelement name="class_bombtimer_11" parent="class_bombtimer_all" startx="49" starty="68" endx="81" endy="101"></bitmapelement>
+		<bitmapelement name="class_bombtimer_12" parent="class_bombtimer_all" startx="83" starty="68" endx="115" endy="101"></bitmapelement>
+		<bitmapelement name="class_bombtimer_13" parent="class_bombtimer_all" startx="117" starty="68" endx="149" endy="101"></bitmapelement>
+		<bitmapelement name="class_bombtimer_14" parent="class_bombtimer_all" startx="151" starty="68" endx="183" endy="101"></bitmapelement>
+		<bitmapelement name="class_bombtimer_15" parent="class_bombtimer_all" startx="185" starty="68" endx="217" endy="101"></bitmapelement>
+		<bitmapelement name="class_bombtimer_16" parent="class_bombtimer_all" startx="219" starty="68" endx="251" endy="101"></bitmapelement>
+	</hud>
+</document>

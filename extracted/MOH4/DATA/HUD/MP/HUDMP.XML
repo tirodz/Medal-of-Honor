@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document type="hud">
+    <hud>    
+		<!-- Definition of multiplayer-specific fullscreen HUD elements -->
+		<timer name="mp_timer_text" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="-70" locy="0" horiz_right="1" vert_top="1"></timer>		
+		
+		<!-- Resupply icons: In code, these should be hidden by default and exposed only when the player is resupplying -->			
+		<sprite name="resupply_health_icon" texture="resupply_health" width="32" height="32" locx="-10" locy="-32" horiz_right="1" vert_center="1"></sprite>
+		<sprite name="resupply_ammo_icon" texture="resupply_ammo" width="32" height="32" locx="-10" locy="0" horiz_right="1" vert_center="1"></sprite>
+				
+		<!-- Bombtimer Textures -->
+        <bombtimertex name="class_bombtimer_frame" texture="class_bombtimer_frame"/>
+        <bombtimertex name="class_bombtimer_tex_00" texture="class_bombtimer_00" width="33" height="34" locx="6" locy="10"/>
+        <bombtimertex name="class_bombtimer_tex_01" texture="class_bombtimer_01"/>
+        <bombtimertex name="class_bombtimer_tex_02" texture="class_bombtimer_02"/>
+        <bombtimertex name="class_bombtimer_tex_03" texture="class_bombtimer_03"/>
+        <bombtimertex name="class_bombtimer_tex_04" texture="class_bombtimer_04"/>
+        <bombtimertex name="class_bombtimer_tex_05" texture="class_bombtimer_05"/>
+        <bombtimertex name="class_bombtimer_tex_06" texture="class_bombtimer_06"/>
+        <bombtimertex name="class_bombtimer_tex_07" texture="class_bombtimer_07"/>
+        <bombtimertex name="class_bombtimer_tex_08" texture="class_bombtimer_08"/>
+        <bombtimertex name="class_bombtimer_tex_09" texture="class_bombtimer_09"/>
+        <bombtimertex name="class_bombtimer_tex_10" texture="class_bombtimer_10"/>
+        <bombtimertex name="class_bombtimer_tex_11" texture="class_bombtimer_11"/>
+        <bombtimertex name="class_bombtimer_tex_12" texture="class_bombtimer_12"/>
+        <bombtimertex name="class_bombtimer_tex_13" texture="class_bombtimer_13"/>
+        <bombtimertex name="class_bombtimer_tex_14" texture="class_bombtimer_14"/>
+        <bombtimertex name="class_bombtimer_tex_15" texture="class_bombtimer_15"/>
+        <bombtimertex name="class_bombtimer_tex_16" texture="class_bombtimer_16"/>
+
+		<teamcolor team="1" red="0" green="181" blue="241"></teamcolor>
+		<teamcolor team="2" red="186" green="32" blue="37"></teamcolor>
+
+        <progressmeter name="progress_meter" width="49" height="49" locx="0" locy="-50" horiz_center="1" vert_center="1"></progressmeter>
+        <bombtimer name="timer_allied_bomb" team="1" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-3" fontlocy="-1" locx="50" locy="-130" horiz_center="1" vert_center="1" width="49" height="49" red="186" green="32" blue="37"></bombtimer>
+        <bombtimer name="timer_axis_bomb" team="2" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-3" fontlocy="-1" locx="-50" locy="-130" horiz_center="1" vert_center="1" width="49" height="49" red="0" green="181" blue="241"></bombtimer>
+        
+        <bombtimer name="timer_airstike1" index="0" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-3" fontlocy="0" locx="-50" locy="-130" horiz_center="1" vert_center="1" width="49" height="49" red="186" green="32" blue="37"></bombtimer>
+        <bombtimer name="timer_airstike2" index="1" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-3" fontlocy="0" locx="0" locy="-130" horiz_center="1" vert_center="1" width="49" height="49" red="186" green="32" blue="37"></bombtimer>
+        <bombtimer name="timer_airstike3" index="2" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-3" fontlocy="0" locx="50" locy="-130" horiz_center="1" vert_center="1" width="49" height="49" red="186" green="32" blue="37"></bombtimer>
+            
+        <objectivemeter name="objective_meter" texture="hud_objectivemeter_bar" width="180" height="12" locx="0" locy="45" horiz_left="1" vert_center="1"/>
+        <objectivemeterflag name="objective_meter_flag" link="objective_meter" texture="hud_objectivemeter_flag" width="22" height="28" locx="0" locy="-7" horiz_center="1" vert_bottom="1"/>
+        
+        <invasionobjectivemeter name="invasion_objective_meter3" texture="dot" index="3" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-2" fontlocy="0" width="32" height="32" locx="0" locy="-180" horiz_center="1" vert_center="1" red="75" green="75" blue="75"/>
+        <sprite name="invasion_objective_meterframe3" link="invasion_objective_meter3" texture="hud_invasionobjectivemeter_frame" width="32" height="32" locx="0" locy="0" horiz_center="1" vert_center="1"/>
+        <invasionobjectivemeter name="invasion_objective_meter2" texture="dot" index="2" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-2" fontlocy="0" width="32" height="32" locx="-36" locy="-180" horiz_center="1" vert_center="1" red="75" green="75" blue="75"/>
+        <sprite name="invasion_objective_meterframe2" link="invasion_objective_meter2" texture="hud_invasionobjectivemeter_frame" width="32" height="32" locx="0" locy="0" horiz_center="1" vert_center="1"/>
+        <invasionobjectivemeter name="invasion_objective_meter1" texture="dot" index="1" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-2" fontlocy="0" width="32" height="32" locx="-72" locy="-180" horiz_center="1" vert_center="1" red="75" green="75" blue="75"/>
+        <sprite name="invasion_objective_meterframe1" link="invasion_objective_meter1" texture="hud_invasionobjectivemeter_frame" width="32" height="32" locx="0" locy="0" horiz_center="1" vert_center="1"/>
+        <invasionobjectivemeter name="invasion_objective_meter4" texture="dot" index="4" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-2" fontlocy="0" width="32" height="32" locx="36" locy="-180" horiz_center="1" vert_center="1" red="75" green="75" blue="75"/>
+        <sprite name="invasion_objective_meterframe4" link="invasion_objective_meter4" texture="hud_invasionobjectivemeter_frame" width="32" height="32" locx="0" locy="0" horiz_center="1" vert_center="1"/>
+        <invasionobjectivemeter name="invasion_objective_meter5" texture="dot" index="5" fontname="Futura Std Condensed ExtBd" fontsize="16" fontlocx="-2" fontlocy="0" width="32" height="32" locx="72" locy="-180" horiz_center="1" vert_center="1" red="75" green="75" blue="75"/>
+        <sprite name="invasion_objective_meterframe5" link="invasion_objective_meter5" texture="hud_invasionobjectivemeter_frame" width="32" height="32" locx="0" locy="0" horiz_center="1" vert_center="1"/>
+        
+        <!-- Frag Counter -->
+ 		<fragcounter name="frag_counter" fontname="Futura Std Condensed ExtBd" fontsize="16" texture="NONE_YET_DONT_REMOVE" width="48" height="75" locx="-275" locy="-180" alpha="64" horiz_center="1" vert_center="1" direction="-1.0"/>
+ 		
+ 		<!-- Ranking -->
+ 		<ranking name="ranking_display" fontname="Futura Std Condensed ExtBd" fontsize="16" texture="NONE_YET_DONT_REMOVE" width="48" height="75" locx="-275" locy="-196" alpha="64" horiz_center="1" vert_center="1" direction="-1.0"/> 		
+	        
+		<!-- Life Counters -->
+		<text name="hud_text_lives" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="GetLivesLeftText" locx="0" locy="-20" horiz_left="1" vert_center="1" staticcammode="1" />
+		<text name="hud_text_lives_allied" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="GetAlliedLivesLeft" locx="0" locy="0" horiz_left="1" vert_center="1" staticcammode="1" />
+		<text name="hud_text_lives_axis" fontname="Futura Std Condensed ExtBd" fontsize="16" datalink="GetAxisLivesLeft" locx="0" locy="20" horiz_left="1" vert_center="1" staticcammode="1" />
+
+		<text name="hud_text_playerinfo" fontname="Futura Std Condensed ExtBd" fontsize="16" link="class_indicator" datalink="GetPlayerInfo" locx="15" locy="0" horiz_right="1" vert_center="1" staticcammode="0" />
+		<text name="hud_text_wave_timer" fontname="Futura Std Condensed ExtBd" fontsize="16"  datalink="GetWaveTimer" locx="0" locy="0" horiz_left="1" vert_top="1" staticcammode="1" />
+
+		<!-- Defines the colour associated with players in a team splitscreen game -->
+		<teamcolor team="1" red="97" green="129" blue="82"/>
+		<teamcolor team="2" red="182" green="29" blue="29"/>
+			
+		<!-- Defines the colour associated with each player in a non-team splitscreen game -->
+		<playercolor index="0" red="97" green="129" blue="82"/>
+		<playercolor index="1" red="241" green="190" blue="54"/>
+		<playercolor index="2" red="48" green="83" blue="186"/>
+		<playercolor index="3" red="182" green="29" blue="29"/>												
+        
+        <!-- Global HUD elements are those shared by all splitscreen players -->
+		<globalHUD_2p>		
+			<!-- Defines the colour associated with players in a team splitscreen game -->
+			<teamcolor team="0" red="192" green="192" blue="0"/>	<!-- Neutral -->
+			<teamcolor team="1" red="97" green="129" blue="82"/>	<!-- Allies -->
+			<teamcolor team="2" red="182" green="29" blue="29"/>	<!-- Axis -->
+			
+			<!-- Defines the colour associated with each player in a non-team splitscreen game -->
+			<playercolor index="0" red="97" green="129" blue="82"/>
+			<playercolor index="1" red="241" green="190" blue="54"/>
+			<playercolor index="2" red="48" green="83" blue="186"/>
+			<playercolor index="3" red="182" green="29" blue="29"/>												
+	
+			<textdisplay name="message_display" fontname="Futura Std Condensed ExtBd" fontsize="20"></textdisplay>
+        </globalHUD_2p>        
+                
+		<globalHUD_3p>			
+			<!-- Defines the colour associated with players in a team splitscreen game -->
+			<teamcolor team="0" red="192" green="192" blue="0"/>	<!-- Neutral -->
+			<teamcolor team="1" red="97" green="129" blue="82"/>	<!-- Allies -->
+			<teamcolor team="2" red="182" green="29" blue="29"/>	<!-- Axis -->
+			
+			<!-- Defines the colour associated with each player in a non-team splitscreen game -->
+			<playercolor index="0" red="97" green="129" blue="82"/>
+			<playercolor index="1" red="241" green="190" blue="54"/>
+			<playercolor index="2" red="48" green="83" blue="186"/>
+			<playercolor index="3" red="182" green="29" blue="29"/>												
+						
+			<textdisplay name="message_display" fontname="Futura Std Condensed ExtBd" fontsize="20"></textdisplay>
+        </globalHUD_3p>        
+        
+        <globalHUD_4p>
+			<!-- Defines the colour associated with players in a team splitscreen game -->
+			<teamcolor team="0" red="192" green="192" blue="0"/>	<!-- Neutral -->
+			<teamcolor team="1" red="97" green="129" blue="82"/>	<!-- Allies -->
+			<teamcolor team="2" red="182" green="29" blue="29"/>	<!-- Axis -->
+			
+			<!-- Defines the colour associated with each player in a non-team splitscreen game -->
+			<playercolor index="0" red="97" green="129" blue="82"/>
+			<playercolor index="1" red="241" green="190" blue="54"/>
+			<playercolor index="2" red="48" green="83" blue="186"/>
+			<playercolor index="3" red="182" green="29" blue="29"/>												
+
+			<textdisplay name="message_display" fontname="Futura Std Condensed ExtBd" fontsize="20"></textdisplay>
+        </globalHUD_4p>
+        
+        <!-- Complete definition of the halfscreen HUD type -->
+        <hud_halfscreen>
+			<!--	START - MOH4 "Final" HUD -->
+			
+			<!-- Compass -->
+			<!-- This is a dummy object that we attach all the compass related objects to. -->
+			<sprite name="compass_dummy" locx="-1" locy="5" width="72" height="72" alignment="hl vb"></sprite>
+			<compass name="compass_center" width="47" height="47" ></compass>
+			
+			<!-- No Rally Mode in MP -->
+			
+			<!-- Health -->				
+			<healthmeter name="health_meter_all" width="72" height="72" >
+				<meterbar name="health_meter" texture="health_bar" width="72" height="72" locx="0" locy="0" arc="1" radius="28" thickness="5" flipVertical="1" direction="1.0" thetaStart="238.0" thetaEnd="-57.0"></meterbar>
+			</healthmeter>						
+				
+			<sprite name="compass_glass" texture="compass_glass_mp" width="72" height="72"></sprite>
+			
+			<link parent="compass_dummy" child="health_meter_all" locx="0" locy="0" alignment="hc vc"></link> 
+			<link parent="compass_dummy" child="compass_center" locx="0" locy="0" alignment="hc vc"></link> 
+			<link parent="compass_dummy" child="compass_glass" locx="0" locy="-3" alignment="hc vc"></link> 			
+			
+			<!-- Compass Objective Arrow -->
+			<!-- PNC_EAM Note: This object is linked to compass_dummy in code in order to force the correct draw order -->			
+			<sprite name="compass_objective_arrow" texture="compass_objective_arrow" width="24" height="24"></sprite>
+										    											
+			<!-- Stance -->
+			<!-- PNC_EAM: Note - the width and height of the stance indicator is relative to the dimensions of the stancestand image.  All other 
+									stance indicator images are scaled proportionally -->
+			<stanceindicator name="stance_indicator" stancestand="stance_stand_2" stancecrouch="stance_crouch_2" stanceprone="stance_prone_2" width="22" height="47" locx="-34" locy="-5" alignment="hr vb"></stanceindicator>
+
+			<!-- Crosshair -->
+			<dyncrosshair name="crosshair" width="6" height="16" horiz_center="1" vert_center="1" radius="12" maxradius="30"></dyncrosshair>
+			<hitindicator name="hit_indicator" texture="hit_indicator" width="83" height="57" horiz_center="1" vert_center="1" alpha="128" radius="27"></hitindicator>        
+			
+			<!-- Ammo icons -->	
+			<sprite name="Ammo" texture="ammo_icon_mp" width="61" height="18" locx="0" locy="0"></sprite>	
+			<text name="ammo_count" fontname="Futura Std Condensed ExtBd" fontsize="14" datalink="CombinedClipReserve" locx="8" locy="-1"></text>
+
+			<sprite name="Grenade" texture="grenade_icon_mp" width="27" height="22" locx="-25" locy="0" alignment="vb hc"></sprite>	
+			<text name="grenade_count" fontname="Futura Std Condensed ExtBd" fontsize="14" datalink="GrenadeCount" locx="13" locy="-3"></text>
+			
+			<link parent="Grenade" child="Ammo" alignment="hr vbi"></link>				
+			<link parent="Ammo" child="ammo_count" alignment="hli vbi"></link>
+			<link parent="Grenade" child="grenade_count" alignment="hli vbi"></link>
+			
+			<!--	END - MOH4 "Final" HUD 	-->  
+			
+			<!-- Resupply icons: In code, these should be hidden by default and exposed only when the player is resupplying -->			
+			<sprite name="resupply_health_icon" texture="resupply_health" width="20" height="20" locx="0" locy="-20" alignment="hr vc"></sprite>
+			<sprite name="resupply_ammo_icon" texture="resupply_ammo" width="20" height="20" locx="0" locy="0" alignment="hr vc"></sprite>
+			
+			<!-- Other icons: These should also be hidden by default and exposed only in certain contexts -->
+			<sprite name="capture_zone_icon" texture="hud_crownicon" width="22" height="23" locx="-4" locy="3" alignment="hr vt"></sprite>
+			<sprite name="flag_icon" texture="hud_flagicon" width="26" height="32" locx="-4" locy="3" alignment="hr vt"></sprite>
+			
+			<!-- Other HUD Elements -->			
+			<richtext name="csa_richtext" fontname="Futura Std Condensed ExtBd" fontsize="14" iconwidth="20" iconheight="20" locx="0" locy="20" horiz_center="1" vert_center="1"></richtext>
+			<sprite name="csa_sprite" texture="" locx="0" locy="42" width="32" height="32" alignment="hc vc"></sprite>
+			<textdisplay name="message_display" fontname="Futura Std Condensed ExtBd" fontsize="14" locy="25"></textdisplay>									
+			
+			<!-- Bomb timer -->
+			<!-- Stopwatch Timer -->
+			<stopwatchtimer name="stopwatchtimer" timerback="timer_back" timerhand="timer_hand" animate="0" sound="0" locx="0" locy="0" width="48" height="48" horiz_center="1" vert_center="1"></stopwatchtimer>
+			<stopwatchmeter name="stopwatchmeter" texture="health_bar" width="48" height="48" locx="0" locy="1" arc="1" radius="0" thickness="19" thetaStart="90.0" thetaEnd="-270.0" flipVertical="1" direction="1.0" horiz_center="1" vert_center="1"></stopwatchmeter>
+			<link parent="stopwatchtimer" child="stopwatchmeter" alignment="hc vc"></link>
+			
+			<!-- Round timer -->
+			<timer name="splitscreen_timer" fontname="Futura Std Condensed ExtBd" fontsize="14" fontlocx="5" fontlocy="5" locx="0" locy="4" staticcammode="1" width="54" height="24" alignment="hl vt"></timer>
+			
+			<!-- Bomb/Objective timers -->
+			<bombtimer name="timer_allied" team="1" texture="timer_back" fontname="Futura Std Condensed ExtBd" fontsize="14" fontlocx="0" fontlocy="0" locx="46" locy="0" alignment="hli vt" width="32" height="32" red="182" green="29" blue="29"></bombtimer>
+			<bombtimer name="timer_axis" team="2" texture="timer_back" fontname="Futura Std Condensed ExtBd" fontsize="14" fontlocx="0" fontlocy="0" locx="80" locy="0" alignment="hli vt" width="32" height="32" red="97" green="129" blue="82"></bombtimer>
+					    
+			<objectivemeter name="objective_meter" texture="hud_objectivemeter_bar" width="86" height="6" locx="0" locy="10" horiz_center="1" vert_top="1"/>
+			<objectivemeterflag name="objective_meter_flag" link="objective_meter" texture="hud_flagicon" width="20" height="24" locx="0" locy="0" horiz_center="1" vert_center="1"/>
+
+			<fragcounter name="score_counter" fontname="Futura Std Condensed ExtBd" fontsize="14" width="32" height="32" locx="-20" locy="0" alignment="hr vt"></fragcounter>
+			<ranking name="ranking_display" fontname="Futura Std Condensed ExtBd" fontsize="16"  width="32" height="32" locx="-47" locy="0" alignment="hr vt"></ranking>		    			
+        </hud_halfscreen>
+        
+        <!-- Complete definition of the quarterscreen HUD type -->
+        <hud_quarterscreen>
+			<!--	START - MOH4 "Final" HUD -->
+			
+			<!-- Compass -->
+			<!-- This is a dummy object that we attach all the compass related objects to. -->
+			<sprite name="compass_dummy" locx="-1" locy="5" width="72" height="72" alignment="hl vb"></sprite>
+			<compass name="compass_center" width="47" height="47" ></compass>
+			
+			<!-- No Rally Mode in MP -->
+			
+			<!-- Health -->				
+			<healthmeter name="health_meter_all" width="72" height="72" >
+				<meterbar name="health_meter" texture="health_bar" width="72" height="72" locx="0" locy="0" arc="1" radius="28" thickness="5" flipVertical="1" direction="1.0" thetaStart="238.0" thetaEnd="-57.0"></meterbar>
+			</healthmeter>						
+				
+			<sprite name="compass_glass" texture="compass_glass_mp" width="72" height="72"></sprite>
+			
+			<link parent="compass_dummy" child="health_meter_all" locx="0" locy="0" alignment="hc vc"></link> 
+			<link parent="compass_dummy" child="compass_center" locx="0" locy="0" alignment="hc vc"></link> 
+			<link parent="compass_dummy" child="compass_glass" locx="0" locy="-3" alignment="hc vc"></link> 			
+			
+			<!-- Compass Objective Arrow -->
+			<!-- PNC_EAM Note: This object is linked to compass_dummy in code in order to force the correct draw order -->			
+			<sprite name="compass_objective_arrow" texture="compass_objective_arrow" width="24" height="24"></sprite>
+										    											
+			<!-- Stance -->
+			<!-- PNC_EAM: Note - the width and height of the stance indicator is relative to the dimensions of the stancestand image.  All other 
+									stance indicator images are scaled proportionally -->
+			<stanceindicator name="stance_indicator" stancestand="stance_stand_2" stancecrouch="stance_crouch_2" stanceprone="stance_prone_2" width="22" height="47" locx="-34" locy="-5" alignment="hr vb"></stanceindicator>
+
+			<!-- Crosshair -->
+			<dyncrosshair name="crosshair" width="6" height="16" horiz_center="1" vert_center="1" radius="12" maxradius="30"></dyncrosshair>
+			<hitindicator name="hit_indicator" texture="hit_indicator" width="83" height="57" horiz_center="1" vert_center="1" alpha="128" radius="27"></hitindicator>        
+			
+			<!-- Ammo icons -->	
+			<sprite name="Ammo" texture="ammo_icon_mp" width="61" height="18" locx="0" locy="0"></sprite>	
+			<text name="ammo_count" fontname="Futura Std Condensed ExtBd" fontsize="14" datalink="CombinedClipReserve" locx="8" locy="-1"></text>
+
+			<sprite name="Grenade" texture="grenade_icon_mp" width="27" height="22" locx="-25" locy="0" alignment="vb hc"></sprite>	
+			<text name="grenade_count" fontname="Futura Std Condensed ExtBd" fontsize="14" datalink="GrenadeCount" locx="13" locy="-3"></text>
+			
+			<link parent="Grenade" child="Ammo" alignment="hr vbi"></link>				
+			<link parent="Ammo" child="ammo_count" alignment="hli vbi"></link>
+			<link parent="Grenade" child="grenade_count" alignment="hli vbi"></link>
+			
+			<!--	END - MOH4 "Final" HUD 	-->  
+			
+			<!-- Resupply icons: In code, these should be hidden by default and exposed only when the player is resupplying -->			
+			<sprite name="resupply_health_icon" texture="resupply_health" width="20" height="20" locx="0" locy="-20" alignment="hr vc"></sprite>
+			<sprite name="resupply_ammo_icon" texture="resupply_ammo" width="20" height="20" locx="0" locy="0" alignment="hr vc"></sprite>
+			
+			<!-- Other icons: These should also be hidden by default and exposed only in certain contexts -->
+			<sprite name="capture_zone_icon" texture="hud_crownicon" width="22" height="23" locx="-4" locy="3" alignment="hr vt"></sprite>
+			<sprite name="flag_icon" texture="hud_flagicon" width="26" height="32" locx="-4" locy="3" alignment="hr vt"></sprite>
+			
+			<!-- Other HUD Elements -->			
+			<richtext name="csa_richtext" fontname="Futura Std Condensed ExtBd" fontsize="14" iconwidth="20" iconheight="20" locx="0" locy="20" horiz_center="1" vert_center="1"></richtext>
+			<sprite name="csa_sprite" texture="" locx="0" locy="42" width="32" height="32" alignment="hc vc"></sprite>
+			<textdisplay name="message_display" fontname="Futura Std Condensed ExtBd" fontsize="14" locy="25"></textdisplay>									
+			
+			<!-- Bomb timer -->
+			<!-- Stopwatch Timer -->
+			<stopwatchtimer name="stopwatchtimer" timerback="timer_back" timerhand="timer_hand" animate="0" sound="0" locx="0" locy="0" width="48" height="48" horiz_center="1" vert_center="1"></stopwatchtimer>
+			<stopwatchmeter name="stopwatchmeter" texture="health_bar" width="48" height="48" locx="0" locy="1" arc="1" radius="0" thickness="19" thetaStart="90.0" thetaEnd="-270.0" flipVertical="1" direction="1.0" horiz_center="1" vert_center="1"></stopwatchmeter>
+			<link parent="stopwatchtimer" child="stopwatchmeter" alignment="hc vc"></link>
+			
+			<!-- Round timer -->
+			<timer name="splitscreen_timer" fontname="Futura Std Condensed ExtBd" fontsize="14" fontlocx="5" fontlocy="5" locx="0" locy="4" staticcammode="1" width="54" height="24" alignment="hl vt"></timer>
+			
+			<!-- Bomb/Objective timers -->
+			<bombtimer name="timer_allied" team="1" texture="timer_back" fontname="Futura Std Condensed ExtBd" fontsize="14" fontlocx="0" fontlocy="0" locx="46" locy="0" alignment="hli vt" width="32" height="32" red="182" green="29" blue="29"></bombtimer>
+			<bombtimer name="timer_axis" team="2" texture="timer_back" fontname="Futura Std Condensed ExtBd" fontsize="14" fontlocx="0" fontlocy="0" locx="80" locy="0" alignment="hli vt" width="32" height="32" red="97" green="129" blue="82"></bombtimer>
+					    
+			<objectivemeter name="objective_meter" texture="hud_objectivemeter_bar" width="86" height="6" locx="0" locy="10" horiz_center="1" vert_top="1"/>
+			<objectivemeterflag name="objective_meter_flag" link="objective_meter" texture="hud_flagicon" width="20" height="24" locx="0" locy="0" horiz_center="1" vert_center="1"/>
+
+			<fragcounter name="score_counter" fontname="Futura Std Condensed ExtBd" fontsize="14" width="32" height="32" locx="-20" locy="0" alignment="hr vt"></fragcounter>
+			<ranking name="ranking_display" fontname="Futura Std Condensed ExtBd" fontsize="16"  width="32" height="32" locx="-47" locy="0" alignment="hr vt"></ranking>
+		    			
+		</hud_quarterscreen>
+    </hud>
+</document>

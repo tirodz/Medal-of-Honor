@@ -1,0 +1,16 @@
+FRAME	STRINGID	X	Y	WIDTH	HEIGHT	SHAPE	A	R	G	B	JUSTIFY_X	JUSTIFY_Y
+0	0	50	350	530	50	0	255	255	255	255	CENTER	CENTER
+15	1
+200	2 
+378	3											
+473	4											
+534	5											
+599	6											
+600	7											
+704	8											
+705	9											
+772	10											
+781	11											
+881	12											
+883	13											
+977	14											

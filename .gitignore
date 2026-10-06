@@ -1,9 +1,25 @@
+# The original commercial ISO and the built image are never committed; the
+# image is distributed as split release assets and the original is user-supplied.
 original/
-extracted/
-build/
+build/moh_ea_ar.iso
+build/*.iso
+build/bundle/
+build/*.tar.gz
+build/download/moh_ea_ar.iso
+
+# Large media/pad payloads inside the extraction are not needed to continue the
+# localization (audio, FMV streams and the 1.9 GB pad). They are reproducible
+# byte-exactly from the ISO with tools/extract_iso.py.
+extracted/PADME.AAA
+extracted/**/SOUND/**
+extracted/**/MOVIES/*.MPC
+
+# Noisy / generated
 tests/tmp/
-*.log
-research/
-log.txt
 __pycache__/
 *.pyc
+log.txt
+*.log
+
+research/EA-Font-Manager/
+research/EA-Graphics-Manager/

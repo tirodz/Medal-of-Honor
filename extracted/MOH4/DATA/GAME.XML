@@ -1,0 +1,599 @@
+<?xml version="1.0"?>
+<document type="gamedata">
+  <game maxlevels="100" startLevel="1_99" numLevels="56">
+    <level name="1_1" type="singleplayer">
+      <datapath value="data/1/1_1" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_2" />
+      <displayname value="STN1 - 'Operation Chariot' - Alpha" />
+      <intromovie value="data/shared/movies/StNMIntr.mpc" />
+      <overheadmappos_tl x="-228.978" y="-116.984" />
+      <overheadmappos_tr x="-98.142" y="13.852" />
+      <overheadmappos_br x="-26.122" y="-58.168" />
+      <overheadmappos_bl x="-156.958" y="-189.004" />
+      <campaignname alias="CampaignName_STN" />
+      <missionname alias="MissionName_STN1" />
+      <campaignindex value="1" />
+      <missionindex value="1" />
+      <numobjectives value="2" />
+      <primaryobjective alias="PrimaryObjective_STN1" />
+    </level>
+    <level name="1_2" type="singleplayer">
+      <datapath value="data/1/1_2" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_4" />
+      <displayname value="STN2 - 'Raid on St. Nazaire' - Alpha" />
+      <overheadmappos_tl x="-250.529" y="-13.408" />
+      <overheadmappos_tr x="106.928" y="-13.408" />
+      <overheadmappos_br x="106.928" y="-210.173" />
+      <overheadmappos_bl x="-250.529" y="-210.173" />
+      <campaignname alias="CampaignName_STN" />
+      <missionname alias="MissionName_STN2" />
+      <campaignindex value="1" />
+      <missionindex value="2" />
+      <numobjectives value="7" />
+      <primaryobjective alias="PrimaryObjective_STN2" />
+      <nemesisobjective alias="NemesisObjective_STN2" />
+      <ossdocumentobjective alias="OSSDocumentObjective_STN2" />
+    </level>
+    <level name="1_4" type="singleplayer">
+      <datapath value="data/1/1_4" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_5" />
+      <displayname value="STN4 - 'Lights Out in the Port City' - Alpha" />
+      <overheadmappos_tl x="-168.378" y="103.667" />
+      <overheadmappos_tr x="208.373" y="70.715" />
+      <overheadmappos_br x="190.229" y="-136.67" />
+      <overheadmappos_bl x="-186.522" y="-103.709" />
+      <campaignname alias="CampaignName_STN" />
+      <missionname alias="MissionName_STN4" />
+      <campaignindex value="1" />
+      <missionindex value="3" />
+      <numobjectives value="6" />
+      <primaryobjective alias="PrimaryObjective_STN4" />
+      <nemesisobjective alias="NemesisObjective_STN4" />
+      <ossdocumentobjective alias="OSSDocumentObjective_STN4" />
+    </level>
+    <level name="1_5" type="singleplayer">
+      <datapath value="data/1/1_5" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_8" />
+      <displayname value="STN5 - 'Escape at Dawn' - Alpha" />
+      <overheadmappos_tl x="-170.844" y="247.507" />
+      <overheadmappos_tr x="25.326" y="247.507" />
+      <overheadmappos_br x="25.326" y="-108.867" />
+      <overheadmappos_bl x="-170.844" y="-108.867" />
+      <campaignname alias="CampaignName_STN" />
+      <missionname alias="MissionName_STN5" />
+      <campaignindex value="1" />
+      <missionindex value="4" />
+      <numobjectives value="6" />
+      <primaryobjective alias="PrimaryObjective_STN5" />
+      <nemesisobjective alias="NemesisObjective_STN5" />
+      <ossdocumentobjective alias="OSSDocumentObjective_STN5" />
+    </level>
+    <level name="1_11" type="singleplayer">
+      <datapath value="data/1/1_11" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_15" />
+      <displayname value="RUS1 - 'Road to Stalingrad' - Alpha" />
+      <overheadmappos_tl x="-193.065" y="185.111" />
+      <overheadmappos_tr x="153.321" y="185.111" />
+      <overheadmappos_br x="153.321" y="-6" />
+      <overheadmappos_bl x="-193.065" y="-6" />
+      <campaignname alias="CampaignName_Russia" />
+      <missionname alias="MissionName_RUS1" />
+      <campaignindex value="3" />
+      <missionindex value="1" />
+      <intromovie value="data/shared/movies/RusCIntr.mpc" />
+      <outtromovie value="data/shared/movies/RusMIntr.mpc" />
+      <numobjectives value="8" />
+      <primaryobjective alias="PrimaryObjective_RUS1" />
+      <nemesisobjective alias="NemesisObjective_RUS1" />
+      <ossdocumentobjective alias="OSSDocumentObjective_RUS1" />
+    </level>
+    <level name="1_15" type="singleplayer">
+      <datapath value="data/1/1_15" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_21" />
+      <displayname value="RUS5 - 'Climbing Mamayev Hill' - Alpha" />
+      <overheadmappos_tl x="90.157" y="200.213" />
+      <overheadmappos_tr x="90.157" y="-164.719" />
+      <overheadmappos_br x="-110.723" y="-164.719" />
+      <overheadmappos_bl x="-110.723" y="200.213" />
+      <campaignname alias="CampaignName_Russia" />
+      <missionname alias="MissionName_RUS5" />
+      <campaignindex value="3" />
+      <missionindex value="2" />
+      <numobjectives value="8" />
+      <primaryobjective alias="PrimaryObjective_RUS5" />
+      <nemesisobjective alias="NemesisObjective_RUS5" />
+      <ossdocumentobjective alias="OSSDocumentObjective_RUS5" />
+    </level>
+    <level name="1_21" type="singleplayer">
+      <datapath value="data/1/1_21" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_22" />
+      <displayname value="BOB1 - 'Mission to Rocherath' - Alpha" />
+      <overheadmappos_tl x="-252.216" y="-263.637" />
+      <overheadmappos_tr x="-141.227" y="150.581" />
+      <overheadmappos_br x="86.783" y="89.486" />
+      <overheadmappos_bl x="-24.206" y="-324.732" />
+      <campaignname alias="CampaignName_BOB" />
+      <missionname alias="MissionName_BOB1" />
+      <campaignindex value="4" />
+      <missionindex value="1" />
+      <intromovie value="data/shared/movies/BoBCIntr.mpc" />
+      <outtromovie value="data/shared/movies/BoBMIntr.mpc" />
+      <numobjectives value="8" />
+      <primaryobjective alias="PrimaryObjective_BOB1" />
+      <nemesisobjective alias="NemesisObjective_BOB1" />
+      <ossdocumentobjective alias="OSSDocumentObjective_BOB1" />
+    </level>
+    <level name="1_22" type="singleplayer">
+      <datapath value="data/1/1_22" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_24" />
+      <displayname value="BOB2 - 'Farmhouse Liberation' - Alpha" />
+      <overheadmappos_tl x="-110.995" y="-105.564" />
+      <overheadmappos_tr x="-110.995" y="216.599" />
+      <overheadmappos_br x="66.342" y="216.599" />
+      <overheadmappos_bl x="66.342" y="-105.564" />
+      <campaignname alias="CampaignName_BOB" />
+      <missionname alias="MissionName_BOB2" />
+      <campaignindex value="4" />
+      <missionindex value="2" />
+      <numobjectives value="6" />
+      <primaryobjective alias="PrimaryObjective_BOB2" />
+      <nemesisobjective alias="NemesisObjective_BOB2" />
+      <ossdocumentobjective alias="OSSDocumentObjective_BOB2" />
+    </level>
+    <level name="1_24" type="singleplayer">
+      <datapath value="data/1/1_24" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_99" />
+      <displayname value="BOB4 - 'Operation: Virus House' - Alpha" />
+      <overheadmappos_tl x="26.035" y="95.739" />
+      <overheadmappos_tr x="489.192" y="95.739" />
+      <overheadmappos_br x="489.192" y="-159.21" />
+      <overheadmappos_bl x="26.035" y="-159.21" />
+      <campaignname alias="CampaignName_BOB" />
+      <missionname alias="MissionName_BOB4" />
+      <campaignindex value="4" />
+      <missionindex value="3" />
+      <numobjectives value="6" />
+      <primaryobjective alias="PrimaryObjective_BOB4" />
+      <nemesisobjective alias="NemesisObjective_BOB4" />
+      <ossdocumentobjective alias="OSSDocumentObjective_BOB4" />
+    </level>
+    <level name="1_8" type="singleplayer">
+      <datapath value="data/1/1_8" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_9" />
+      <displayname value="NAF3 - 'Operation: Blindfold' - Alpha" />
+      <campaignname alias="CampaignName_NorthAfrica" />
+      <missionname alias="MissionName_NAF3" />
+      <overheadmappos_tl x="-254.701" y="114.023" />
+      <overheadmappos_tr x="259.522" y="114.023" />
+      <overheadmappos_br x="259.522" y="-169.035" />
+      <overheadmappos_bl x="-254.701" y="-169.035" />
+      <campaignindex value="2" />
+      <missionindex value="1" />
+      <intromovie value="data/shared/movies/NafCIntr.mpc" />
+      <outtromovie value="data/shared/movies/NafMIntr.mpc" />
+      <numobjectives value="7" />
+      <primaryobjective alias="PrimaryObjective_NAF3" />
+      <nemesisobjective alias="NemesisObjective_NAF3" />
+      <ossdocumentobjective alias="OSSDocumentObjective_NAF3" />
+    </level>
+    <level name="1_9" type="singleplayer">
+      <datapath value="data/1/1_9" />
+      <leveltype value="singleplayer" />
+      <nextlevel value="1_11" />
+      <displayname value="NAF4 - 'Operation: V2 Silence' - Alpha" />
+      <campaignname alias="CampaignName_NorthAfrica" />
+      <missionname alias="MissionName_NAF4" />
+      <overheadmappos_tl x="-43.076" y="-173.968" />
+      <overheadmappos_tr x="-43.076" y=" 92.339" />
+      <overheadmappos_br x="103.514" y=" 92.339" />
+      <overheadmappos_bl x="103.514" y="-173.968" />
+      <campaignindex value="2" />
+      <missionindex value="2" />
+      <numobjectives value="8" />
+      <primaryobjective alias="PrimaryObjective_NAF4" />
+      <nemesisobjective alias="NemesisObjective_NAF4" />
+      <ossdocumentobjective alias="OSSDocumentObjective_NAF4" />
+    </level>
+    <level name="1_99" type="shell">
+      <datapath value="data/1/1_99" />
+      <leveltype value="shell" />
+      <nextlevel value="1_99" />
+      <displayname value="Shell" />
+      <campaignname value="" />
+    </level>
+    <level name="2_51" type="multiplayer">
+      <datapath value="data/2/2_51" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L1.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="medium" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_51" />
+      <nextlevel value="2_51" />
+      <displayname value="2_51, MP, Up in Flame" />
+    </level>
+    <level name="2_52" type="multiplayer">
+      <datapath value="data/2/2_52" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L2.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="small" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_52" />
+      <nextlevel value="2_52" />
+      <displayname value="2_52, MP, Close and Personal" />
+    </level>
+    <level name="2_53" type="multiplayer">
+      <datapath value="data/2/2_53" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L3.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="medium" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_53" />
+      <nextlevel value="2_53" />
+      <displayname value="2_53, MP, Meet me in Bastogne" />
+    </level>
+    <level name="2_54" type="multiplayer">
+      <datapath value="data/2/2_54" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L4.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="large" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_54" />
+      <nextlevel value="2_54" />
+      <displayname value="2_54, MP, Crash Landing" />
+    </level>
+    <level name="2_55" type="multiplayer">
+      <datapath value="data/2/2_55" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L5.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="small" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_55" />
+      <nextlevel value="2_55" />
+      <displayname value="2_55, MP, Crossing the Styx" />
+    </level>
+    <level name="2_56" type="multiplayer">
+      <datapath value="data/2/2_56" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L6.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="medium" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_56" />
+      <nextlevel value="2_56" />
+      <displayname value="2_56, MP, Epiphany" />
+    </level>
+    <level name="2_57" type="multiplayer">
+      <datapath value="data/2/2_57" />
+      <leveltype value="multiplayer" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L7.abk" />
+      <mapsize value="large" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_57" />
+      <nextlevel value="2_57" />
+      <displayname value="2_57, MP, Wind of Despair" />
+    </level>
+    <level name="2_58" type="multiplayer">
+      <datapath value="data/2/2_58" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L8.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="medium" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_58" />
+      <nextlevel value="2_58" />
+      <displayname value="2_58, MP, Outskirt Skirmish" />
+    </level>
+    <level name="2_59" type="multiplayer">
+      <datapath value="data/2/2_59" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L9.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="small" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_59" />
+      <nextlevel value="2_59" />
+      <displayname value="2_59, MP, Volga Song" />
+    </level>
+    <level name="2_60" type="multiplayer">
+      <datapath value="data/2/2_60" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L10.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="large" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_60" />
+      <nextlevel value="2_60" />
+      <displayname value="2_60, MP, Silent Prayer" />
+    </level>
+    <level name="2_61" type="multiplayer">
+      <datapath value="data/2/2_61" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L11.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="medium" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_61" />
+      <nextlevel value="2_61" />
+      <displayname value="2_61, MP, Winter's Harvest" />
+    </level>
+    <level name="2_62" type="multiplayer">
+      <datapath value="data/2/2_62" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L12.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="large" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_62" />
+      <nextlevel value="2_62" />
+      <displayname value="2_62, MP, Sniper's Square" />
+    </level>
+    <level name="2_63" type="multiplayer">
+      <datapath value="data/2/2_63" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L13.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="medium" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_63" />
+      <nextlevel value="2_63" />
+      <displayname value="2_63, MP, The Under Dogs" />
+    </level>
+    <level name="2_64" type="multiplayer">
+      <datapath value="data/2/2_64" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L14.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="small" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_64" />
+      <nextlevel value="2_64" />
+      <displayname value="2_64, MP, History Repeats" />
+    </level>
+    <level name="2_66" type="multiplayer">
+      <datapath value="data/2/2_66" />
+      <mpaudiopath value="data/2/MPAudio" />
+      <mpasyncfile value="L16.abk" />
+      <leveltype value="multiplayer" />
+      <mapsize value="small" />
+      <objective0 value="1" />
+      <objective3 value="0" />
+      <objective7 value="1" />
+      <objective11 value="1" />
+      <previouslevel value="2_66" />
+      <nextlevel value="2_66" />
+      <displayname value="2_66, MP, Blind Date" />
+    </level>
+    <level name="5_20" type="debuggym">
+      <datapath value="data\5\5_20" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_20: LOD Gym" />
+    </level>
+    <level name="5_40" type="debuggym">
+      <datapath value="data\5\5_40" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_40: Single Cover Point Gym" />
+    </level>
+    <level name="5_42" type="debuggym">
+      <datapath value="data\5\5_42" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_42: Fixed Fire Tactic Gym" />
+    </level>
+    <level name="5_43" type="debuggym">
+      <datapath value="data\5\5_43" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_43: Rig Animation Gym" />
+    </level>
+    <level name="5_44" type="debuggym">
+      <datapath value="data\5\5_44" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_44: Locomotion Gym" />
+    </level>
+    <level name="5_45" type="debuggym">
+      <datapath value="data\5\5_45" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_45: Targeting Gym" />
+    </level>
+    <level name="5_46" type="debuggym">
+      <datapath value="data\5\5_46" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_46: Pathfinding Gym" />
+    </level>
+    <level name="5_50" type="debuggym">
+      <datapath value="data\5\5_50" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_50: Squad driven by NPC" />
+    </level>
+    <level name="5_52" type="debuggym">
+      <datapath value="data\5\5_52" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_52: Hit/Death Tactics Gym" />
+    </level>
+    <level name="5_57" type="debuggym">
+      <datapath value="data\5\5_57" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_57: Squad Collision, Player vs. NPC" />
+    </level>
+    <level name="5_58" type="debuggym">
+      <datapath value="data\5\5_58" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_58: ICS Gym" />
+    </level>
+    <level name="5_59" type="debuggym">
+      <datapath value="data\5\5_59" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_59: Squad Collision, NPC vs. NPC" />
+    </level>
+    <level name="5_60" type="debuggym">
+      <datapath value="data\5\5_60" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_60: Squad Driven by Player" />
+    </level>
+    <level name="5_62" type="debuggym">
+      <datapath value="data\5\5_62" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_62: SOB Gym" />
+    </level>
+    <level name="5_63" type="debuggym">
+      <datapath value="data\5\5_63" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_63: Vehicles Gym" />
+    </level>
+    <level name="5_64" type="debuggym">
+      <datapath value="data\5\5_64" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_64: Player Weapons Gym" />
+    </level>
+    <level name="5_66" type="debuggym">
+      <datapath value="data\5\5_66" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_66: Character LOD Gym" />
+    </level>
+    <level name="5_68" type="multiplayer">
+      <datapath value="data\5\5_68" />
+      <leveltype value="multiplayer" />
+      <nextlevel value="1_99" />
+      <displayname value="5_68: MP Avatar Locomotion Gym" />
+    </level>
+    <level name="5_69" type="debuggym">
+      <datapath value="data\5\5_69" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_69: NPC Weapons Gym" />
+    </level>
+    <level name="5_70" type="debuggym">
+      <datapath value="data\5\5_70" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_70: NPC MMG Gym" />
+    </level>
+    <level name="5_71" type="debuggym">
+      <datapath value="data\5\5_71" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_71: Surface_Impacts_RnD" />
+    </level>
+    <level name="5_74" type="debuggym">
+      <datapath value="data\5\5_74" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_74: Vehicle Sound Gym 1" />
+    </level>
+    <level name="5_75" type="debuggym">
+      <datapath value="data\5\5_75" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_75: Vehicle Sound Gym 2" />
+    </level>
+    <level name="5_81" type="debuggym">
+      <datapath value="data\5\5_81" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_81: Rag Doll Gym" />
+    </level>
+    <level name="5_82" type="debuggym">
+      <datapath value="data\5\5_82" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_82: Player Weapons Gym - BOB" />
+    </level>
+    <level name="5_83" type="debuggym">
+      <datapath value="data\5\5_83" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_83: Player Weapons Gym - RUS" />
+    </level>
+    <level name="5_84" type="debuggym">
+      <datapath value="data\5\5_84" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_84: Player Weapons Gym - NAF" />
+    </level>
+    <level name="5_85" type="debuggym">
+      <datapath value="data\5\5_85" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_85: Player Weapons Gym - STN" />
+    </level>
+    <level name="5_90" type="debuggym">
+      <datapath value="data\5\5_90" />
+      <leveltype value="debuggym" />
+      <nextlevel value="1_99" />
+      <displayname value="5_90: AI Squad features Gym - STN" />
+    </level>
+  </game>
+</document>

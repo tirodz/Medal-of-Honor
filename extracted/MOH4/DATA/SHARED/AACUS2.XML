@@ -1,0 +1,11 @@
+<mapcycle>
+
+	<mode value="medley"/>
+
+	<level value="2_64" variation="2"/>
+	<level value="2_62" variation="2"/>
+	<level value="2_56" variation="2"/>
+	<level value="2_58" variation="2"/>
+	<level value="2_55" variation="2"/>
+
+</mapcycle>

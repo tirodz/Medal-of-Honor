@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document type="hud">
+<hud>
+
+	<!-- NOTE: For bitmap definitions, it is [name] that is most important.  [name] MUST match the asset name (not filename) of a
+			   loaded texture (presumably defined in hud.xdd); [filename] is not used by the game code.  -->
+
+	<!-- CSA icons -->
+	<bitmap name="csa_icons"></bitmap>
+
+	<bitmapelement name="csa_kick_grenade" parent="csa_icons" startx="0" starty="0" endx="65" endy="65"></bitmapelement>
+	<bitmapelement name="csa_add_primaryobj" parent="csa_icons" startx="64" starty="0" endx="129" endy="65"></bitmapelement>
+	<bitmapelement name="csa_add_secondaryobj" parent="csa_icons" startx="128" starty="0" endx="193" endy="65"></bitmapelement>
+	<bitmapelement name="csa_add_medkit" parent="csa_icons" startx="192" starty="0" endx="256" endy="65"></bitmapelement>
+	
+	<bitmapelement name="csa_use_mmg" parent="csa_icons" startx="0" starty="64" endx="65" endy="129"></bitmapelement>
+	<bitmapelement name="csa_use_democharge" parent="csa_icons" startx="64" starty="64" endx="129" endy="129"></bitmapelement>
+	<bitmapelement name="csa_swap_weapon" parent="csa_icons" startx="128" starty="64" endx="193" endy="129"></bitmapelement>
+	<bitmapelement name="csa_heal_ally" parent="csa_icons" startx="192" starty="64" endx="256" endy="129"></bitmapelement>
+
+	<bitmapelement name="csa_add_revive" parent="csa_icons" startx="0" starty="128" endx="65" endy="193"></bitmapelement>
+	<bitmapelement name="csa_walkie_talkie" parent="csa_icons" startx="193" starty="193" endx="256" endy="256"></bitmapelement>
+
+	<bitmap name="HUD_Sheet_Shared" filename="HUD_Sheet_Shared"></bitmap>
+
+	<bitmapelement name="compass_glass" parent="HUD_Sheet_Shared" startx="0" starty="0" endx="127" endy="127"></bitmapelement>
+	<bitmapelement name="compass_center" parent="HUD_Sheet_Shared" startx="129" starty="0" endx="204" endy="75"></bitmapelement>
+
+	<!-- controller buttons (generic mappings, should work for all three controllers) -->
+	<bitmap name="icon_action_button" filename="icon_action_button"></bitmap>
+	<bitmap name="controller_buttons"/>
+	<bitmapelement name="icon_triangle_button" parent="controller_buttons" startx="0" endx="31" starty="0" endy="32"/>
+	<bitmapelement name="icon_square_button" parent="controller_buttons" startx="32" endx="63" starty="0" endy="32"/>
+	<bitmapelement name="icon_cross_button" parent="controller_buttons" startx="64" endx="95" starty="0" endy="32"/>
+	<bitmapelement name="icon_circle_button" parent="controller_buttons" startx="96" endx="127" starty="0" endy="32"/>
+	<bitmapelement name="icon_L1_button" parent="controller_buttons" startx="128" endx="159" starty="0" endy="32"/>
+	<bitmapelement name="icon_R1_button" parent="controller_buttons" startx="160" endx="191" starty="0" endy="32"/>
+	<bitmapelement name="icon_L2_button" parent="controller_buttons" startx="192" endx="223" starty="0" endy="32"/>
+	<bitmapelement name="icon_R2_button" parent="controller_buttons" startx="224" endx="255" starty="0" endy="32"/>
+	<bitmapelement name="icon_DPadUp_button" parent="controller_buttons" startx="256" endx="287" starty="0" endy="32"/>
+	<bitmapelement name="icon_DPadLeft_button" parent="controller_buttons" startx="288" endx="319" starty="0" endy="32"/>
+	<bitmapelement name="icon_DPadDown_button" parent="controller_buttons" startx="320" endx="351" starty="0" endy="32"/>
+	<bitmapelement name="icon_DPadRight_button" parent="controller_buttons" startx="352" endx="383" starty="0" endy="32"/>
+	<bitmapelement name="icon_L3_button" parent="controller_buttons" startx="384" endx="415" starty="0" endy="32"/>
+	<bitmapelement name="icon_R3_button" parent="controller_buttons" startx="416" endx="447" starty="0" endy="32"/>
+	<bitmapelement name="icon_R3_toggle_updown" parent="controller_buttons" startx="448" endx="479" starty="0" endy="32"/>
+	<bitmapelement name="icon_R3_toggle_leftright" parent="controller_buttons" startx="480" endx="511" starty="0" endy="32"/>
+
+	<bitmapelement name="icon_select_button" parent="controller_buttons" startx="0" endx="31" starty="32" endy="64"/>
+	<bitmapelement name="icon_start_button" parent="controller_buttons" startx="32" endx="63" starty="32" endy="64"/>
+	<bitmapelement name="icon_L3_toggle_updown" parent="controller_buttons" startx="448" endx="479" starty="32" endy="64"/>
+	<bitmapelement name="icon_L3_toggle_leftright" parent="controller_buttons" startx="480" endx="511" starty="32" endy="64"/>
+
+	<!-- stance -->
+	<bitmapelement name="stance_stand_2" parent="HUD_Sheet_Shared" startx="31" starty="135" endx="58" endy="196"></bitmapelement>		
+	<bitmapelement name="stance_crouch_2" parent="HUD_Sheet_Shared" startx="59" starty="135" endx="96" endy="196"></bitmapelement>		
+	<bitmapelement name="stance_prone_2" parent="HUD_Sheet_Shared" startx="97" starty="135" endx="165" endy="196"></bitmapelement>		
+	
+	<!-- PNC_EAM: Temporary, so that things work with new code and "old" data (ie. hudMP.xml needs to use the old stance icons for now) -->
+	<bitmapelement name="stance_stand" parent="HUD_Sheet_Shared" startx="31" starty="135" endx="59" endy="196"></bitmapelement>		
+	<bitmapelement name="stance_crouch" parent="HUD_Sheet_Shared" startx="59" starty="135" endx="97" endy="196"></bitmapelement>		
+	<bitmapelement name="stance_prone" parent="HUD_Sheet_Shared" startx="97" starty="135" endx="168" endy="196"></bitmapelement>	
+		
+	<bitmapelement name="revive_icon"	parent="HUD_Sheet_Shared" startx="0"	starty="197"	endx="40"	endy="227"></bitmapelement>
+	<bitmapelement name="medkit_icon"	parent="HUD_Sheet_Shared" startx="69"	starty="197"	endx="116"	endy="227"></bitmapelement>
+	<bitmapelement name="ammo_icon"		parent="HUD_Sheet_Shared" startx="100"	starty="197"	endx="191"	endy="227"></bitmapelement>
+	<bitmapelement name="grenade_icon"	parent="HUD_Sheet_Shared" startx="41"	starty="197"	endx="90"	endy="227"></bitmapelement>
+
+	<bitmapelement name="timer_back" parent="HUD_Sheet_Shared" startx="170" starty="135" endx="235" endy="196"></bitmapelement>
+	<bitmapelement name="timer_hand" parent="HUD_Sheet_Shared" startx="166" starty="135" endx="170" endy="196"></bitmapelement>
+	
+	<bitmapelement name="health_bar" parent="HUD_Sheet_Shared" startx="4" starty="174" endx="13" endy="179"></bitmapelement>
+	<bitmapelement name="health_flash" parent="HUD_Sheet_Shared" startx="18" starty="170" endx="31" endy="183"></bitmapelement>
+	
+	<!-- Rally icons -->
+	<bitmap name="HUD_Sheet_Rally" filename="HUD_Sheet_Rally"></bitmap>
+	<bitmapelement name="rally_bar" parent="HUD_Sheet_Rally" startx="149" starty="103" endx="246" endy="117"></bitmapelement>
+	<bitmapelement name="rally_top" parent="HUD_Sheet_Rally" startx="0" starty="101" endx="149" endy="122"></bitmapelement>
+	<bitmapelement name="rally_flash" parent="HUD_Sheet_Rally" startx="127" starty="0" endx="149" endy="13"></bitmapelement>
+
+	<!-- Are these both headshot? No. -->
+	<bitmapelement name="rally_helmet" parent="HUD_Sheet_Rally"	startx="0" starty="0" endx="0" endy="0"></bitmapelement>
+		
+	<bitmapelement name="rally_headshot" parent="HUD_Sheet_Rally"	startx="0" starty="0" endx="31" endy="31"></bitmapelement>
+	<bitmapelement name="rally_count_two" parent="HUD_Sheet_Rally" startx="32" starty="0" endx="63" endy="31"></bitmapelement>
+	<bitmapelement name="rally_count_three" parent="HUD_Sheet_Rally" startx="64" starty="0" endx="95" endy="31"></bitmapelement>
+	<bitmapelement name="rally_count_four" parent="HUD_Sheet_Rally" startx="96" starty="0" endx="127" endy="31"></bitmapelement>
+
+	<bitmapelement name="rally_count_five" parent="HUD_Sheet_Rally" startx="0" starty="32" endx="31" endy="63"></bitmapelement>
+	<bitmapelement name="rally_tank" parent="HUD_Sheet_Rally"		startx="32" starty="32" endx="63" endy="63"></bitmapelement>
+	<bitmapelement name="rally_SS" parent="HUD_Sheet_Rally"		startx="64" starty="32" endx="95" endy="63"></bitmapelement>
+	<bitmapelement name="rally_melee" parent="HUD_Sheet_Rally"		startx="96" starty="32" endx="127" endy="63"></bitmapelement>			
+	
+	<bitmap name="bar" filename="bar"></bitmap>
+<!--	<bitmapelement name="dot" parent="bar" startx="0" starty="0" endx="1" endy="1"></bitmapelement> -->
+	<bitmapelement name="overheat_bar" parent="HUD_Sheet_Shared" startx="29" starty="232" endx="89" endy="252"></bitmapelement>
+	<bitmapelement name="overheat_indicator" parent="HUD_Sheet_Shared" startx="100" starty="226" endx="191" endy="256"></bitmapelement>
+
+	<bitmapelement name="democharge_bar" parent="bar" startx="1" starty="17" endx="75" endy="31"></bitmapelement>
+	<bitmapelement name="democharge_indicator" parent="bar" startx="0" starty="0" endx="76" endy="16"></bitmapelement>
+
+	<!-- 4 piece circular "crosshair" and "dot" -->
+	<bitmapelement name="crosshair_left" parent="HUD_Sheet_Shared" startx="134" starty="108" endx="140" endy="124"></bitmapelement>
+	<bitmapelement name="crosshair_down" parent="HUD_Sheet_Shared" startx="134" starty="108" endx="140" endy="124"></bitmapelement>
+	<bitmapelement name="crosshair_up" parent="HUD_Sheet_Shared" startx="134" starty="108" endx="140" endy="124"></bitmapelement>
+	<bitmapelement name="crosshair_right" parent="HUD_Sheet_Shared" startx="134" starty="108" endx="140" endy="124"></bitmapelement>
+	<bitmapelement name="crosshair_dot" parent="HUD_Sheet_Shared" startx="132" starty="95" endx="141" endy="104"></bitmapelement>
+
+	<bitmapelement name="compass_bead_primary" parent="HUD_Sheet_Shared" startx="1" starty="127" endx="17" endy="141"></bitmapelement>
+	<bitmapelement name="compass_bead_primary_tail" parent="HUD_Sheet_Shared" startx="1" starty="127" endx="17" endy="147"></bitmapelement>
+	<bitmapelement name="compass_bead_team" parent="HUD_Sheet_Shared" startx="0" starty="150" endx="14" endy="164"></bitmapelement>
+	<bitmapelement name="compass_bead_secondary" parent="HUD_Sheet_Shared" startx="18" starty="138" endx="30" endy="147"></bitmapelement>
+	<bitmapelement name="compass_bead_secondary_tail" parent="HUD_Sheet_Shared" startx="18" starty="136" endx="30" endy="151"></bitmapelement>
+	<bitmapelement name="compass_bead_nemesis" parent="HUD_Sheet_Shared" startx="18" starty="170" endx="30" endy="182"></bitmapelement>
+	
+	<bitmapelement name="hit_indicator" parent="HUD_Sheet_Shared" startx="173" starty="76" endx="256" endy="133" ></bitmapelement>
+	<bitmapelement name="hud_dont_shoot" parent="HUD_Sheet_Shared" startx="191" starty="224" endx="223" endy="256" ></bitmapelement>
+
+	<bitmap name="BlackSprite" filename="popupBack"></bitmap>
+	
+	
+<!--	<bitmap name="hud_dpad_texture" filename="MOH4_HUD_DPad"></bitmap> -->
+
+	<bitmap name="warning_box" filename="warning_box"></bitmap>
+	<bitmapelement name="warning_box_tl" parent="warning_box" startx="0" endx="11" starty="0" endy="12"></bitmapelement>
+	<bitmapelement name="warning_box_tm" parent="warning_box" startx="12" endx="23" starty="0" endy="12"></bitmapelement>
+	<bitmapelement name="warning_box_tr" parent="warning_box" startx="24" endx="35" starty="0" endy="12"></bitmapelement>
+	<bitmapelement name="warning_box_ml" parent="warning_box" startx="0" endx="11" starty="12" endy="23"></bitmapelement>
+	<bitmapelement name="warning_box_mm" parent="warning_box" startx="12" endx="23" starty="12" endy="23"></bitmapelement>
+	<bitmapelement name="warning_box_mr" parent="warning_box" startx="24" endx="35" starty="12" endy="23"></bitmapelement>
+	<bitmapelement name="warning_box_bl" parent="warning_box" startx="0" endx="11" starty="24" endy="35"></bitmapelement>
+	<bitmapelement name="warning_box_bm" parent="warning_box" startx="12" endx="23" starty="24" endy="35"></bitmapelement>
+	<bitmapelement name="warning_box_br" parent="warning_box" startx="24" endx="35" starty="24" endy="35"></bitmapelement>
+
+</hud>
+</document>

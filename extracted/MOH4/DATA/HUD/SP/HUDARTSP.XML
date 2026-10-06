@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document type="hud">
+	<hud>
+
+		<bitmap name="CSC_Form_Agressive"></bitmap>
+		<bitmap name="CSC_Form_Cautious"></bitmap>
+		<bitmap name="CSC_Hold_Aggresive"></bitmap>
+		<bitmap name="CSC_Hold_Cautious"></bitmap>
+		<bitmap name="CSC_Move_Aggressive"></bitmap>
+		<bitmap name="CSC_Move_Cautious"></bitmap>
+		<bitmap name="CSC_Wait_Agressive"></bitmap>
+		<bitmap name="CSC_Wait_Cautious"></bitmap>
+
+<!--		<bitmap name="nemesiscard" filename="nemesiscard"></bitmap>	-->
+
+		<!-- <bitmap name="Dossier" filename="MOH4_stats_FG"></bitmap> -->
+		
+		<!-- <bitmap name="rally_overlay" filename="Rally_Overlay"></bitmap> -->
+	</hud>
+</document>

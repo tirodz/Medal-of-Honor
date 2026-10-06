@@ -1,0 +1,229 @@
+<MultiplayerUI>
+
+	<!-- TOWS -->
+	<tows count="2">
+		<towscycle description="$MP_Preset_TOW_1" image="tow_1_img.jpg" file="data/shared/mctowbob.xml"/>
+		<towscycle description="$MP_Preset_TOW_2" image="tow_2_img.jpg" file="data/shared/mctowrus.xml"/>
+	</tows>
+
+	<!-- AXIS vs ALLIES -->
+	<axisallies count="5">
+		<axisalliescycle description="$MP_Preset_AA_1" image="AvA_IMG_1" file="data/shared/AAcus1.xml"/>
+		<axisalliescycle description="$MP_Preset_AA_2" image="AvA_IMG_2" file="data/shared/AAcus2.xml"/>
+		<axisalliescycle description="$MP_Preset_AA_3" image="AvA_IMG_3" file="data/shared/AAcus3.xml"/>
+		<axisalliescycle description="$MP_Preset_AA_4" image="AvA_IMG_4" file="data/shared/AAcus4.xml"/>
+		<axisalliescycle description="$MP_Preset_AA_5" image="AvA_IMG_3" file="data/shared/AAcus5.xml"/>
+
+	</axisallies>
+
+	<axisalliescustomobjectives count="8">
+		<axisalliesobjective description="$MP_Objective_0_Name $MP_2_to_4_Players" variation="0" image="Variation0.jpg" count="10">
+			<axisallieslevel value="2_58"/>
+			<axisallieslevel value="2_52"/>
+			<axisallieslevel value="2_53"/>
+			<axisallieslevel value="2_57"/>
+			<axisallieslevel value="2_59"/>
+			<axisallieslevel value="2_61"/>
+			<axisallieslevel value="2_62"/>
+			<axisallieslevel value="2_63"/>
+			<axisallieslevel value="2_64"/>
+			<axisallieslevel value="2_66"/>
+		</axisalliesobjective>
+
+		<axisalliesobjective description="$MP_Objective_2_Name  $MP_4_Players" variation="2" image="Variation2.jpg" count="10">
+			<axisallieslevel value="2_62"/>
+			<axisallieslevel value="2_51"/>
+			<axisallieslevel value="2_52"/>
+			<axisallieslevel value="2_53"/>
+			<axisallieslevel value="2_55"/>
+			<axisallieslevel value="2_56"/>
+			<axisallieslevel value="2_57"/>
+			<axisallieslevel value="2_58"/>
+			<axisallieslevel value="2_63"/>
+			<axisallieslevel value="2_64"/>
+		</axisalliesobjective>
+
+		<axisalliesobjective description="$MP_Objective_3_Name $MP_2_to_4_Players" variation="3" image="Variation3.jpg" count="6">
+			<axisallieslevel value="2_66"/>
+			<axisallieslevel value="2_53"/>
+			<axisallieslevel value="2_54"/>
+			<axisallieslevel value="2_55"/>
+			<axisallieslevel value="2_59"/>
+		</axisalliesobjective>
+
+		<axisalliesobjective description="$MP_Objective_1_Name $MP_2_to_4_Players" variation="1" image="Variation1.jpg" count="15">
+			<axisallieslevel value="2_55"/>
+			<axisallieslevel value="2_51"/>
+			<axisallieslevel value="2_52"/>
+			<axisallieslevel value="2_53"/>
+			<axisallieslevel value="2_54"/>
+			<axisallieslevel value="2_56"/>
+			<axisallieslevel value="2_57"/>
+			<axisallieslevel value="2_58"/>
+			<axisallieslevel value="2_59"/>
+			<axisallieslevel value="2_60"/>
+			<axisallieslevel value="2_61"/>
+			<axisallieslevel value="2_62"/>
+			<axisallieslevel value="2_63"/>
+			<axisallieslevel value="2_64"/>
+			<axisallieslevel value="2_66"/>
+		</axisalliesobjective>
+
+		<axisalliesobjective description="$MP_Objective_4_Name $MP_2_to_4_Players" variation="4" image="Variation4.jpg" count="15">
+			<axisallieslevel value="2_53"/>
+			<axisallieslevel value="2_51"/>
+			<axisallieslevel value="2_52"/>
+			<axisallieslevel value="2_54"/>
+			<axisallieslevel value="2_55"/>
+			<axisallieslevel value="2_56"/>
+			<axisallieslevel value="2_57"/>
+			<axisallieslevel value="2_58"/>
+			<axisallieslevel value="2_59"/>
+			<axisallieslevel value="2_60"/>
+			<axisallieslevel value="2_61"/>
+			<axisallieslevel value="2_62"/>
+			<axisallieslevel value="2_63"/>
+			<axisallieslevel value="2_64"/>
+			<axisallieslevel value="2_66"/>
+		</axisalliesobjective>
+
+		<axisalliesobjective description="$MP_Objective_5_Name $MP_2_to_4_Players" variation="5" image="Variation5.jpg" count="15">
+			<axisallieslevel value="2_64"/>
+			<axisallieslevel value="2_51"/>
+			<axisallieslevel value="2_52"/>
+			<axisallieslevel value="2_53"/>
+			<axisallieslevel value="2_54"/>
+			<axisallieslevel value="2_55"/>
+			<axisallieslevel value="2_56"/>
+			<axisallieslevel value="2_57"/>
+			<axisallieslevel value="2_58"/>
+			<axisallieslevel value="2_59"/>
+			<axisallieslevel value="2_60"/>
+			<axisallieslevel value="2_61"/>
+			<axisallieslevel value="2_62"/>
+			<axisallieslevel value="2_63"/>
+			<axisallieslevel value="2_66"/>
+		</axisalliesobjective>
+
+		<axisalliesobjective description="$MP_Objective_8_Name $MP_4_Players" variation="8" image="Variation8.jpg" count="15">
+			<axisallieslevel value="2_51"/>
+			<axisallieslevel value="2_52"/>
+			<axisallieslevel value="2_53"/>
+			<axisallieslevel value="2_54"/>
+			<axisallieslevel value="2_55"/>
+			<axisallieslevel value="2_56"/>
+			<axisallieslevel value="2_57"/>
+			<axisallieslevel value="2_58"/>
+			<axisallieslevel value="2_59"/>
+			<axisallieslevel value="2_60"/>
+			<axisallieslevel value="2_61"/>
+			<axisallieslevel value="2_62"/>
+			<axisallieslevel value="2_63"/>
+			<axisallieslevel value="2_64"/>
+			<axisallieslevel value="2_66"/>
+		</axisalliesobjective>
+
+		<axisalliesobjective description="$MP_Objective_10_Name $MP_4_Players" variation="10" image="Variation10.jpg" count="12">
+			<axisallieslevel value="2_57"/>
+			<axisallieslevel value="2_51"/>
+			<axisallieslevel value="2_52"/>
+			<axisallieslevel value="2_53"/>
+			<axisallieslevel value="2_55"/>
+			<axisallieslevel value="2_56"/>
+			<axisallieslevel value="2_58"/>
+			<axisallieslevel value="2_59"/>
+			<axisallieslevel value="2_62"/>
+			<axisallieslevel value="2_63"/>
+			<axisallieslevel value="2_64"/>
+			<axisallieslevel value="2_66"/>
+		</axisalliesobjective>
+
+	</axisalliescustomobjectives>
+
+
+	<!-- LIGHT ENCOUNTERS -->
+	<lightencounters count="4">
+		<lightencounterscycle description="$MP_Preset_LE_1" image="LE_IMG_1" file="data/shared/LEcus1.xml"/>
+		<lightencounterscycle description="$MP_Preset_LE_2" image="LE_IMG_2" file="data/shared/LEcus2.xml"/>
+		<lightencounterscycle description="$MP_Preset_LE_3" image="LE_IMG_3" file="data/shared/LEcus3.xml"/>
+		<lightencounterscycle description="$MP_Preset_LE_4" image="LE_IMG_4" file="data/shared/LEcus4.xml"/>
+	</lightencounters>
+
+	<lightencounterscustomobjectives count="4">
+		<lightencountersobjective description="$MP_Objective_1_Name $MP_2_to_4_Players" variation="1" image="Variation1.jpg" count="15">
+			<lightencounterslevel value="2_55"/>
+			<lightencounterslevel value="2_51"/>
+			<lightencounterslevel value="2_52"/>
+			<lightencounterslevel value="2_53"/>
+			<lightencounterslevel value="2_54"/>
+			<lightencounterslevel value="2_56"/>
+			<lightencounterslevel value="2_57"/>
+			<lightencounterslevel value="2_58"/>
+			<lightencounterslevel value="2_59"/>
+			<lightencounterslevel value="2_60"/>
+			<lightencounterslevel value="2_61"/>
+			<lightencounterslevel value="2_62"/>
+			<lightencounterslevel value="2_63"/>
+			<lightencounterslevel value="2_64"/>
+			<lightencounterslevel value="2_66"/>
+		</lightencountersobjective>
+
+
+		<lightencountersobjective description="$MP_Objective_4_Name $MP_2_to_4_Players" variation="4" image="Variation4.jpg" count="15">
+			<lightencounterslevel value="2_53"/>
+			<lightencounterslevel value="2_51"/>
+			<lightencounterslevel value="2_52"/>
+			<lightencounterslevel value="2_54"/>
+			<lightencounterslevel value="2_55"/>
+			<lightencounterslevel value="2_56"/>
+			<lightencounterslevel value="2_57"/>
+			<lightencounterslevel value="2_58"/>
+			<lightencounterslevel value="2_59"/>
+			<lightencounterslevel value="2_60"/>
+			<lightencounterslevel value="2_61"/>
+			<lightencounterslevel value="2_62"/>
+			<lightencounterslevel value="2_63"/>
+			<lightencounterslevel value="2_64"/>
+			<lightencounterslevel value="2_66"/>
+		</lightencountersobjective>
+
+		<lightencountersobjective description="$MP_Objective_5_Name $MP_2_to_4_Players" variation="5" image="Variation5.jpg" count="15">
+			<lightencounterslevel value="2_64"/>
+			<lightencounterslevel value="2_51"/>
+			<lightencounterslevel value="2_52"/>
+			<lightencounterslevel value="2_53"/>
+			<lightencounterslevel value="2_54"/>
+			<lightencounterslevel value="2_55"/>
+			<lightencounterslevel value="2_56"/>
+			<lightencounterslevel value="2_57"/>
+			<lightencounterslevel value="2_58"/>
+			<lightencounterslevel value="2_59"/>
+			<lightencounterslevel value="2_60"/>
+			<lightencounterslevel value="2_61"/>
+			<lightencounterslevel value="2_62"/>
+			<lightencounterslevel value="2_63"/>
+			<lightencounterslevel value="2_66"/>
+		</lightencountersobjective>
+
+		<lightencountersobjective description="$MP_Objective_8_Name $MP_4_Players" variation="8" image="Variation8.jpg" count="15">
+			<lightencounterslevel value="2_51"/>
+			<lightencounterslevel value="2_52"/>
+			<lightencounterslevel value="2_53"/>
+			<lightencounterslevel value="2_54"/>
+			<lightencounterslevel value="2_55"/>
+			<lightencounterslevel value="2_56"/>
+			<lightencounterslevel value="2_57"/>
+			<lightencounterslevel value="2_58"/>
+			<lightencounterslevel value="2_59"/>
+			<lightencounterslevel value="2_60"/>
+			<lightencounterslevel value="2_61"/>
+			<lightencounterslevel value="2_62"/>
+			<lightencounterslevel value="2_63"/>
+			<lightencounterslevel value="2_64"/>
+			<lightencounterslevel value="2_66"/>
+		</lightencountersobjective>
+
+	</lightencounterscustomobjectives>
+
+
+</MultiplayerUI>

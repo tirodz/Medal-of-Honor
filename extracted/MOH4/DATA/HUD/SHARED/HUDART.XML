@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document type="hud">
+	<hud>
+
+
+<!-- 	New MOH4 "Final" HUD	-->
+
+	<!-- NOTE: For bitmap definitions, it is [name] that is most important.  [name] MUST match the asset name (not filename) of a
+			   loaded texture (presumably defined in hud.xdd); [filename] is not used by the game code.  -->
+	<bitmap name="compass_meters" filename="compass_meters"></bitmap>
+	
+	<bitmap name="compass_center" filename="compass_center"></bitmap>
+	<bitmap name="compass_glass" filename="compass_glass"></bitmap>
+	<bitmap name="compass_ring" filename="compass_ring"></bitmap>
+	<bitmap name="compass_back" filename="compass_backup"></bitmap>
+	
+	<!-- Controller Button Icons used in the mixed text object -->
+	<bitmap name="icon_action_button" filename="icon_action_button"></bitmap>
+
+	<bitmap name="stance"></bitmap>
+	<bitmapelement name="stance_stand" parent="stance" startx="0" endx="45" starty="0" endy="63"></bitmapelement>		
+	<bitmapelement name="stance_crouch" parent="stance" startx="46" endx="103" starty="0" endy="63"></bitmapelement>		
+	<bitmapelement name="stance_prone" parent="stance" startx="104" endx="228" starty="0" endy="63"></bitmapelement>		
+		
+	<bitmap name="icons" filename="icons"></bitmap>
+	<bitmapelement name="ammo_icon" parent="icons" startx="0" endx="11" starty="39" endy="64"></bitmapelement>
+	<bitmapelement name="grenade_icon" parent="icons" startx="12" endx="34" starty="39" endy="64"></bitmapelement>
+	<bitmapelement name="medkit_icon" parent="icons" startx="33" endx="55" starty="39" endy="64"></bitmapelement>
+	<bitmapelement name="revive_icon" parent="icons" startx="40" endx="50" starty="15" endy="39"></bitmapelement>
+	<bitmapelement name="timer_back" parent="icons" startx="65" endx="129" starty="0" endy="64"></bitmapelement>
+	<bitmapelement name="timer_hand" parent="icons" startx="60" endx="64" starty="8" endy="55"></bitmapelement>
+	<bitmapelement name="rally_flash" parent="icons" startx="46" endx="59" starty="0" endy="13"></bitmapelement>
+	<bitmapelement name="health_flash" parent="icons" startx="32" endx="45" starty="0" endy="13"></bitmapelement>
+	
+	<!-- sprites used for rally mode awards -->
+	<bitmap name="kill_icons" filename="kill_icons"></bitmap>
+	<bitmapelement name="rally_helmet" parent="kill_icons" startx="47" endx="91" starty="33" endy="64"></bitmapelement>
+	<bitmapelement name="rally_count_two" parent="kill_icons" startx="102" endx="111" starty="28" endy="46"></bitmapelement>
+	<bitmapelement name="rally_count_three" parent="kill_icons" startx="102" endx="116" starty="28" endy="46"></bitmapelement>
+	<bitmapelement name="rally_count_four" parent="kill_icons" startx="102" endx="121" starty="28" endy="46"></bitmapelement>
+	<bitmapelement name="rally_count_five" parent="kill_icons" startx="97" endx="127" starty="47" endy="64"></bitmapelement>
+	<bitmapelement name="rally_tank" parent="kill_icons" startx="0" endx="56" starty="0" endy="26"></bitmapelement>
+	<bitmapelement name="rally_melee" parent="kill_icons" startx="64" endx="90" starty="0" endy="32"></bitmapelement>
+	<bitmapelement name="rally_headshot" parent="kill_icons" startx="0" endx="44" starty="33" endy="64"></bitmapelement>
+	<bitmapelement name="rally_SS" parent="kill_icons" startx="103" endx="128" starty="0" endy="28"></bitmapelement>
+	
+	<bitmapelement name="health_bar" parent="compass_meters" startx="102" starty="58" endx="128" endy="72"></bitmapelement>
+	
+	<bitmap name="bar" filename="bar"></bitmap>
+	<bitmapelement name="dot" parent="bar" startx="0" starty="0" endx="1" endy="1"></bitmapelement>
+	<bitmapelement name="overheat_bar" parent="bar" startx="1" starty="17" endx="75" endy="31"></bitmapelement>
+	<bitmapelement name="overheat_indicator" parent="bar" startx="0" starty="0" endx="76" endy="16"></bitmapelement>
+
+	<bitmapelement name="democharge_bar" parent="bar" startx="1" starty="17" endx="75" endy="31"></bitmapelement>
+	<bitmapelement name="democharge_indicator" parent="bar" startx="0" starty="0" endx="76" endy="16"></bitmapelement>
+
+	<!-- 4 piece circular "crosshair" and "dot" -->
+	<bitmap name="crosshair_left" filename="circle_crosshair_left"></bitmap>
+	<bitmap name="crosshair_down" filename="circle_crosshair_down"></bitmap>
+	<bitmap name="crosshair_up" filename="circle_crosshair_up"></bitmap>
+	<bitmap name="crosshair_right" filename="circle_crosshair_right"></bitmap>
+	
+	<bitmap name="crosshair_dot" filename="dynamic_crosshair_dot"></bitmap>
+
+<!-- END - New MOH4 "Final" HUD	-->	
+
+		
+		<!-- CSA ICON TEXTURES -->
+		<!--
+		<bitmap name="csa_icons" filename="MOH4_CSA_Icons"></bitmap>
+		<bitmapelement name="csa_use_medkit" parent="csa_icons" startx="0" starty="0" endx="32" endy="32"></bitmapelement>
+		<bitmapelement name="csa_kick_grenade" parent="csa_icons" startx="32" starty="0" endx="64" endy="32"></bitmapelement>
+		<bitmapelement name="csa_swap_weapon" parent="csa_icons" startx="64" starty="0" endx="96" endy="32"></bitmapelement>
+		<bitmapelement name="csa_use_mmg" parent="csa_icons" startx="96" starty="0" endx="128" endy="32"></bitmapelement>
+		<bitmapelement name="csa_use_democharge" parent="csa_icons" startx="128" starty="0" endx="160" endy="32"></bitmapelement>
+		-->
+	
+		
+		<bitmap name="compass_teambead" filename="MOH4_HUD_CompassTeamBead"></bitmap>
+		<bitmap name="compass_objectivebead" filename="MOH4_HUD_CompassObjectiveBead"></bitmap>
+		<bitmap name="compass_objectivearrow" filename="MOH4_HUD_CompassObjectiveArrow"></bitmap>
+
+		<bitmap name="hit_indicator" filename="MOH4_HUD_Hit_Indicator"></bitmap>
+
+		<bitmap name="BlackSprite" filename="popupBack"></bitmap>
+	
+		<bitmap name="hud_dpad_texture" filename="MOH4_HUD_DPad"></bitmap>
+
+		<bitmapelement name="rally_bar" parent="compass_meters" startx="102" starty="58" endx="128" endy="72"></bitmapelement>
+
+	<bitmap name="warning_box" filename="warning_box"></bitmap>
+	<bitmapelement name="warning_box_tl" parent="icons" startx="0" endx="11" starty="0" endy="12"></bitmapelement>
+	<bitmapelement name="warning_box_tm" parent="icons" startx="12" endx="23" starty="0" endy="12"></bitmapelement>
+	<bitmapelement name="warning_box_tr" parent="icons" startx="24" endx="35" starty="0" endy="12"></bitmapelement>
+	<bitmapelement name="warning_box_ml" parent="icons" startx="0" endx="11" starty="12" endy="23"></bitmapelement>
+	<bitmapelement name="warning_box_mm" parent="icons" startx="12" endx="23" starty="12" endy="23"></bitmapelement>
+	<bitmapelement name="warning_box_mr" parent="icons" startx="24" endx="35" starty="12" endy="23"></bitmapelement>
+	<bitmapelement name="warning_box_bl" parent="icons" startx="0" endx="11" starty="24" endy="35"></bitmapelement>
+	<bitmapelement name="warning_box_bm" parent="icons" startx="12" endx="23" starty="24" endy="35"></bitmapelement>
+	<bitmapelement name="warning_box_br" parent="icons" startx="24" endx="35" starty="24" endy="35"></bitmapelement>
+
+	</hud>
+</document>

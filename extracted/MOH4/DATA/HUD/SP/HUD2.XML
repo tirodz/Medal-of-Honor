@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document type="hud">
+	<hud>
+	<timer name="sp_timer_text" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="-27" locy="-170" horiz_center="1" vert_center="1"></timer>
+	
+	<commandicons name="command_icons" width="56" height="60" locx="8" locy="0"></commandicons>
+	<link parent="rally_top" child="command_icons" alignment="hri vt"></link> 
+
+	<nemesiscard name="nemesis_card" nemesistexture="nemesiscard" locx="480" locy="48" width="64" height="128" ></nemesiscard>
+	
+	<!-- <buddystatus name="buddy_status" width="16" height="16" locx="0" locy="-6" link="morale_meter_normal" horiz_center="1" vert_top="1"></buddystatus> -->
+		
+	<!-- 
+	<text name="debug_primary_weapon_state" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="-16" locy="0" horiz_right="1" vert_center="1"></text>
+	
+	<text name="debug_spine_anim" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="16" locy="0" horiz_left="1" vert_center="1"></text>
+	<text name="debug_arm_anim" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="16" locy="24" horiz_left="1" vert_center="1"></text>
+	<text name="debug_gun_anim" fontname="Futura Std Condensed ExtBd" fontsize="16" locx="16" locy="48" horiz_left="1" vert_center="1"></text>
+	-->
+
+	</hud>
+</document>

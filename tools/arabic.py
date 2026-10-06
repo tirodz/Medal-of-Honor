@@ -56,27 +56,40 @@ def _restore(s: str, store) -> str:
     return re.sub("\uE000([\uE001-\uE0FF])", repl, s)
 
 
-def process(text: str) -> str:
-    """Return the shaped, visually-ordered string to store in the game.
-
-    The string tables use two line separators - the literal two-character
-    sequence ``\\n`` and ``|`` - and the engine breaks lines on them, drawing
-    each line left to right.  They must therefore be handled as hard breaks:
-    the bidi algorithm would otherwise reverse the order of the lines
-    themselves (first paragraph would render last).  Each line is reshaped and
-    reordered on its own and the separators are kept verbatim.
-    """
-    if not has_arabic(text):
-        return text
-    out = []
+def _shape_parts(text: str):
+    """Yield hard-break-separated Arabic runs in logical storage order."""
     for part in re.split(r"(\\n|\|)", text):
         if part in ("\\n", "|"):
-            out.append(part)
+            yield part
             continue
         protected, store = _protect(part)
         shaped = _RESHAper.reshape(protected)
-        visual = get_display(shaped, base_dir="R")
-        out.append(_restore(visual, store))
+        yield _restore(shaped, store)
+
+
+def shape_only(text: str) -> str:
+    """Shape Arabic but keep logical order for a renderer that performs BiDi.
+
+    This is specifically for the game's Scaleform/GFx front-end. Scaleform's
+    BiDi-capable text path can reorder RTL runs, but it does not perform Arabic
+    contextual shaping. Feeding it text that has already been visually
+    reordered causes a second BiDi pass at runtime.
+    """
+    if not has_arabic(text):
+        return text
+    return "".join(_shape_parts(text))
+
+
+def process(text: str) -> str:
+    """Return shaped, visually-ordered text for a strict LTR renderer."""
+    if not has_arabic(text):
+        return text
+    out = []
+    for shaped in _shape_parts(text):
+        if shaped in ("\\n", "|"):
+            out.append(shaped)
+            continue
+        out.append(get_display(shaped, base_dir="R"))
     return "".join(out)
 
 
